@@ -21,7 +21,7 @@ export default async function ReadPage({
   if (index > cardsDone) {
     const next = cardsDone + 1;
     return (
-      <div className="mt-24 text-center text-[var(--ink-soft)]">
+      <div className="mx-auto mt-24 max-w-3xl px-6 text-center text-[var(--ink-soft)]">
         <p>Learn the words before you read.</p>
         <p className="font-ui mt-3 text-sm">
           {index === next
@@ -51,12 +51,14 @@ export default async function ReadPage({
   }
 
   return (
-    <ReaderView
-      chapter={chapter}
+    <div className="mx-auto max-w-3xl px-6">
+      <ReaderView
+        chapter={chapter}
       entries={entries}
       bookTitle={meta.title}
-      chapterCount={meta.chapterCount}
-      cardsDoneThrough={cardsDone}
-    />
+        chapterCount={meta.chapterCount}
+        cardsDoneThrough={cardsDone}
+      />
+    </div>
   );
 }

@@ -11,12 +11,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="min-h-screen">
-        <header className="mx-auto flex max-w-3xl items-baseline justify-between px-6 pb-2 pt-6">
-          <Link href="/" className="font-ui text-sm tracking-[0.25em] text-[var(--ink-soft)]">
-            WEAVE <span className="jp text-[var(--indigo)]">織</span>
+        <header className="mx-auto flex max-w-3xl items-center justify-between px-6 pb-2 pt-6">
+          <Link href="/" className="font-ui flex items-center gap-2.5 text-sm tracking-[0.25em] text-[var(--ink-soft)]">
+            <span className="hanko hanko-sm jp" aria-hidden>
+              織
+            </span>
+            WEAVE
+          </Link>
+          <Link href="/library" className="font-ui text-sm text-[var(--ink-soft)]">
+            library
           </Link>
         </header>
-        <main className="mx-auto max-w-3xl px-6 pb-24">{children}</main>
+        <main className="pb-24">{children}</main>
       </body>
     </html>
   );

@@ -6,5 +6,9 @@ export default async function ReviewPage({
   params: Promise<{ slug: string; n: string }>;
 }) {
   const { slug, n } = await params;
-  return <ReviewSession slug={slug} chapter={Number(n)} />;
+  return (
+    <div className="mx-auto max-w-3xl px-6">
+      <ReviewSession slug={slug} chapter={Number(n)} />
+    </div>
+  );
 }

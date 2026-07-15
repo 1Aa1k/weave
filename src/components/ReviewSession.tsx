@@ -145,7 +145,7 @@ export default function ReviewSession({ slug, chapter }: ReviewSessionProps) {
         </p>
 
         {revealed ? (
-          <div className="mt-8 border-t border-[var(--line)] pt-6">
+          <div className="card-reveal mt-8 border-t border-[var(--line)] pt-6">
             {current.entry.reading && (
               <p className="jp text-xl text-[var(--ink-soft)]">{current.entry.reading}</p>
             )}
@@ -170,10 +170,12 @@ export default function ReviewSession({ slug, chapter }: ReviewSessionProps) {
             <button
               key={g.rating}
               onClick={() => grade(g.rating)}
-              className="font-ui rounded border px-5 py-2 text-sm"
+              className="grade-btn font-ui rounded border px-5 py-2 text-sm"
               style={{ borderColor: g.color, color: g.color }}
             >
-              {g.label} <span className="opacity-50">{g.key}</span>
+              <span className="grade-label">
+                {g.label} <span className="opacity-50">{g.key}</span>
+              </span>
             </button>
           ))}
         </div>

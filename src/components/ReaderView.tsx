@@ -129,7 +129,7 @@ export default function ReaderView({
 
       {slip && entry && (
         <div
-          className="slip fixed z-50 px-4 py-3"
+          className="slip slip-pop fixed z-50 px-4 py-3"
           style={{ left: slip.x, top: slip.y }}
           onClick={(e) => e.stopPropagation()}
         >
