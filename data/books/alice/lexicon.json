@@ -1,0 +1,1082 @@
+{
+ "know|verb": {
+  "ja": "知る",
+  "reading": "しる",
+  "gloss": "to know; to be aware of; to learn of",
+  "seq": 0
+ },
+ "like|verb": {
+  "ja": "好き",
+  "reading": "すき",
+  "gloss": "to like; liked; favorite (suki, na-adjective)",
+  "seq": 0
+ },
+ "get|verb": {
+  "ja": "得る",
+  "reading": "える",
+  "gloss": "to get; to earn; to acquire; to procure",
+  "seq": 1588760
+ },
+ "go|verb": {
+  "ja": "行く",
+  "reading": "いく",
+  "gloss": "to go; to move (towards); to head (towards); to leave (for)",
+  "seq": 1578850
+ },
+ "right|adj": {
+  "ja": "正しい",
+  "reading": "ただしい",
+  "gloss": "right; correct",
+  "seq": 1376600
+ },
+ "one|noun": {
+  "ja": "一つ",
+  "reading": "ひとつ",
+  "gloss": "one (thing); one item",
+  "seq": 0
+ },
+ "come|verb": {
+  "ja": "来る",
+  "reading": "くる",
+  "gloss": "to come; to arrive",
+  "seq": 0
+ },
+ "want|verb": {
+  "ja": "欲しい",
+  "reading": "ほしい",
+  "gloss": "to want; wanted; desired (hoshii)",
+  "seq": 0
+ },
+ "think|verb": {
+  "ja": "思う",
+  "reading": "おもう",
+  "gloss": "to think; to consider; to believe; to reckon",
+  "seq": 1589350
+ },
+ "see|verb": {
+  "ja": "見る",
+  "reading": "みる",
+  "gloss": "to see; to look; to watch; to view",
+  "seq": 1259290
+ },
+ "good|adj": {
+  "ja": "良い",
+  "reading": "いい",
+  "gloss": "good; fine; nice",
+  "seq": 0
+ },
+ "time|noun": {
+  "ja": "時間",
+  "reading": "じかん",
+  "gloss": "time; hour",
+  "seq": 0
+ },
+ "back|noun": {
+  "ja": "後ろ",
+  "reading": "うしろ",
+  "gloss": "back; behind; rear",
+  "seq": 1269410
+ },
+ "look|verb": {
+  "ja": "眺める",
+  "reading": "ながめる",
+  "gloss": "to look at; to gaze at; to watch",
+  "seq": 0
+ },
+ "take|verb": {
+  "ja": "取る",
+  "reading": "とる",
+  "gloss": "to take; to pick up; to grab; to catch",
+  "seq": 1326980
+ },
+ "tell|verb": {
+  "ja": "教える",
+  "reading": "おしえる",
+  "gloss": "to tell; to inform; to teach",
+  "seq": 0
+ },
+ "really|adv": {
+  "ja": "本当に",
+  "reading": "ほんとうに",
+  "gloss": "really; truly",
+  "seq": 0
+ },
+ "man|noun": {
+  "ja": "男",
+  "reading": "おとこ",
+  "gloss": "man; male",
+  "seq": 1419990
+ },
+ "say|verb": {
+  "ja": "言う",
+  "reading": "いう",
+  "gloss": "to say; to utter; to declare",
+  "seq": 1587040
+ },
+ "need|verb": {
+  "ja": "要る",
+  "reading": "いる",
+  "gloss": "to need; to be necessary",
+  "seq": 0
+ },
+ "something|noun": {
+  "ja": "何か",
+  "reading": "なにか",
+  "gloss": "something; some kind of",
+  "seq": 0
+ },
+ "way|noun": {
+  "ja": "道",
+  "reading": "みち",
+  "gloss": "way; road; path",
+  "seq": 0
+ },
+ "make|verb": {
+  "ja": "作る",
+  "reading": "つくる",
+  "gloss": "to make; to build; to create",
+  "seq": 0
+ },
+ "never|adv": {
+  "ja": "決して",
+  "reading": "けっして",
+  "gloss": "never; by no means (with negative)",
+  "seq": 0
+ },
+ "people|noun": {
+  "ja": "人々",
+  "reading": "ひとびと",
+  "gloss": "people; everybody",
+  "seq": 0
+ },
+ "little|adj": {
+  "ja": "小さい",
+  "reading": "ちいさい",
+  "gloss": "small; little; tiny",
+  "seq": 0
+ },
+ "please|verb": {
+  "ja": "お願い",
+  "reading": "おねがい",
+  "gloss": "please; request (onegai)",
+  "seq": 0
+ },
+ "love|noun": {
+  "ja": "愛",
+  "reading": "あい",
+  "gloss": "love; affection; care",
+  "seq": 1150410
+ },
+ "mean|verb": {
+  "ja": "意味する",
+  "reading": "いみする",
+  "gloss": "to mean; to signify",
+  "seq": 0
+ },
+ "sorry|adj": {
+  "ja": "ごめんなさい",
+  "reading": "",
+  "gloss": "sorry; my apologies",
+  "seq": 0
+ },
+ "give|verb": {
+  "ja": "あげる",
+  "reading": "",
+  "gloss": "to give (to someone)",
+  "seq": 0
+ },
+ "thank|verb": {
+  "ja": "感謝する",
+  "reading": "かんしゃする",
+  "gloss": "to thank; to be grateful",
+  "seq": 0
+ },
+ "sure|adj": {
+  "ja": "確か",
+  "reading": "たしか",
+  "gloss": "sure; certain; positive; definite",
+  "seq": 1596930
+ },
+ "thing|noun": {
+  "ja": "事",
+  "reading": "こと",
+  "gloss": "thing; matter",
+  "seq": 1313580
+ },
+ "help|verb": {
+  "ja": "手伝う",
+  "reading": "てつだう",
+  "gloss": "to help; to assist; to aid",
+  "seq": 1328190
+ },
+ "anything|noun": {
+  "ja": "何でも",
+  "reading": "なんでも",
+  "gloss": "anything; whatever",
+  "seq": 0
+ },
+ "still|adv": {
+  "ja": "まだ",
+  "reading": "",
+  "gloss": "still; not yet",
+  "seq": 0
+ },
+ "find|verb": {
+  "ja": "見つける",
+  "reading": "みつける",
+  "gloss": "to find; to discover; to come across; to spot",
+  "seq": 1604570
+ },
+ "life|noun": {
+  "ja": "人生",
+  "reading": "じんせい",
+  "gloss": "life; one's life",
+  "seq": 0
+ },
+ "nothing|noun": {
+  "ja": "何も",
+  "reading": "なにも",
+  "gloss": "nothing (with negative)",
+  "seq": 0
+ },
+ "sir|noun": {
+  "ja": "旦那",
+  "reading": "だんな",
+  "gloss": "sir; boss; master; governor",
+  "seq": 1418410
+ },
+ "day|noun": {
+  "ja": "日",
+  "reading": "ひ",
+  "gloss": "day; days",
+  "seq": 1463770
+ },
+ "work|verb": {
+  "ja": "働く",
+  "reading": "はたらく",
+  "gloss": "to work; to labor",
+  "seq": 0
+ },
+ "maybe|adv": {
+  "ja": "多分",
+  "reading": "たぶん",
+  "gloss": "maybe; probably",
+  "seq": 0
+ },
+ "before|adv": {
+  "ja": "前に",
+  "reading": "まえに",
+  "gloss": "before; earlier; in front",
+  "seq": 0
+ },
+ "wait|verb": {
+  "ja": "待つ",
+  "reading": "まつ",
+  "gloss": "to wait",
+  "seq": 1410590
+ },
+ "stop|verb": {
+  "ja": "止める",
+  "reading": "とめる",
+  "gloss": "to stop; to turn off",
+  "seq": 1310670
+ },
+ "call|verb": {
+  "ja": "呼ぶ",
+  "reading": "よぶ",
+  "gloss": "to call; to call out; to name",
+  "seq": 0
+ },
+ "talk|verb": {
+  "ja": "話す",
+  "reading": "はなす",
+  "gloss": "to talk; to speak",
+  "seq": 0
+ },
+ "thought|noun": {
+  "ja": "考え",
+  "reading": "かんがえ",
+  "gloss": "thought; idea",
+  "seq": 0
+ },
+ "home|noun": {
+  "ja": "うち",
+  "reading": "",
+  "gloss": "home; one's house",
+  "seq": 0
+ },
+ "night|noun": {
+  "ja": "夜",
+  "reading": "よる",
+  "gloss": "night; evening",
+  "seq": 1536350
+ },
+ "put|verb": {
+  "ja": "置く",
+  "reading": "おく",
+  "gloss": "to put; to place",
+  "seq": 1421850
+ },
+ "great|adj": {
+  "ja": "すごい",
+  "reading": "",
+  "gloss": "great; amazing; enormous",
+  "seq": 0
+ },
+ "last|noun": {
+  "ja": "最後",
+  "reading": "さいご",
+  "gloss": "last; the end; conclusion",
+  "seq": 0
+ },
+ "better|adv": {
+  "ja": "寧ろ",
+  "reading": "むしろ",
+  "gloss": "rather; better; instead; if anything",
+  "seq": 1604870
+ },
+ "everything|noun": {
+  "ja": "全て",
+  "reading": "すべて",
+  "gloss": "everything; all; the whole",
+  "seq": 1595730
+ },
+ "new|adj": {
+  "ja": "新しい",
+  "reading": "あたらしい",
+  "gloss": "new; novel; fresh; recent",
+  "seq": 1361490
+ },
+ "always|adv": {
+  "ja": "いつも",
+  "reading": "",
+  "gloss": "always; usually; every time",
+  "seq": 0
+ },
+ "keep|verb": {
+  "ja": "保つ",
+  "reading": "たもつ",
+  "gloss": "to keep; to preserve; to hold; to retain",
+  "seq": 1513250
+ },
+ "long|adj": {
+  "ja": "長い",
+  "reading": "ながい",
+  "gloss": "long (length or time)",
+  "seq": 0
+ },
+ "leave|verb": {
+  "ja": "去る",
+  "reading": "さる",
+  "gloss": "to leave; to go away",
+  "seq": 1231650
+ },
+ "name|noun": {
+  "ja": "名前",
+  "reading": "なまえ",
+  "gloss": "name",
+  "seq": 0
+ },
+ "place|noun": {
+  "ja": "所",
+  "reading": "ところ",
+  "gloss": "place; spot; scene; site",
+  "seq": 1343100
+ },
+ "ever|adv": {
+  "ja": "今まで",
+  "reading": "いままで",
+  "gloss": "ever; until now",
+  "seq": 0
+ },
+ "feel|verb": {
+  "ja": "感じる",
+  "reading": "かんじる",
+  "gloss": "to feel; to sense; to experience",
+  "seq": 1212260
+ },
+ "father|noun": {
+  "ja": "お父さん",
+  "reading": "おとうさん",
+  "gloss": "father; dad",
+  "seq": 0
+ },
+ "old|adj": {
+  "ja": "古い",
+  "reading": "ふるい",
+  "gloss": "old; aged; ancient; antiquated",
+  "seq": 1265070
+ },
+ "nice|adj": {
+  "ja": "素敵",
+  "reading": "すてき",
+  "gloss": "nice; lovely; wonderful",
+  "seq": 0
+ },
+ "believe|verb": {
+  "ja": "信じる",
+  "reading": "しんじる",
+  "gloss": "to believe; to believe in; to place trust in; to confide in",
+  "seq": 1359040
+ },
+ "girl|noun": {
+  "ja": "女の子",
+  "reading": "おんなのこ",
+  "gloss": "girl; daughter; baby girl",
+  "seq": 1344970
+ },
+ "someone|noun": {
+  "ja": "誰か",
+  "reading": "だれか",
+  "gloss": "someone; somebody",
+  "seq": 0
+ },
+ "fine|adj": {
+  "ja": "大丈夫",
+  "reading": "だいじょうぶ",
+  "gloss": "fine; all right; OK",
+  "seq": 0
+ },
+ "kind|noun": {
+  "ja": "種類",
+  "reading": "しゅるい",
+  "gloss": "kind; sort; type",
+  "seq": 0
+ },
+ "house|noun": {
+  "ja": "家",
+  "reading": "いえ",
+  "gloss": "house; residence; dwelling; home",
+  "seq": 1191730
+ },
+ "course|noun": {
+  "ja": "もちろん",
+  "reading": "",
+  "gloss": "of course; certainly",
+  "seq": 0
+ },
+ "stay|verb": {
+  "ja": "留まる",
+  "reading": "とどまる",
+  "gloss": "to stay; to remain",
+  "seq": 0
+ },
+ "enough|adv": {
+  "ja": "十分",
+  "reading": "じゅうぶん",
+  "gloss": "enough; sufficient; plenty",
+  "seq": 0
+ },
+ "wrong|adj": {
+  "ja": "違う",
+  "reading": "ちがう",
+  "gloss": "wrong; different; to differ",
+  "seq": 0
+ },
+ "world|noun": {
+  "ja": "世界",
+  "reading": "せかい",
+  "gloss": "world",
+  "seq": 0
+ },
+ "bad|adj": {
+  "ja": "悪い",
+  "reading": "わるい",
+  "gloss": "bad; poor; wrong",
+  "seq": 0
+ },
+ "today|noun": {
+  "ja": "今日",
+  "reading": "きょう",
+  "gloss": "today",
+  "seq": 0
+ },
+ "listen|verb": {
+  "ja": "聴く",
+  "reading": "きく",
+  "gloss": "to listen (attentively)",
+  "seq": 0
+ },
+ "understand|verb": {
+  "ja": "分かる",
+  "reading": "わかる",
+  "gloss": "to understand; to comprehend; to grasp; to see",
+  "seq": 1606560
+ },
+ "hear|verb": {
+  "ja": "聞く",
+  "reading": "きく",
+  "gloss": "to hear",
+  "seq": 1591110
+ },
+ "remember|verb": {
+  "ja": "覚える",
+  "reading": "おぼえる",
+  "gloss": "to remember; to memorize",
+  "seq": 0
+ },
+ "ask|verb": {
+  "ja": "尋ねる",
+  "reading": "たずねる",
+  "gloss": "to ask; to enquire; to inquire",
+  "seq": 1369940
+ },
+ "show|verb": {
+  "ja": "見せる",
+  "reading": "みせる",
+  "gloss": "to show; to display",
+  "seq": 0
+ },
+ "else|adv": {
+  "ja": "他に",
+  "reading": "ほかに",
+  "gloss": "else; in addition; besides",
+  "seq": 1203280
+ },
+ "kill|verb": {
+  "ja": "殺す",
+  "reading": "ころす",
+  "gloss": "to kill; to slay; to murder; to slaughter",
+  "seq": 1299030
+ },
+ "care|noun": {
+  "ja": "世話",
+  "reading": "せわ",
+  "gloss": "care; looking after; help",
+  "seq": 0
+ },
+ "try|verb": {
+  "ja": "試す",
+  "reading": "ためす",
+  "gloss": "to try; to attempt; to test",
+  "seq": 0
+ },
+ "woman|noun": {
+  "ja": "女",
+  "reading": "おんな",
+  "gloss": "woman; female",
+  "seq": 1344930
+ },
+ "dead|adj": {
+  "ja": "死んだ",
+  "reading": "しんだ",
+  "gloss": "dead",
+  "seq": 0
+ },
+ "many|adj": {
+  "ja": "多い",
+  "reading": "おおい",
+  "gloss": "many; numerous; a lot",
+  "seq": 1407460
+ },
+ "mind|noun": {
+  "ja": "心",
+  "reading": "こころ",
+  "gloss": "mind; heart; spirit",
+  "seq": 1360480
+ },
+ "friend|noun": {
+  "ja": "友達",
+  "reading": "ともだち",
+  "gloss": "friend",
+  "seq": 0
+ },
+ "morning|noun": {
+  "ja": "朝",
+  "reading": "あさ",
+  "gloss": "morning",
+  "seq": 0
+ },
+ "boy|noun": {
+  "ja": "男の子",
+  "reading": "おとこのこ",
+  "gloss": "boy",
+  "seq": 0
+ },
+ "together|adv": {
+  "ja": "一緒に",
+  "reading": "いっしょに",
+  "gloss": "together",
+  "seq": 0
+ },
+ "real|adj": {
+  "ja": "本当",
+  "reading": "ほんとう",
+  "gloss": "real; true; genuine",
+  "seq": 0
+ },
+ "baby|noun": {
+  "ja": "赤ちゃん",
+  "reading": "あかちゃん",
+  "gloss": "baby; infant",
+  "seq": 1383260
+ },
+ "room|noun": {
+  "ja": "部屋",
+  "reading": "へや",
+  "gloss": "room",
+  "seq": 0
+ },
+ "already|adv": {
+  "ja": "もう",
+  "reading": "",
+  "gloss": "already; yet; by now; now",
+  "seq": 1012480
+ },
+ "move|verb": {
+  "ja": "動かす",
+  "reading": "うごかす",
+  "gloss": "to move; to shift; to stir; to budge",
+  "seq": 1451170
+ },
+ "live|verb": {
+  "ja": "住む",
+  "reading": "すむ",
+  "gloss": "to live; to reside",
+  "seq": 0
+ },
+ "miss|verb": {
+  "ja": "恋しい",
+  "reading": "こいしい",
+  "gloss": "to miss; to long for (koishii)",
+  "seq": 0
+ },
+ "once|adv": {
+  "ja": "一度",
+  "reading": "いちど",
+  "gloss": "once; one time",
+  "seq": 0
+ },
+ "ready|adj": {
+  "ja": "用意",
+  "reading": "ようい",
+  "gloss": "ready; prepared",
+  "seq": 0
+ },
+ "head|noun": {
+  "ja": "頭",
+  "reading": "あたま",
+  "gloss": "head",
+  "seq": 0
+ },
+ "idea|noun": {
+  "ja": "案",
+  "reading": "あん",
+  "gloss": "idea; plan; proposal; suggestion",
+  "seq": 1154770
+ },
+ "hold|verb": {
+  "ja": "持つ",
+  "reading": "もつ",
+  "gloss": "to hold; to carry",
+  "seq": 0
+ },
+ "happy|adj": {
+  "ja": "嬉しい",
+  "reading": "うれしい",
+  "gloss": "happy; glad; pleased; delighted",
+  "seq": 1219510
+ },
+ "door|noun": {
+  "ja": "扉",
+  "reading": "とびら",
+  "gloss": "door",
+  "seq": 0
+ },
+ "pretty|adj": {
+  "ja": "綺麗",
+  "reading": "きれい",
+  "gloss": "pretty; lovely; beautiful; fair",
+  "seq": 1591900
+ },
+ "bit|noun": {
+  "ja": "少し",
+  "reading": "すこし",
+  "gloss": "a bit; a little",
+  "seq": 0
+ },
+ "yet|adv": {
+  "ja": "まだ",
+  "reading": "",
+  "gloss": "yet; still (with negative)",
+  "seq": 0
+ },
+ "whole|adj": {
+  "ja": "全体",
+  "reading": "ぜんたい",
+  "gloss": "whole; entire",
+  "seq": 0
+ },
+ "use|verb": {
+  "ja": "使う",
+  "reading": "つかう",
+  "gloss": "to use; to make use of",
+  "seq": 0
+ },
+ "while|noun": {
+  "ja": "間",
+  "reading": "あいだ",
+  "gloss": "while; during; interval",
+  "seq": 0
+ },
+ "guess|verb": {
+  "ja": "推測する",
+  "reading": "すいそくする",
+  "gloss": "to guess; to suppose",
+  "seq": 0
+ },
+ "matter|verb": {
+  "ja": "構う",
+  "reading": "かまう",
+  "gloss": "to be an issue; to matter; to create inconvenience",
+  "seq": 1279680
+ },
+ "meet|verb": {
+  "ja": "会う",
+  "reading": "あう",
+  "gloss": "to meet; to encounter; to see",
+  "seq": 1198180
+ },
+ "bring|verb": {
+  "ja": "持ってくる",
+  "reading": "もってくる",
+  "gloss": "to bring (something)",
+  "seq": 0
+ },
+ "run|verb": {
+  "ja": "走る",
+  "reading": "はしる",
+  "gloss": "to run",
+  "seq": 0
+ },
+ "hard|adj": {
+  "ja": "難しい",
+  "reading": "むずかしい",
+  "gloss": "hard; difficult",
+  "seq": 0
+ },
+ "alone|adv": {
+  "ja": "一人で",
+  "reading": "ひとりで",
+  "gloss": "alone; by oneself",
+  "seq": 0
+ },
+ "school|noun": {
+  "ja": "学校",
+  "reading": "がっこう",
+  "gloss": "school",
+  "seq": 1206730
+ },
+ "end|noun": {
+  "ja": "終わり",
+  "reading": "おわり",
+  "gloss": "end; ending; close",
+  "seq": 0
+ },
+ "play|verb": {
+  "ja": "遊ぶ",
+  "reading": "あそぶ",
+  "gloss": "to play; to have fun",
+  "seq": 0
+ },
+ "few|adj": {
+  "ja": "少ない",
+  "reading": "すくない",
+  "gloss": "few; little; small (amount); low",
+  "seq": 1348910
+ },
+ "ago|adv": {
+  "ja": "前",
+  "reading": "まえ",
+  "gloss": "before; earlier; previously; prior",
+  "seq": 1392580
+ },
+ "open|verb": {
+  "ja": "開く",
+  "reading": "ひらく",
+  "gloss": "to open; to undo; to unseal; to unpack",
+  "seq": 1202440
+ },
+ "face|noun": {
+  "ja": "顔",
+  "reading": "かお",
+  "gloss": "face; visage; looks; (facial) features",
+  "seq": 1217730
+ },
+ "turn|verb": {
+  "ja": "回る",
+  "reading": "まわる",
+  "gloss": "to turn; to rotate; to go around",
+  "seq": 0
+ },
+ "business|noun": {
+  "ja": "仕事",
+  "reading": "しごと",
+  "gloss": "business; work; affair",
+  "seq": 0
+ },
+ "true|adj": {
+  "ja": "真実",
+  "reading": "しんじつ",
+  "gloss": "true; truth",
+  "seq": 0
+ },
+ "die|verb": {
+  "ja": "死ぬ",
+  "reading": "しぬ",
+  "gloss": "to die; to pass away",
+  "seq": 1310730
+ },
+ "heart|noun": {
+  "ja": "心臓",
+  "reading": "しんぞう",
+  "gloss": "heart",
+  "seq": 1360770
+ },
+ "soon|adv": {
+  "ja": "間もなく",
+  "reading": "まもなく",
+  "gloss": "soon; shortly; before long; in a short time",
+  "seq": 1215290
+ },
+ "worry|verb": {
+  "ja": "心配する",
+  "reading": "しんぱいする",
+  "gloss": "to worry; to be anxious",
+  "seq": 0
+ },
+ "year|noun": {
+  "ja": "年",
+  "reading": "とし",
+  "gloss": "year",
+  "seq": 1468060
+ },
+ "watch|verb": {
+  "ja": "見つめる",
+  "reading": "みつめる",
+  "gloss": "to watch; to stare at; to gaze at",
+  "seq": 0
+ },
+ "music|noun": {
+  "ja": "音楽",
+  "reading": "おんがく",
+  "gloss": "music",
+  "seq": 1183720
+ },
+ "hand|noun": {
+  "ja": "手",
+  "reading": "て",
+  "gloss": "hand; arm",
+  "seq": 1327190
+ },
+ "beautiful|adj": {
+  "ja": "美しい",
+  "reading": "うつくしい",
+  "gloss": "beautiful; pretty; lovely; sweet",
+  "seq": 1486360
+ },
+ "sit|verb": {
+  "ja": "座る",
+  "reading": "すわる",
+  "gloss": "to sit",
+  "seq": 0
+ },
+ "person|noun": {
+  "ja": "人間",
+  "reading": "にんげん",
+  "gloss": "person; human being",
+  "seq": 0
+ },
+ "part|noun": {
+  "ja": "分",
+  "reading": "ぶん",
+  "gloss": "part; portion; share",
+  "seq": 1502860
+ },
+ "late|adj": {
+  "ja": "遅い",
+  "reading": "おそい",
+  "gloss": "late; slow",
+  "seq": 0
+ },
+ "stuff|noun": {
+  "ja": "物",
+  "reading": "もの",
+  "gloss": "thing; object; article; stuff",
+  "seq": 1502390
+ },
+ "exactly|adv": {
+  "ja": "ちょうど",
+  "reading": "",
+  "gloss": "exactly; just; precisely",
+  "seq": 0
+ },
+ "minute|noun": {
+  "ja": "分",
+  "reading": "ふん",
+  "gloss": "minute (of time)",
+  "seq": 0
+ },
+ "forget|verb": {
+  "ja": "忘れる",
+  "reading": "わすれる",
+  "gloss": "to forget; to leave carelessly; to be forgetful of; to forget about",
+  "seq": 1519210
+ },
+ "everybody|noun": {
+  "ja": "皆",
+  "reading": "みな",
+  "gloss": "everyone; everybody; all",
+  "seq": 1202150
+ },
+ "change|verb": {
+  "ja": "変わる",
+  "reading": "かわる",
+  "gloss": "to change; to be transformed",
+  "seq": 0
+ },
+ "happen|verb": {
+  "ja": "起こる",
+  "reading": "おこる",
+  "gloss": "to happen; to occur",
+  "seq": 0
+ },
+ "far|adv": {
+  "ja": "遠く",
+  "reading": "とおく",
+  "gloss": "far away; far off; distant",
+  "seq": 0
+ },
+ "shut|verb": {
+  "ja": "閉じる",
+  "reading": "とじる",
+  "gloss": "to shut; to close",
+  "seq": 0
+ },
+ "check|verb": {
+  "ja": "確かめる",
+  "reading": "たしかめる",
+  "gloss": "to check; to make sure",
+  "seq": 0
+ },
+ "deal|noun": {
+  "ja": "たくさん",
+  "reading": "",
+  "gloss": "a great deal; a lot",
+  "seq": 0
+ },
+ "different|adj": {
+  "ja": "別々",
+  "reading": "べつべつ",
+  "gloss": "separate; respective; different",
+  "seq": 1603290
+ },
+ "point|verb": {
+  "ja": "指す",
+  "reading": "さす",
+  "gloss": "to point",
+  "seq": 1309670
+ },
+ "somebody|noun": {
+  "ja": "人",
+  "reading": "ひと",
+  "gloss": "person; someone; somebody",
+  "seq": 1580640
+ },
+ "sleep|verb": {
+  "ja": "眠る",
+  "reading": "ねむる",
+  "gloss": "to sleep",
+  "seq": 1529390
+ },
+ "chance|noun": {
+  "ja": "機会",
+  "reading": "きかい",
+  "gloss": "chance; opportunity; occasion",
+  "seq": 1220800
+ },
+ "dear|adj": {
+  "ja": "まあ",
+  "reading": "",
+  "gloss": "oh dear; oh my (exclamation)",
+  "seq": 0
+ },
+ "quite|adv": {
+  "ja": "かなり",
+  "reading": "",
+  "gloss": "quite; fairly; rather",
+  "seq": 0
+ },
+ "close|verb": {
+  "ja": "閉める",
+  "reading": "しめる",
+  "gloss": "to close; to shut",
+  "seq": 1508590
+ },
+ "word|noun": {
+  "ja": "言葉",
+  "reading": "ことば",
+  "gloss": "word; language; speech",
+  "seq": 0
+ },
+ "important|adj": {
+  "ja": "重要",
+  "reading": "じゅうよう",
+  "gloss": "important; essential; significant; major",
+  "seq": 1336820
+ },
+ "set|verb": {
+  "ja": "始める",
+  "reading": "はじめる",
+  "gloss": "to set to; to begin; to start",
+  "seq": 0
+ },
+ "wish|verb": {
+  "ja": "願う",
+  "reading": "ねがう",
+  "gloss": "to wish; to hope for",
+  "seq": 0
+ },
+ "moment|noun": {
+  "ja": "瞬間",
+  "reading": "しゅんかん",
+  "gloss": "moment; instant; second",
+  "seq": 1341210
+ },
+ "week|noun": {
+  "ja": "週",
+  "reading": "しゅう",
+  "gloss": "week",
+  "seq": 1333450
+ },
+ "rest|noun": {
+  "ja": "残り",
+  "reading": "のこり",
+  "gloss": "the rest; remainder; leftover",
+  "seq": 0
+ },
+ "nobody|noun": {
+  "ja": "誰も",
+  "reading": "だれも",
+  "gloss": "nobody; no one (with negative)",
+  "seq": 0
+ },
+ "side|noun": {
+  "ja": "側",
+  "reading": "がわ",
+  "gloss": "side",
+  "seq": 0
+ },
+ "stand|verb": {
+  "ja": "立つ",
+  "reading": "たつ",
+  "gloss": "to stand; to stand up",
+  "seq": 0
+ },
+ "read|verb": {
+  "ja": "読む",
+  "reading": "よむ",
+  "gloss": "to read",
+  "seq": 1456360
+ }
+}

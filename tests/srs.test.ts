@@ -1,0 +1,91 @@
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import fs from "node:fs";
+import path from "node:path";
+import os from "node:os";
+
+let tmpDir: string;
+
+beforeEach(() => {
+  tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "weave-test-"));
+  process.env.WEAVE_DB = path.join(tmpDir, "test.db");
+  vi.resetModules();
+  globalThis.weaveDb = undefined;
+});
+
+afterEach(() => {
+  globalThis.weaveDb?.close();
+  globalThis.weaveDb = undefined;
+  fs.rmSync(tmpDir, { recursive: true, force: true });
+});
+
+async function loadSrs() {
+  return await import("../src/lib/srs");
+}
+
+describe("rateCard", () => {
+  it("creates a card on first rating and schedules it forward", async () => {
+    const srs = await loadSrs();
+    const now = new Date("2026-07-15T12:00:00Z");
+    const card = srs.rateCard("cat|noun", "alice", 3, now);
+    expect(card.due.getTime()).toBeGreaterThan(now.getTime());
+    expect(srs.getCardRow("cat|noun")).toBeDefined();
+  });
+
+  it("rejects nothing but records a review log entry", async () => {
+    const srs = await loadSrs();
+    srs.rateCard("dog|noun", "alice", 1);
+    const row = srs.getCardRow("dog|noun");
+    expect(row?.book).toBe("alice");
+  });
+});
+
+describe("isKnown / furigana fade", () => {
+  it("is not known when new, known after stability grows past threshold", async () => {
+    const srs = await loadSrs();
+    let now = new Date("2026-01-01T12:00:00Z");
+    srs.rateCard("run|verb", "alice", 4, now);
+    // simulate spaced Easy reviews until stability passes the threshold
+    for (let i = 0; i < 6; i++) {
+      now = new Date(now.getTime() + 1000 * 60 * 60 * 24 * 30);
+      srs.rateCard("run|verb", "alice", 4, now);
+    }
+    expect(srs.isKnown(srs.getCardRow("run|verb"))).toBe(true);
+    expect(srs.isKnown(undefined)).toBe(false);
+  });
+});
+
+describe("clicks", () => {
+  it("records and aggregates clicks per lexeme", async () => {
+    const srs = await loadSrs();
+    srs.recordClick("cat|noun", "alice", 1);
+    srs.recordClick("cat|noun", "alice", 1);
+    srs.recordClick("dog|noun", "alice", 2);
+    const counts = srs.clickCounts("alice");
+    expect(counts.get("cat|noun")).toBe(2);
+    expect(counts.get("dog|noun")).toBe(1);
+  });
+});
+
+describe("chapter gate", () => {
+  it("starts with chapter 1 unlocked", async () => {
+    const srs = await loadSrs();
+    expect(srs.getUnlockedChapter("alice")).toBe(1);
+  });
+});
+
+describe("buildSession + gate (integration, real alice data)", () => {
+  it("serves 15 new words for chapter 1 and unlocks chapter 2 when finished", async () => {
+    const srs = await loadSrs();
+    const first = srs.buildSession("alice", 1);
+    expect(first.newWords).toHaveLength(15);
+    expect(first.done).toBe(false);
+    expect(srs.getUnlockedChapter("alice")).toBe(1);
+
+    const now = new Date();
+    for (const w of first.newWords) srs.rateCard(w.id, "alice", 3, now);
+
+    const after = srs.buildSession("alice", 1, now);
+    expect(after.done).toBe(true);
+    expect(srs.getUnlockedChapter("alice")).toBe(2);
+  });
+});

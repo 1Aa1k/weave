@@ -1,0 +1,37 @@
+{
+  "name": "weave",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "ingest": "tsx scripts/ingest.ts",
+    "build-lexicon": "tsx scripts/build-lexicon.ts",
+    "dev:cli": "next dev"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "ts-fsrs": "^5.4.1",
+    "wink-lemmatizer": "^3.0.4",
+    "wink-pos-tagger": "^2.2.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.1",
+    "typescript": "^5",
+    "vitest": "^3.2.7"
+  }
+}

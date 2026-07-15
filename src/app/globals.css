@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  /* paper and sumi ink */
+  --paper: #f7f6f1;
+  --paper-raised: #fdfcf9;
+  --ink: #26251f;
+  --ink-soft: #6b6a60;
+  --line: #e0ded4;
+  /* ai-iro, traditional Japanese indigo: the woven words */
+  --indigo: #1f4e79;
+  --indigo-soft: #eaeff5;
+  /* review grades */
+  --again: #9c3b2e;
+  --good: #3d6b4f;
+
+  --font-body: "Noto Serif", "Liberation Serif", georgia, serif;
+  --font-jp: "Noto Serif CJK JP", "Noto Serif JP", serif;
+  --font-ui: system-ui, sans-serif;
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-ui {
+  font-family: var(--font-ui);
+}
+
+.jp {
+  font-family: var(--font-jp);
+}
+
+/* ---- reader ---- */
+
+.reader-para {
+  font-size: 1.16rem;
+  line-height: 2.1; /* head-room for ruby */
+  margin-bottom: 1.4em;
+  text-indent: 1.4em;
+}
+
+.reader-para:first-of-type {
+  text-indent: 0;
+}
+
+.woven {
+  font-family: var(--font-jp);
+  color: var(--indigo);
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0 0.08em;
+  transition: background-color 120ms ease;
+}
+
+.woven:hover,
+.woven:focus-visible {
+  background: var(--indigo-soft);
+  outline: none;
+}
+
+.woven rt {
+  font-size: 0.52em;
+  color: var(--ink-soft);
+  letter-spacing: 0.05em;
+}
+
+/* vertical chapter ornament */
+.chapter-ornament {
+  writing-mode: vertical-rl;
+  font-family: var(--font-jp);
+  color: var(--ink-soft);
+  letter-spacing: 0.35em;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+/* definition slip */
+.slip {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--indigo);
+  border-radius: 4px;
+  box-shadow: 0 6px 24px rgba(38, 37, 31, 0.12);
+  max-width: 20rem;
+}
+
+/* ---- flashcards ---- */
+
+.card-face {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(38, 37, 31, 0.07);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
