@@ -13,7 +13,7 @@ interface SessionPayload {
   newWords: (VocabEntry & { entry: LexiconEntry })[];
   dueWords: (VocabEntry & { entry: LexiconEntry })[];
   done: boolean;
-  unlockedChapter: number;
+  cardsDoneThrough: number;
   error?: string;
 }
 
@@ -100,7 +100,7 @@ export default function ReviewSession({ slug, chapter }: ReviewSessionProps) {
   if (status === "error") {
     return (
       <p className="font-ui mt-24 text-center text-sm text-[var(--ink-soft)]">
-        This chapter is locked. Finish the previous chapter first.
+        These words are still locked. Finish the earlier chapters&apos; flashcards first.
       </p>
     );
   }
@@ -109,12 +109,12 @@ export default function ReviewSession({ slug, chapter }: ReviewSessionProps) {
       <div className="mt-24 text-center">
         <p className="jp text-4xl text-[var(--indigo)]">よくできました</p>
         <p className="mt-4 text-[var(--ink-soft)]">
-          Chapter {chapter} reviews finished{seen > 0 ? ` after ${seen} cards` : ""}. The next
-          chapter is unlocked.
+          Chapter {chapter} words learned{seen > 0 ? ` after ${seen} cards` : ""}. Now read them
+          in the wild.
         </p>
         <div className="font-ui mt-8 flex justify-center gap-6 text-sm">
-          <Link href={`/read/${slug}/${chapter + 1}`} className="text-[var(--indigo)]">
-            read chapter {chapter + 1}
+          <Link href={`/read/${slug}/${chapter}`} className="text-[var(--indigo)]">
+            read chapter {chapter}
           </Link>
           <Link href="/" className="text-[var(--ink-soft)]">
             library

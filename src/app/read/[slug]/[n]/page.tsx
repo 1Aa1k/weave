@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getChapter, getLexicon, getMeta } from "@/lib/books";
-import { getUnlockedChapter, swapStates } from "@/lib/srs";
+import { getCardsDoneThrough, swapStates } from "@/lib/srs";
 import ReaderView, { type WovenEntries } from "@/components/ReaderView";
 
 export const dynamic = "force-dynamic";
@@ -13,21 +13,29 @@ export default async function ReadPage({
   const { slug, n } = await params;
   const index = Number(n);
   const meta = getMeta(slug);
-  const unlocked = getUnlockedChapter(slug);
+  const cardsDone = getCardsDoneThrough(slug);
 
   if (!Number.isInteger(index) || index < 1 || index > meta.chapterCount) {
     return <p className="mt-24 text-center text-[var(--ink-soft)]">No such chapter.</p>;
   }
-  if (index > unlocked) {
+  if (index > cardsDone) {
+    const next = cardsDone + 1;
     return (
       <div className="mt-24 text-center text-[var(--ink-soft)]">
-        <p>This chapter is still locked.</p>
+        <p>Learn the words before you read.</p>
         <p className="font-ui mt-3 text-sm">
-          Finish the flashcards for chapter {unlocked} to unlock the next one.
+          {index === next
+            ? `Chapter ${index} opens once you finish its flashcards.`
+            : `You are on chapter ${next}. Finish each chapter's flashcards to move forward.`}
         </p>
-        <Link href="/" className="font-ui mt-6 inline-block text-sm text-[var(--indigo)]">
-          back to the library
-        </Link>
+        <div className="font-ui mt-6 flex justify-center gap-6 text-sm">
+          <Link href={`/review/${slug}/${next}`} className="text-[var(--indigo)]">
+            do chapter {next} flashcards
+          </Link>
+          <Link href="/" className="text-[var(--ink-soft)]">
+            library
+          </Link>
+        </div>
       </div>
     );
   }
@@ -48,7 +56,7 @@ export default async function ReadPage({
       entries={entries}
       bookTitle={meta.title}
       chapterCount={meta.chapterCount}
-      unlocked={unlocked}
+      cardsDoneThrough={cardsDone}
     />
   );
 }

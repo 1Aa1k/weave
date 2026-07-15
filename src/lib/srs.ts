@@ -74,14 +74,19 @@ export function clickCounts(book: string): Map<string, number> {
   return new Map(rows.map((r) => [r.lexeme_id, r.n]));
 }
 
-export function getUnlockedChapter(book: string): number {
+/**
+ * Highest chapter whose flashcards are complete. Words come before text:
+ * reading chapter N requires cards done through N; the next reviewable
+ * chapter is N+1.
+ */
+export function getCardsDoneThrough(book: string): number {
   const row = getDb()
     .prepare("SELECT unlocked_chapter FROM progress WHERE book = ?")
     .get(book) as { unlocked_chapter: number } | undefined;
-  return row?.unlocked_chapter ?? 1;
+  return row?.unlocked_chapter ?? 0;
 }
 
-function setUnlockedChapter(book: string, chapter: number): void {
+function setCardsDoneThrough(book: string, chapter: number): void {
   getDb()
     .prepare(
       `INSERT INTO progress (book, unlocked_chapter) VALUES (?, ?)
@@ -96,9 +101,9 @@ export interface ReviewSession {
   newWords: VocabEntry[];
   /** Previously introduced words due for review now. */
   dueWords: VocabEntry[];
-  /** True when nothing is left; reaching it unlocks the next chapter. */
+  /** True when nothing is left; reaching it unlocks reading this chapter. */
   done: boolean;
-  unlockedChapter: number;
+  cardsDoneThrough: number;
 }
 
 export function buildSession(book: string, chapter: number, now = new Date()): ReviewSession {
@@ -118,8 +123,8 @@ export function buildSession(book: string, chapter: number, now = new Date()): R
     .filter((v): v is VocabEntry => !!v);
 
   const done = newWords.length === 0 && dueWords.length === 0;
-  if (done) setUnlockedChapter(book, chapter + 1);
-  return { newWords, dueWords, done, unlockedChapter: getUnlockedChapter(book) };
+  if (done) setCardsDoneThrough(book, chapter);
+  return { newWords, dueWords, done, cardsDoneThrough: getCardsDoneThrough(book) };
 }
 
 /** Display state for every lexeme swapped in a given chapter. */

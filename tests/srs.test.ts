@@ -67,25 +67,25 @@ describe("clicks", () => {
 });
 
 describe("chapter gate", () => {
-  it("starts with chapter 1 unlocked", async () => {
+  it("starts with no chapters done, so only chapter 1 cards are reviewable", async () => {
     const srs = await loadSrs();
-    expect(srs.getUnlockedChapter("alice")).toBe(1);
+    expect(srs.getCardsDoneThrough("alice")).toBe(0);
   });
 });
 
 describe("buildSession + gate (integration, real alice data)", () => {
-  it("serves 15 new words for chapter 1 and unlocks chapter 2 when finished", async () => {
+  it("serves 15 new words for chapter 1; finishing them opens reading ch1", async () => {
     const srs = await loadSrs();
     const first = srs.buildSession("alice", 1);
     expect(first.newWords).toHaveLength(15);
     expect(first.done).toBe(false);
-    expect(srs.getUnlockedChapter("alice")).toBe(1);
+    expect(srs.getCardsDoneThrough("alice")).toBe(0);
 
     const now = new Date();
     for (const w of first.newWords) srs.rateCard(w.id, "alice", 3, now);
 
     const after = srs.buildSession("alice", 1, now);
     expect(after.done).toBe(true);
-    expect(srs.getUnlockedChapter("alice")).toBe(2);
+    expect(srs.getCardsDoneThrough("alice")).toBe(1);
   });
 });

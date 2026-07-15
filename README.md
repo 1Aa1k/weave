@@ -3,12 +3,14 @@
 Learn to read a language by reading books that slowly change language.
 
 A book starts in English. Each chapter weaves in ~15 new Japanese words (most
-frequent first), shown in indigo with furigana. Click any woven word for its
-reading and definition; every click is tracked. Finishing a chapter's
-FSRS-scheduled flashcards (its 15 new words plus everything due from earlier
-chapters) unlocks the next chapter, which weaves in 15 more. Furigana
-disappears per-word once its FSRS stability passes 7 days. By the end of a
-book you are reading hundreds of Japanese words in context without crutches.
+frequent first), shown in indigo with furigana. Words come before text: a
+chapter opens for reading only after you finish its FSRS-scheduled flashcards
+(its 15 new words plus everything due from earlier chapters), so you always
+meet new words as cards first, then in the wild. Click any woven word while
+reading for its reading and definition; every click is tracked and front-loads
+that word in review. Furigana disappears per-word once its FSRS stability
+passes 7 days. By the end of a book you are reading hundreds of Japanese words
+in context without crutches.
 
 ## Run
 

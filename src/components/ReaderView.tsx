@@ -22,7 +22,7 @@ interface ReaderViewProps {
   entries: WovenEntries;
   bookTitle: string;
   chapterCount: number;
-  unlocked: number;
+  cardsDoneThrough: number;
 }
 
 export default function ReaderView({
@@ -30,7 +30,7 @@ export default function ReaderView({
   entries,
   bookTitle,
   chapterCount,
-  unlocked,
+  cardsDoneThrough,
 }: ReaderViewProps) {
   const [slip, setSlip] = useState<Slip | null>(null);
 
@@ -101,19 +101,28 @@ export default function ReaderView({
         ) : (
           <span />
         )}
-        <Link
-          href={`/review/${chapter.book}/${chapter.index}`}
-          className="rounded border border-[var(--indigo)] px-4 py-2 text-[var(--indigo)]"
-        >
-          Review this chapter
-        </Link>
-        {chapter.index < chapterCount && unlocked > chapter.index ? (
+        {chapter.index < chapterCount ? (
+          <Link
+            href={`/review/${chapter.book}/${chapter.index + 1}`}
+            className="rounded border border-[var(--indigo)] px-4 py-2 text-[var(--indigo)]"
+          >
+            Learn chapter {chapter.index + 1} words
+          </Link>
+        ) : (
+          <Link
+            href={`/review/${chapter.book}/${chapter.index}`}
+            className="rounded border border-[var(--indigo)] px-4 py-2 text-[var(--indigo)]"
+          >
+            Review words
+          </Link>
+        )}
+        {chapter.index < chapterCount && cardsDoneThrough > chapter.index ? (
           <Link href={`/read/${chapter.book}/${chapter.index + 1}`} className="text-[var(--ink-soft)]">
             next chapter
           </Link>
         ) : (
           <span className="text-[var(--ink-soft)] opacity-60">
-            {chapter.index < chapterCount ? "next is locked" : "last chapter"}
+            {chapter.index < chapterCount ? "next needs its flashcards" : "last chapter"}
           </span>
         )}
       </footer>

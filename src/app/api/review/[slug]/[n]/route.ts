@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getLexicon } from "@/lib/books";
-import { buildSession, getUnlockedChapter } from "@/lib/srs";
+import { buildSession, getCardsDoneThrough } from "@/lib/srs";
 
 export async function GET(
   _req: Request,
@@ -9,7 +9,8 @@ export async function GET(
   const { slug, n } = await params;
   const index = Number(n);
   try {
-    if (index > getUnlockedChapter(slug)) {
+    // Words come first: the next reviewable chapter is one past the last done.
+    if (index > getCardsDoneThrough(slug) + 1) {
       return NextResponse.json({ error: "chapter locked" }, { status: 403 });
     }
     const session = buildSession(slug, index);
@@ -22,7 +23,7 @@ export async function GET(
       newWords: withEntry(session.newWords),
       dueWords: withEntry(session.dueWords),
       done: session.done,
-      unlockedChapter: session.unlockedChapter,
+      cardsDoneThrough: session.cardsDoneThrough,
     });
   } catch (err) {
     return NextResponse.json({ error: String(err) }, { status: 404 });

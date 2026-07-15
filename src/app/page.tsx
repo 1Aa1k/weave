@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { listBooks } from "@/lib/books";
-import { getUnlockedChapter } from "@/lib/srs";
+import { getCardsDoneThrough } from "@/lib/srs";
 import { jpChapter } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -22,19 +22,19 @@ export default function Library() {
   return (
     <div className="mt-10">
       {books.map((book) => {
-        const unlocked = getUnlockedChapter(book.slug);
+        const cardsDone = getCardsDoneThrough(book.slug);
         return (
           <section key={book.slug} className="mb-14">
             <h1 className="mb-1 text-3xl">{book.title}</h1>
             <p className="font-ui mb-6 text-sm text-[var(--ink-soft)]">
-              {unlocked > book.chapterCount
+              {cardsDone >= book.chapterCount
                 ? "finished"
-                : `chapter ${unlocked} of ${book.chapterCount}`}
+                : `chapter ${Math.min(cardsDone + 1, book.chapterCount)} of ${book.chapterCount}`}
             </p>
             <ol>
               {book.chapterTitles.map((title, i) => {
                 const n = i + 1;
-                const state = n < unlocked ? "done" : n === unlocked ? "current" : "locked";
+                const state = n <= cardsDone ? "readable" : n === cardsDone + 1 ? "next" : "locked";
                 return (
                   <li
                     key={n}
@@ -47,14 +47,14 @@ export default function Library() {
                       <span className="text-[var(--ink-soft)] opacity-60">{title}</span>
                     ) : (
                       <Link
-                        href={`/read/${book.slug}/${n}`}
-                        className={state === "current" ? "text-[var(--indigo)]" : ""}
+                        href={state === "next" ? `/review/${book.slug}/${n}` : `/read/${book.slug}/${n}`}
+                        className={state === "next" ? "text-[var(--indigo)]" : ""}
                       >
                         {title}
                       </Link>
                     )}
                     <span className="font-ui ml-auto text-xs tracking-wide text-[var(--ink-soft)]">
-                      {state === "done" ? "read" : state === "current" ? "up next" : "locked"}
+                      {state === "readable" ? "read" : state === "next" ? "learn words" : "locked"}
                     </span>
                   </li>
                 );
