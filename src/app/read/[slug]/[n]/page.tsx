@@ -54,8 +54,9 @@ export default async function ReadPage({
     <div className="mx-auto max-w-3xl px-6">
       <ReaderView
         chapter={chapter}
-      entries={entries}
-      bookTitle={meta.title}
+        entries={entries}
+        bookTitle={meta.title}
+        language={meta.language}
         chapterCount={meta.chapterCount}
         cardsDoneThrough={cardsDone}
       />

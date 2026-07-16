@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import type { LexiconEntry, VocabEntry } from "@/lib/types";
+import { praise } from "@/lib/format";
 
 interface SessionWord extends VocabEntry {
   entry: LexiconEntry;
@@ -27,9 +28,10 @@ const GRADES = [
 interface ReviewSessionProps {
   slug: string;
   chapter: number;
+  language: string;
 }
 
-export default function ReviewSession({ slug, chapter }: ReviewSessionProps) {
+export default function ReviewSession({ slug, chapter, language }: ReviewSessionProps) {
   const [queue, setQueue] = useState<SessionWord[]>([]);
   const [revealed, setRevealed] = useState(false);
   const [done, setDone] = useState(false);
@@ -107,7 +109,7 @@ export default function ReviewSession({ slug, chapter }: ReviewSessionProps) {
   if (done) {
     return (
       <div className="mt-24 text-center">
-        <p className="jp text-4xl text-[var(--indigo)]">よくできました</p>
+        <p className="jp text-4xl text-[var(--indigo)]">{praise(language)}</p>
         <p className="mt-4 text-[var(--ink-soft)]">
           Chapter {chapter} words learned{seen > 0 ? ` after ${seen} cards` : ""}. Now read them
           in the wild.

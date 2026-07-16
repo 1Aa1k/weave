@@ -12,20 +12,25 @@ const LOOM_WORDS = [
   { text: "story", ruby: "", lang: "en" },
   { text: "物語", ruby: "ものがたり", lang: "ja" },
   { text: "story", ruby: "", lang: "en" },
+  { text: "историей", ruby: "istóriyey", lang: "ru" },
+  { text: "story", ruby: "", lang: "en" },
   { text: "故事", ruby: "gùshi", lang: "zh" },
   { text: "story", ruby: "", lang: "en" },
   { text: "historia", ruby: "", lang: "es" },
+  { text: "story", ruby: "", lang: "en" },
+  { text: "이야기", ruby: "iyagi", lang: "ko" },
 ] as const;
 
+/* One drifting word per language the loom could hold. */
 const FLOATERS = [
-  { char: "織", size: "11rem", left: "72%", top: "6%", dur: "67s", delay: "0s" },
-  { char: "読", size: "7rem", left: "85%", top: "58%", dur: "53s", delay: "-12s" },
-  { char: "言葉", size: "3.2rem", left: "8%", top: "70%", dur: "71s", delay: "-30s" },
-  { char: "物語", size: "2.4rem", left: "58%", top: "82%", dur: "59s", delay: "-8s" },
-  { char: "夢", size: "5rem", left: "3%", top: "12%", dur: "63s", delay: "-40s" },
-  { char: "本", size: "8.5rem", left: "38%", top: "40%", dur: "77s", delay: "-22s" },
-  { char: "字", size: "4rem", left: "90%", top: "26%", dur: "49s", delay: "-5s" },
-  { char: "心", size: "3rem", left: "22%", top: "90%", dur: "61s", delay: "-33s" },
+  { char: "物語", size: "8rem", left: "72%", top: "6%", dur: "67s", delay: "0s" },
+  { char: "читать", size: "3.4rem", left: "84%", top: "58%", dur: "53s", delay: "-12s" },
+  { char: "palabra", size: "3rem", left: "6%", top: "70%", dur: "71s", delay: "-30s" },
+  { char: "故事", size: "2.6rem", left: "58%", top: "84%", dur: "59s", delay: "-8s" },
+  { char: "λέξη", size: "4.5rem", left: "3%", top: "12%", dur: "63s", delay: "-40s" },
+  { char: "책", size: "8rem", left: "38%", top: "40%", dur: "77s", delay: "-22s" },
+  { char: "كلمة", size: "4rem", left: "90%", top: "24%", dur: "49s", delay: "-5s" },
+  { char: "mot", size: "3rem", left: "22%", top: "92%", dur: "61s", delay: "-33s" },
 ] as const;
 
 function Floaters() {
@@ -52,26 +57,30 @@ function Floaters() {
 
 function WordLoom() {
   const [index, setIndex] = useState(0);
-  const [leaving, setLeaving] = useState(false);
+  const [prev, setPrev] = useState<number | null>(null);
 
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (media.matches) return;
+    let clear: ReturnType<typeof setTimeout>;
     const tick = setInterval(() => {
-      setLeaving(true);
-      setTimeout(() => {
-        setIndex((i) => (i + 1) % LOOM_WORDS.length);
-        setLeaving(false);
-      }, 380);
+      setIndex((i) => {
+        setPrev(i);
+        return (i + 1) % LOOM_WORDS.length;
+      });
+      clear = setTimeout(() => setPrev(null), 400);
     }, 2400);
-    return () => clearInterval(tick);
+    return () => {
+      clearInterval(tick);
+      clearTimeout(clear);
+    };
   }, []);
 
   return (
     <span className="loom-word">
       {LOOM_WORDS.map((word, i) => {
         const foreign = word.lang !== "en";
-        const state = i !== index ? "" : leaving ? "loom-leaving" : "loom-arriving";
+        const state = i === index ? "loom-arriving" : i === prev ? "loom-leaving" : "";
         const body = word.ruby ? (
           <ruby>
             {word.text}
@@ -105,8 +114,8 @@ export default function Landing() {
           </h1>
           <p className="mt-10 max-w-md text-lg leading-relaxed text-[var(--ink-soft)]">
             weave takes a book you want to read and quietly swaps English words
-            for Japanese, fifteen per chapter. You keep reading. The book stops
-            being English before you notice.
+            for the language you&apos;re learning, fifteen per chapter. You keep
+            reading. The book stops being English before you notice.
           </p>
           <div className="font-ui mt-10 flex flex-wrap items-center gap-5 text-sm">
             <Link
@@ -127,19 +136,19 @@ export default function Landing() {
       <section className="mx-auto max-w-3xl px-6 py-24">
         <div className="grid gap-14">
           <Step
-            kanji="一"
+            num="01"
             title="Fifteen words, then the chapter"
             body="Each chapter starts as flashcards: its fifteen most useful words, scheduled by FSRS, the same algorithm behind Anki. Only when the cards are done does the chapter open - so every woven word is one you've already met."
           />
           <Step
-            kanji="二"
+            num="02"
             title="Read them in the wild"
-            body="The chapter arrives with those words already in Japanese, indigo against the English, furigana above. Tap one and a paper slip gives you the reading and the meaning. Every tap is remembered and works its way back into your reviews."
+            body="The chapter arrives with those words already woven in, indigo against the English, pronunciation printed above. Tap one and a paper slip gives you the reading and the meaning. Every tap is remembered and works its way back into your reviews."
           />
           <Step
-            kanji="三"
+            num="03"
             title="The crutches fall away"
-            body="Old words keep returning as reviews alongside each chapter's new ones. When a word's memory is strong enough, its furigana disappears. Chapter one gives you fifteen words; chapter twelve is carrying one hundred eighty."
+            body="Old words keep returning as reviews alongside each chapter's new ones. When a word's memory is strong enough, its pronunciation guide disappears. Chapter one gives you fifteen words; chapter twelve is carrying one hundred eighty."
           />
         </div>
       </section>
@@ -147,23 +156,22 @@ export default function Landing() {
       <footer className="mx-auto max-w-3xl px-6 pb-16">
         <div className="flex items-baseline justify-between border-t border-[var(--line)] pt-6">
           <p className="font-ui text-xs text-[var(--ink-soft)]">
-            Built for one impatient reader. Japanese first; any language the
-            loom can hold, eventually.
+            Built for one impatient reader. Japanese on the loom first; any
+            language it can hold, eventually.
           </p>
-          <span className="hanko jp" aria-hidden>
-            織
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logomark.svg" alt="" width={26} height={26} aria-hidden />
         </div>
       </footer>
     </div>
   );
 }
 
-function Step({ kanji, title, body }: { kanji: string; title: string; body: string }) {
+function Step({ num, title, body }: { num: string; title: string; body: string }) {
   return (
     <div className="grid grid-cols-[3.5rem_1fr] items-start gap-6 border-t border-[var(--line)] pt-8">
-      <span className="jp text-4xl text-[var(--indigo)] opacity-80" aria-hidden>
-        {kanji}
+      <span className="font-ui pt-1.5 text-sm tracking-[0.2em] text-[var(--vermilion)]" aria-hidden>
+        {num}
       </span>
       <div>
         <h2 className="text-2xl">{title}</h2>

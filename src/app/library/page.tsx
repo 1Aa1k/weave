@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { listBooks } from "@/lib/books";
 import { getCardsDoneThrough } from "@/lib/srs";
-import { jpChapter } from "@/lib/format";
+import { chapterOrnament } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
@@ -41,7 +41,7 @@ export default function Library() {
                     className="flex items-baseline gap-4 border-b border-[var(--line)] py-3"
                   >
                     <span className="jp w-14 shrink-0 text-sm text-[var(--ink-soft)]">
-                      {jpChapter(n)}
+                      {chapterOrnament(book.language, n)}
                     </span>
                     {state === "locked" ? (
                       <span className="text-[var(--ink-soft)] opacity-60">{title}</span>

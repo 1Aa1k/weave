@@ -20,7 +20,8 @@
   --good: #8cb896;
 
   --font-body: "Noto Serif", "Liberation Serif", georgia, serif;
-  --font-jp: "Noto Serif CJK JP", "Noto Serif JP", serif;
+  /* target-language serif: JP first, then the other CJK cuts, then fontconfig */
+  --font-jp: "Noto Serif CJK JP", "Noto Serif JP", "Noto Serif CJK KR", "Noto Serif CJK SC", serif;
   --font-ui: system-ui, sans-serif;
 }
 
@@ -135,29 +136,6 @@ body {
 
 .grade-btn:hover .grade-label {
   color: var(--paper-raised);
-}
-
-/* ---- hanko seal ---- */
-
-.hanko {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  background: var(--vermilion);
-  color: #f4eee1;
-  border-radius: 3px;
-  font-size: 1.15rem;
-  line-height: 1;
-  user-select: none;
-}
-
-.hanko-sm {
-  width: 1.4rem;
-  height: 1.4rem;
-  font-size: 0.8rem;
-  border-radius: 2px;
 }
 
 /* ---- landing: floaters ---- */

@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import type { Chapter, Token } from "@/lib/types";
-import { jpChapter } from "@/lib/format";
+import { chapterOrnament } from "@/lib/format";
 
 export type WovenEntries = Record<
   string,
@@ -21,6 +21,7 @@ interface ReaderViewProps {
   chapter: Chapter;
   entries: WovenEntries;
   bookTitle: string;
+  language: string;
   chapterCount: number;
   cardsDoneThrough: number;
 }
@@ -29,6 +30,7 @@ export default function ReaderView({
   chapter,
   entries,
   bookTitle,
+  language,
   chapterCount,
   cardsDoneThrough,
 }: ReaderViewProps) {
@@ -72,7 +74,7 @@ export default function ReaderView({
     <div onClick={() => setSlip(null)}>
       <div className="relative mt-12 mb-10">
         <span className="chapter-ornament absolute -left-2 top-1 hidden md:block" aria-hidden>
-          {jpChapter(chapter.index)}
+          {chapterOrnament(language, chapter.index)}
         </span>
         <div className="md:pl-14">
           <p className="font-ui text-xs tracking-[0.2em] text-[var(--ink-soft)] uppercase">

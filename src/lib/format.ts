@@ -13,3 +13,24 @@ export function jpNumber(n: number): string {
 export function jpChapter(n: number): string {
   return `第${jpNumber(n)}章`;
 }
+
+/**
+ * Chapter ornament in the book's own language. The chrome follows the book:
+ * a Japanese or Chinese book gets 第N章, anything else a plain chapter label.
+ */
+export function chapterOrnament(language: string, n: number): string {
+  if (language === "ja" || language === "zh") return jpChapter(n);
+  return `Ch. ${n}`;
+}
+
+/** Session-complete praise in the book's language. */
+export function praise(language: string): string {
+  const map: Record<string, string> = {
+    ja: "よくできました",
+    zh: "做得好",
+    es: "Bien hecho",
+    fr: "Bien joue",
+    ko: "잘했어요",
+  };
+  return map[language] ?? "Well done";
+}

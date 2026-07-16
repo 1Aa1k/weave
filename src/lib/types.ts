@@ -57,7 +57,8 @@ export interface LexiconEntry {
 export interface BookMeta {
   slug: string;
   title: string;
-  language: "ja";
+  /** BCP-47-ish code of the language being learned: "ja", "zh", "es"... */
+  language: string;
   chapterCount: number;
   chapterTitles: string[];
 }
