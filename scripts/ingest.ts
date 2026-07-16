@@ -11,6 +11,7 @@ import fs from "node:fs";
 import path from "node:path";
 import posTagger from "wink-pos-tagger";
 import lemmatizer from "wink-lemmatizer";
+import { chapterize } from "./lib/chapterize";
 import type { BookMeta, Candidate, Chapter, Pos, Token } from "../src/lib/types";
 
 const MAX_BOOK_BYTES = 20 * 1024 * 1024; // fail fast on absurd input
@@ -18,7 +19,8 @@ const MAX_BOOK_BYTES = 20 * 1024 * 1024; // fail fast on absurd input
 // Auxiliaries and near-function words that tag as content but make bad swaps.
 const LEMMA_STOPLIST = new Set([
   "be", "have", "do", "will", "would", "can", "could", "shall", "should",
-  "may", "might", "must", "not", "n't", "as", "being", "mine", "very", "so", "too", "then", "there",
+  "may", "might", "must", "not", "n't", "as", "being", "mine", "looking", "trying",
+  "very", "so", "too", "then", "there",
   "here", "now", "just", "only", "even", "also", "again", "well", "much",
   "more", "most", "such", "own", "same", "other",
 ]);
@@ -56,27 +58,6 @@ export function stripGutenberg(text: string): string {
   const end = text.search(/^\*\*\* END OF [^\n]*\*\*\*$/m);
   if (start === -1 || end === -1 || end <= start) return text;
   return text.slice(text.indexOf("\n", start) + 1, end);
-}
-
-export interface RawChapter {
-  title: string;
-  body: string;
-}
-
-/** Split on `CHAPTER <roman>.` headings at column 0; TOC lines are indented. */
-export function splitChapters(text: string): RawChapter[] {
-  const parts = text.split(/^(CHAPTER [IVXLC]+\.)\s*$/m);
-  const chapters: RawChapter[] = [];
-  // parts: [preamble, heading, body, heading, body, ...]
-  for (let i = 1; i + 1 < parts.length; i += 2) {
-    const body = parts[i + 1];
-    const lines = body.split("\n");
-    let t = 0;
-    while (t < lines.length && lines[t].trim() === "") t++;
-    const title = (lines[t] ?? "").trim();
-    chapters.push({ title, body: lines.slice(t + 1).join("\n").trim() });
-  }
-  return chapters;
 }
 
 export function splitParagraphs(body: string): string[] {
@@ -139,18 +120,27 @@ function loadFreqRanks(freqPath: string): Map<string, number> {
   return ranks;
 }
 
-function main() {
-  const [, , bookPath, slug, title, freqPath] = process.argv;
-  if (!bookPath || !slug || !title) {
-    console.error('usage: tsx scripts/ingest.ts <book.txt> <slug> "<Title>" [freqlist.txt]');
-    process.exit(1);
-  }
+export interface IngestOptions {
+  bookPath: string;
+  slug: string;
+  title: string;
+  freqPath?: string;
+  language?: string;
+}
+
+export interface IngestSummary {
+  strategy: string;
+  chapterCount: number;
+  candidateCount: number;
+}
+
+export function ingestBook({ bookPath, slug, title, freqPath, language = "ja" }: IngestOptions): IngestSummary {
   if (fs.statSync(bookPath).size > MAX_BOOK_BYTES) {
     throw new Error(`book file exceeds ${MAX_BOOK_BYTES} bytes; refusing`);
   }
 
   const text = normalizeText(stripGutenberg(fs.readFileSync(bookPath, "utf8")));
-  const rawChapters = splitChapters(text);
+  const { strategy, chapters: rawChapters } = chapterize(text);
   if (rawChapters.length === 0) throw new Error("no chapters found");
 
   const ranks = freqPath ? loadFreqRanks(freqPath) : new Map<string, number>();
@@ -183,7 +173,7 @@ function main() {
   });
 
   const meta: BookMeta = {
-    slug, title, language: "ja",
+    slug, title, language,
     chapterCount: rawChapters.length,
     chapterTitles: rawChapters.map((c) => c.title),
   };
@@ -192,7 +182,19 @@ function main() {
   const sorted = [...candidates.values()].sort((a, b) => a.rank - b.rank);
   fs.writeFileSync(path.join(outDir, "candidates.json"), JSON.stringify(sorted, null, 1));
 
-  console.log(`${slug}: ${rawChapters.length} chapters, ${sorted.length} candidate lexemes`);
+  return { strategy, chapterCount: rawChapters.length, candidateCount: sorted.length };
+}
+
+function main() {
+  const [, , bookPath, slug, title, freqPath] = process.argv;
+  if (!bookPath || !slug || !title) {
+    console.error('usage: tsx scripts/ingest.ts <book.txt> <slug> "<Title>" [freqlist.txt]');
+    process.exit(1);
+  }
+  const summary = ingestBook({ bookPath, slug, title, freqPath });
+  console.log(
+    `${slug}: ${summary.chapterCount} chapters (${summary.strategy}), ${summary.candidateCount} candidate lexemes`,
+  );
 }
 
 if (process.argv[1]?.endsWith("ingest.ts")) main();

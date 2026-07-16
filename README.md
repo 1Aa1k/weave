@@ -22,23 +22,38 @@ npm run dev        # custom server on :5317 (next dev CLI exits when detached; s
 ## Add a book
 
 ```
-npx tsx scripts/ingest.ts path/to/book.txt <slug> "Title" data/raw/en_50k.txt
-npx tsx scripts/build-lexicon.ts <slug> /data/dicts/jmdict-eng.json
+npm run weave-book -- <input>            # gutenberg id, url, or .txt path
+npm run weave-book -- 55 --slug oz       # flags: --slug --title --lang
 ```
 
-Ingest handles Project Gutenberg plain text (strips boilerplate, splits on
-`CHAPTER <roman>.` headings). Other formats need a chapter-splitter tweak in
-`scripts/ingest.ts`.
+One command: fetch (Gutenberg header supplies the title), chapterize,
+tokenize, resolve the lexicon, schedule introductions, and print a report.
+Epub input needs pandoc (`pandoc book.epub -t plain -o book.txt`).
 
-The lexicon builder reverse-looks-up JMdict (skipping honorific/humble senses
-and penalizing katakana loanwords) and schedules introductions. Auto-picks are
-imperfect for polysemous words - audit `vocab.json` + `lexicon.json` and put
-corrections in `data/books/<slug>/lexicon-overrides.json` (see alice's for the
-format), then re-run build-lexicon. Alice ships with 107/180 hand-curated
-entries.
+Chapter detection tries heading strategies in confidence order
+(`CHAPTER IV.`, `CHAPTER 12`, `Chapter One`, `3. Title`, roman-only,
+markdown) with TOC-cluster rejection, and falls back to even ~3000-word
+parts when a book has no headings (`scripts/lib/chapterize.ts`).
+
+Word resolution order per lexeme:
+
+1. `data/books/<slug>/lexicon-overrides.json` - book-specific senses
+2. `data/lexicon/ja.json` - the global curated lexicon (grows with every
+   book; each entry tagged `manual`/`reviewed`)
+3. JMdict reverse lookup (skips honorific/humble senses, penalizes
+   katakana loanwords) - scheduled auto-picks that are common words or
+   weak matches land in `data/books/<slug>/review-queue.json`
+
+The curation loop: read the review queue, put fixes for wrong picks in
+`data/lexicon/ja-corrections.json`, then
+`npx tsx scripts/promote-reviewed.ts <slug>` folds the queue into the
+global lexicon (corrections as `manual`, the rest as `reviewed`) and a
+re-run of weave-book rebuilds clean. Coverage compounds: Alice needed a
+full audit, Oz reused 47% of it, Peter Pan reused 62% and needed one fix.
 
 JMdict JSON lives at `/data/dicts/jmdict-eng.json` (from
-github.com/scriptin/jmdict-simplified, `jmdict-eng` release asset).
+github.com/scriptin/jmdict-simplified, `jmdict-eng` release asset);
+override with `$JMDICT`.
 
 ## Layout
 

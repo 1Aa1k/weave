@@ -1,12 +1,17 @@
-// Build a Japanese lexicon for a book's candidate lexemes via JMdict reverse
-// lookup, then schedule word introductions (NEW_WORDS_PER_CHAPTER per chapter).
+// Build a Japanese lexicon for a book's candidate lexemes, then schedule word
+// introductions (NEW_WORDS_PER_CHAPTER per chapter).
+//
+// Resolution order per lexeme:
+//   1. data/books/<slug>/lexicon-overrides.json  (book-specific senses)
+//   2. data/lexicon/ja.json                      (global curated lexicon)
+//   3. JMdict reverse lookup                     (auto; low-confidence picks
+//      are written to review-queue.json for a curation pass)
 //
 // Usage: npx tsx scripts/build-lexicon.ts <slug> <jmdict-eng.json>
 //
-// Reads  data/books/<slug>/candidates.json
-// Reads  data/books/<slug>/lexicon-overrides.json (optional, hand-curated)
-// Writes data/books/<slug>/lexicon.json  { [lexemeId]: LexiconEntry }
-// Writes data/books/<slug>/vocab.json    VocabEntry[] (introduction schedule)
+// Writes data/books/<slug>/lexicon.json       { [lexemeId]: LexiconEntry }
+// Writes data/books/<slug>/vocab.json         VocabEntry[] (schedule)
+// Writes data/books/<slug>/review-queue.json  scheduled auto-picks needing review
 
 import fs from "node:fs";
 import path from "node:path";
@@ -151,12 +156,34 @@ export function scheduleIntroductions(
     .sort((a, b) => a.introducedChapter - b.introducedChapter || a.rank - b.rank);
 }
 
-function main() {
-  const [, , slug, jmdictPath] = process.argv;
-  if (!slug || !jmdictPath) {
-    console.error("usage: tsx scripts/build-lexicon.ts <slug> <jmdict-eng.json>");
-    process.exit(1);
-  }
+/** Common words carry the highest wrong-sense risk; queue them for review. */
+const REVIEW_RANK_THRESHOLD = 3000;
+const REVIEW_SCORE_THRESHOLD = 4;
+
+export interface ReviewItem {
+  id: string;
+  lemma: string;
+  pos: Pos;
+  rank: number;
+  count: number;
+  pick: LexiconEntry;
+  score: number;
+  reason: string;
+}
+
+function bestScore(index: Map<string, Hit[]>, lemma: string, pos: Pos): number {
+  const hits = index.get(lemma) ?? [];
+  return hits.reduce((best, h) => Math.max(best, scoreHit(h, pos)), -1);
+}
+
+export interface LexiconSummary {
+  scheduled: number;
+  chapterCount: number;
+  byProvenance: { override: number; global: number; auto: number };
+  reviewQueue: ReviewItem[];
+}
+
+export function buildBookLexicon(slug: string, jmdictPath: string): LexiconSummary {
   const bookDir = path.join("data", "books", slug);
   const candidates: Candidate[] = JSON.parse(
     fs.readFileSync(path.join(bookDir, "candidates.json"), "utf8"),
@@ -171,25 +198,74 @@ function main() {
   const overrides: Record<string, LexiconEntry> = fs.existsSync(overridesPath)
     ? JSON.parse(fs.readFileSync(overridesPath, "utf8"))
     : {};
+  const globalPath = path.join("data", "lexicon", "ja.json");
+  const globalLexicon: Record<string, LexiconEntry & { source?: string }> = fs.existsSync(
+    globalPath,
+  )
+    ? JSON.parse(fs.readFileSync(globalPath, "utf8"))
+    : {};
 
   const lexicon: Record<string, LexiconEntry> = {};
+  const provenance: Record<string, "override" | "global" | "auto"> = {};
   for (const c of candidates) {
-    const entry = overrides[c.id] ?? lookup(index, c.lemma, c.pos);
-    if (entry) lexicon[c.id] = entry;
+    if (overrides[c.id]) {
+      lexicon[c.id] = overrides[c.id];
+      provenance[c.id] = "override";
+    } else if (globalLexicon[c.id]) {
+      const { source: _source, ...entry } = globalLexicon[c.id];
+      lexicon[c.id] = entry;
+      provenance[c.id] = "global";
+    } else {
+      const entry = lookup(index, c.lemma, c.pos);
+      if (entry) {
+        lexicon[c.id] = entry;
+        provenance[c.id] = "auto";
+      }
+    }
   }
 
   const vocab = scheduleIntroductions(candidates, (id) => id in lexicon, chapterCount);
-  // Trim the lexicon to scheduled words only; the rest are never displayed.
   const scheduledIds = new Set(vocab.map((v) => v.id));
   const trimmed = Object.fromEntries(
     Object.entries(lexicon).filter(([id]) => scheduledIds.has(id)),
   );
 
+  // Scheduled auto-picks that look risky go to the review queue.
+  const queue: ReviewItem[] = [];
+  for (const v of vocab) {
+    if (provenance[v.id] !== "auto") continue;
+    const score = bestScore(index, v.lemma, v.pos);
+    const reasons: string[] = [];
+    if (v.rank <= REVIEW_RANK_THRESHOLD) reasons.push(`common word (rank ${v.rank})`);
+    if (score <= REVIEW_SCORE_THRESHOLD) reasons.push(`weak match (score ${score})`);
+    if (reasons.length > 0) {
+      queue.push({
+        id: v.id, lemma: v.lemma, pos: v.pos, rank: v.rank, count: v.count,
+        pick: lexicon[v.id], score, reason: reasons.join("; "),
+      });
+    }
+  }
+
   fs.writeFileSync(path.join(bookDir, "lexicon.json"), JSON.stringify(trimmed, null, 1));
   fs.writeFileSync(path.join(bookDir, "vocab.json"), JSON.stringify(vocab, null, 1));
+  fs.writeFileSync(path.join(bookDir, "review-queue.json"), JSON.stringify(queue, null, 1));
+
+  const byProv = { override: 0, global: 0, auto: 0 };
+  for (const id of scheduledIds) byProv[provenance[id]]++;
+  return { scheduled: vocab.length, chapterCount, byProvenance: byProv, reviewQueue: queue };
+}
+
+function main() {
+  const [, , slug, jmdictPath] = process.argv;
+  if (!slug || !jmdictPath) {
+    console.error("usage: tsx scripts/build-lexicon.ts <slug> <jmdict-eng.json>");
+    process.exit(1);
+  }
+  const s = buildBookLexicon(slug, jmdictPath);
   console.log(
-    `${slug}: ${candidates.length} candidates, ${Object.keys(lexicon).length} dictionary hits, ` +
-    `${vocab.length} scheduled across ${chapterCount} chapters`,
+    `${slug}: ${s.scheduled} scheduled across ${s.chapterCount} chapters ` +
+    `(overrides ${s.byProvenance.override}, global ${s.byProvenance.global}, auto ${s.byProvenance.auto}) | ` +
+    `review queue: ${s.reviewQueue.length}`,
   );
 }
 

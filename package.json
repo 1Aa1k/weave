@@ -10,7 +10,8 @@
     "test": "vitest run",
     "ingest": "tsx scripts/ingest.ts",
     "build-lexicon": "tsx scripts/build-lexicon.ts",
-    "dev:cli": "next dev"
+    "dev:cli": "next dev",
+    "weave-book": "tsx scripts/weave-book.ts"
   },
   "dependencies": {
     "better-sqlite3": "^12.11.1",

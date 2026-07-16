@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
 import {
   normalizeText,
-  splitChapters,
   splitParagraphs,
   stripGutenberg,
   tokenizeParagraph,
 } from "../scripts/ingest";
+import { chapterize } from "../scripts/lib/chapterize";
 
 describe("normalizeText", () => {
   it("straightens typographic punctuation", () => {
@@ -24,13 +24,50 @@ describe("stripGutenberg", () => {
   });
 });
 
-describe("splitChapters", () => {
-  it("splits on column-0 headings and takes the next line as title", () => {
-    const text = "CHAPTER I.\nDown the Rabbit-Hole\n\nfirst body\n\nCHAPTER II.\nThe Pool of Tears\n\nsecond body";
-    const chapters = splitChapters(text);
-    expect(chapters).toHaveLength(2);
+function fakeBody(n: number): string {
+  return `paragraph ${n} `.repeat(120).trim();
+}
+
+describe("chapterize", () => {
+  it("detects CHAPTER <roman> headings and takes the next line as title", () => {
+    const text = [
+      "CHAPTER I.\nDown the Rabbit-Hole\n\n" + fakeBody(1),
+      "CHAPTER II.\nThe Pool of Tears\n\n" + fakeBody(2),
+      "CHAPTER III.\nA Caucus-Race\n\n" + fakeBody(3),
+    ].join("\n\n");
+    const { strategy, chapters } = chapterize(text);
+    expect(strategy).toBe("chapter-roman");
+    expect(chapters).toHaveLength(3);
     expect(chapters[0].title).toBe("Down the Rabbit-Hole");
-    expect(chapters[1].body).toBe("second body");
+    expect(chapters[1].body).toContain("paragraph 2");
+  });
+
+  it("detects 'Chapter One' spelled headings with inline titles", () => {
+    const text = [
+      "Chapter One The Cyclone\n\n" + fakeBody(1),
+      "Chapter Two The Council\n\n" + fakeBody(2),
+      "Chapter Three The Rescue\n\n" + fakeBody(3),
+    ].join("\n\n");
+    const { strategy, chapters } = chapterize(text);
+    expect(strategy).toBe("chapter-spelled");
+    expect(chapters).toHaveLength(3);
+  });
+
+  it("ignores table-of-contents heading clusters", () => {
+    const toc = "CHAPTER I.\nCHAPTER II.\nCHAPTER III.\n\n";
+    const text =
+      toc +
+      ["CHAPTER I.\nA\n\n" + fakeBody(1), "CHAPTER II.\nB\n\n" + fakeBody(2), "CHAPTER III.\nC\n\n" + fakeBody(3)].join("\n\n");
+    const { chapters } = chapterize(text);
+    expect(chapters).toHaveLength(3);
+  });
+
+  it("falls back to chunking when no headings exist", () => {
+    const text = Array.from({ length: 80 }, (_, i) => fakeBody(i)).join("\n\n");
+    const { strategy, chapters } = chapterize(text);
+    expect(strategy).toBe("chunk-fallback");
+    expect(chapters.length).toBeGreaterThan(1);
+    expect(chapters[0].title).toBe("Part 1");
   });
 });
 
