@@ -65,6 +65,26 @@ override with `$JMDICT`.
 - `server.js` - custom Next server entrypoint
 - `tests/` - vitest (`npm test`); pool=forks because better-sqlite3 crashes worker threads
 
+## License
+
+Code is MIT (see `LICENSE`). Bundled data carries its own licenses:
+
+- `data/lexicon/*.json` and the `lexicon.json` / `review-queue.json` files
+  under `data/books/` contain Japanese glosses derived from
+  [JMdict](https://www.edrdg.org/jmdict/j_jmdict.html), property of the
+  Electronic Dictionary Research and Development Group, used under the
+  group's [CC BY-SA 4.0 licence](https://www.edrdg.org/edrdg/licence.html)
+  (via [jmdict-simplified](https://github.com/scriptin/jmdict-simplified)).
+  These files are therefore CC BY-SA 4.0.
+- `data/raw/en_50k.txt` is the English frequency list from
+  [hermitdave/FrequencyWords](https://github.com/hermitdave/FrequencyWords)
+  (CC BY-SA 4.0, built from the OpenSubtitles corpus).
+- The book texts under `data/raw/` and `data/books/` (Alice's Adventures in
+  Wonderland, The Wonderful Wizard of Oz, Peter Pan) are public-domain works
+  obtained from [Project Gutenberg](https://www.gutenberg.org/), with the
+  Gutenberg boilerplate stripped.
+- Spaced repetition is [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs) (MIT).
+
 ## Future direction
 
 - Grammar-stage weaving: chapter files carry token-level annotations, so
