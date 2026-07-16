@@ -145,13 +145,20 @@ export default function Landing() {
       </section>
 
       <footer className="mx-auto max-w-[1400px] px-6 pb-16 md:px-12">
-        <div className="flex items-baseline justify-between border-t border-[var(--line)] pt-6">
+        <div className="flex flex-wrap items-baseline justify-between gap-4 border-t border-[var(--line)] pt-6">
           <p className="font-ui text-xs text-[var(--ink-soft)]">
             Built for one impatient reader. Japanese on the loom first; any
             language it can hold, eventually.
           </p>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logomark.svg" alt="" width={26} height={26} aria-hidden />
+          <nav className="font-ui flex items-center gap-5 text-xs text-[var(--ink-soft)]">
+            <Link href="/about">about</Link>
+            <Link href="/contact">contact</Link>
+            <Link href="/privacy">privacy</Link>
+            <Link href="/terms">terms</Link>
+            <Link href="/licenses">licenses</Link>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logomark.svg" alt="" width={26} height={26} aria-hidden />
+          </nav>
         </div>
       </footer>
     </div>

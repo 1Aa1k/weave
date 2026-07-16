@@ -153,6 +153,42 @@ body {
   color: var(--paper-raised);
 }
 
+/* ---- prose pages (about, legal) ---- */
+
+.prose-body {
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.prose-body p {
+  margin-bottom: 1.1em;
+  max-width: 65ch;
+}
+
+.prose-body h2 {
+  font-size: 1.35rem;
+  margin: 1.8em 0 0.6em;
+}
+
+.prose-body ul {
+  max-width: 65ch;
+  margin-bottom: 1.1em;
+  padding-left: 1.4em;
+  color: var(--ink-soft);
+}
+
+.prose-body li {
+  margin-bottom: 0.4em;
+}
+
+.prose-body a {
+  color: var(--indigo);
+}
+
+.prose-body .muted {
+  color: var(--ink-soft);
+}
+
 /* ---- landing: floaters ---- */
 
 .floaters {
