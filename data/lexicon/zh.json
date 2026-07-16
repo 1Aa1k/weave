@@ -1258,5 +1258,12 @@
   "gloss": "to set; to place; to arrange",
   "seq": 0,
   "source": "manual"
+ },
+ "side|noun": {
+  "word": "边",
+  "reading": "biān",
+  "gloss": "side; edge; margin; border",
+  "seq": 109056,
+  "source": "reviewed"
  }
 }

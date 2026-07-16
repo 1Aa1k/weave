@@ -83,7 +83,7 @@
   "lemma": "right",
   "pos": "noun",
   "rank": 49,
-  "count": 26,
+  "count": 19,
   "chapters": [
    1,
    2,
@@ -91,7 +91,6 @@
    4,
    5,
    8,
-   10,
    11,
    15,
    16,
@@ -123,7 +122,7 @@
   "lemma": "come",
   "pos": "verb",
   "rank": 58,
-  "count": 161,
+  "count": 154,
   "chapters": [
    1,
    2,
@@ -256,7 +255,7 @@
   "lemma": "time",
   "pos": "noun",
   "rank": 80,
-  "count": 102,
+  "count": 99,
   "chapters": [
    1,
    2,
@@ -555,7 +554,7 @@
   "lemma": "little",
   "pos": "adj",
   "rank": 121,
-  "count": 101,
+  "count": 55,
   "chapters": [
    1,
    2,
@@ -564,7 +563,6 @@
    5,
    6,
    7,
-   8,
    9,
    10,
    11,
@@ -1504,33 +1502,6 @@
   "introducedChapter": 5
  },
  {
-  "id": "course|noun",
-  "lemma": "course",
-  "pos": "noun",
-  "rank": 218,
-  "count": 68,
-  "chapters": [
-   1,
-   2,
-   3,
-   4,
-   5,
-   6,
-   7,
-   8,
-   9,
-   10,
-   11,
-   12,
-   13,
-   14,
-   15,
-   16,
-   17
-  ],
-  "introducedChapter": 5
- },
- {
   "id": "mother|noun",
   "lemma": "mother",
   "pos": "noun",
@@ -1662,6 +1633,29 @@
   "introducedChapter": 5
  },
  {
+  "id": "show|verb",
+  "lemma": "show",
+  "pos": "verb",
+  "rank": 241,
+  "count": 36,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   10,
+   11,
+   13,
+   15,
+   17
+  ],
+  "introducedChapter": 5
+ },
+ {
   "id": "better|adv",
   "lemma": "better",
   "pos": "adv",
@@ -1787,29 +1781,6 @@
    9,
    15,
    16,
-   17
-  ],
-  "introducedChapter": 6
- },
- {
-  "id": "show|verb",
-  "lemma": "show",
-  "pos": "verb",
-  "rank": 241,
-  "count": 36,
-  "chapters": [
-   1,
-   2,
-   3,
-   4,
-   5,
-   6,
-   7,
-   8,
-   10,
-   11,
-   13,
-   15,
    17
   ],
   "introducedChapter": 6
@@ -1950,6 +1921,22 @@
   "introducedChapter": 6
  },
  {
+  "id": "baby|noun",
+  "lemma": "baby",
+  "pos": "noun",
+  "rank": 274,
+  "count": 11,
+  "chapters": [
+   1,
+   3,
+   6,
+   7,
+   10,
+   17
+  ],
+  "introducedChapter": 6
+ },
+ {
   "id": "else|adv",
   "lemma": "else",
   "pos": "adv",
@@ -2066,22 +2053,6 @@
   "introducedChapter": 7
  },
  {
-  "id": "baby|noun",
-  "lemma": "baby",
-  "pos": "noun",
-  "rank": 274,
-  "count": 11,
-  "chapters": [
-   1,
-   3,
-   6,
-   7,
-   10,
-   17
-  ],
-  "introducedChapter": 7
- },
- {
   "id": "room|noun",
   "lemma": "room",
   "pos": "noun",
@@ -2110,23 +2081,15 @@
   "lemma": "once",
   "pos": "adv",
   "rank": 288,
-  "count": 65,
+  "count": 19,
   "chapters": [
    1,
-   2,
    3,
    4,
    5,
-   6,
    7,
-   8,
-   9,
-   10,
    11,
-   12,
-   13,
    14,
-   15,
    16,
    17
   ],
@@ -2171,6 +2134,32 @@
    9,
    10,
    13,
+   15,
+   16,
+   17
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "of course|phrase",
+  "lemma": "of course",
+  "pos": "phrase",
+  "rank": 300,
+  "count": 67,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   14,
    15,
    16,
    17
@@ -3052,19 +3041,26 @@
   "introducedChapter": 10
  },
  {
-  "id": "shut|verb",
-  "lemma": "shut",
-  "pos": "verb",
-  "rank": 404,
-  "count": 13,
+  "id": "a little|phrase",
+  "lemma": "a little",
+  "pos": "phrase",
+  "rank": 400,
+  "count": 47,
   "chapters": [
+   2,
    3,
+   4,
+   5,
+   6,
    7,
    8,
-   9,
    10,
+   11,
+   13,
    14,
-   16
+   15,
+   16,
+   17
   ],
   "introducedChapter": 10
  },
@@ -3616,6 +3612,17 @@
   "introducedChapter": 12
  },
  {
+  "id": "course|noun",
+  "lemma": "course",
+  "pos": "noun",
+  "rank": 218,
+  "count": 1,
+  "chapters": [
+   13
+  ],
+  "introducedChapter": 13
+ },
+ {
   "id": "beautiful|adj",
   "lemma": "beautiful",
   "pos": "adj",
@@ -3873,30 +3880,6 @@
   "introducedChapter": 13
  },
  {
-  "id": "save|verb",
-  "lemma": "save",
-  "pos": "verb",
-  "rank": 528,
-  "count": 28,
-  "chapters": [
-   3,
-   4,
-   5,
-   6,
-   7,
-   8,
-   9,
-   10,
-   12,
-   13,
-   14,
-   15,
-   16,
-   17
-  ],
-  "introducedChapter": 13
- },
- {
   "id": "school|noun",
   "lemma": "school",
   "pos": "noun",
@@ -3919,6 +3902,23 @@
   "count": 2,
   "chapters": [
    14
+  ],
+  "introducedChapter": 14
+ },
+ {
+  "id": "shut|verb",
+  "lemma": "shut",
+  "pos": "verb",
+  "rank": 404,
+  "count": 13,
+  "chapters": [
+   3,
+   7,
+   8,
+   9,
+   10,
+   14,
+   16
   ],
   "introducedChapter": 14
  },
@@ -4035,6 +4035,30 @@
   "introducedChapter": 14
  },
  {
+  "id": "save|verb",
+  "lemma": "save",
+  "pos": "verb",
+  "rank": 528,
+  "count": 28,
+  "chapters": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17
+  ],
+  "introducedChapter": 14
+ },
+ {
   "id": "sometimes|adv",
   "lemma": "sometimes",
   "pos": "adv",
@@ -4122,30 +4146,6 @@
   "introducedChapter": 14
  },
  {
-  "id": "country|noun",
-  "lemma": "country",
-  "pos": "noun",
-  "rank": 539,
-  "count": 2,
-  "chapters": [
-   14,
-   16
-  ],
-  "introducedChapter": 14
- },
- {
-  "id": "clear|verb",
-  "lemma": "clear",
-  "pos": "verb",
-  "rank": 540,
-  "count": 2,
-  "chapters": [
-   7,
-   14
-  ],
-  "introducedChapter": 14
- },
- {
   "id": "pay|verb",
   "lemma": "pay",
   "pos": "verb",
@@ -4166,6 +4166,26 @@
    1,
    8,
    10,
+   15,
+   16,
+   17
+  ],
+  "introducedChapter": 15
+ },
+ {
+  "id": "no one|phrase",
+  "lemma": "no one",
+  "pos": "phrase",
+  "rank": 500,
+  "count": 20,
+  "chapters": [
+   1,
+   3,
+   4,
+   6,
+   7,
+   8,
+   11,
    15,
    16,
    17
@@ -4241,6 +4261,20 @@
    15,
    16,
    17
+  ],
+  "introducedChapter": 15
+ },
+ {
+  "id": "clear|adj",
+  "lemma": "clear",
+  "pos": "adj",
+  "rank": 540,
+  "count": 4,
+  "chapters": [
+   2,
+   9,
+   10,
+   15
   ],
   "introducedChapter": 15
  },
@@ -4343,41 +4377,6 @@
    11,
    15,
    16
-  ],
-  "introducedChapter": 15
- },
- {
-  "id": "sort|noun",
-  "lemma": "sort",
-  "pos": "noun",
-  "rank": 562,
-  "count": 7,
-  "chapters": [
-   1,
-   5,
-   6,
-   7,
-   15
-  ],
-  "introducedChapter": 15
- },
- {
-  "id": "hour|noun",
-  "lemma": "hour",
-  "pos": "noun",
-  "rank": 575,
-  "count": 19,
-  "chapters": [
-   2,
-   5,
-   7,
-   8,
-   9,
-   10,
-   12,
-   13,
-   14,
-   15
   ],
   "introducedChapter": 15
  },
@@ -4493,6 +4492,23 @@
   "introducedChapter": 16
  },
  {
+  "id": "all right|phrase",
+  "lemma": "all right",
+  "pos": "phrase",
+  "rank": 500,
+  "count": 7,
+  "chapters": [
+   3,
+   4,
+   8,
+   10,
+   11,
+   16,
+   17
+  ],
+  "introducedChapter": 16
+ },
+ {
   "id": "news|noun",
   "lemma": "news",
   "pos": "noun",
@@ -4513,6 +4529,18 @@
   "chapters": [
    3,
    6,
+   16
+  ],
+  "introducedChapter": 16
+ },
+ {
+  "id": "country|noun",
+  "lemma": "country",
+  "pos": "noun",
+  "rank": 539,
+  "count": 2,
+  "chapters": [
+   14,
    16
   ],
   "introducedChapter": 16
@@ -4554,34 +4582,6 @@
   "count": 3,
   "chapters": [
    4,
-   16
-  ],
-  "introducedChapter": 16
- },
- {
-  "id": "dinner|noun",
-  "lemma": "dinner",
-  "pos": "noun",
-  "rank": 560,
-  "count": 4,
-  "chapters": [
-   2,
-   6,
-   16
-  ],
-  "introducedChapter": 16
- },
- {
-  "id": "safe|adj",
-  "lemma": "safe",
-  "pos": "adj",
-  "rank": 570,
-  "count": 6,
-  "chapters": [
-   1,
-   3,
-   6,
-   9,
    16
   ],
   "introducedChapter": 16

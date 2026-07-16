@@ -713,6 +713,12 @@
   "gloss": "entrance; door; gate; large and influential family",
   "seq": 28437
  },
+ "of course|phrase": {
+  "word": "当然",
+  "reading": "dāng rán",
+  "gloss": "of course; naturally",
+  "seq": 0
+ },
  "pretty|adj": {
   "word": "漂亮",
   "reading": "piào liang",
@@ -869,12 +875,6 @@
   "gloss": "not long (after); before too long; soon; soon after",
   "seq": 2127
  },
- "worry|verb": {
-  "word": "担心",
-  "reading": "dān xīn",
-  "gloss": "to worry",
-  "seq": 0
- },
  "year|noun": {
   "word": "年",
   "reading": "nián",
@@ -965,6 +965,12 @@
   "gloss": "far; distant; remote; (intensifier in a comparison) by far",
   "seq": 108550
  },
+ "a little|phrase": {
+  "word": "一点儿",
+  "reading": "yī diǎnr",
+  "gloss": "a little; a bit",
+  "seq": 0
+ },
  "shut|verb": {
   "word": "闭",
   "reading": "bì",
@@ -982,12 +988,6 @@
   "reading": "dà liàng",
   "gloss": "a great deal; large amount",
   "seq": 0
- },
- "different|adj": {
-  "word": "不同",
-  "reading": "bù tóng",
-  "gloss": "different; distinct; not the same; not alike",
-  "seq": 2331
  },
  "point|verb": {
   "word": "指",
@@ -1049,12 +1049,6 @@
   "gloss": "important",
   "seq": 0
  },
- "set|verb": {
-  "word": "摆",
-  "reading": "bǎi",
-  "gloss": "to set; to place; to arrange",
-  "seq": 0
- },
  "wish|verb": {
   "word": "愿意",
   "reading": "yuàn yì",
@@ -1078,5 +1072,11 @@
   "reading": "xiū xi",
   "gloss": "rest; to rest",
   "seq": 6872
+ },
+ "side|noun": {
+  "word": "边",
+  "reading": "biān",
+  "gloss": "side; edge; margin; border",
+  "seq": 109056
  }
 }

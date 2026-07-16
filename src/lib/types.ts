@@ -1,9 +1,15 @@
 // Shared types for book data, lexicon, and review state.
 
-/** Part of speech buckets we swap. Proper nouns and function words are excluded. */
-export type Pos = "noun" | "verb" | "adj" | "adv";
+/**
+ * Part of speech buckets we swap. Proper nouns and function words are
+ * excluded. "phrase" is a multi-word unit from the curated phrase lexicon
+ * ("of course" -> もちろん) - the first grammar-stage swap: the unit crosses
+ * word boundaries instead of mapping one word to one word.
+ */
+export type Pos = "noun" | "verb" | "adj" | "adv" | "phrase";
 
-/** Stable key for a swappable word: `${lemma}|${pos}`. */
+/** Stable key for a swappable unit: `${lemma}|${pos}`. The lemma of a phrase
+ * is the phrase itself ("of course"). */
 export type LexemeId = string;
 
 /**

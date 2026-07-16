@@ -707,6 +707,12 @@
   "gloss": "door",
   "seq": 0
  },
+ "of course|phrase": {
+  "word": "もちろん",
+  "reading": "",
+  "gloss": "of course; certainly",
+  "seq": 0
+ },
  "pretty|adv": {
   "word": "かなり",
   "reading": "",
@@ -1013,6 +1019,12 @@
   "gloss": "far away; far off; distant",
   "seq": 0
  },
+ "a little|phrase": {
+  "word": "少し",
+  "reading": "すこし",
+  "gloss": "a little; a bit",
+  "seq": 0
+ },
  "shut|verb": {
   "word": "閉じる",
   "reading": "とじる",
@@ -1283,6 +1295,18 @@
   "gloss": "high; tall",
   "seq": 1283190
  },
+ "no one|phrase": {
+  "word": "誰も",
+  "reading": "だれも",
+  "gloss": "no one (with negative)",
+  "seq": 0
+ },
+ "all right|phrase": {
+  "word": "大丈夫",
+  "reading": "だいじょうぶ",
+  "gloss": "all right; okay",
+  "seq": 0
+ },
  "half|noun": {
   "word": "半分",
   "reading": "はんぶん",
@@ -1403,10 +1427,10 @@
   "gloss": "country; nation",
   "seq": 0
  },
- "clear|verb": {
-  "word": "片付ける",
-  "reading": "かたづける",
-  "gloss": "to clear away; to tidy up",
+ "clear|adj": {
+  "word": "明らか",
+  "reading": "あきらか",
+  "gloss": "clear; obvious",
   "seq": 0
  },
  "order|noun": {
@@ -1469,41 +1493,17 @@
   "gloss": "to plan",
   "seq": 0
  },
- "dinner|noun": {
-  "word": "晩御飯",
-  "reading": "ばんごはん",
-  "gloss": "dinner; evening meal",
-  "seq": 1601340
- },
- "sort|noun": {
-  "word": "品種",
-  "reading": "ひんしゅ",
-  "gloss": "type (of goods); sort",
-  "seq": 1490620
- },
  "promise|verb": {
   "word": "約束",
   "reading": "やくそく",
   "gloss": "promise; agreement; arrangement; one's word",
   "seq": 1538130
  },
- "safe|adj": {
-  "word": "安全",
-  "reading": "あんぜん",
-  "gloss": "safe; secure",
-  "seq": 0
- },
  "white|adj": {
   "word": "白い",
   "reading": "しろい",
   "gloss": "white",
   "seq": 1474910
- },
- "hour|noun": {
-  "word": "時間",
-  "reading": "じかん",
-  "gloss": "hour",
-  "seq": 0
  },
  "small|adj": {
   "word": "細か",

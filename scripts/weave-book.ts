@@ -98,7 +98,7 @@ async function main() {
   const lex = buildBookLexicon(slug);
   console.log(
     `  scheduled: ${lex.scheduled} words / ${lex.chapterCount} chapters ` +
-    `(override ${lex.byProvenance.override}, global ${lex.byProvenance.global}, auto ${lex.byProvenance.auto})`,
+    `(override ${lex.byProvenance.override}, global ${lex.byProvenance.global}, phrases ${lex.byProvenance.phrase}, auto ${lex.byProvenance.auto})`,
   );
 
   const chapters = JSON.parse(

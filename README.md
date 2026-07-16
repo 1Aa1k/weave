@@ -71,11 +71,16 @@ parts when a book has no headings (`scripts/lib/chapterize.ts`).
 Word resolution order per lexeme:
 
 1. `data/books/<slug>/lexicon-overrides.json` - book-specific senses
-2. `data/lexicon/ja.json` - the global curated lexicon (grows with every
-   book; each entry tagged `manual`/`reviewed`)
-3. JMdict reverse lookup (skips honorific/humble senses, penalizes
-   katakana loanwords) - scheduled auto-picks that are common words or
-   weak matches land in `data/books/<slug>/review-queue.json`
+2. `data/lexicon/<language>.json` - the global curated lexicon (grows with
+   every book; each entry tagged `manual`/`reviewed`)
+3. `data/lexicon/<language>-phrases.json` - curated multi-word units
+   ("of course" weaves as one unit into もちろん / 当然), matched at ingest
+   and never sent to the dictionary
+4. dictionary reverse lookup - JMdict for Japanese (skips honorific/humble
+   senses, penalizes katakana loanwords), CC-CEDICT for Mandarin
+   (frequency-ranked, proper nouns rejected, tone-marked pinyin) -
+   scheduled auto-picks that are common words or weak matches land in
+   `data/books/<slug>/review-queue.json`
 
 The curation loop: read the review queue, put fixes for wrong picks in
 `data/lexicon/ja-corrections.json`, then
@@ -124,9 +129,9 @@ Code is MIT (see `LICENSE`). Bundled data carries its own licenses:
 
 ## Future direction
 
-- Grammar-stage weaving: chapter files carry token-level annotations, so
-  phrase-level swap units (word order, particles) can be added to the same
-  format without reprocessing.
-- Chinese: same pipeline with CC-CEDICT + pinyin; `language` field in meta.json
-  is already per-book.
-- Cloze/sentence cards using the book sentence the word appeared in.
+- Deeper grammar-stage weaving: phrase-level swap units shipped ("of
+  course" -> もちろん as one unit); next are word-order and particle swaps
+  on the same token format.
+- More languages: the adapter layer (`scripts/dict/`) takes a new language
+  with one adapter (Spanish/Korean/French need a dictionary + scorer;
+  the reader, scheduler, and pipeline are already language-agnostic).

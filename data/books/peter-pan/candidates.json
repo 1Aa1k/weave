@@ -151,7 +151,7 @@
   "lemma": "right",
   "pos": "noun",
   "rank": 49,
-  "count": 26,
+  "count": 19,
   "chapters": [
    1,
    2,
@@ -159,7 +159,6 @@
    4,
    5,
    8,
-   10,
    11,
    15,
    16,
@@ -222,7 +221,7 @@
   "lemma": "come",
   "pos": "verb",
   "rank": 58,
-  "count": 161,
+  "count": 154,
   "chapters": [
    1,
    2,
@@ -434,7 +433,7 @@
   "lemma": "time",
   "pos": "verb",
   "rank": 80,
-  "count": 33,
+  "count": 32,
   "chapters": [
    1,
    2,
@@ -458,7 +457,7 @@
   "lemma": "time",
   "pos": "noun",
   "rank": 80,
-  "count": 102,
+  "count": 99,
   "chapters": [
    1,
    2,
@@ -484,7 +483,7 @@
   "lemma": "back",
   "pos": "adv",
   "rank": 83,
-  "count": 62,
+  "count": 55,
   "chapters": [
    1,
    2,
@@ -920,7 +919,7 @@
   "lemma": "little",
   "pos": "adj",
   "rank": 121,
-  "count": 101,
+  "count": 55,
   "chapters": [
    1,
    2,
@@ -929,7 +928,6 @@
    5,
    6,
    7,
-   8,
    9,
    10,
    11,
@@ -945,9 +943,8 @@
   "lemma": "little",
   "pos": "adv",
   "rank": 121,
-  "count": 2,
+  "count": 1,
   "chapters": [
-   10,
    11
   ]
  },
@@ -1661,14 +1658,12 @@
   "lemma": "last",
   "pos": "adj",
   "rank": 173,
-  "count": 56,
+  "count": 33,
   "chapters": [
    1,
    2,
-   3,
    4,
    5,
-   6,
    7,
    8,
    9,
@@ -1697,10 +1692,9 @@
   "lemma": "last",
   "pos": "noun",
   "rank": 173,
-  "count": 2,
+  "count": 1,
   "chapters": [
-   9,
-   13
+   9
   ]
  },
  {
@@ -2216,25 +2210,9 @@
   "lemma": "course",
   "pos": "noun",
   "rank": 218,
-  "count": 68,
+  "count": 1,
   "chapters": [
-   1,
-   2,
-   3,
-   4,
-   5,
-   6,
-   7,
-   8,
-   9,
-   10,
-   11,
-   12,
-   13,
-   14,
-   15,
-   16,
-   17
+   13
   ]
  },
  {
@@ -2967,23 +2945,15 @@
   "lemma": "once",
   "pos": "adv",
   "rank": 288,
-  "count": 65,
+  "count": 19,
   "chapters": [
    1,
-   2,
    3,
    4,
    5,
-   6,
    7,
-   8,
-   9,
-   10,
    11,
-   12,
-   13,
    14,
-   15,
    16,
    17
   ]
@@ -3120,6 +3090,31 @@
    9,
    10,
    13,
+   15,
+   16,
+   17
+  ]
+ },
+ {
+  "id": "of course|phrase",
+  "lemma": "of course",
+  "pos": "phrase",
+  "rank": 300,
+  "count": 67,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   14,
    15,
    16,
    17
@@ -4348,6 +4343,29 @@
   ]
  },
  {
+  "id": "a little|phrase",
+  "lemma": "a little",
+  "pos": "phrase",
+  "rank": 400,
+  "count": 47,
+  "chapters": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   10,
+   11,
+   13,
+   14,
+   15,
+   16,
+   17
+  ]
+ },
+ {
   "id": "shut|verb",
   "lemma": "shut",
   "pos": "verb",
@@ -5414,6 +5432,41 @@
   ]
  },
  {
+  "id": "no one|phrase",
+  "lemma": "no one",
+  "pos": "phrase",
+  "rank": 500,
+  "count": 20,
+  "chapters": [
+   1,
+   3,
+   4,
+   6,
+   7,
+   8,
+   11,
+   15,
+   16,
+   17
+  ]
+ },
+ {
+  "id": "all right|phrase",
+  "lemma": "all right",
+  "pos": "phrase",
+  "rank": 500,
+  "count": 7,
+  "chapters": [
+   3,
+   4,
+   8,
+   10,
+   11,
+   16,
+   17
+  ]
+ },
+ {
   "id": "half|noun",
   "lemma": "half",
   "pos": "noun",
@@ -5685,18 +5738,6 @@
   ]
  },
  {
-  "id": "hurry|noun",
-  "lemma": "hurry",
-  "pos": "noun",
-  "rank": 525,
-  "count": 3,
-  "chapters": [
-   1,
-   4,
-   16
-  ]
- },
- {
   "id": "hurry|verb",
   "lemma": "hurry",
   "pos": "verb",
@@ -5705,6 +5746,17 @@
   "chapters": [
    3,
    6,
+   16
+  ]
+ },
+ {
+  "id": "hurry|noun",
+  "lemma": "hurry",
+  "pos": "noun",
+  "rank": 525,
+  "count": 2,
+  "chapters": [
+   4,
    16
   ]
  },
@@ -6465,6 +6517,17 @@
    1,
    4,
    5
+  ]
+ },
+ {
+  "id": "at all|phrase",
+  "lemma": "at all",
+  "pos": "phrase",
+  "rank": 600,
+  "count": 2,
+  "chapters": [
+   3,
+   14
   ]
  },
  {
@@ -7656,6 +7719,31 @@
   ]
  },
  {
+  "id": "once more|phrase",
+  "lemma": "once more",
+  "pos": "phrase",
+  "rank": 700,
+  "count": 3,
+  "chapters": [
+   1,
+   5,
+   9
+  ]
+ },
+ {
+  "id": "come back|phrase",
+  "lemma": "come back",
+  "pos": "phrase",
+  "rank": 700,
+  "count": 7,
+  "chapters": [
+   2,
+   4,
+   5,
+   16
+  ]
+ },
+ {
   "id": "land|verb",
   "lemma": "land",
   "pos": "verb",
@@ -8484,6 +8572,63 @@
   "count": 1,
   "chapters": [
    1
+  ]
+ },
+ {
+  "id": "all the time|phrase",
+  "lemma": "all the time",
+  "pos": "phrase",
+  "rank": 800,
+  "count": 4,
+  "chapters": [
+   1,
+   4,
+   8,
+   16
+  ]
+ },
+ {
+  "id": "each other|phrase",
+  "lemma": "each other",
+  "pos": "phrase",
+  "rank": 800,
+  "count": 17,
+  "chapters": [
+   1,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9,
+   10,
+   12,
+   15
+  ]
+ },
+ {
+  "id": "at once|phrase",
+  "lemma": "at once",
+  "pos": "phrase",
+  "rank": 800,
+  "count": 43,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   17
   ]
  },
  {
@@ -9321,6 +9466,27 @@
    5,
    9,
    15
+  ]
+ },
+ {
+  "id": "at last|phrase",
+  "lemma": "at last",
+  "pos": "phrase",
+  "rank": 900,
+  "count": 24,
+  "chapters": [
+   1,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   10,
+   13,
+   15,
+   16,
+   17
   ]
  },
  {
@@ -10292,10 +10458,8 @@
   "lemma": "doubt",
   "pos": "noun",
   "rank": 1038,
-  "count": 6,
+  "count": 1,
   "chapters": [
-   2,
-   6,
    13
   ]
  },
@@ -13274,6 +13438,28 @@
   ]
  },
  {
+  "id": "in a hurry|phrase",
+  "lemma": "in a hurry",
+  "pos": "phrase",
+  "rank": 1500,
+  "count": 1,
+  "chapters": [
+   1
+  ]
+ },
+ {
+  "id": "no doubt|phrase",
+  "lemma": "no doubt",
+  "pos": "phrase",
+  "rank": 1500,
+  "count": 5,
+  "chapters": [
+   2,
+   6,
+   13
+  ]
+ },
+ {
   "id": "crew|noun",
   "lemma": "crew",
   "pos": "noun",
@@ -15416,6 +15602,20 @@
    4,
    10,
    16
+  ]
+ },
+ {
+  "id": "by and by|phrase",
+  "lemma": "by and by",
+  "pos": "phrase",
+  "rank": 2000,
+  "count": 5,
+  "chapters": [
+   1,
+   6,
+   8,
+   15,
+   17
   ]
  },
  {

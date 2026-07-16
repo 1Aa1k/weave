@@ -455,12 +455,6 @@
   "gloss": "house; residence; dwelling; home",
   "seq": 1191730
  },
- "course|noun": {
-  "word": "もちろん",
-  "reading": "",
-  "gloss": "of course; certainly",
-  "seq": 0
- },
  "stay|verb": {
   "word": "留まる",
   "reading": "とどまる",
@@ -705,6 +699,12 @@
   "word": "扉",
   "reading": "とびら",
   "gloss": "door",
+  "seq": 0
+ },
+ "of course|phrase": {
+  "word": "もちろん",
+  "reading": "",
+  "gloss": "of course; certainly",
   "seq": 0
  },
  "pretty|adv": {
@@ -1031,6 +1031,12 @@
   "gloss": "far away; far off; distant",
   "seq": 0
  },
+ "a little|phrase": {
+  "word": "少し",
+  "reading": "すこし",
+  "gloss": "a little; a bit",
+  "seq": 0
+ },
  "shut|verb": {
   "word": "閉じる",
   "reading": "とじる",
@@ -1307,6 +1313,18 @@
   "gloss": "high; tall",
   "seq": 1283190
  },
+ "no one|phrase": {
+  "word": "誰も",
+  "reading": "だれも",
+  "gloss": "no one (with negative)",
+  "seq": 0
+ },
+ "all right|phrase": {
+  "word": "大丈夫",
+  "reading": "だいじょうぶ",
+  "gloss": "all right; okay",
+  "seq": 0
+ },
  "half|noun": {
   "word": "半分",
   "reading": "はんぶん",
@@ -1535,6 +1553,12 @@
   "gloss": "possible; potential; practicable; feasible",
   "seq": 1191060
  },
+ "at all|phrase": {
+  "word": "全然",
+  "reading": "ぜんぜん",
+  "gloss": "at all (with negative); entirely",
+  "seq": 0
+ },
  "touch|verb": {
   "word": "触る",
   "reading": "さわる",
@@ -1727,6 +1751,18 @@
   "gloss": "to throw; to hurl; to fling; to toss",
   "seq": 1447000
  },
+ "once more|phrase": {
+  "word": "もう一度",
+  "reading": "もういちど",
+  "gloss": "once more; one more time",
+  "seq": 0
+ },
+ "come back|phrase": {
+  "word": "戻る",
+  "reading": "もどる",
+  "gloss": "to come back; to return",
+  "seq": 0
+ },
  "land|noun": {
   "word": "陸",
   "reading": "りく",
@@ -1811,12 +1847,6 @@
   "gloss": "to suppose; to think",
   "seq": 0
  },
- "completely|adv": {
-  "word": "完全に",
-  "reading": "かんぜんに",
-  "gloss": "completely; entirely",
-  "seq": 0
- },
  "mouth|noun": {
   "word": "口",
   "reading": "くち",
@@ -1846,6 +1876,18 @@
   "reading": "せめる",
   "gloss": "to attack; to assault; to assail",
   "seq": 1279130
+ },
+ "at once|phrase": {
+  "word": "すぐに",
+  "reading": "",
+  "gloss": "at once; immediately",
+  "seq": 0
+ },
+ "all the time|phrase": {
+  "word": "ずっと",
+  "reading": "",
+  "gloss": "all the time; the whole time",
+  "seq": 0
  },
  "history|noun": {
   "word": "歴史",
@@ -1895,41 +1937,23 @@
   "gloss": "middle; center",
   "seq": 0
  },
- "protect|verb": {
-  "word": "守る",
-  "reading": "まもる",
-  "gloss": "to protect; to guard; to defend",
-  "seq": 1327120
- },
  "dangerous|adj": {
   "word": "危ない",
   "reading": "あぶない",
   "gloss": "dangerous",
   "seq": 0
  },
- "lead|noun": {
-  "word": "先頭",
-  "reading": "せんとう",
-  "gloss": "head (of a line, group, etc.); front; lead; forefront",
-  "seq": 1596210
- },
- "sun|noun": {
-  "word": "太陽",
-  "reading": "たいよう",
-  "gloss": "Sun",
-  "seq": 1408370
+ "lead|verb": {
+  "word": "率いる",
+  "reading": "ひきいる",
+  "gloss": "to lead; to spearhead (a group); to command (troops)",
+  "seq": 1551210
  },
  "space|noun": {
   "word": "空間",
   "reading": "くうかん",
   "gloss": "space; room",
   "seq": 0
- },
- "box|noun": {
-  "word": "箱",
-  "reading": "はこ",
-  "gloss": "box; case; chest; package",
-  "seq": 1585650
  },
  "join|verb": {
   "word": "加わる",
@@ -1985,12 +2009,6 @@
   "gloss": "to cover",
   "seq": 0
  },
- "deep|adj": {
-  "word": "深い",
-  "reading": "ふかい",
-  "gloss": "deep",
-  "seq": 1362640
- },
  "difficult|adj": {
   "word": "手ごわい",
   "reading": "てごわい",
@@ -2015,23 +2033,11 @@
   "gloss": "service; duty; business; responsibility",
   "seq": 1240810
  },
- "angry|adj": {
-  "word": "怒る",
-  "reading": "おこる",
-  "gloss": "angry; to get angry",
-  "seq": 0
- },
  "rich|adj": {
   "word": "豊か",
   "reading": "ゆたか",
   "gloss": "rich; wealthy; affluent; well-off",
   "seq": 1518130
- },
- "blow|noun": {
-  "word": "打撃",
-  "reading": "だげき",
-  "gloss": "blow; shock; strike; damage",
-  "seq": 1408870
  },
  "dress|noun": {
   "word": "服",
@@ -2061,12 +2067,6 @@
   "word": "突然",
   "reading": "とつぜん",
   "gloss": "suddenly",
-  "seq": 0
- },
- "jump|verb": {
-  "word": "跳ぶ",
-  "reading": "とぶ",
-  "gloss": "to jump; to leap",
   "seq": 0
  }
 }

@@ -79,7 +79,7 @@ export interface LexiconSummary {
   language: string;
   scheduled: number;
   chapterCount: number;
-  byProvenance: { override: number; global: number; auto: number };
+  byProvenance: { override: number; global: number; phrase: number; auto: number };
   reviewQueue: ReviewItem[];
 }
 
@@ -104,9 +104,12 @@ export function buildBookLexicon(slug: string, dictPath?: string): LexiconSummar
   )
     ? JSON.parse(fs.readFileSync(globalPath, "utf8"))
     : {};
+  const phrasePath = path.join("data", "lexicon", `${meta.language}-phrases.json`);
+  const phraseLexicon: Record<string, Omit<LexiconEntry, "seq"> & { rank: number }> =
+    fs.existsSync(phrasePath) ? JSON.parse(fs.readFileSync(phrasePath, "utf8")) : {};
 
   const lexicon: Record<string, LexiconEntry> = {};
-  const provenance: Record<string, "override" | "global" | "auto"> = {};
+  const provenance: Record<string, "override" | "global" | "phrase" | "auto"> = {};
   for (const c of candidates) {
     if (overrides[c.id]) {
       lexicon[c.id] = overrides[c.id];
@@ -115,6 +118,14 @@ export function buildBookLexicon(slug: string, dictPath?: string): LexiconSummar
       const { source: _source, ...entry } = globalLexicon[c.id];
       lexicon[c.id] = entry;
       provenance[c.id] = "global";
+    } else if (c.pos === "phrase") {
+      // Phrases only ever come from the curated file - never the dictionary.
+      const def = phraseLexicon[c.lemma];
+      if (def) {
+        const { rank: _rank, ...entry } = def;
+        lexicon[c.id] = { ...entry, seq: 0 };
+        provenance[c.id] = "phrase";
+      }
     } else {
       const entry = dict.lookup(c.lemma, c.pos);
       if (entry) {
@@ -150,7 +161,7 @@ export function buildBookLexicon(slug: string, dictPath?: string): LexiconSummar
   fs.writeFileSync(path.join(bookDir, "vocab.json"), JSON.stringify(vocab, null, 1));
   fs.writeFileSync(path.join(bookDir, "review-queue.json"), JSON.stringify(queue, null, 1));
 
-  const byProv = { override: 0, global: 0, auto: 0 };
+  const byProv = { override: 0, global: 0, phrase: 0, auto: 0 };
   for (const id of scheduledIds) byProv[provenance[id]]++;
   return {
     language: meta.language,
@@ -170,7 +181,7 @@ function main() {
   const s = buildBookLexicon(slug, dictPath);
   console.log(
     `${slug} (${s.language}): ${s.scheduled} scheduled across ${s.chapterCount} chapters ` +
-    `(overrides ${s.byProvenance.override}, global ${s.byProvenance.global}, auto ${s.byProvenance.auto}) | ` +
+    `(overrides ${s.byProvenance.override}, global ${s.byProvenance.global}, phrases ${s.byProvenance.phrase}, auto ${s.byProvenance.auto}) | ` +
     `review queue: ${s.reviewQueue.length}`,
   );
 }

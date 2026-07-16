@@ -73,14 +73,81 @@ interface TaggedWord {
   pos: string; // Penn tag
 }
 
+/** A curated multi-word unit to merge into a single swappable token. */
+export interface PhraseDef {
+  phrase: string;
+  rank: number;
+}
+
+/**
+ * Match a phrase's words against tokens at `start`: word tokens separated by
+ * exactly one single-space gap (splitParagraphs collapses all whitespace to
+ * single spaces). Returns the number of tokens consumed, or 0 for no match.
+ */
+function matchPhraseAt(tokens: Token[], start: number, phrase: string): number {
+  const words = phrase.split(" ");
+  let ti = start;
+  for (let wi = 0; wi < words.length; wi++) {
+    if (wi > 0) {
+      if (tokens[ti]?.s !== " ") return 0;
+      ti++;
+    }
+    if (tokens[ti]?.s.toLowerCase() !== words[wi]) return 0;
+    ti++;
+  }
+  return ti - start;
+}
+
+/**
+ * Merge curated phrases ("of course", "at last") into single tokens with a
+ * `<phrase>|phrase` lexeme id. Word-level lexeme ids inside a matched phrase
+ * are swallowed; longer phrases win over shorter ones.
+ */
+export function mergePhrases(tokens: Token[], phrases: PhraseDef[]): Token[] {
+  const byLength = [...phrases].sort((a, b) => b.phrase.length - a.phrase.length);
+  const out: Token[] = [];
+  let i = 0;
+  while (i < tokens.length) {
+    let consumed = 0;
+    let matched: PhraseDef | null = null;
+    for (const p of byLength) {
+      consumed = matchPhraseAt(tokens, i, p.phrase);
+      if (consumed > 0) {
+        matched = p;
+        break;
+      }
+    }
+    if (matched) {
+      const s = tokens
+        .slice(i, i + consumed)
+        .map((t) => t.s)
+        .join("");
+      out.push({ s, l: `${matched.phrase}|phrase` });
+      i += consumed;
+    } else {
+      out.push(tokens[i]);
+      i++;
+    }
+  }
+  return out;
+}
+
+/** `${lemma}|${pos}` -> [lemma, pos]; lemmas may contain spaces, never "|". */
+function splitLexemeId(id: string): [string, Pos] {
+  const sep = id.lastIndexOf("|");
+  return [id.slice(0, sep), id.slice(sep + 1) as Pos];
+}
+
 /**
  * Tokenize a paragraph into exact text slices, attaching a lexeme id to
- * swappable words. Tagger tokens are re-aligned to the original string by
- * sequential search; anything that fails alignment becomes plain text.
+ * swappable words and curated phrases. Tagger tokens are re-aligned to the
+ * original string by sequential search; anything that fails alignment becomes
+ * plain text.
  */
 export function tokenizeParagraph(
   paragraph: string,
   onLexeme: (id: string, lemma: string, pos: Pos, surface: string) => void,
+  phrases: PhraseDef[] = [],
 ): Token[] {
   const tagged: TaggedWord[] = tagger.tagSentence(paragraph);
   const tokens: Token[] = [];
@@ -102,12 +169,17 @@ export function tokenizeParagraph(
       tokens.push({ s: tok.value });
       continue;
     }
-    const id = `${lemma}|${bucket}`;
-    onLexeme(id, lemma, bucket, tok.value);
-    tokens.push({ s: tok.value, l: id });
+    tokens.push({ s: tok.value, l: `${lemma}|${bucket}` });
   }
   if (cursor < paragraph.length) tokens.push({ s: paragraph.slice(cursor) });
-  return tokens;
+
+  const merged = phrases.length > 0 ? mergePhrases(tokens, phrases) : tokens;
+  for (const t of merged) {
+    if (!t.l) continue;
+    const [lemma, pos] = splitLexemeId(t.l);
+    onLexeme(t.l, lemma, pos, t.s);
+  }
+  return merged;
 }
 
 function loadFreqRanks(freqPath: string): Map<string, number> {
@@ -144,6 +216,16 @@ export function ingestBook({ bookPath, slug, title, freqPath, language = "ja" }:
   if (rawChapters.length === 0) throw new Error("no chapters found");
 
   const ranks = freqPath ? loadFreqRanks(freqPath) : new Map<string, number>();
+  // Curated multi-word units for this language ("of course" -> もちろん).
+  const phrasePath = path.join("data", "lexicon", `${language}-phrases.json`);
+  const phraseEntries: Record<string, { rank: number }> = fs.existsSync(phrasePath)
+    ? JSON.parse(fs.readFileSync(phrasePath, "utf8"))
+    : {};
+  const phrases: PhraseDef[] = Object.entries(phraseEntries).map(([phrase, e]) => ({
+    phrase,
+    rank: e.rank,
+  }));
+  const phraseRanks = new Map(phrases.map((p) => [p.phrase, p.rank]));
   const candidates = new Map<string, Candidate>();
 
   const outDir = path.join("data", "books", slug);
@@ -152,20 +234,24 @@ export function ingestBook({ bookPath, slug, title, freqPath, language = "ja" }:
   rawChapters.forEach((raw, i) => {
     const chapterIndex = i + 1;
     const paragraphs = splitParagraphs(raw.body).map((p) =>
-      tokenizeParagraph(p, (id, lemma, pos) => {
-        const existing = candidates.get(id);
-        if (existing) {
-          existing.count++;
-          if (existing.chapters.at(-1) !== chapterIndex) existing.chapters.push(chapterIndex);
-        } else {
-          candidates.set(id, {
-            id, lemma, pos,
-            rank: ranks.get(lemma) ?? 999999,
-            count: 1,
-            chapters: [chapterIndex],
-          });
-        }
-      }),
+      tokenizeParagraph(
+        p,
+        (id, lemma, pos) => {
+          const existing = candidates.get(id);
+          if (existing) {
+            existing.count++;
+            if (existing.chapters.at(-1) !== chapterIndex) existing.chapters.push(chapterIndex);
+          } else {
+            candidates.set(id, {
+              id, lemma, pos,
+              rank: (pos === "phrase" ? phraseRanks.get(lemma) : ranks.get(lemma)) ?? 999999,
+              count: 1,
+              chapters: [chapterIndex],
+            });
+          }
+        },
+        phrases,
+      ),
     );
     const chapter: Chapter = { book: slug, index: chapterIndex, title: raw.title, paragraphs };
     const nn = String(chapterIndex).padStart(2, "0");

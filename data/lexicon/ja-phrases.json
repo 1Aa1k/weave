@@ -1,0 +1,17 @@
+{
+ "of course": { "word": "もちろん", "reading": "", "gloss": "of course; certainly", "rank": 300 },
+ "at last": { "word": "ついに", "reading": "", "gloss": "at last; finally", "rank": 900 },
+ "at once": { "word": "すぐに", "reading": "", "gloss": "at once; immediately", "rank": 800 },
+ "a little": { "word": "少し", "reading": "すこし", "gloss": "a little; a bit", "rank": 400 },
+ "at all": { "word": "全然", "reading": "ぜんぜん", "gloss": "at all (with negative); entirely", "rank": 600 },
+ "all right": { "word": "大丈夫", "reading": "だいじょうぶ", "gloss": "all right; okay", "rank": 500 },
+ "once more": { "word": "もう一度", "reading": "もういちど", "gloss": "once more; one more time", "rank": 700 },
+ "each other": { "word": "お互い", "reading": "おたがい", "gloss": "each other; one another", "rank": 800 },
+ "in fact": { "word": "実は", "reading": "じつは", "gloss": "in fact; actually", "rank": 700 },
+ "no one": { "word": "誰も", "reading": "だれも", "gloss": "no one (with negative)", "rank": 500 },
+ "come back": { "word": "戻る", "reading": "もどる", "gloss": "to come back; to return", "rank": 700 },
+ "by and by": { "word": "やがて", "reading": "", "gloss": "by and by; before long", "rank": 2000 },
+ "in a hurry": { "word": "急いで", "reading": "いそいで", "gloss": "in a hurry; hurriedly", "rank": 1500 },
+ "all the time": { "word": "ずっと", "reading": "", "gloss": "all the time; the whole time", "rank": 800 },
+ "no doubt": { "word": "きっと", "reading": "", "gloss": "no doubt; surely", "rank": 1500 }
+}

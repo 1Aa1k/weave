@@ -323,10 +323,10 @@
   "gloss": "great; amazing; enormous",
   "seq": 0
  },
- "last|noun": {
-  "word": "最後",
-  "reading": "さいご",
-  "gloss": "last; the end; conclusion",
+ "last|verb": {
+  "word": "続く",
+  "reading": "つづく",
+  "gloss": "to last; to continue",
   "seq": 0
  },
  "better|adv": {
@@ -683,6 +683,12 @@
   "gloss": "door",
   "seq": 0
  },
+ "of course|phrase": {
+  "word": "もちろん",
+  "reading": "",
+  "gloss": "of course; certainly",
+  "seq": 0
+ },
  "pretty|adj": {
   "word": "綺麗",
   "reading": "きれい",
@@ -947,16 +953,16 @@
   "gloss": "far away; far off; distant",
   "seq": 0
  },
+ "a little|phrase": {
+  "word": "少し",
+  "reading": "すこし",
+  "gloss": "a little; a bit",
+  "seq": 0
+ },
  "shut|verb": {
   "word": "閉じる",
   "reading": "とじる",
   "gloss": "to shut; to close",
-  "seq": 0
- },
- "check|verb": {
-  "word": "確かめる",
-  "reading": "たしかめる",
-  "gloss": "to check; to make sure",
   "seq": 0
  },
  "deal|noun": {
@@ -964,12 +970,6 @@
   "reading": "",
   "gloss": "a great deal; a lot",
   "seq": 0
- },
- "different|adj": {
-  "word": "別々",
-  "reading": "べつべつ",
-  "gloss": "separate; respective; different",
-  "seq": 1603290
  },
  "point|verb": {
   "word": "指す",
