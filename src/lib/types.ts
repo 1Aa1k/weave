@@ -42,15 +42,15 @@ export interface VocabEntry extends Candidate {
   introducedChapter: number;
 }
 
-/** Japanese dictionary entry for one lexeme. */
+/** Target-language dictionary entry for one lexeme. */
 export interface LexiconEntry {
-  /** Display form, kanji when available. */
-  ja: string;
-  /** Kana reading; empty when `ja` is already kana-only. */
+  /** Display form in the target language (kanji/hanzi when available). */
+  word: string;
+  /** Pronunciation aid (kana for ja, pinyin for zh); empty when `word` needs none. */
   reading: string;
   /** Short English gloss list, "; "-joined. */
   gloss: string;
-  /** JMdict sequence number, for tracing back to the source entry. */
+  /** Source-dictionary id (JMdict sequence, CEDICT line), for tracing back. */
   seq: number;
 }
 

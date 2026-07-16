@@ -3,11 +3,11 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import type { Chapter, Token } from "@/lib/types";
-import { chapterOrnament } from "@/lib/format";
+import { chapterOrnament, readingName } from "@/lib/format";
 
 export type WovenEntries = Record<
   string,
-  { ja: string; reading: string; gloss: string; known: boolean }
+  { word: string; reading: string; gloss: string; known: boolean }
 >;
 
 interface Slip {
@@ -137,7 +137,7 @@ export default function ReaderView({
                   <div key={pin.lexemeId} className="slip slip-pop relative px-4 py-3">
                     <button
                       className="font-ui absolute right-2.5 top-2 text-xs text-[var(--ink-soft)]"
-                      aria-label={`unpin ${entry.ja}`}
+                      aria-label={`unpin ${entry.word}`}
                       onClick={() =>
                         setPins((prev) => prev.filter((p) => p.lexemeId !== pin.lexemeId))
                       }
@@ -145,7 +145,7 @@ export default function ReaderView({
                       x
                     </button>
                     <p className="jp text-xl text-[var(--indigo)]">
-                      {entry.ja}
+                      {entry.word}
                       {entry.reading && (
                         <span className="ml-2 text-sm text-[var(--ink-soft)]">{entry.reading}</span>
                       )}
@@ -162,7 +162,7 @@ export default function ReaderView({
             <div className="font-ui border-t border-[var(--line)] pt-4 text-xs leading-relaxed text-[var(--ink-soft)]">
               <p>
                 {wovenCount} words woven into this chapter
-                {knownCount > 0 && <> · {knownCount} already furigana-free</>}
+                {knownCount > 0 && <> · {knownCount} already {readingName(language)}-free</>}
               </p>
               {chapter.index < chapterCount && nextNewCount > 0 && (
                 <p className="mt-2">
@@ -219,7 +219,7 @@ export default function ReaderView({
           onClick={(e) => e.stopPropagation()}
         >
           <p className="jp text-xl text-[var(--indigo)]">
-            {entry.ja}
+            {entry.word}
             {entry.reading && (
               <span className="ml-2 text-sm text-[var(--ink-soft)]">{entry.reading}</span>
             )}
@@ -264,10 +264,10 @@ function renderTokens(
         }}
       >
         {entry.known || !entry.reading ? (
-          entry.ja
+          entry.word
         ) : (
           <ruby>
-            {entry.ja}
+            {entry.word}
             <rt>{entry.reading}</rt>
           </ruby>
         )}

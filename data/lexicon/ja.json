@@ -1,2820 +1,2820 @@
 {
  "know|verb": {
-  "ja": "知る",
+  "word": "知る",
   "reading": "しる",
   "gloss": "to know; to be aware of; to learn of",
   "seq": 0,
   "source": "manual"
  },
  "like|verb": {
-  "ja": "好き",
+  "word": "好き",
   "reading": "すき",
   "gloss": "to like; liked; favorite (suki, na-adjective)",
   "seq": 0,
   "source": "manual"
  },
  "get|verb": {
-  "ja": "得る",
+  "word": "得る",
   "reading": "える",
   "gloss": "to get; to earn; to acquire; to procure",
   "seq": 1588760,
   "source": "reviewed"
  },
  "go|verb": {
-  "ja": "行く",
+  "word": "行く",
   "reading": "いく",
   "gloss": "to go; to move (towards); to head (towards); to leave (for)",
   "seq": 1578850,
   "source": "reviewed"
  },
  "right|adj": {
-  "ja": "正しい",
+  "word": "正しい",
   "reading": "ただしい",
   "gloss": "right; correct",
   "seq": 1376600,
   "source": "reviewed"
  },
  "come|verb": {
-  "ja": "来る",
+  "word": "来る",
   "reading": "くる",
   "gloss": "to come; to arrive",
   "seq": 0,
   "source": "manual"
  },
  "think|verb": {
-  "ja": "思う",
+  "word": "思う",
   "reading": "おもう",
   "gloss": "to think; to consider; to believe; to reckon",
   "seq": 1589350,
   "source": "reviewed"
  },
  "see|verb": {
-  "ja": "見る",
+  "word": "見る",
   "reading": "みる",
   "gloss": "to see; to look; to watch; to view",
   "seq": 1259290,
   "source": "reviewed"
  },
  "good|adj": {
-  "ja": "良い",
+  "word": "良い",
   "reading": "いい",
   "gloss": "good; fine; nice",
   "seq": 0,
   "source": "manual"
  },
  "time|noun": {
-  "ja": "時間",
+  "word": "時間",
   "reading": "じかん",
   "gloss": "time; hour",
   "seq": 0,
   "source": "manual"
  },
  "look|verb": {
-  "ja": "眺める",
+  "word": "眺める",
   "reading": "ながめる",
   "gloss": "to look at; to gaze at; to watch",
   "seq": 0,
   "source": "manual"
  },
  "take|verb": {
-  "ja": "取る",
+  "word": "取る",
   "reading": "とる",
   "gloss": "to take; to pick up; to grab; to catch",
   "seq": 1326980,
   "source": "reviewed"
  },
  "tell|verb": {
-  "ja": "教える",
+  "word": "教える",
   "reading": "おしえる",
   "gloss": "to tell; to inform; to teach",
   "seq": 0,
   "source": "manual"
  },
  "really|adv": {
-  "ja": "本当に",
+  "word": "本当に",
   "reading": "ほんとうに",
   "gloss": "really; truly",
   "seq": 0,
   "source": "manual"
  },
  "say|verb": {
-  "ja": "言う",
+  "word": "言う",
   "reading": "いう",
   "gloss": "to say; to utter; to declare",
   "seq": 1587040,
   "source": "reviewed"
  },
  "want|verb": {
-  "ja": "欲しい",
+  "word": "欲しい",
   "reading": "ほしい",
   "gloss": "to want; wanted; desired (hoshii)",
   "seq": 0,
   "source": "manual"
  },
  "something|noun": {
-  "ja": "何か",
+  "word": "何か",
   "reading": "なにか",
   "gloss": "something; some kind of",
   "seq": 0,
   "source": "manual"
  },
  "way|noun": {
-  "ja": "道",
+  "word": "道",
   "reading": "みち",
   "gloss": "way; road; path",
   "seq": 0,
   "source": "manual"
  },
  "make|verb": {
-  "ja": "作る",
+  "word": "作る",
   "reading": "つくる",
   "gloss": "to make; to build; to create",
   "seq": 0,
   "source": "manual"
  },
  "never|adv": {
-  "ja": "決して",
+  "word": "決して",
   "reading": "けっして",
   "gloss": "never; by no means (with negative)",
   "seq": 0,
   "source": "manual"
  },
  "little|adj": {
-  "ja": "小さい",
+  "word": "小さい",
   "reading": "ちいさい",
   "gloss": "small; little; tiny",
   "seq": 0,
   "source": "manual"
  },
  "please|verb": {
-  "ja": "お願い",
+  "word": "お願い",
   "reading": "おねがい",
   "gloss": "please; request (onegai)",
   "seq": 0,
   "source": "manual"
  },
  "love|noun": {
-  "ja": "愛",
+  "word": "愛",
   "reading": "あい",
   "gloss": "love; affection; care",
   "seq": 1150410,
   "source": "reviewed"
  },
  "give|verb": {
-  "ja": "あげる",
+  "word": "あげる",
   "reading": "",
   "gloss": "to give (to someone)",
   "seq": 0,
   "source": "manual"
  },
  "sure|adj": {
-  "ja": "確か",
+  "word": "確か",
   "reading": "たしか",
   "gloss": "sure; certain; positive; definite",
   "seq": 1596930,
   "source": "reviewed"
  },
  "thing|noun": {
-  "ja": "事",
+  "word": "事",
   "reading": "こと",
   "gloss": "thing; matter",
   "seq": 1313580,
   "source": "reviewed"
  },
  "help|verb": {
-  "ja": "手伝う",
+  "word": "手伝う",
   "reading": "てつだう",
   "gloss": "to help; to assist; to aid",
   "seq": 1328190,
   "source": "reviewed"
  },
  "anything|noun": {
-  "ja": "何でも",
+  "word": "何でも",
   "reading": "なんでも",
   "gloss": "anything; whatever",
   "seq": 0,
   "source": "manual"
  },
  "still|adv": {
-  "ja": "まだ",
+  "word": "まだ",
   "reading": "",
   "gloss": "still; not yet",
   "seq": 0,
   "source": "manual"
  },
  "find|verb": {
-  "ja": "見つける",
+  "word": "見つける",
   "reading": "みつける",
   "gloss": "to find; to discover; to come across; to spot",
   "seq": 1604570,
   "source": "reviewed"
  },
  "one|noun": {
-  "ja": "一つ",
+  "word": "一つ",
   "reading": "ひとつ",
   "gloss": "one (thing); one item",
   "seq": 0,
   "source": "manual"
  },
  "back|noun": {
-  "ja": "後ろ",
+  "word": "後ろ",
   "reading": "うしろ",
   "gloss": "back; behind; rear",
   "seq": 1269410,
   "source": "reviewed"
  },
  "mean|verb": {
-  "ja": "意味する",
+  "word": "意味する",
   "reading": "いみする",
   "gloss": "to mean; to signify",
   "seq": 0,
   "source": "manual"
  },
  "life|noun": {
-  "ja": "人生",
+  "word": "人生",
   "reading": "じんせい",
   "gloss": "life; one's life",
   "seq": 0,
   "source": "manual"
  },
  "nothing|noun": {
-  "ja": "何も",
+  "word": "何も",
   "reading": "なにも",
   "gloss": "nothing (with negative)",
   "seq": 0,
   "source": "manual"
  },
  "sir|noun": {
-  "ja": "旦那",
+  "word": "旦那",
   "reading": "だんな",
   "gloss": "sir; boss; master; governor",
   "seq": 1418410,
   "source": "reviewed"
  },
  "day|noun": {
-  "ja": "日",
+  "word": "日",
   "reading": "ひ",
   "gloss": "day; days",
   "seq": 1463770,
   "source": "reviewed"
  },
  "wait|verb": {
-  "ja": "待つ",
+  "word": "待つ",
   "reading": "まつ",
   "gloss": "to wait",
   "seq": 1410590,
   "source": "reviewed"
  },
  "call|verb": {
-  "ja": "呼ぶ",
+  "word": "呼ぶ",
   "reading": "よぶ",
   "gloss": "to call; to call out; to name",
   "seq": 0,
   "source": "manual"
  },
  "talk|verb": {
-  "ja": "話す",
+  "word": "話す",
   "reading": "はなす",
   "gloss": "to talk; to speak",
   "seq": 0,
   "source": "manual"
  },
  "home|noun": {
-  "ja": "うち",
+  "word": "うち",
   "reading": "",
   "gloss": "home; one's house",
   "seq": 0,
   "source": "manual"
  },
  "night|noun": {
-  "ja": "夜",
+  "word": "夜",
   "reading": "よる",
   "gloss": "night; evening",
   "seq": 1536350,
   "source": "reviewed"
  },
  "put|verb": {
-  "ja": "置く",
+  "word": "置く",
   "reading": "おく",
   "gloss": "to put; to place",
   "seq": 1421850,
   "source": "reviewed"
  },
  "great|adj": {
-  "ja": "すごい",
+  "word": "すごい",
   "reading": "",
   "gloss": "great; amazing; enormous",
   "seq": 0,
   "source": "manual"
  },
  "last|noun": {
-  "ja": "最後",
+  "word": "最後",
   "reading": "さいご",
   "gloss": "last; the end; conclusion",
   "seq": 0,
   "source": "manual"
  },
  "people|noun": {
-  "ja": "人々",
+  "word": "人々",
   "reading": "ひとびと",
   "gloss": "people; everybody",
   "seq": 0,
   "source": "manual"
  },
  "thank|verb": {
-  "ja": "感謝する",
+  "word": "感謝する",
   "reading": "かんしゃする",
   "gloss": "to thank; to be grateful",
   "seq": 0,
   "source": "manual"
  },
  "before|adv": {
-  "ja": "前に",
+  "word": "前に",
   "reading": "まえに",
   "gloss": "before; earlier; in front",
   "seq": 0,
   "source": "manual"
  },
  "stop|verb": {
-  "ja": "止める",
+  "word": "止める",
   "reading": "とめる",
   "gloss": "to stop; to turn off",
   "seq": 1310670,
   "source": "reviewed"
  },
  "better|adv": {
-  "ja": "寧ろ",
+  "word": "寧ろ",
   "reading": "むしろ",
   "gloss": "rather; better; instead; if anything",
   "seq": 1604870,
   "source": "reviewed"
  },
  "everything|noun": {
-  "ja": "全て",
+  "word": "全て",
   "reading": "すべて",
   "gloss": "everything; all; the whole",
   "seq": 1595730,
   "source": "reviewed"
  },
  "always|adv": {
-  "ja": "いつも",
+  "word": "いつも",
   "reading": "",
   "gloss": "always; usually; every time",
   "seq": 0,
   "source": "manual"
  },
  "keep|verb": {
-  "ja": "保つ",
+  "word": "保つ",
   "reading": "たもつ",
   "gloss": "to keep; to preserve; to hold; to retain",
   "seq": 1513250,
   "source": "reviewed"
  },
  "long|adj": {
-  "ja": "長い",
+  "word": "長い",
   "reading": "ながい",
   "gloss": "long (length or time)",
   "seq": 0,
   "source": "manual"
  },
  "leave|verb": {
-  "ja": "去る",
+  "word": "去る",
   "reading": "さる",
   "gloss": "to leave; to go away",
   "seq": 1231650,
   "source": "reviewed"
  },
  "name|noun": {
-  "ja": "名前",
+  "word": "名前",
   "reading": "なまえ",
   "gloss": "name",
   "seq": 0,
   "source": "manual"
  },
  "place|noun": {
-  "ja": "所",
+  "word": "所",
   "reading": "ところ",
   "gloss": "place; spot; scene; site",
   "seq": 1343100,
   "source": "reviewed"
  },
  "ever|adv": {
-  "ja": "今まで",
+  "word": "今まで",
   "reading": "いままで",
   "gloss": "ever; until now",
   "seq": 0,
   "source": "manual"
  },
  "feel|verb": {
-  "ja": "感じる",
+  "word": "感じる",
   "reading": "かんじる",
   "gloss": "to feel; to sense; to experience",
   "seq": 1212260,
   "source": "reviewed"
  },
  "old|adj": {
-  "ja": "古い",
+  "word": "古い",
   "reading": "ふるい",
   "gloss": "old; aged; ancient; antiquated",
   "seq": 1265070,
   "source": "reviewed"
  },
  "man|noun": {
-  "ja": "男",
+  "word": "男",
   "reading": "おとこ",
   "gloss": "man; male",
   "seq": 1419990,
   "source": "reviewed"
  },
  "need|verb": {
-  "ja": "要る",
+  "word": "要る",
   "reading": "いる",
   "gloss": "to need; to be necessary",
   "seq": 0,
   "source": "manual"
  },
  "sorry|adj": {
-  "ja": "ごめんなさい",
+  "word": "ごめんなさい",
   "reading": "",
   "gloss": "sorry; my apologies",
   "seq": 0,
   "source": "manual"
  },
  "work|verb": {
-  "ja": "働く",
+  "word": "働く",
   "reading": "はたらく",
   "gloss": "to work; to labor",
   "seq": 0,
   "source": "manual"
  },
  "new|adj": {
-  "ja": "新しい",
+  "word": "新しい",
   "reading": "あたらしい",
   "gloss": "new; novel; fresh; recent",
   "seq": 1361490,
   "source": "reviewed"
  },
  "father|noun": {
-  "ja": "お父さん",
+  "word": "お父さん",
   "reading": "おとうさん",
   "gloss": "father; dad",
   "seq": 0,
   "source": "manual"
  },
  "believe|verb": {
-  "ja": "信じる",
+  "word": "信じる",
   "reading": "しんじる",
   "gloss": "to believe; to believe in; to place trust in; to confide in",
   "seq": 1359040,
   "source": "reviewed"
  },
  "girl|noun": {
-  "ja": "女の子",
+  "word": "女の子",
   "reading": "おんなのこ",
   "gloss": "girl; daughter; baby girl",
   "seq": 1344970,
   "source": "reviewed"
  },
  "kind|noun": {
-  "ja": "種類",
+  "word": "種類",
   "reading": "しゅるい",
   "gloss": "kind; sort; type",
   "seq": 0,
   "source": "manual"
  },
  "house|noun": {
-  "ja": "家",
+  "word": "家",
   "reading": "いえ",
   "gloss": "house; residence; dwelling; home",
   "seq": 1191730,
   "source": "reviewed"
  },
  "enough|adv": {
-  "ja": "十分",
+  "word": "十分",
   "reading": "じゅうぶん",
   "gloss": "enough; sufficient; plenty",
   "seq": 0,
   "source": "manual"
  },
  "wrong|adj": {
-  "ja": "違う",
+  "word": "違う",
   "reading": "ちがう",
   "gloss": "wrong; different; to differ",
   "seq": 0,
   "source": "manual"
  },
  "listen|verb": {
-  "ja": "聴く",
+  "word": "聴く",
   "reading": "きく",
   "gloss": "to listen (attentively)",
   "seq": 0,
   "source": "manual"
  },
  "understand|verb": {
-  "ja": "分かる",
+  "word": "分かる",
   "reading": "わかる",
   "gloss": "to understand; to comprehend; to grasp; to see",
   "seq": 1606560,
   "source": "reviewed"
  },
  "remember|verb": {
-  "ja": "覚える",
+  "word": "覚える",
   "reading": "おぼえる",
   "gloss": "to remember; to memorize",
   "seq": 0,
   "source": "manual"
  },
  "maybe|adv": {
-  "ja": "多分",
+  "word": "多分",
   "reading": "たぶん",
   "gloss": "maybe; probably",
   "seq": 0,
   "source": "manual"
  },
  "world|noun": {
-  "ja": "世界",
+  "word": "世界",
   "reading": "せかい",
   "gloss": "world",
   "seq": 0,
   "source": "manual"
  },
  "hear|verb": {
-  "ja": "聞く",
+  "word": "聞く",
   "reading": "きく",
   "gloss": "to hear",
   "seq": 1591110,
   "source": "reviewed"
  },
  "ask|verb": {
-  "ja": "尋ねる",
+  "word": "尋ねる",
   "reading": "たずねる",
   "gloss": "to ask; to enquire; to inquire",
   "seq": 1369940,
   "source": "reviewed"
  },
  "show|verb": {
-  "ja": "見せる",
+  "word": "見せる",
   "reading": "みせる",
   "gloss": "to show; to display",
   "seq": 0,
   "source": "manual"
  },
  "kill|verb": {
-  "ja": "殺す",
+  "word": "殺す",
   "reading": "ころす",
   "gloss": "to kill; to slay; to murder; to slaughter",
   "seq": 1299030,
   "source": "reviewed"
  },
  "care|noun": {
-  "ja": "世話",
+  "word": "世話",
   "reading": "せわ",
   "gloss": "care; looking after; help",
   "seq": 0,
   "source": "manual"
  },
  "try|verb": {
-  "ja": "試す",
+  "word": "試す",
   "reading": "ためす",
   "gloss": "to try; to attempt; to test",
   "seq": 0,
   "source": "manual"
  },
  "many|adj": {
-  "ja": "多い",
+  "word": "多い",
   "reading": "おおい",
   "gloss": "many; numerous; a lot",
   "seq": 1407460,
   "source": "reviewed"
  },
  "mind|noun": {
-  "ja": "心",
+  "word": "心",
   "reading": "こころ",
   "gloss": "mind; heart; spirit",
   "seq": 1360480,
   "source": "reviewed"
  },
  "boy|noun": {
-  "ja": "男の子",
+  "word": "男の子",
   "reading": "おとこのこ",
   "gloss": "boy",
   "seq": 0,
   "source": "manual"
  },
  "together|adv": {
-  "ja": "一緒に",
+  "word": "一緒に",
   "reading": "いっしょに",
   "gloss": "together",
   "seq": 0,
   "source": "manual"
  },
  "real|adj": {
-  "ja": "本当",
+  "word": "本当",
   "reading": "ほんとう",
   "gloss": "real; true; genuine",
   "seq": 0,
   "source": "manual"
  },
  "baby|noun": {
-  "ja": "赤ちゃん",
+  "word": "赤ちゃん",
   "reading": "あかちゃん",
   "gloss": "baby; infant",
   "seq": 1383260,
   "source": "reviewed"
  },
  "room|noun": {
-  "ja": "部屋",
+  "word": "部屋",
   "reading": "へや",
   "gloss": "room",
   "seq": 0,
   "source": "manual"
  },
  "course|noun": {
-  "ja": "もちろん",
+  "word": "もちろん",
   "reading": "",
   "gloss": "of course; certainly",
   "seq": 0,
   "source": "manual"
  },
  "stay|verb": {
-  "ja": "留まる",
+  "word": "留まる",
   "reading": "とどまる",
   "gloss": "to stay; to remain",
   "seq": 0,
   "source": "manual"
  },
  "bad|adj": {
-  "ja": "悪い",
+  "word": "悪い",
   "reading": "わるい",
   "gloss": "bad; poor; wrong",
   "seq": 0,
   "source": "manual"
  },
  "today|noun": {
-  "ja": "今日",
+  "word": "今日",
   "reading": "きょう",
   "gloss": "today",
   "seq": 0,
   "source": "manual"
  },
  "morning|noun": {
-  "ja": "朝",
+  "word": "朝",
   "reading": "あさ",
   "gloss": "morning",
   "seq": 0,
   "source": "manual"
  },
  "move|verb": {
-  "ja": "動かす",
+  "word": "動かす",
   "reading": "うごかす",
   "gloss": "to move; to shift; to stir; to budge",
   "seq": 1451170,
   "source": "reviewed"
  },
  "live|verb": {
-  "ja": "住む",
+  "word": "住む",
   "reading": "すむ",
   "gloss": "to live; to reside",
   "seq": 0,
   "source": "manual"
  },
  "once|adv": {
-  "ja": "一度",
+  "word": "一度",
   "reading": "いちど",
   "gloss": "once; one time",
   "seq": 0,
   "source": "manual"
  },
  "head|noun": {
-  "ja": "頭",
+  "word": "頭",
   "reading": "あたま",
   "gloss": "head",
   "seq": 0,
   "source": "manual"
  },
  "idea|noun": {
-  "ja": "案",
+  "word": "案",
   "reading": "あん",
   "gloss": "idea; plan; proposal; suggestion",
   "seq": 1154770,
   "source": "reviewed"
  },
  "hold|verb": {
-  "ja": "持つ",
+  "word": "持つ",
   "reading": "もつ",
   "gloss": "to hold; to carry",
   "seq": 0,
   "source": "manual"
  },
  "door|noun": {
-  "ja": "扉",
+  "word": "扉",
   "reading": "とびら",
   "gloss": "door",
   "seq": 0,
   "source": "manual"
  },
  "bit|noun": {
-  "ja": "少し",
+  "word": "少し",
   "reading": "すこし",
   "gloss": "a bit; a little",
   "seq": 0,
   "source": "manual"
  },
  "yet|adv": {
-  "ja": "まだ",
+  "word": "まだ",
   "reading": "",
   "gloss": "yet; still (with negative)",
   "seq": 0,
   "source": "manual"
  },
  "use|verb": {
-  "ja": "使う",
+  "word": "使う",
   "reading": "つかう",
   "gloss": "to use; to make use of",
   "seq": 0,
   "source": "manual"
  },
  "someone|noun": {
-  "ja": "誰か",
+  "word": "誰か",
   "reading": "だれか",
   "gloss": "someone; somebody",
   "seq": 0,
   "source": "manual"
  },
  "fine|adj": {
-  "ja": "大丈夫",
+  "word": "大丈夫",
   "reading": "だいじょうぶ",
   "gloss": "fine; all right; OK",
   "seq": 0,
   "source": "manual"
  },
  "else|adv": {
-  "ja": "他に",
+  "word": "他に",
   "reading": "ほかに",
   "gloss": "else; in addition; besides",
   "seq": 1203280,
   "source": "reviewed"
  },
  "friend|noun": {
-  "ja": "友達",
+  "word": "友達",
   "reading": "ともだち",
   "gloss": "friend",
   "seq": 0,
   "source": "manual"
  },
  "already|adv": {
-  "ja": "もう",
+  "word": "もう",
   "reading": "",
   "gloss": "already; yet; by now; now",
   "seq": 1012480,
   "source": "reviewed"
  },
  "miss|verb": {
-  "ja": "恋しい",
+  "word": "恋しい",
   "reading": "こいしい",
   "gloss": "to miss; to long for (koishii)",
   "seq": 0,
   "source": "manual"
  },
  "whole|adj": {
-  "ja": "全体",
+  "word": "全体",
   "reading": "ぜんたい",
   "gloss": "whole; entire",
   "seq": 0,
   "source": "manual"
  },
  "while|noun": {
-  "ja": "間",
+  "word": "間",
   "reading": "あいだ",
   "gloss": "while; during; interval",
   "seq": 0,
   "source": "manual"
  },
  "matter|verb": {
-  "ja": "構う",
+  "word": "構う",
   "reading": "かまう",
   "gloss": "to be an issue; to matter; to create inconvenience",
   "seq": 1279680,
   "source": "reviewed"
  },
  "bring|verb": {
-  "ja": "持ってくる",
+  "word": "持ってくる",
   "reading": "もってくる",
   "gloss": "to bring (something)",
   "seq": 0,
   "source": "manual"
  },
  "run|verb": {
-  "ja": "走る",
+  "word": "走る",
   "reading": "はしる",
   "gloss": "to run",
   "seq": 0,
   "source": "manual"
  },
  "hard|adj": {
-  "ja": "難しい",
+  "word": "難しい",
   "reading": "むずかしい",
   "gloss": "hard; difficult",
   "seq": 0,
   "source": "manual"
  },
  "end|noun": {
-  "ja": "終わり",
+  "word": "終わり",
   "reading": "おわり",
   "gloss": "end; ending; close",
   "seq": 0,
   "source": "manual"
  },
  "play|verb": {
-  "ja": "遊ぶ",
+  "word": "遊ぶ",
   "reading": "あそぶ",
   "gloss": "to play; to have fun",
   "seq": 0,
   "source": "manual"
  },
  "face|noun": {
-  "ja": "顔",
+  "word": "顔",
   "reading": "かお",
   "gloss": "face; visage; looks; (facial) features",
   "seq": 1217730,
   "source": "reviewed"
  },
  "ready|adj": {
-  "ja": "用意",
+  "word": "用意",
   "reading": "ようい",
   "gloss": "ready; prepared",
   "seq": 0,
   "source": "manual"
  },
  "pretty|adj": {
-  "ja": "綺麗",
+  "word": "綺麗",
   "reading": "きれい",
   "gloss": "pretty; lovely; beautiful; fair",
   "seq": 1591900,
   "source": "reviewed"
  },
  "meet|verb": {
-  "ja": "会う",
+  "word": "会う",
   "reading": "あう",
   "gloss": "to meet; to encounter; to see",
   "seq": 1198180,
   "source": "reviewed"
  },
  "alone|adv": {
-  "ja": "一人で",
+  "word": "一人で",
   "reading": "ひとりで",
   "gloss": "alone; by oneself",
   "seq": 0,
   "source": "manual"
  },
  "school|noun": {
-  "ja": "学校",
+  "word": "学校",
   "reading": "がっこう",
   "gloss": "school",
   "seq": 1206730,
   "source": "reviewed"
  },
  "turn|verb": {
-  "ja": "回る",
+  "word": "回る",
   "reading": "まわる",
   "gloss": "to turn; to rotate; to go around",
   "seq": 0,
   "source": "manual"
  },
  "business|noun": {
-  "ja": "仕事",
+  "word": "仕事",
   "reading": "しごと",
   "gloss": "business; work; affair",
   "seq": 0,
   "source": "manual"
  },
  "true|adj": {
-  "ja": "真実",
+  "word": "真実",
   "reading": "しんじつ",
   "gloss": "true; truth",
   "seq": 0,
   "source": "manual"
  },
  "die|verb": {
-  "ja": "死ぬ",
+  "word": "死ぬ",
   "reading": "しぬ",
   "gloss": "to die; to pass away",
   "seq": 1310730,
   "source": "reviewed"
  },
  "heart|noun": {
-  "ja": "心臓",
+  "word": "心臓",
   "reading": "しんぞう",
   "gloss": "heart",
   "seq": 1360770,
   "source": "reviewed"
  },
  "soon|adv": {
-  "ja": "間もなく",
+  "word": "間もなく",
   "reading": "まもなく",
   "gloss": "soon; shortly; before long; in a short time",
   "seq": 1215290,
   "source": "reviewed"
  },
  "worry|verb": {
-  "ja": "心配する",
+  "word": "心配する",
   "reading": "しんぱいする",
   "gloss": "to worry; to be anxious",
   "seq": 0,
   "source": "manual"
  },
  "watch|verb": {
-  "ja": "見つめる",
+  "word": "見つめる",
   "reading": "みつめる",
   "gloss": "to watch; to stare at; to gaze at",
   "seq": 0,
   "source": "manual"
  },
  "music|noun": {
-  "ja": "音楽",
+  "word": "音楽",
   "reading": "おんがく",
   "gloss": "music",
   "seq": 1183720,
   "source": "reviewed"
  },
  "sit|verb": {
-  "ja": "座る",
+  "word": "座る",
   "reading": "すわる",
   "gloss": "to sit",
   "seq": 0,
   "source": "manual"
  },
  "thought|noun": {
-  "ja": "考え",
+  "word": "考え",
   "reading": "かんがえ",
   "gloss": "thought; idea",
   "seq": 0,
   "source": "manual"
  },
  "open|verb": {
-  "ja": "開く",
+  "word": "開く",
   "reading": "ひらく",
   "gloss": "to open; to undo; to unseal; to unpack",
   "seq": 1202440,
   "source": "reviewed"
  },
  "hand|noun": {
-  "ja": "手",
+  "word": "手",
   "reading": "て",
   "gloss": "hand; arm",
   "seq": 1327190,
   "source": "reviewed"
  },
  "beautiful|adj": {
-  "ja": "美しい",
+  "word": "美しい",
   "reading": "うつくしい",
   "gloss": "beautiful; pretty; lovely; sweet",
   "seq": 1486360,
   "source": "reviewed"
  },
  "person|noun": {
-  "ja": "人間",
+  "word": "人間",
   "reading": "にんげん",
   "gloss": "person; human being",
   "seq": 0,
   "source": "manual"
  },
  "part|noun": {
-  "ja": "分",
+  "word": "分",
   "reading": "ぶん",
   "gloss": "part; portion; share",
   "seq": 1502860,
   "source": "reviewed"
  },
  "late|adj": {
-  "ja": "遅い",
+  "word": "遅い",
   "reading": "おそい",
   "gloss": "late; slow",
   "seq": 0,
   "source": "manual"
  },
  "stuff|noun": {
-  "ja": "物",
+  "word": "物",
   "reading": "もの",
   "gloss": "thing; object; article; stuff",
   "seq": 1502390,
   "source": "reviewed"
  },
  "minute|noun": {
-  "ja": "分",
+  "word": "分",
   "reading": "ふん",
   "gloss": "minute (of time)",
   "seq": 0,
   "source": "manual"
  },
  "change|verb": {
-  "ja": "変わる",
+  "word": "変わる",
   "reading": "かわる",
   "gloss": "to change; to be transformed",
   "seq": 0,
   "source": "manual"
  },
  "happen|verb": {
-  "ja": "起こる",
+  "word": "起こる",
   "reading": "おこる",
   "gloss": "to happen; to occur",
   "seq": 0,
   "source": "manual"
  },
  "far|adv": {
-  "ja": "遠く",
+  "word": "遠く",
   "reading": "とおく",
   "gloss": "far away; far off; distant",
   "seq": 0,
   "source": "manual"
  },
  "shut|verb": {
-  "ja": "閉じる",
+  "word": "閉じる",
   "reading": "とじる",
   "gloss": "to shut; to close",
   "seq": 0,
   "source": "manual"
  },
  "check|verb": {
-  "ja": "確かめる",
+  "word": "確かめる",
   "reading": "たしかめる",
   "gloss": "to check; to make sure",
   "seq": 0,
   "source": "manual"
  },
  "different|adj": {
-  "ja": "別々",
+  "word": "別々",
   "reading": "べつべつ",
   "gloss": "separate; respective; different",
   "seq": 1603290,
   "source": "reviewed"
  },
  "nice|adj": {
-  "ja": "素敵",
+  "word": "素敵",
   "reading": "すてき",
   "gloss": "nice; lovely; wonderful",
   "seq": 0,
   "source": "manual"
  },
  "guess|verb": {
-  "ja": "推測する",
+  "word": "推測する",
   "reading": "すいそくする",
   "gloss": "to guess; to suppose",
   "seq": 0,
   "source": "manual"
  },
  "few|adj": {
-  "ja": "少ない",
+  "word": "少ない",
   "reading": "すくない",
   "gloss": "few; little; small (amount); low",
   "seq": 1348910,
   "source": "reviewed"
  },
  "forget|verb": {
-  "ja": "忘れる",
+  "word": "忘れる",
   "reading": "わすれる",
   "gloss": "to forget; to leave carelessly; to be forgetful of; to forget about",
   "seq": 1519210,
   "source": "reviewed"
  },
  "deal|noun": {
-  "ja": "たくさん",
+  "word": "たくさん",
   "reading": "",
   "gloss": "a great deal; a lot",
   "seq": 0,
   "source": "manual"
  },
  "chance|noun": {
-  "ja": "機会",
+  "word": "機会",
   "reading": "きかい",
   "gloss": "chance; opportunity; occasion",
   "seq": 1220800,
   "source": "reviewed"
  },
  "dear|adj": {
-  "ja": "まあ",
+  "word": "まあ",
   "reading": "",
   "gloss": "oh dear; oh my (exclamation)",
   "seq": 0,
   "source": "manual"
  },
  "quite|adv": {
-  "ja": "かなり",
+  "word": "かなり",
   "reading": "",
   "gloss": "quite; fairly; rather",
   "seq": 0,
   "source": "manual"
  },
  "word|noun": {
-  "ja": "言葉",
+  "word": "言葉",
   "reading": "ことば",
   "gloss": "word; language; speech",
   "seq": 0,
   "source": "manual"
  },
  "wish|verb": {
-  "ja": "願う",
+  "word": "願う",
   "reading": "ねがう",
   "gloss": "to wish; to hope for",
   "seq": 0,
   "source": "manual"
  },
  "moment|noun": {
-  "ja": "瞬間",
+  "word": "瞬間",
   "reading": "しゅんかん",
   "gloss": "moment; instant; second",
   "seq": 1341210,
   "source": "reviewed"
  },
  "week|noun": {
-  "ja": "週",
+  "word": "週",
   "reading": "しゅう",
   "gloss": "week",
   "seq": 1333450,
   "source": "reviewed"
  },
  "rest|noun": {
-  "ja": "残り",
+  "word": "残り",
   "reading": "のこり",
   "gloss": "the rest; remainder; leftover",
   "seq": 0,
   "source": "manual"
  },
  "side|noun": {
-  "ja": "側",
+  "word": "側",
   "reading": "がわ",
   "gloss": "side",
   "seq": 0,
   "source": "manual"
  },
  "stand|verb": {
-  "ja": "立つ",
+  "word": "立つ",
   "reading": "たつ",
   "gloss": "to stand; to stand up",
   "seq": 0,
   "source": "manual"
  },
  "woman|noun": {
-  "ja": "女",
+  "word": "女",
   "reading": "おんな",
   "gloss": "woman; female",
   "seq": 1344930,
   "source": "reviewed"
  },
  "dead|adj": {
-  "ja": "死んだ",
+  "word": "死んだ",
   "reading": "しんだ",
   "gloss": "dead",
   "seq": 0,
   "source": "manual"
  },
  "happy|adj": {
-  "ja": "嬉しい",
+  "word": "嬉しい",
   "reading": "うれしい",
   "gloss": "happy; glad; pleased; delighted",
   "seq": 1219510,
   "source": "reviewed"
  },
  "ago|adv": {
-  "ja": "前",
+  "word": "前",
   "reading": "まえ",
   "gloss": "before; earlier; previously; prior",
   "seq": 1392580,
   "source": "reviewed"
  },
  "year|noun": {
-  "ja": "年",
+  "word": "年",
   "reading": "とし",
   "gloss": "year",
   "seq": 1468060,
   "source": "reviewed"
  },
  "exactly|adv": {
-  "ja": "ちょうど",
+  "word": "ちょうど",
   "reading": "",
   "gloss": "exactly; just; precisely",
   "seq": 0,
   "source": "manual"
  },
  "everybody|noun": {
-  "ja": "皆",
+  "word": "皆",
   "reading": "みな",
   "gloss": "everyone; everybody; all",
   "seq": 1202150,
   "source": "reviewed"
  },
  "point|verb": {
-  "ja": "指す",
+  "word": "指す",
   "reading": "さす",
   "gloss": "to point",
   "seq": 1309670,
   "source": "reviewed"
  },
  "somebody|noun": {
-  "ja": "人",
+  "word": "人",
   "reading": "ひと",
   "gloss": "person; someone; somebody",
   "seq": 1580640,
   "source": "reviewed"
  },
  "sleep|verb": {
-  "ja": "眠る",
+  "word": "眠る",
   "reading": "ねむる",
   "gloss": "to sleep",
   "seq": 1529390,
   "source": "reviewed"
  },
  "close|verb": {
-  "ja": "閉める",
+  "word": "閉める",
   "reading": "しめる",
   "gloss": "to close; to shut",
   "seq": 1508590,
   "source": "reviewed"
  },
  "important|adj": {
-  "ja": "重要",
+  "word": "重要",
   "reading": "じゅうよう",
   "gloss": "important; essential; significant; major",
   "seq": 1336820,
   "source": "reviewed"
  },
  "set|verb": {
-  "ja": "始める",
+  "word": "始める",
   "reading": "はじめる",
   "gloss": "to set to; to begin; to start",
   "seq": 0,
   "source": "manual"
  },
  "nobody|noun": {
-  "ja": "誰も",
+  "word": "誰も",
   "reading": "だれも",
   "gloss": "nobody; no one (with negative)",
   "seq": 0,
   "source": "manual"
  },
  "read|verb": {
-  "ja": "読む",
+  "word": "読む",
   "reading": "よむ",
   "gloss": "to read",
   "seq": 1456360,
   "source": "reviewed"
  },
  "use|noun": {
-  "ja": "無駄",
+  "word": "無駄",
   "reading": "むだ",
   "gloss": "no use; futile; waste",
   "seq": 0,
   "source": "manual"
  },
  "mind|verb": {
-  "ja": "気にする",
+  "word": "気にする",
   "reading": "きにする",
   "gloss": "to mind; to care about; to worry about",
   "seq": 0,
   "source": "manual"
  },
  "change|noun": {
-  "ja": "変化",
+  "word": "変化",
   "reading": "へんか",
   "gloss": "change; variation",
   "seq": 0,
   "source": "manual"
  },
  "love|verb": {
-  "ja": "愛する",
+  "word": "愛する",
   "reading": "あいする",
   "gloss": "to love",
   "seq": 1150450,
   "source": "reviewed"
  },
  "right|noun": {
-  "ja": "右",
+  "word": "右",
   "reading": "みぎ",
   "gloss": "right; right-hand side",
   "seq": 1171010,
   "source": "reviewed"
  },
  "big|adj": {
-  "ja": "大きい",
+  "word": "大きい",
   "reading": "おおきい",
   "gloss": "big; large",
   "seq": 0,
   "source": "manual"
  },
  "money|noun": {
-  "ja": "お金",
+  "word": "お金",
   "reading": "おかね",
   "gloss": "money",
   "seq": 0,
   "source": "manual"
  },
  "lot|noun": {
-  "ja": "たくさん",
+  "word": "たくさん",
   "reading": "",
   "gloss": "a lot; many; plenty",
   "seq": 0,
   "source": "manual"
  },
  "mother|noun": {
-  "ja": "母親",
+  "word": "母親",
   "reading": "ははおや",
   "gloss": "mother",
   "seq": 1515120,
   "source": "reviewed"
  },
  "son|noun": {
-  "ja": "息子",
+  "word": "息子",
   "reading": "むすこ",
   "gloss": "son",
   "seq": 1404390,
   "source": "reviewed"
  },
  "start|verb": {
-  "ja": "始める",
+  "word": "始める",
   "reading": "はじめる",
   "gloss": "to start; to begin",
   "seq": 0,
   "source": "manual"
  },
  "pretty|adv": {
-  "ja": "かなり",
+  "word": "かなり",
   "reading": "",
   "gloss": "quite; fairly; rather",
   "seq": 0,
   "source": "manual"
  },
  "open|adj": {
-  "ja": "開いた",
+  "word": "開いた",
   "reading": "あいた",
   "gloss": "open; opened",
   "seq": 0,
   "source": "manual"
  },
  "anyone|noun": {
-  "ja": "誰でも",
+  "word": "誰でも",
   "reading": "だれでも",
   "gloss": "anyone; anybody",
   "seq": 0,
   "source": "manual"
  },
  "hope|noun": {
-  "ja": "希望",
+  "word": "希望",
   "reading": "きぼう",
   "gloss": "hope; wish; aspiration",
   "seq": 1219910,
   "source": "reviewed"
  },
  "eat|verb": {
-  "ja": "食べる",
+  "word": "食べる",
   "reading": "たべる",
   "gloss": "to eat",
   "seq": 0,
   "source": "manual"
  },
  "stuff|verb": {
-  "ja": "詰め込む",
+  "word": "詰め込む",
   "reading": "つめこむ",
   "gloss": "to cram; to stuff; to jam; to squeeze",
   "seq": 1226550,
   "source": "reviewed"
  },
  "death|noun": {
-  "ja": "死",
+  "word": "死",
   "reading": "し",
   "gloss": "death",
   "seq": 1310720,
   "source": "reviewed"
  },
  "body|noun": {
-  "ja": "体",
+  "word": "体",
   "reading": "からだ",
   "gloss": "body",
   "seq": 0,
   "source": "manual"
  },
  "hurt|verb": {
-  "ja": "痛む",
+  "word": "痛む",
   "reading": "いたむ",
   "gloss": "to hurt; to ache; to feel a pain",
   "seq": 1432710,
   "source": "reviewed"
  },
  "child|noun": {
-  "ja": "子供",
+  "word": "子供",
   "reading": "こども",
   "gloss": "child; kid",
   "seq": 0,
   "source": "manual"
  },
  "speak|verb": {
-  "ja": "話す",
+  "word": "話す",
   "reading": "はなす",
   "gloss": "to talk; to speak; to converse; to chat",
   "seq": 1562350,
   "source": "reviewed"
  },
  "yourself|noun": {
-  "ja": "自身",
+  "word": "自身",
   "reading": "じしん",
   "gloss": "(one's) self; oneself; yourself; himself",
   "seq": 1318000,
   "source": "reviewed"
  },
  "tomorrow|noun": {
-  "ja": "明日",
+  "word": "明日",
   "reading": "あした",
   "gloss": "tomorrow",
   "seq": 1584660,
   "source": "reviewed"
  },
  "everyone|noun": {
-  "ja": "皆",
+  "word": "皆",
   "reading": "みな",
   "gloss": "everyone; everybody; all",
   "seq": 1202150,
   "source": "reviewed"
  },
  "young|adj": {
-  "ja": "若い",
+  "word": "若い",
   "reading": "わかい",
   "gloss": "young; youthful",
   "seq": 1324300,
   "source": "reviewed"
  },
  "working|noun": {
-  "ja": "労働",
+  "word": "労働",
   "reading": "ろうどう",
   "gloss": "work; labor",
   "seq": 0,
   "source": "manual"
  },
  "pay|verb": {
-  "ja": "支払う",
+  "word": "支払う",
   "reading": "しはらう",
   "gloss": "to pay",
   "seq": 1310300,
   "source": "reviewed"
  },
  "actually|adv": {
-  "ja": "現に",
+  "word": "現に",
   "reading": "げんに",
   "gloss": "actually; really",
   "seq": 1263500,
   "source": "reviewed"
  },
  "water|noun": {
-  "ja": "水",
+  "word": "水",
   "reading": "みず",
   "gloss": "water",
   "seq": 0,
   "source": "manual"
  },
  "easy|adj": {
-  "ja": "簡単",
+  "word": "簡単",
   "reading": "かんたん",
   "gloss": "easy; simple",
   "seq": 0,
   "source": "manual"
  },
  "fight|verb": {
-  "ja": "戦う",
+  "word": "戦う",
   "reading": "たたかう",
   "gloss": "to fight; to battle",
   "seq": 0,
   "source": "manual"
  },
  "fire|noun": {
-  "ja": "火",
+  "word": "火",
   "reading": "ひ",
   "gloss": "fire; flame; blaze",
   "seq": 1193610,
   "source": "reviewed"
  },
  "truth|noun": {
-  "ja": "真実",
+  "word": "真実",
   "reading": "しんじつ",
   "gloss": "truth",
   "seq": 0,
   "source": "manual"
  },
  "blood|noun": {
-  "ja": "血",
+  "word": "血",
   "reading": "ち",
   "gloss": "blood",
   "seq": 1255060,
   "source": "reviewed"
  },
  "able|adj": {
-  "ja": "できる",
+  "word": "できる",
   "reading": "",
   "gloss": "able to; can",
   "seq": 0,
   "source": "manual"
  },
  "reason|verb": {
-  "ja": "考える",
+  "word": "考える",
   "reading": "かんがえる",
   "gloss": "to reason; to think through",
   "seq": 0,
   "source": "manual"
  },
  "job|noun": {
-  "ja": "職",
+  "word": "職",
   "reading": "しょく",
   "gloss": "job; work; employment; occupation",
   "seq": 1357480,
   "source": "reviewed"
  },
  "number|noun": {
-  "ja": "数",
+  "word": "数",
   "reading": "かず",
   "gloss": "number; amount",
   "seq": 0,
   "source": "manual"
  },
  "break|verb": {
-  "ja": "壊す",
+  "word": "壊す",
   "reading": "こわす",
   "gloss": "to break; to destroy; to demolish",
   "seq": 1199890,
   "source": "reviewed"
  },
  "walk|verb": {
-  "ja": "歩く",
+  "word": "歩く",
   "reading": "あるく",
   "gloss": "to walk",
   "seq": 0,
   "source": "manual"
  },
  "free|adj": {
-  "ja": "自由",
+  "word": "自由",
   "reading": "じゆう",
   "gloss": "free; freedom",
   "seq": 0,
   "source": "manual"
  },
  "power|noun": {
-  "ja": "力",
+  "word": "力",
   "reading": "ちから",
   "gloss": "power; strength",
   "seq": 0,
   "source": "manual"
  },
  "answer|verb": {
-  "ja": "答える",
+  "word": "答える",
   "reading": "こたえる",
   "gloss": "to answer; to reply",
   "seq": 0,
   "source": "manual"
  },
  "save|verb": {
-  "ja": "助ける",
+  "word": "助ける",
   "reading": "たすける",
   "gloss": "to save; to rescue; to spare",
   "seq": 1344410,
   "source": "reviewed"
  },
  "become|verb": {
-  "ja": "成る",
+  "word": "成る",
   "reading": "なる",
   "gloss": "to become; to get; to grow; to turn",
   "seq": 1375610,
   "source": "reviewed"
  },
  "food|noun": {
-  "ja": "食べ物",
+  "word": "食べ物",
   "reading": "たべもの",
   "gloss": "food",
   "seq": 1358340,
   "source": "reviewed"
  },
  "pick|verb": {
-  "ja": "摘む",
+  "word": "摘む",
   "reading": "つむ",
   "gloss": "to pick; to pluck",
   "seq": 1437060,
   "source": "reviewed"
  },
  "promise|noun": {
-  "ja": "約束",
+  "word": "約束",
   "reading": "やくそく",
   "gloss": "promise; agreement; arrangement; one's word",
   "seq": 1538130,
   "source": "reviewed"
  },
  "fast|adv": {
-  "ja": "早く",
+  "word": "早く",
   "reading": "はやく",
   "gloss": "quickly; swiftly; rapidly; fast",
   "seq": 1400150,
   "source": "reviewed"
  },
  "meeting|noun": {
-  "ja": "会",
+  "word": "会",
   "reading": "かい",
   "gloss": "meeting; assembly; party; gathering",
   "seq": 1198170,
   "source": "reviewed"
  },
  "lie|verb": {
-  "ja": "横になる",
+  "word": "横になる",
   "reading": "よこになる",
   "gloss": "to lie down",
   "seq": 0,
   "source": "manual"
  },
  "probably|adv": {
-  "ja": "恐らく",
+  "word": "恐らく",
   "reading": "おそらく",
   "gloss": "probably; (most) likely; in all likelihood; I suspect",
   "seq": 1236650,
   "source": "reviewed"
  },
  "fun|noun": {
-  "ja": "楽しみ",
+  "word": "楽しみ",
   "reading": "たのしみ",
   "gloss": "enjoyment; pleasure; amusement; delight",
   "seq": 1207250,
   "source": "reviewed"
  },
  "story|noun": {
-  "ja": "物語",
+  "word": "物語",
   "reading": "ものがたり",
   "gloss": "story; tale; narrative; account",
   "seq": 1502480,
   "source": "reviewed"
  },
  "husband|noun": {
-  "ja": "夫",
+  "word": "夫",
   "reading": "おっと",
   "gloss": "husband",
   "seq": 1496480,
   "source": "reviewed"
  },
  "trouble|noun": {
-  "ja": "いざこざ",
+  "word": "いざこざ",
   "reading": "",
   "gloss": "trouble; quarrel; difficulties; complication",
   "seq": 1000760,
   "source": "reviewed"
  },
  "half|noun": {
-  "ja": "半分",
+  "word": "半分",
   "reading": "はんぶん",
   "gloss": "half",
   "seq": 0,
   "source": "manual"
  },
  "line|verb": {
-  "ja": "並ぶ",
+  "word": "並ぶ",
   "reading": "ならぶ",
   "gloss": "to line up; to stand in a row",
   "seq": 0,
   "source": "manual"
  },
  "send|verb": {
-  "ja": "送る",
+  "word": "送る",
   "reading": "おくる",
   "gloss": "to send",
   "seq": 0,
   "source": "manual"
  },
  "stupid|adj": {
-  "ja": "間抜け",
+  "word": "間抜け",
   "reading": "まぬけ",
   "gloss": "stupid; foolish; idiotic; inane",
   "seq": 1215640,
   "source": "reviewed"
  },
  "hurry|verb": {
-  "ja": "急ぐ",
+  "word": "急ぐ",
   "reading": "いそぐ",
   "gloss": "to hurry; to rush; to hasten; to make something happen sooner",
   "seq": 1228650,
   "source": "reviewed"
  },
  "full|adj": {
-  "ja": "一杯",
+  "word": "一杯",
   "reading": "いっぱい",
   "gloss": "full; filled (with); brimming (with); crowded",
   "seq": 1165670,
   "source": "reviewed"
  },
  "dog|noun": {
-  "ja": "犬",
+  "word": "犬",
   "reading": "いぬ",
   "gloss": "dog",
   "seq": 0,
   "source": "manual"
  },
  "later|adv": {
-  "ja": "後で",
+  "word": "後で",
   "reading": "あとで",
   "gloss": "later; afterwards",
   "seq": 0,
   "source": "manual"
  },
  "city|noun": {
-  "ja": "都市",
+  "word": "都市",
   "reading": "とし",
   "gloss": "city",
   "seq": 0,
   "source": "manual"
  },
  "high|adj": {
-  "ja": "高い",
+  "word": "高い",
   "reading": "たかい",
   "gloss": "high; tall",
   "seq": 1283190,
   "source": "reviewed"
  },
  "news|noun": {
-  "ja": "知らせ",
+  "word": "知らせ",
   "reading": "しらせ",
   "gloss": "news; word; tidings; notice",
   "seq": 1420400,
   "source": "reviewed"
  },
  "country|noun": {
-  "ja": "国",
+  "word": "国",
   "reading": "くに",
   "gloss": "country; nation",
   "seq": 0,
   "source": "manual"
  },
  "order|verb": {
-  "ja": "命令する",
+  "word": "命令する",
   "reading": "めいれいする",
   "gloss": "to order; to command",
   "seq": 0,
   "source": "manual"
  },
  "sort|noun": {
-  "ja": "品種",
+  "word": "品種",
   "reading": "ひんしゅ",
   "gloss": "type (of goods); sort",
   "seq": 1490620,
   "source": "reviewed"
  },
  "small|adj": {
-  "ja": "細か",
+  "word": "細か",
   "reading": "こまか",
   "gloss": "small; fine; detailed; stingy",
   "seq": 1295520,
   "source": "reviewed"
  },
  "perhaps|adv": {
-  "ja": "ひょっとすると",
+  "word": "ひょっとすると",
   "reading": "",
   "gloss": "perhaps; maybe; possibly",
   "seq": 1010650,
   "source": "reviewed"
  },
  "poor|adj": {
-  "ja": "貧しい",
+  "word": "貧しい",
   "reading": "まずしい",
   "gloss": "poor; needy",
   "seq": 1490740,
   "source": "reviewed"
  },
  "excuse|verb": {
-  "ja": "許す",
+  "word": "許す",
   "reading": "ゆるす",
   "gloss": "to excuse; to forgive",
   "seq": 0,
   "source": "manual"
  },
  "drink|verb": {
-  "ja": "飲む",
+  "word": "飲む",
   "reading": "のむ",
   "gloss": "to drink; to swallow; to take (medicine)",
   "seq": 1169870,
   "source": "reviewed"
  },
  "cut|verb": {
-  "ja": "切る",
+  "word": "切る",
   "reading": "きる",
   "gloss": "to cut",
   "seq": 0,
   "source": "manual"
  },
  "welcome|adj": {
-  "ja": "歓迎",
+  "word": "歓迎",
   "reading": "かんげい",
   "gloss": "welcome",
   "seq": 0,
   "source": "manual"
  },
  "possible|adj": {
-  "ja": "可能",
+  "word": "可能",
   "reading": "かのう",
   "gloss": "possible; potential; practicable; feasible",
   "seq": 1191060,
   "source": "reviewed"
  },
  "top|noun": {
-  "ja": "頂上",
+  "word": "頂上",
   "reading": "ちょうじょう",
   "gloss": "top; summit; peak",
   "seq": 1430220,
   "source": "reviewed"
  },
  "voice|noun": {
-  "ja": "声",
+  "word": "声",
   "reading": "こえ",
   "gloss": "voice",
   "seq": 0,
   "source": "manual"
  },
  "longer|adv": {
-  "ja": "もっと",
+  "word": "もっと",
   "reading": "",
   "gloss": "(some) more; even more; longer; further",
   "seq": 1012620,
   "source": "reviewed"
  },
  "return|verb": {
-  "ja": "帰る",
+  "word": "帰る",
   "reading": "かえる",
   "gloss": "to return; to come home; to go home; to go back",
   "seq": 1221270,
   "source": "reviewed"
  },
  "imagine|verb": {
-  "ja": "想像する",
+  "word": "想像する",
   "reading": "そうぞうする",
   "gloss": "to imagine",
   "seq": 0,
   "source": "manual"
  },
  "space|noun": {
-  "ja": "空間",
+  "word": "空間",
   "reading": "くうかん",
   "gloss": "space; room",
   "seq": 0,
   "source": "manual"
  },
  "gold|noun": {
-  "ja": "金",
+  "word": "金",
   "reading": "きん",
   "gloss": "gold",
   "seq": 0,
   "source": "manual"
  },
  "deep|adj": {
-  "ja": "深い",
+  "word": "深い",
   "reading": "ふかい",
   "gloss": "deep",
   "seq": 1362640,
   "source": "reviewed"
  },
  "inside|adj": {
-  "ja": "中",
+  "word": "中",
   "reading": "なか",
   "gloss": "inside; within",
   "seq": 0,
   "source": "manual"
  },
  "party|noun": {
-  "ja": "一行",
+  "word": "一行",
   "reading": "いっこう",
   "gloss": "party; group (of people)",
   "seq": 0,
   "source": "manual"
  },
  "front|noun": {
-  "ja": "正面",
+  "word": "正面",
   "reading": "しょうめん",
   "gloss": "front; frontage; facade; main",
   "seq": 1378030,
   "source": "reviewed"
  },
  "light|noun": {
-  "ja": "光",
+  "word": "光",
   "reading": "ひかり",
   "gloss": "light",
   "seq": 1272780,
   "source": "reviewed"
  },
  "hot|adj": {
-  "ja": "暑い",
+  "word": "暑い",
   "reading": "あつい",
   "gloss": "hot; warm; sultry; heated",
   "seq": 1343460,
   "source": "reviewed"
  },
  "lose|verb": {
-  "ja": "失う",
+  "word": "失う",
   "reading": "うしなう",
   "gloss": "to lose",
   "seq": 1319750,
   "source": "reviewed"
  },
  "company|noun": {
-  "ja": "仲間",
+  "word": "仲間",
   "reading": "なかま",
   "gloss": "company; companions",
   "seq": 0,
   "source": "manual"
  },
  "earth|noun": {
-  "ja": "大地",
+  "word": "大地",
   "reading": "だいち",
   "gloss": "earth; ground; the solid earth; the (vast) land",
   "seq": 1414520,
   "source": "reviewed"
  },
  "touch|verb": {
-  "ja": "触る",
+  "word": "触る",
   "reading": "さわる",
   "gloss": "to touch; to feel; to handle",
   "seq": 1357980,
   "source": "reviewed"
  },
  "glad|adj": {
-  "ja": "嬉しい",
+  "word": "嬉しい",
   "reading": "うれしい",
   "gloss": "happy; glad; pleased; delighted",
   "seq": 1219510,
   "source": "reviewed"
  },
  "air|noun": {
-  "ja": "空気",
+  "word": "空気",
   "reading": "くうき",
   "gloss": "air; atmosphere",
   "seq": 1245470,
   "source": "reviewed"
  },
  "finally|adv": {
-  "ja": "遂に",
+  "word": "遂に",
   "reading": "ついに",
   "gloss": "finally; in the end; at last",
   "seq": 1372630,
   "source": "reviewed"
  },
  "cold|adj": {
-  "ja": "寒い",
+  "word": "寒い",
   "reading": "さむい",
   "gloss": "cold",
   "seq": 0,
   "source": "manual"
  },
  "catch|verb": {
-  "ja": "捕まえる",
+  "word": "捕まえる",
   "reading": "つかまえる",
   "gloss": "to catch; to capture",
   "seq": 0,
   "source": "manual"
  },
  "rather|adv": {
-  "ja": "寧ろ",
+  "word": "寧ろ",
   "reading": "むしろ",
   "gloss": "rather; better; instead; if anything",
   "seq": 1604870,
   "source": "reviewed"
  },
  "luck|noun": {
-  "ja": "運",
+  "word": "運",
   "reading": "うん",
   "gloss": "luck; fortune",
   "seq": 0,
   "source": "manual"
  },
  "seem|verb": {
-  "ja": "思われる",
+  "word": "思われる",
   "reading": "おもわれる",
   "gloss": "to seem; to appear",
   "seq": 1309470,
   "source": "reviewed"
  },
  "others|noun": {
-  "ja": "他の人",
+  "word": "他の人",
   "reading": "ほかのひと",
   "gloss": "others; other people",
   "seq": 0,
   "source": "manual"
  },
  "follow|verb": {
-  "ja": "追う",
+  "word": "追う",
   "reading": "おう",
   "gloss": "to follow; to chase",
   "seq": 0,
   "source": "manual"
  },
  "straight|adj": {
-  "ja": "まっすぐ",
+  "word": "まっすぐ",
   "reading": "",
   "gloss": "straight; direct",
   "seq": 0,
   "source": "manual"
  },
  "road|noun": {
-  "ja": "道路",
+  "word": "道路",
   "reading": "どうろ",
   "gloss": "road",
   "seq": 0,
   "source": "manual"
  },
  "none|noun": {
-  "ja": "皆無",
+  "word": "皆無",
   "reading": "かいむ",
   "gloss": "nonexistent; nil; none; nothing (at all)",
   "seq": 1202240,
   "source": "reviewed"
  },
  "pass|verb": {
-  "ja": "通る",
+  "word": "通る",
   "reading": "とおる",
   "gloss": "to pass; to go through",
   "seq": 0,
   "source": "manual"
  },
  "finish|verb": {
-  "ja": "終わる",
+  "word": "終わる",
   "reading": "おわる",
   "gloss": "to finish; to end",
   "seq": 0,
   "source": "manual"
  },
  "suppose|verb": {
-  "ja": "思う",
+  "word": "思う",
   "reading": "おもう",
   "gloss": "to suppose; to think",
   "seq": 0,
   "source": "manual"
  },
  "certainly|adv": {
-  "ja": "確かに",
+  "word": "確かに",
   "reading": "たしかに",
   "gloss": "certainly; surely",
   "seq": 0,
   "source": "manual"
  },
  "lovely|adj": {
-  "ja": "愛しい",
+  "word": "愛しい",
   "reading": "いとしい",
   "gloss": "lovely; dear; beloved; darling",
   "seq": 1150420,
   "source": "reviewed"
  },
  "protect|verb": {
-  "ja": "守る",
+  "word": "守る",
   "reading": "まもる",
   "gloss": "to protect; to guard; to defend",
   "seq": 1327120,
   "source": "reviewed"
  },
  "white|adj": {
-  "ja": "白い",
+  "word": "白い",
   "reading": "しろい",
   "gloss": "white",
   "seq": 1474910,
   "source": "reviewed"
  },
  "wonderful|adj": {
-  "ja": "素晴らしい",
+  "word": "素晴らしい",
   "reading": "すばらしい",
   "gloss": "wonderful; splendid; magnificent; amazing",
   "seq": 1397300,
   "source": "reviewed"
  },
  "throw|verb": {
-  "ja": "投げる",
+  "word": "投げる",
   "reading": "なげる",
   "gloss": "to throw; to hurl; to fling; to toss",
   "seq": 1447000,
   "source": "reviewed"
  },
  "wonder|verb": {
-  "ja": "不思議に思う",
+  "word": "不思議に思う",
   "reading": "ふしぎにおもう",
   "gloss": "to wonder",
   "seq": 0,
   "source": "manual"
  },
  "quick|adj": {
-  "ja": "速い",
+  "word": "速い",
   "reading": "はやい",
   "gloss": "quick; fast",
   "seq": 0,
   "source": "manual"
  },
  "strange|adj": {
-  "ja": "変",
+  "word": "変",
   "reading": "へん",
   "gloss": "strange; odd",
   "seq": 0,
   "source": "manual"
  },
  "pain|noun": {
-  "ja": "苦しみ",
+  "word": "苦しみ",
   "reading": "くるしみ",
   "gloss": "pain; anguish; distress; suffering",
   "seq": 1244340,
   "source": "reviewed"
  },
  "kiss|verb": {
-  "ja": "キスする",
+  "word": "キスする",
   "reading": "",
   "gloss": "to kiss",
   "seq": 0,
   "source": "manual"
  },
  "handle|verb": {
-  "ja": "取り扱う",
+  "word": "取り扱う",
   "reading": "とりあつかう",
   "gloss": "to handle; to operate (a machine, etc.); to use",
   "seq": 1326540,
   "source": "reviewed"
  },
  "lead|noun": {
-  "ja": "先頭",
+  "word": "先頭",
   "reading": "せんとう",
   "gloss": "head (of a line, group, etc.); front; lead; forefront",
   "seq": 1596210,
   "source": "reviewed"
  },
  "sun|noun": {
-  "ja": "太陽",
+  "word": "太陽",
   "reading": "たいよう",
   "gloss": "Sun",
   "seq": 1408370,
   "source": "reviewed"
  },
  "box|noun": {
-  "ja": "箱",
+  "word": "箱",
   "reading": "はこ",
   "gloss": "box; case; chest; package",
   "seq": 1585650,
   "source": "reviewed"
  },
  "fear|noun": {
-  "ja": "恐れ",
+  "word": "恐れ",
   "reading": "おそれ",
   "gloss": "fear; horror; anxiety; concern",
   "seq": 1236660,
   "source": "reviewed"
  },
  "lady|noun": {
-  "ja": "淑女",
+  "word": "淑女",
   "reading": "しゅくじょ",
   "gloss": "lady",
   "seq": 1337350,
   "source": "reviewed"
  },
  "funny|adj": {
-  "ja": "可笑しい",
+  "word": "可笑しい",
   "reading": "おかしい",
   "gloss": "funny; amusing; comical; laughable",
   "seq": 1190860,
   "source": "reviewed"
  },
  "safe|adj": {
-  "ja": "安全",
+  "word": "安全",
   "reading": "あんぜん",
   "gloss": "safe; secure",
   "seq": 0,
   "source": "manual"
  },
  "hour|noun": {
-  "ja": "時間",
+  "word": "時間",
   "reading": "じかん",
   "gloss": "hour",
   "seq": 0,
   "source": "manual"
  },
  "red|adj": {
-  "ja": "赤い",
+  "word": "赤い",
   "reading": "あかい",
   "gloss": "red; crimson; scarlet; vermilion",
   "seq": 1383240,
   "source": "reviewed"
  },
  "lucky|adj": {
-  "ja": "幸運",
+  "word": "幸運",
   "reading": "こううん",
   "gloss": "lucky; fortunate",
   "seq": 0,
   "source": "manual"
  },
  "quiet|adj": {
-  "ja": "静か",
+  "word": "静か",
   "reading": "しずか",
   "gloss": "quiet; silent",
   "seq": 1381820,
   "source": "reviewed"
  },
  "pull|verb": {
-  "ja": "引く",
+  "word": "引く",
   "reading": "ひく",
   "gloss": "to pull; to tug; to lead (e.g. a horse)",
   "seq": 1169250,
   "source": "reviewed"
  },
  "careful|adj": {
-  "ja": "注意深い",
+  "word": "注意深い",
   "reading": "ちゅういぶかい",
   "gloss": "careful; cautious",
   "seq": 0,
   "source": "manual"
  },
  "fall|verb": {
-  "ja": "落ちる",
+  "word": "落ちる",
   "reading": "おちる",
   "gloss": "to fall; to drop",
   "seq": 0,
   "source": "manual"
  },
  "piece|noun": {
-  "ja": "切れ",
+  "word": "切れ",
   "reading": "きれ",
   "gloss": "piece; slice; strip; scrap",
   "seq": 1384840,
   "source": "reviewed"
  },
  "strong|adj": {
-  "ja": "強い",
+  "word": "強い",
   "reading": "つよい",
   "gloss": "strong; potent; competent; domineering",
   "seq": 1236070,
   "source": "reviewed"
  },
  "wake|verb": {
-  "ja": "覚める",
+  "word": "覚める",
   "reading": "さめる",
   "gloss": "to wake; to wake up",
   "seq": 1206070,
   "source": "reviewed"
  },
  "completely|adv": {
-  "ja": "完全に",
+  "word": "完全に",
   "reading": "かんぜんに",
   "gloss": "completely; entirely",
   "seq": 0,
   "source": "manual"
  },
  "black|adj": {
-  "ja": "黒い",
+  "word": "黒い",
   "reading": "くろい",
   "gloss": "black",
   "seq": 1287420,
   "source": "reviewed"
  },
  "hair|noun": {
-  "ja": "毛",
+  "word": "毛",
   "reading": "け",
   "gloss": "hair",
   "seq": 1533820,
   "source": "reviewed"
  },
  "explain|verb": {
-  "ja": "説明する",
+  "word": "説明する",
   "reading": "せつめいする",
   "gloss": "to explain",
   "seq": 0,
   "source": "manual"
  },
  "dark|adj": {
-  "ja": "暗い",
+  "word": "暗い",
   "reading": "くらい",
   "gloss": "dark; gloomy; murky",
   "seq": 1154330,
   "source": "reviewed"
  },
  "mouth|noun": {
-  "ja": "口",
+  "word": "口",
   "reading": "くち",
   "gloss": "mouth",
   "seq": 1275640,
   "source": "reviewed"
  },
  "attack|verb": {
-  "ja": "攻める",
+  "word": "攻める",
   "reading": "せめる",
   "gloss": "to attack; to assault; to assail",
   "seq": 1279130,
   "source": "reviewed"
  },
  "history|noun": {
-  "ja": "歴史",
+  "word": "歴史",
   "reading": "れきし",
   "gloss": "history",
   "seq": 0,
   "source": "manual"
  },
  "join|verb": {
-  "ja": "加わる",
+  "word": "加わる",
   "reading": "くわわる",
   "gloss": "to join; to take part",
   "seq": 0,
   "source": "manual"
  },
  "peace|noun": {
-  "ja": "平和",
+  "word": "平和",
   "reading": "へいわ",
   "gloss": "peace",
   "seq": 0,
   "source": "manual"
  },
  "ground|noun": {
-  "ja": "地面",
+  "word": "地面",
   "reading": "じめん",
   "gloss": "ground",
   "seq": 0,
   "source": "manual"
  },
  "cover|verb": {
-  "ja": "覆う",
+  "word": "覆う",
   "reading": "おおう",
   "gloss": "to cover",
   "seq": 0,
   "source": "manual"
  },
  "difficult|adj": {
-  "ja": "手ごわい",
+  "word": "手ごわい",
   "reading": "てごわい",
   "gloss": "difficult; tough; formidable; redoubtable",
   "seq": 1327460,
   "source": "reviewed"
  },
  "hide|verb": {
-  "ja": "隠す",
+  "word": "隠す",
   "reading": "かくす",
   "gloss": "to hide; to conceal",
   "seq": 1170650,
   "source": "reviewed"
  },
  "rich|adj": {
-  "ja": "豊か",
+  "word": "豊か",
   "reading": "ゆたか",
   "gloss": "rich; wealthy; affluent; well-off",
   "seq": 1518130,
   "source": "reviewed"
  },
  "blow|noun": {
-  "ja": "打撃",
+  "word": "打撃",
   "reading": "だげき",
   "gloss": "blow; shock; strike; damage",
   "seq": 1408870,
   "source": "reviewed"
  },
  "wife|noun": {
-  "ja": "妻",
+  "word": "妻",
   "reading": "つま",
   "gloss": "wife",
   "seq": 1294330,
   "source": "reviewed"
  },
  "almost|adv": {
-  "ja": "殆ど",
+  "word": "殆ど",
   "reading": "ほとんど",
   "gloss": "almost; nearly; mostly; practically",
   "seq": 1522050,
   "source": "reviewed"
  },
  "shot|noun": {
-  "ja": "弾丸",
+  "word": "弾丸",
   "reading": "だんがん",
   "gloss": "bullet; shot; shell",
   "seq": 1419440,
   "source": "reviewed"
  },
  "feeling|noun": {
-  "ja": "感じ",
+  "word": "感じ",
   "reading": "かんじ",
   "gloss": "feeling; sense; impression",
   "seq": 1212250,
   "source": "reviewed"
  },
  "cause|verb": {
-  "ja": "引き起こす",
+  "word": "引き起こす",
   "reading": "ひきおこす",
   "gloss": "to cause; to induce; to bring about; to provoke",
   "seq": 1168880,
   "source": "reviewed"
  },
  "dinner|noun": {
-  "ja": "晩御飯",
+  "word": "晩御飯",
   "reading": "ばんごはん",
   "gloss": "dinner; evening meal",
   "seq": 1601340,
   "source": "reviewed"
  },
  "step|verb": {
-  "ja": "踏む",
+  "word": "踏む",
   "reading": "ふむ",
   "gloss": "to step (on)",
   "seq": 0,
   "source": "manual"
  },
  "blue|adj": {
-  "ja": "青い",
+  "word": "青い",
   "reading": "あおい",
   "gloss": "blue; azure",
   "seq": 1381390,
   "source": "reviewed"
  },
  "entire|adj": {
-  "ja": "全部",
+  "word": "全部",
   "reading": "ぜんぶ",
   "gloss": "entire; all; whole",
   "seq": 0,
   "source": "manual"
  },
  "rock|noun": {
-  "ja": "岩",
+  "word": "岩",
   "reading": "いわ",
   "gloss": "rock; boulder",
   "seq": 1217270,
   "source": "reviewed"
  },
  "middle|noun": {
-  "ja": "真ん中",
+  "word": "真ん中",
   "reading": "まんなか",
   "gloss": "middle; center",
   "seq": 0,
   "source": "manual"
  },
  "short|adj": {
-  "ja": "短い",
+  "word": "短い",
   "reading": "みじかい",
   "gloss": "short",
   "seq": 1418620,
   "source": "reviewed"
  },
  "ball|noun": {
-  "ja": "玉",
+  "word": "玉",
   "reading": "たま",
   "gloss": "ball; sphere; globe; orb",
   "seq": 1240530,
   "source": "reviewed"
  },
  "quickly|adv": {
-  "ja": "さっさと",
+  "word": "さっさと",
   "reading": "",
   "gloss": "quickly; promptly; immediately; without delay",
   "seq": 1005190,
   "source": "reviewed"
  },
  "angry|adj": {
-  "ja": "怒る",
+  "word": "怒る",
   "reading": "おこる",
   "gloss": "angry; to get angry",
   "seq": 0,
   "source": "manual"
  },
  "sweet|adj": {
-  "ja": "甘い",
+  "word": "甘い",
   "reading": "あまい",
   "gloss": "sweet",
   "seq": 0,
   "source": "manual"
  },
  "land|noun": {
-  "ja": "陸",
+  "word": "陸",
   "reading": "りく",
   "gloss": "land; shore",
   "seq": 1550980,
   "source": "reviewed"
  },
  "eye|noun": {
-  "ja": "目",
+  "word": "目",
   "reading": "め",
   "gloss": "eye; eyeball",
   "seq": 1604890,
   "source": "reviewed"
  },
  "instead|adv": {
-  "ja": "代わりに",
+  "word": "代わりに",
   "reading": "かわりに",
   "gloss": "instead; in place of",
   "seq": 0,
   "source": "manual"
  },
  "forever|adv": {
-  "ja": "いつまでも",
+  "word": "いつまでも",
   "reading": "",
   "gloss": "forever",
   "seq": 0,
   "source": "manual"
  },
  "dangerous|adj": {
-  "ja": "危ない",
+  "word": "危ない",
   "reading": "あぶない",
   "gloss": "dangerous",
   "seq": 0,
   "source": "manual"
  },
  "brain|noun": {
-  "ja": "脳",
+  "word": "脳",
   "reading": "のう",
   "gloss": "brain",
   "seq": 1470380,
   "source": "reviewed"
  },
  "service|noun": {
-  "ja": "勤め",
+  "word": "勤め",
   "reading": "つとめ",
   "gloss": "service; duty; business; responsibility",
   "seq": 1240810,
   "source": "reviewed"
  },
  "dress|noun": {
-  "ja": "服",
+  "word": "服",
   "reading": "ふく",
   "gloss": "clothes; dress",
   "seq": 0,
   "source": "manual"
  },
  "cry|verb": {
-  "ja": "泣く",
+  "word": "泣く",
   "reading": "なく",
   "gloss": "to cry; to shed tears; to weep; to sob",
   "seq": 1229840,
   "source": "reviewed"
  },
  "carry|verb": {
-  "ja": "運ぶ",
+  "word": "運ぶ",
   "reading": "はこぶ",
   "gloss": "to carry; to transport; to move; to convey",
   "seq": 1172660,
   "source": "reviewed"
  },
  "wind|noun": {
-  "ja": "風",
+  "word": "風",
   "reading": "かぜ",
   "gloss": "wind",
   "seq": 0,
   "source": "manual"
  },
  "suddenly|adv": {
-  "ja": "突然",
+  "word": "突然",
   "reading": "とつぜん",
   "gloss": "suddenly",
   "seq": 0,
   "source": "manual"
  },
  "jump|verb": {
-  "ja": "跳ぶ",
+  "word": "跳ぶ",
   "reading": "とぶ",
   "gloss": "to jump; to leap",
   "seq": 0,
   "source": "manual"
  },
  "stop|noun": {
-  "ja": "停止",
+  "word": "停止",
   "reading": "ていし",
   "gloss": "stop; halt",
   "seq": 0,
   "source": "manual"
  },
  "looking|noun": {
-  "ja": "見",
+  "word": "見",
   "reading": "み",
   "gloss": "looking; viewing",
   "seq": 2256270,
   "source": "reviewed"
  },
  "saw|verb": {
-  "ja": "見る",
+  "word": "見る",
   "reading": "みる",
   "gloss": "to see (saw = past of see)",
   "seq": 0,
   "source": "manual"
  },
  "family|noun": {
-  "ja": "家族",
+  "word": "家族",
   "reading": "かぞく",
   "gloss": "family",
   "seq": 0,
   "source": "manual"
  },
  "last|verb": {
-  "ja": "続く",
+  "word": "続く",
   "reading": "つづく",
   "gloss": "to last; to continue",
   "seq": 0,
   "source": "manual"
  },
  "thanks|noun": {
-  "ja": "感謝",
+  "word": "感謝",
   "reading": "かんしゃ",
   "gloss": "thanks; gratitude; appreciation; thankfulness",
   "seq": 1212380,
   "source": "reviewed"
  },
  "late|adv": {
-  "ja": "遅く",
+  "word": "遅く",
   "reading": "おそく",
   "gloss": "late",
   "seq": 1421980,
   "source": "reviewed"
  },
  "matter|noun": {
-  "ja": "件",
+  "word": "件",
   "reading": "けん",
   "gloss": "matter; affair; case; item",
   "seq": 1255940,
   "source": "reviewed"
  },
  "die|noun": {
-  "ja": "死",
+  "word": "死",
   "reading": "し",
   "gloss": "death",
   "seq": 0,
   "source": "manual"
  },
  "hit|verb": {
-  "ja": "殴る",
+  "word": "殴る",
   "reading": "なぐる",
   "gloss": "to hit; to punch",
   "seq": 0,
   "source": "manual"
  },
  "deal|verb": {
-  "ja": "扱う",
+  "word": "扱う",
   "reading": "あつかう",
   "gloss": "to deal with; to handle",
   "seq": 0,
   "source": "manual"
  },
  "least|adj": {
-  "ja": "最低",
+  "word": "最低",
   "reading": "さいてい",
   "gloss": "least; lowest; minimum",
   "seq": 1294220,
   "source": "reviewed"
  },
  "fight|noun": {
-  "ja": "争い",
+  "word": "争い",
   "reading": "あらそい",
   "gloss": "fight; dispute; feud; conflict",
   "seq": 1400560,
   "source": "reviewed"
  },
  "rest|verb": {
-  "ja": "休む",
+  "word": "休む",
   "reading": "やすむ",
   "gloss": "to rest",
   "seq": 0,
   "source": "manual"
  },
  "bed|noun": {
-  "ja": "ベッド",
+  "word": "ベッド",
   "reading": "",
   "gloss": "bed",
   "seq": 0,
   "source": "manual"
  },
  "problem|noun": {
-  "ja": "問題",
+  "word": "問題",
   "reading": "もんだい",
   "gloss": "problem; question",
   "seq": 0,
   "source": "manual"
  },
  "game|noun": {
-  "ja": "遊び",
+  "word": "遊び",
   "reading": "あそび",
   "gloss": "game; play",
   "seq": 0,
   "source": "manual"
  },
  "question|noun": {
-  "ja": "質問",
+  "word": "質問",
   "reading": "しつもん",
   "gloss": "question",
   "seq": 0,
   "source": "manual"
  },
  "honey|noun": {
-  "ja": "蜂蜜",
+  "word": "蜂蜜",
   "reading": "はちみつ",
   "gloss": "honey",
   "seq": 1517860,
   "source": "reviewed"
  },
  "line|noun": {
-  "ja": "線",
+  "word": "線",
   "reading": "せん",
   "gloss": "line",
   "seq": 0,
   "source": "manual"
  },
  "sometimes|adv": {
-  "ja": "時折",
+  "word": "時折",
   "reading": "ときおり",
   "gloss": "sometimes; at intervals; occasionally; on occasion",
   "seq": 1598670,
   "source": "reviewed"
  },
  "trying|noun": {
-  "ja": "試食",
+  "word": "試食",
   "reading": "ししょく",
   "gloss": "sampling food; tasting; trying",
   "seq": 1312490,
   "source": "reviewed"
  },
  "free|verb": {
-  "ja": "放す",
+  "word": "放す",
   "reading": "はなす",
   "gloss": "to release; to let go; to free; to set free",
   "seq": 1516460,
   "source": "reviewed"
  },
  "clear|adj": {
-  "ja": "明らか",
+  "word": "明らか",
   "reading": "あきらか",
   "gloss": "clear; obvious",
   "seq": 0,
   "source": "manual"
  },
  "captain|noun": {
-  "ja": "船長",
+  "word": "船長",
   "reading": "せんちょう",
   "gloss": "captain (of a ship)",
   "seq": 0,
   "source": "manual"
  },
  "living|noun": {
-  "ja": "生活",
+  "word": "生活",
   "reading": "せいかつ",
   "gloss": "living; life",
   "seq": 0,
   "source": "manual"
  },
  "four|noun": {
-  "ja": "四",
+  "word": "四",
   "reading": "よん",
   "gloss": "four",
   "seq": 0,
   "source": "manual"
  },
  "reason|noun": {
-  "ja": "理由",
+  "word": "理由",
   "reading": "りゆう",
   "gloss": "reason",
   "seq": 0,
   "source": "manual"
  },
  "office|noun": {
-  "ja": "事務所",
+  "word": "事務所",
   "reading": "じむしょ",
   "gloss": "office",
   "seq": 1314400,
   "source": "reviewed"
  },
  "order|noun": {
-  "ja": "命令",
+  "word": "命令",
   "reading": "めいれい",
   "gloss": "order; command",
   "seq": 0,
   "source": "manual"
  },
  "plan|verb": {
-  "ja": "計画する",
+  "word": "計画する",
   "reading": "けいかくする",
   "gloss": "to plan",
   "seq": 0,
   "source": "manual"
  },
  "daughter|noun": {
-  "ja": "娘",
+  "word": "娘",
   "reading": "むすめ",
   "gloss": "daughter",
   "seq": 1531190,
   "source": "reviewed"
  },
  "buy|verb": {
-  "ja": "買う",
+  "word": "買う",
   "reading": "かう",
   "gloss": "to buy; to purchase",
   "seq": 1473740,
   "source": "reviewed"
  },
  "lord|noun": {
-  "ja": "主",
+  "word": "主",
   "reading": "しゅ",
   "gloss": "Lord",
   "seq": 1324950,
   "source": "reviewed"
  },
  "promise|verb": {
-  "ja": "約束",
+  "word": "約束",
   "reading": "やくそく",
   "gloss": "promise; agreement; arrangement; one's word",
   "seq": 1538130,
   "source": "reviewed"
  },
  "sound|noun": {
-  "ja": "音",
+  "word": "音",
   "reading": "おと",
   "gloss": "sound",
   "seq": 0,
   "source": "manual"
  },
  "clear|verb": {
-  "ja": "片付ける",
+  "word": "片付ける",
   "reading": "かたづける",
   "gloss": "to clear away; to tidy up",
   "seq": 0,

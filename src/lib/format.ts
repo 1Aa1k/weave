@@ -23,6 +23,13 @@ export function chapterOrnament(language: string, n: number): string {
   return `Ch. ${n}`;
 }
 
+/** What the pronunciation aid above a woven word is called in this language. */
+export function readingName(language: string): string {
+  if (language === "ja") return "furigana";
+  if (language === "zh") return "pinyin";
+  return "hint";
+}
+
 /** Session-complete praise in the book's language. */
 export function praise(language: string): string {
   const map: Record<string, string> = {

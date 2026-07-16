@@ -111,7 +111,7 @@ async function main() {
     console.log(`\n  REVIEW QUEUE (${lex.reviewQueue.length}) - data/books/${slug}/review-queue.json`);
     for (const item of lex.reviewQueue.slice(0, 12)) {
       console.log(
-        `    ${item.id.padEnd(20)} -> ${item.pick.ja} [${item.pick.reading}] ` +
+        `    ${item.id.padEnd(20)} -> ${item.pick.word} [${item.pick.reading}] ` +
         `(${item.reason}) :: ${item.pick.gloss.slice(0, 40)}`,
       );
     }

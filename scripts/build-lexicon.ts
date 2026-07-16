@@ -91,16 +91,16 @@ function pickReading(word: JmWord, kanjiText: string | null): string {
 }
 
 export function hitToEntry(hit: Hit): LexiconEntry {
-  const { word, senseIdx } = hit;
-  const kanji = (word.kanji.find((k) => k.common) ?? word.kanji[0])?.text ?? null;
-  const reading = pickReading(word, kanji);
-  const ja = kanji ?? reading;
-  const gloss = word.sense[senseIdx].gloss
+  const { word: jmWord, senseIdx } = hit;
+  const kanji = (jmWord.kanji.find((k) => k.common) ?? jmWord.kanji[0])?.text ?? null;
+  const reading = pickReading(jmWord, kanji);
+  const display = kanji ?? reading;
+  const gloss = jmWord.sense[senseIdx].gloss
     .filter((g) => g.lang === "eng")
     .slice(0, 4)
     .map((g) => g.text)
     .join("; ");
-  return { ja, reading: ja === reading ? "" : reading, gloss, seq: Number(word.id) };
+  return { word: display, reading: display === reading ? "" : reading, gloss, seq: Number(jmWord.id) };
 }
 
 export function lookup(index: Map<string, Hit[]>, lemma: string, pos: Pos): LexiconEntry | null {

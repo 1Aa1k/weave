@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import type { LexiconEntry, VocabEntry } from "@/lib/types";
-import { praise } from "@/lib/format";
+import { praise, readingName } from "@/lib/format";
 
 interface Example {
   before: string;
@@ -153,7 +153,7 @@ export default function ReviewSession({ slug, chapter, language }: ReviewSession
             {freed.size > 0 && (
               <span>
                 <span className="block text-2xl text-[var(--indigo)]">{freed.size}</span>
-                furigana-free
+                {readingName(language)}-free
               </span>
             )}
           </div>
@@ -171,24 +171,37 @@ export default function ReviewSession({ slug, chapter, language }: ReviewSession
   }
   if (!current) return null;
 
+  // Review words that came with a book sentence are tested in context: the
+  // sentence carries the word in the target language, you recall the meaning.
+  const cloze = !current.isNew && current.example && !revealed;
+
   return (
     <div className="mt-16">
       <p className="font-ui mb-6 text-center text-xs tracking-wide text-[var(--ink-soft)]">
         {queue.length} to go
         {current.isNew && <span className="ml-2 text-[var(--indigo)]">new word</span>}
+        {cloze && <span className="ml-2">in the book</span>}
       </p>
 
       <div className="card-face mx-auto max-w-md px-8 py-12 text-center">
-        <p className="jp text-5xl leading-relaxed text-[var(--ink)]">
-          {current.isNew && current.entry.reading && !revealed ? (
-            <ruby>
-              {current.entry.ja}
-              <rt className="text-base text-[var(--ink-soft)]">{current.entry.reading}</rt>
-            </ruby>
-          ) : (
-            current.entry.ja
-          )}
-        </p>
+        {cloze && current.example ? (
+          <p className="text-left text-lg leading-loose">
+            {current.example.before}
+            <span className="jp mx-0.5 text-xl text-[var(--indigo)]">{current.entry.word}</span>
+            {current.example.after}
+          </p>
+        ) : (
+          <p className="jp text-5xl leading-relaxed text-[var(--ink)]">
+            {current.isNew && current.entry.reading && !revealed ? (
+              <ruby>
+                {current.entry.word}
+                <rt className="text-base text-[var(--ink-soft)]">{current.entry.reading}</rt>
+              </ruby>
+            ) : (
+              current.entry.word
+            )}
+          </p>
+        )}
 
         {revealed ? (
           <div className="card-reveal mt-8 border-t border-[var(--line)] pt-6">

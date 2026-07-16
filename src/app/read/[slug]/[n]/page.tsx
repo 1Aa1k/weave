@@ -47,7 +47,7 @@ export default async function ReadPage({
   const entries: WovenEntries = {};
   for (const [id, s] of states) {
     const lex = lexicon[id];
-    if (lex) entries[id] = { ja: lex.ja, reading: lex.reading, gloss: lex.gloss, known: s.known };
+    if (lex) entries[id] = { word: lex.word, reading: lex.reading, gloss: lex.gloss, known: s.known };
   }
 
   const knownCount = Object.values(entries).filter((e) => e.known).length;

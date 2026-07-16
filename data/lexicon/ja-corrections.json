@@ -1,512 +1,512 @@
 {
-  "big|adj": {
-    "ja": "大きい",
-    "reading": "おおきい",
-    "gloss": "big; large"
-  },
-  "money|noun": {
-    "ja": "お金",
-    "reading": "おかね",
-    "gloss": "money"
-  },
-  "lot|noun": {
-    "ja": "たくさん",
-    "reading": "",
-    "gloss": "a lot; many; plenty"
-  },
-  "pretty|adv": {
-    "ja": "かなり",
-    "reading": "",
-    "gloss": "quite; fairly; rather"
-  },
-  "open|adj": {
-    "ja": "開いた",
-    "reading": "あいた",
-    "gloss": "open; opened"
-  },
-  "anyone|noun": {
-    "ja": "誰でも",
-    "reading": "だれでも",
-    "gloss": "anyone; anybody"
-  },
-  "eat|verb": {
-    "ja": "食べる",
-    "reading": "たべる",
-    "gloss": "to eat"
-  },
-  "body|noun": {
-    "ja": "体",
-    "reading": "からだ",
-    "gloss": "body"
-  },
-  "child|noun": {
-    "ja": "子供",
-    "reading": "こども",
-    "gloss": "child; kid"
-  },
-  "working|noun": {
-    "ja": "労働",
-    "reading": "ろうどう",
-    "gloss": "work; labor"
-  },
-  "water|noun": {
-    "ja": "水",
-    "reading": "みず",
-    "gloss": "water"
-  },
-  "easy|adj": {
-    "ja": "簡単",
-    "reading": "かんたん",
-    "gloss": "easy; simple"
-  },
-  "fight|verb": {
-    "ja": "戦う",
-    "reading": "たたかう",
-    "gloss": "to fight; to battle"
-  },
-  "truth|noun": {
-    "ja": "真実",
-    "reading": "しんじつ",
-    "gloss": "truth"
-  },
-  "able|adj": {
-    "ja": "できる",
-    "reading": "",
-    "gloss": "able to; can"
-  },
-  "reason|verb": {
-    "ja": "考える",
-    "reading": "かんがえる",
-    "gloss": "to reason; to think through"
-  },
-  "number|noun": {
-    "ja": "数",
-    "reading": "かず",
-    "gloss": "number; amount"
-  },
-  "walk|verb": {
-    "ja": "歩く",
-    "reading": "あるく",
-    "gloss": "to walk"
-  },
-  "free|adj": {
-    "ja": "自由",
-    "reading": "じゆう",
-    "gloss": "free; freedom"
-  },
-  "power|noun": {
-    "ja": "力",
-    "reading": "ちから",
-    "gloss": "power; strength"
-  },
-  "answer|verb": {
-    "ja": "答える",
-    "reading": "こたえる",
-    "gloss": "to answer; to reply"
-  },
-  "half|noun": {
-    "ja": "半分",
-    "reading": "はんぶん",
-    "gloss": "half"
-  },
-  "line|verb": {
-    "ja": "並ぶ",
-    "reading": "ならぶ",
-    "gloss": "to line up; to stand in a row"
-  },
-  "line|noun": {
-    "ja": "線",
-    "reading": "せん",
-    "gloss": "line"
-  },
-  "send|verb": {
-    "ja": "送る",
-    "reading": "おくる",
-    "gloss": "to send"
-  },
-  "dog|noun": {
-    "ja": "犬",
-    "reading": "いぬ",
-    "gloss": "dog"
-  },
-  "later|adv": {
-    "ja": "後で",
-    "reading": "あとで",
-    "gloss": "later; afterwards"
-  },
-  "city|noun": {
-    "ja": "都市",
-    "reading": "とし",
-    "gloss": "city"
-  },
-  "country|noun": {
-    "ja": "国",
-    "reading": "くに",
-    "gloss": "country; nation"
-  },
-  "order|verb": {
-    "ja": "命令する",
-    "reading": "めいれいする",
-    "gloss": "to order; to command"
-  },
-  "order|noun": {
-    "ja": "命令",
-    "reading": "めいれい",
-    "gloss": "order; command"
-  },
-  "excuse|verb": {
-    "ja": "許す",
-    "reading": "ゆるす",
-    "gloss": "to excuse; to forgive"
-  },
-  "cut|verb": {
-    "ja": "切る",
-    "reading": "きる",
-    "gloss": "to cut"
-  },
-  "welcome|adj": {
-    "ja": "歓迎",
-    "reading": "かんげい",
-    "gloss": "welcome"
-  },
-  "voice|noun": {
-    "ja": "声",
-    "reading": "こえ",
-    "gloss": "voice"
-  },
-  "imagine|verb": {
-    "ja": "想像する",
-    "reading": "そうぞうする",
-    "gloss": "to imagine"
-  },
-  "space|noun": {
-    "ja": "空間",
-    "reading": "くうかん",
-    "gloss": "space; room"
-  },
-  "gold|noun": {
-    "ja": "金",
-    "reading": "きん",
-    "gloss": "gold"
-  },
-  "inside|adj": {
-    "ja": "中",
-    "reading": "なか",
-    "gloss": "inside; within"
-  },
-  "party|noun": {
-    "ja": "一行",
-    "reading": "いっこう",
-    "gloss": "party; group (of people)"
-  },
-  "company|noun": {
-    "ja": "仲間",
-    "reading": "なかま",
-    "gloss": "company; companions"
-  },
-  "cold|adj": {
-    "ja": "寒い",
-    "reading": "さむい",
-    "gloss": "cold"
-  },
-  "catch|verb": {
-    "ja": "捕まえる",
-    "reading": "つかまえる",
-    "gloss": "to catch; to capture"
-  },
-  "luck|noun": {
-    "ja": "運",
-    "reading": "うん",
-    "gloss": "luck; fortune"
-  },
-  "others|noun": {
-    "ja": "他の人",
-    "reading": "ほかのひと",
-    "gloss": "others; other people"
-  },
-  "follow|verb": {
-    "ja": "追う",
-    "reading": "おう",
-    "gloss": "to follow; to chase"
-  },
-  "straight|adj": {
-    "ja": "まっすぐ",
-    "reading": "",
-    "gloss": "straight; direct"
-  },
-  "road|noun": {
-    "ja": "道路",
-    "reading": "どうろ",
-    "gloss": "road"
-  },
-  "start|verb": {
-    "ja": "始める",
-    "reading": "はじめる",
-    "gloss": "to start; to begin"
-  },
-  "pass|verb": {
-    "ja": "通る",
-    "reading": "とおる",
-    "gloss": "to pass; to go through"
-  },
-  "finish|verb": {
-    "ja": "終わる",
-    "reading": "おわる",
-    "gloss": "to finish; to end"
-  },
-  "suppose|verb": {
-    "ja": "思う",
-    "reading": "おもう",
-    "gloss": "to suppose; to think"
-  },
-  "certainly|adv": {
-    "ja": "確かに",
-    "reading": "たしかに",
-    "gloss": "certainly; surely"
-  },
-  "wonder|verb": {
-    "ja": "不思議に思う",
-    "reading": "ふしぎにおもう",
-    "gloss": "to wonder"
-  },
-  "quick|adj": {
-    "ja": "速い",
-    "reading": "はやい",
-    "gloss": "quick; fast"
-  },
-  "strange|adj": {
-    "ja": "変",
-    "reading": "へん",
-    "gloss": "strange; odd"
-  },
-  "kiss|verb": {
-    "ja": "キスする",
-    "reading": "",
-    "gloss": "to kiss"
-  },
-  "hour|noun": {
-    "ja": "時間",
-    "reading": "じかん",
-    "gloss": "hour"
-  },
-  "lucky|adj": {
-    "ja": "幸運",
-    "reading": "こううん",
-    "gloss": "lucky; fortunate"
-  },
-  "careful|adj": {
-    "ja": "注意深い",
-    "reading": "ちゅういぶかい",
-    "gloss": "careful; cautious"
-  },
-  "fall|verb": {
-    "ja": "落ちる",
-    "reading": "おちる",
-    "gloss": "to fall; to drop"
-  },
-  "completely|adv": {
-    "ja": "完全に",
-    "reading": "かんぜんに",
-    "gloss": "completely; entirely"
-  },
-  "explain|verb": {
-    "ja": "説明する",
-    "reading": "せつめいする",
-    "gloss": "to explain"
-  },
-  "history|noun": {
-    "ja": "歴史",
-    "reading": "れきし",
-    "gloss": "history"
-  },
-  "join|verb": {
-    "ja": "加わる",
-    "reading": "くわわる",
-    "gloss": "to join; to take part"
-  },
-  "peace|noun": {
-    "ja": "平和",
-    "reading": "へいわ",
-    "gloss": "peace"
-  },
-  "ground|noun": {
-    "ja": "地面",
-    "reading": "じめん",
-    "gloss": "ground"
-  },
-  "cover|verb": {
-    "ja": "覆う",
-    "reading": "おおう",
-    "gloss": "to cover"
-  },
-  "safe|adj": {
-    "ja": "安全",
-    "reading": "あんぜん",
-    "gloss": "safe; secure"
-  },
-  "step|verb": {
-    "ja": "踏む",
-    "reading": "ふむ",
-    "gloss": "to step (on)"
-  },
-  "clear|adj": {
-    "ja": "明らか",
-    "reading": "あきらか",
-    "gloss": "clear; obvious"
-  },
-  "lie|verb": {
-    "ja": "横になる",
-    "reading": "よこになる",
-    "gloss": "to lie down"
-  },
-  "entire|adj": {
-    "ja": "全部",
-    "reading": "ぜんぶ",
-    "gloss": "entire; all; whole"
-  },
-  "middle|noun": {
-    "ja": "真ん中",
-    "reading": "まんなか",
-    "gloss": "middle; center"
-  },
-  "angry|adj": {
-    "ja": "怒る",
-    "reading": "おこる",
-    "gloss": "angry; to get angry"
-  },
-  "sweet|adj": {
-    "ja": "甘い",
-    "reading": "あまい",
-    "gloss": "sweet"
-  },
-  "instead|adv": {
-    "ja": "代わりに",
-    "reading": "かわりに",
-    "gloss": "instead; in place of"
-  },
-  "dangerous|adj": {
-    "ja": "危ない",
-    "reading": "あぶない",
-    "gloss": "dangerous"
-  },
-  "dress|noun": {
-    "ja": "服",
-    "reading": "ふく",
-    "gloss": "clothes; dress"
-  },
-  "wind|noun": {
-    "ja": "風",
-    "reading": "かぜ",
-    "gloss": "wind"
-  },
-  "suddenly|adv": {
-    "ja": "突然",
-    "reading": "とつぜん",
-    "gloss": "suddenly"
-  },
-  "jump|verb": {
-    "ja": "跳ぶ",
-    "reading": "とぶ",
-    "gloss": "to jump; to leap"
-  },
-  "stop|noun": {
-    "ja": "停止",
-    "reading": "ていし",
-    "gloss": "stop; halt"
-  },
-  "family|noun": {
-    "ja": "家族",
-    "reading": "かぞく",
-    "gloss": "family"
-  },
-  "saw|verb": {
-    "ja": "見る",
-    "reading": "みる",
-    "gloss": "to see (saw = past of see)"
-  },
-  "last|verb": {
-    "ja": "続く",
-    "reading": "つづく",
-    "gloss": "to last; to continue"
-  },
-  "die|noun": {
-    "ja": "死",
-    "reading": "し",
-    "gloss": "death"
-  },
-  "hit|verb": {
-    "ja": "殴る",
-    "reading": "なぐる",
-    "gloss": "to hit; to punch"
-  },
-  "deal|verb": {
-    "ja": "扱う",
-    "reading": "あつかう",
-    "gloss": "to deal with; to handle"
-  },
-  "rest|verb": {
-    "ja": "休む",
-    "reading": "やすむ",
-    "gloss": "to rest"
-  },
-  "bed|noun": {
-    "ja": "ベッド",
-    "reading": "",
-    "gloss": "bed"
-  },
-  "problem|noun": {
-    "ja": "問題",
-    "reading": "もんだい",
-    "gloss": "problem; question"
-  },
-  "game|noun": {
-    "ja": "遊び",
-    "reading": "あそび",
-    "gloss": "game; play"
-  },
-  "question|noun": {
-    "ja": "質問",
-    "reading": "しつもん",
-    "gloss": "question"
-  },
-  "captain|noun": {
-    "ja": "船長",
-    "reading": "せんちょう",
-    "gloss": "captain (of a ship)"
-  },
-  "four|noun": {
-    "ja": "四",
-    "reading": "よん",
-    "gloss": "four"
-  },
-  "reason|noun": {
-    "ja": "理由",
-    "reading": "りゆう",
-    "gloss": "reason"
-  },
-  "plan|verb": {
-    "ja": "計画する",
-    "reading": "けいかくする",
-    "gloss": "to plan"
-  },
-  "sound|noun": {
-    "ja": "音",
-    "reading": "おと",
-    "gloss": "sound"
-  },
-  "forever|adv": {
-    "ja": "いつまでも",
-    "reading": "",
-    "gloss": "forever"
-  },
-  "living|noun": {
-    "ja": "生活",
-    "reading": "せいかつ",
-    "gloss": "living; life"
-  },
-  "clear|verb": {
-    "ja": "片付ける",
-    "reading": "かたづける",
-    "gloss": "to clear away; to tidy up"
-  }
+ "big|adj": {
+  "word": "大きい",
+  "reading": "おおきい",
+  "gloss": "big; large"
+ },
+ "money|noun": {
+  "word": "お金",
+  "reading": "おかね",
+  "gloss": "money"
+ },
+ "lot|noun": {
+  "word": "たくさん",
+  "reading": "",
+  "gloss": "a lot; many; plenty"
+ },
+ "pretty|adv": {
+  "word": "かなり",
+  "reading": "",
+  "gloss": "quite; fairly; rather"
+ },
+ "open|adj": {
+  "word": "開いた",
+  "reading": "あいた",
+  "gloss": "open; opened"
+ },
+ "anyone|noun": {
+  "word": "誰でも",
+  "reading": "だれでも",
+  "gloss": "anyone; anybody"
+ },
+ "eat|verb": {
+  "word": "食べる",
+  "reading": "たべる",
+  "gloss": "to eat"
+ },
+ "body|noun": {
+  "word": "体",
+  "reading": "からだ",
+  "gloss": "body"
+ },
+ "child|noun": {
+  "word": "子供",
+  "reading": "こども",
+  "gloss": "child; kid"
+ },
+ "working|noun": {
+  "word": "労働",
+  "reading": "ろうどう",
+  "gloss": "work; labor"
+ },
+ "water|noun": {
+  "word": "水",
+  "reading": "みず",
+  "gloss": "water"
+ },
+ "easy|adj": {
+  "word": "簡単",
+  "reading": "かんたん",
+  "gloss": "easy; simple"
+ },
+ "fight|verb": {
+  "word": "戦う",
+  "reading": "たたかう",
+  "gloss": "to fight; to battle"
+ },
+ "truth|noun": {
+  "word": "真実",
+  "reading": "しんじつ",
+  "gloss": "truth"
+ },
+ "able|adj": {
+  "word": "できる",
+  "reading": "",
+  "gloss": "able to; can"
+ },
+ "reason|verb": {
+  "word": "考える",
+  "reading": "かんがえる",
+  "gloss": "to reason; to think through"
+ },
+ "number|noun": {
+  "word": "数",
+  "reading": "かず",
+  "gloss": "number; amount"
+ },
+ "walk|verb": {
+  "word": "歩く",
+  "reading": "あるく",
+  "gloss": "to walk"
+ },
+ "free|adj": {
+  "word": "自由",
+  "reading": "じゆう",
+  "gloss": "free; freedom"
+ },
+ "power|noun": {
+  "word": "力",
+  "reading": "ちから",
+  "gloss": "power; strength"
+ },
+ "answer|verb": {
+  "word": "答える",
+  "reading": "こたえる",
+  "gloss": "to answer; to reply"
+ },
+ "half|noun": {
+  "word": "半分",
+  "reading": "はんぶん",
+  "gloss": "half"
+ },
+ "line|verb": {
+  "word": "並ぶ",
+  "reading": "ならぶ",
+  "gloss": "to line up; to stand in a row"
+ },
+ "line|noun": {
+  "word": "線",
+  "reading": "せん",
+  "gloss": "line"
+ },
+ "send|verb": {
+  "word": "送る",
+  "reading": "おくる",
+  "gloss": "to send"
+ },
+ "dog|noun": {
+  "word": "犬",
+  "reading": "いぬ",
+  "gloss": "dog"
+ },
+ "later|adv": {
+  "word": "後で",
+  "reading": "あとで",
+  "gloss": "later; afterwards"
+ },
+ "city|noun": {
+  "word": "都市",
+  "reading": "とし",
+  "gloss": "city"
+ },
+ "country|noun": {
+  "word": "国",
+  "reading": "くに",
+  "gloss": "country; nation"
+ },
+ "order|verb": {
+  "word": "命令する",
+  "reading": "めいれいする",
+  "gloss": "to order; to command"
+ },
+ "order|noun": {
+  "word": "命令",
+  "reading": "めいれい",
+  "gloss": "order; command"
+ },
+ "excuse|verb": {
+  "word": "許す",
+  "reading": "ゆるす",
+  "gloss": "to excuse; to forgive"
+ },
+ "cut|verb": {
+  "word": "切る",
+  "reading": "きる",
+  "gloss": "to cut"
+ },
+ "welcome|adj": {
+  "word": "歓迎",
+  "reading": "かんげい",
+  "gloss": "welcome"
+ },
+ "voice|noun": {
+  "word": "声",
+  "reading": "こえ",
+  "gloss": "voice"
+ },
+ "imagine|verb": {
+  "word": "想像する",
+  "reading": "そうぞうする",
+  "gloss": "to imagine"
+ },
+ "space|noun": {
+  "word": "空間",
+  "reading": "くうかん",
+  "gloss": "space; room"
+ },
+ "gold|noun": {
+  "word": "金",
+  "reading": "きん",
+  "gloss": "gold"
+ },
+ "inside|adj": {
+  "word": "中",
+  "reading": "なか",
+  "gloss": "inside; within"
+ },
+ "party|noun": {
+  "word": "一行",
+  "reading": "いっこう",
+  "gloss": "party; group (of people)"
+ },
+ "company|noun": {
+  "word": "仲間",
+  "reading": "なかま",
+  "gloss": "company; companions"
+ },
+ "cold|adj": {
+  "word": "寒い",
+  "reading": "さむい",
+  "gloss": "cold"
+ },
+ "catch|verb": {
+  "word": "捕まえる",
+  "reading": "つかまえる",
+  "gloss": "to catch; to capture"
+ },
+ "luck|noun": {
+  "word": "運",
+  "reading": "うん",
+  "gloss": "luck; fortune"
+ },
+ "others|noun": {
+  "word": "他の人",
+  "reading": "ほかのひと",
+  "gloss": "others; other people"
+ },
+ "follow|verb": {
+  "word": "追う",
+  "reading": "おう",
+  "gloss": "to follow; to chase"
+ },
+ "straight|adj": {
+  "word": "まっすぐ",
+  "reading": "",
+  "gloss": "straight; direct"
+ },
+ "road|noun": {
+  "word": "道路",
+  "reading": "どうろ",
+  "gloss": "road"
+ },
+ "start|verb": {
+  "word": "始める",
+  "reading": "はじめる",
+  "gloss": "to start; to begin"
+ },
+ "pass|verb": {
+  "word": "通る",
+  "reading": "とおる",
+  "gloss": "to pass; to go through"
+ },
+ "finish|verb": {
+  "word": "終わる",
+  "reading": "おわる",
+  "gloss": "to finish; to end"
+ },
+ "suppose|verb": {
+  "word": "思う",
+  "reading": "おもう",
+  "gloss": "to suppose; to think"
+ },
+ "certainly|adv": {
+  "word": "確かに",
+  "reading": "たしかに",
+  "gloss": "certainly; surely"
+ },
+ "wonder|verb": {
+  "word": "不思議に思う",
+  "reading": "ふしぎにおもう",
+  "gloss": "to wonder"
+ },
+ "quick|adj": {
+  "word": "速い",
+  "reading": "はやい",
+  "gloss": "quick; fast"
+ },
+ "strange|adj": {
+  "word": "変",
+  "reading": "へん",
+  "gloss": "strange; odd"
+ },
+ "kiss|verb": {
+  "word": "キスする",
+  "reading": "",
+  "gloss": "to kiss"
+ },
+ "hour|noun": {
+  "word": "時間",
+  "reading": "じかん",
+  "gloss": "hour"
+ },
+ "lucky|adj": {
+  "word": "幸運",
+  "reading": "こううん",
+  "gloss": "lucky; fortunate"
+ },
+ "careful|adj": {
+  "word": "注意深い",
+  "reading": "ちゅういぶかい",
+  "gloss": "careful; cautious"
+ },
+ "fall|verb": {
+  "word": "落ちる",
+  "reading": "おちる",
+  "gloss": "to fall; to drop"
+ },
+ "completely|adv": {
+  "word": "完全に",
+  "reading": "かんぜんに",
+  "gloss": "completely; entirely"
+ },
+ "explain|verb": {
+  "word": "説明する",
+  "reading": "せつめいする",
+  "gloss": "to explain"
+ },
+ "history|noun": {
+  "word": "歴史",
+  "reading": "れきし",
+  "gloss": "history"
+ },
+ "join|verb": {
+  "word": "加わる",
+  "reading": "くわわる",
+  "gloss": "to join; to take part"
+ },
+ "peace|noun": {
+  "word": "平和",
+  "reading": "へいわ",
+  "gloss": "peace"
+ },
+ "ground|noun": {
+  "word": "地面",
+  "reading": "じめん",
+  "gloss": "ground"
+ },
+ "cover|verb": {
+  "word": "覆う",
+  "reading": "おおう",
+  "gloss": "to cover"
+ },
+ "safe|adj": {
+  "word": "安全",
+  "reading": "あんぜん",
+  "gloss": "safe; secure"
+ },
+ "step|verb": {
+  "word": "踏む",
+  "reading": "ふむ",
+  "gloss": "to step (on)"
+ },
+ "clear|adj": {
+  "word": "明らか",
+  "reading": "あきらか",
+  "gloss": "clear; obvious"
+ },
+ "lie|verb": {
+  "word": "横になる",
+  "reading": "よこになる",
+  "gloss": "to lie down"
+ },
+ "entire|adj": {
+  "word": "全部",
+  "reading": "ぜんぶ",
+  "gloss": "entire; all; whole"
+ },
+ "middle|noun": {
+  "word": "真ん中",
+  "reading": "まんなか",
+  "gloss": "middle; center"
+ },
+ "angry|adj": {
+  "word": "怒る",
+  "reading": "おこる",
+  "gloss": "angry; to get angry"
+ },
+ "sweet|adj": {
+  "word": "甘い",
+  "reading": "あまい",
+  "gloss": "sweet"
+ },
+ "instead|adv": {
+  "word": "代わりに",
+  "reading": "かわりに",
+  "gloss": "instead; in place of"
+ },
+ "dangerous|adj": {
+  "word": "危ない",
+  "reading": "あぶない",
+  "gloss": "dangerous"
+ },
+ "dress|noun": {
+  "word": "服",
+  "reading": "ふく",
+  "gloss": "clothes; dress"
+ },
+ "wind|noun": {
+  "word": "風",
+  "reading": "かぜ",
+  "gloss": "wind"
+ },
+ "suddenly|adv": {
+  "word": "突然",
+  "reading": "とつぜん",
+  "gloss": "suddenly"
+ },
+ "jump|verb": {
+  "word": "跳ぶ",
+  "reading": "とぶ",
+  "gloss": "to jump; to leap"
+ },
+ "stop|noun": {
+  "word": "停止",
+  "reading": "ていし",
+  "gloss": "stop; halt"
+ },
+ "family|noun": {
+  "word": "家族",
+  "reading": "かぞく",
+  "gloss": "family"
+ },
+ "saw|verb": {
+  "word": "見る",
+  "reading": "みる",
+  "gloss": "to see (saw = past of see)"
+ },
+ "last|verb": {
+  "word": "続く",
+  "reading": "つづく",
+  "gloss": "to last; to continue"
+ },
+ "die|noun": {
+  "word": "死",
+  "reading": "し",
+  "gloss": "death"
+ },
+ "hit|verb": {
+  "word": "殴る",
+  "reading": "なぐる",
+  "gloss": "to hit; to punch"
+ },
+ "deal|verb": {
+  "word": "扱う",
+  "reading": "あつかう",
+  "gloss": "to deal with; to handle"
+ },
+ "rest|verb": {
+  "word": "休む",
+  "reading": "やすむ",
+  "gloss": "to rest"
+ },
+ "bed|noun": {
+  "word": "ベッド",
+  "reading": "",
+  "gloss": "bed"
+ },
+ "problem|noun": {
+  "word": "問題",
+  "reading": "もんだい",
+  "gloss": "problem; question"
+ },
+ "game|noun": {
+  "word": "遊び",
+  "reading": "あそび",
+  "gloss": "game; play"
+ },
+ "question|noun": {
+  "word": "質問",
+  "reading": "しつもん",
+  "gloss": "question"
+ },
+ "captain|noun": {
+  "word": "船長",
+  "reading": "せんちょう",
+  "gloss": "captain (of a ship)"
+ },
+ "four|noun": {
+  "word": "四",
+  "reading": "よん",
+  "gloss": "four"
+ },
+ "reason|noun": {
+  "word": "理由",
+  "reading": "りゆう",
+  "gloss": "reason"
+ },
+ "plan|verb": {
+  "word": "計画する",
+  "reading": "けいかくする",
+  "gloss": "to plan"
+ },
+ "sound|noun": {
+  "word": "音",
+  "reading": "おと",
+  "gloss": "sound"
+ },
+ "forever|adv": {
+  "word": "いつまでも",
+  "reading": "",
+  "gloss": "forever"
+ },
+ "living|noun": {
+  "word": "生活",
+  "reading": "せいかつ",
+  "gloss": "living; life"
+ },
+ "clear|verb": {
+  "word": "片付ける",
+  "reading": "かたづける",
+  "gloss": "to clear away; to tidy up"
+ }
 }
