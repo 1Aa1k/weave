@@ -13,9 +13,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen">
         <header className="mx-auto flex max-w-3xl items-center justify-between px-6 pb-2 pt-6">
           <Link href="/" className="font-ui flex items-center gap-2.5 text-sm tracking-[0.25em] text-[var(--ink-soft)]">
-            <span className="hanko hanko-sm jp" aria-hidden>
-              織
-            </span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logomark.svg" alt="" width={22} height={22} aria-hidden />
             WEAVE
           </Link>
           <Link href="/library" className="font-ui text-sm text-[var(--ink-soft)]">

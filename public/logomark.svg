@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="weave">
+  <!-- Two indigo threads and two vermilion threads, interlaced over-under. -->
+  <g stroke-width="6" stroke-linecap="round" fill="none">
+    <!-- vertical indigo threads -->
+    <path d="M17 6 v6" stroke="#8db4e2"/>
+    <path d="M17 22 v20" stroke="#8db4e2"/>
+    <path d="M31 6 v20" stroke="#8db4e2"/>
+    <path d="M31 36 v6" stroke="#8db4e2"/>
+    <!-- horizontal vermilion threads -->
+    <path d="M6 17 h20" stroke="#c14a33"/>
+    <path d="M36 17 h6" stroke="#c14a33"/>
+    <path d="M6 31 h6" stroke="#c14a33"/>
+    <path d="M22 31 h20" stroke="#c14a33"/>
+  </g>
+</svg>

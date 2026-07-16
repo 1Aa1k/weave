@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>weave brand</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #171511; color: #e9e3d3; }
+  .row { display: flex; gap: 48px; align-items: center; padding: 48px; flex-wrap: wrap; }
+  .tile { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+  .tile span { font-size: 12px; color: #9b937d; letter-spacing: 0.1em; }
+  .chip { padding: 32px; border: 1px solid #363021; border-radius: 8px; display: flex; align-items: center; gap: 14px; }
+  .chip.light { background: #f2ede1; }
+  .word { font-family: "Noto Serif", Georgia, serif; font-size: 28px; color: #e9e3d3; letter-spacing: 0.02em; }
+  .light .word { color: #26251f; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="tile"><div class="chip"><img src="logomark.svg" width="48" height="48"></div><span>LOGOMARK</span></div>
+    <div class="tile"><div class="chip"><img src="logomark.svg" width="36" height="36"><span class="word">weave</span></div><span>LOCKUP / DARK</span></div>
+    <div class="tile"><div class="chip light"><img src="logomark.svg" width="36" height="36"><span class="word">weave</span></div><span>LOCKUP / LIGHT</span></div>
+    <div class="tile"><div class="chip"><img src="logomark.svg" width="16" height="16"></div><span>FAVICON SIZE</span></div>
+  </div>
+</body>
+</html>
