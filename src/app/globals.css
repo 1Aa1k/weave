@@ -175,62 +175,83 @@ body {
   }
 }
 
-/* ---- landing: word loom (hero cycle) ---- */
+/* ---- landing: split-flap board ---- */
 
-/* All words render stacked in one grid cell, so the loom's width and height
-   never change - nothing around it moves when the word does. */
-.loom-word {
-  display: inline-grid;
-  white-space: nowrap;
-  vertical-align: bottom;
+.flap-board {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  perspective: 900px;
 }
 
-.loom-item {
-  grid-area: 1 / 1;
-  justify-self: start;
-  align-self: end;
-  visibility: hidden;
+.flap-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.loom-item rt {
-  font-size: 0.3em;
-  color: var(--ink-soft);
+.flap {
+  position: relative;
+  width: 240px;
+  height: 74px;
+  transform-style: preserve-3d;
+  transition: transform 640ms cubic-bezier(0.32, 0.72, 0.16, 1.04);
+}
+
+.flap-flipped {
+  transform: rotateX(180deg);
+}
+
+.flap-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  background: var(--paper-raised);
+  border: 1px solid var(--line-solid);
+  border-radius: 6px;
+  font-size: 1.7rem;
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+/* split-flap hinge line */
+.flap-face::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  top: 50%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.flap-front {
+  color: var(--ink);
+}
+
+.flap-back {
+  transform: rotateX(180deg);
+  color: var(--indigo);
+}
+
+.flap-note {
+  font-size: 0.72rem;
   letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  transition: opacity 500ms ease 250ms;
+  width: 110px;
 }
 
-.loom-arriving {
-  visibility: visible;
-  animation: loom-in 420ms ease-out;
-}
-
-.loom-leaving {
-  visibility: visible;
-  animation: loom-out 380ms ease-in forwards;
-}
-
-@keyframes loom-in {
-  from {
-    opacity: 0;
-    transform: translateY(0.18em);
-    filter: blur(3px);
+@media (max-width: 767px) {
+  .flap {
+    width: 180px;
+    height: 58px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-  }
-}
-
-@keyframes loom-out {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-0.18em);
-    filter: blur(3px);
+  .flap-face {
+    font-size: 1.3rem;
   }
 }
 

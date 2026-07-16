@@ -4,21 +4,13 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import WeavingPassage from "./WeavingPassage";
 
-/**
- * The marquee: one concept cycling through languages, the way weave
- * swaps words mid-sentence. Readings render as ruby above non-Latin forms.
- */
-const LOOM_WORDS = [
-  { text: "story", ruby: "", lang: "en" },
-  { text: "物語", ruby: "ものがたり", lang: "ja" },
-  { text: "story", ruby: "", lang: "en" },
-  { text: "историей", ruby: "istóriyey", lang: "ru" },
-  { text: "story", ruby: "", lang: "en" },
-  { text: "故事", ruby: "gùshi", lang: "zh" },
-  { text: "story", ruby: "", lang: "en" },
-  { text: "historia", ruby: "", lang: "es" },
-  { text: "story", ruby: "", lang: "en" },
-  { text: "이야기", ruby: "iyagi", lang: "ko" },
+/** The departure board: word-cards that flip between English and the loom's languages. */
+const FLAPS = [
+  { en: "read", to: "読む", note: "yomu · Japanese", period: 4200, delay: 0 },
+  { en: "night", to: "ночь", note: "noch · Russian", period: 5100, delay: 900 },
+  { en: "story", to: "故事", note: "gùshi · Chinese", period: 4600, delay: 1700 },
+  { en: "friend", to: "amigo", note: "Spanish", period: 5500, delay: 600 },
+  { en: "begin", to: "시작", note: "sijak · Korean", period: 4900, delay: 2300 },
 ] as const;
 
 /* One drifting word per language the loom could hold. */
@@ -55,47 +47,43 @@ function Floaters() {
   );
 }
 
-function WordLoom() {
-  const [index, setIndex] = useState(0);
-  const [prev, setPrev] = useState<number | null>(null);
+function Flap({ en, to, note, period, delay }: (typeof FLAPS)[number]) {
+  const [flipped, setFlipped] = useState(false);
 
   useEffect(() => {
-    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (media.matches) return;
-    let clear: ReturnType<typeof setTimeout>;
-    const tick = setInterval(() => {
-      setIndex((i) => {
-        setPrev(i);
-        return (i + 1) % LOOM_WORDS.length;
-      });
-      clear = setTimeout(() => setPrev(null), 400);
-    }, 2400);
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setFlipped(true);
+      return;
+    }
+    let interval: ReturnType<typeof setInterval>;
+    const start = setTimeout(() => {
+      setFlipped(true);
+      interval = setInterval(() => setFlipped((f) => !f), period);
+    }, 1000 + delay);
     return () => {
-      clearInterval(tick);
-      clearTimeout(clear);
+      clearTimeout(start);
+      clearInterval(interval);
     };
-  }, []);
+  }, [period, delay]);
 
   return (
-    <span className="loom-word">
-      {LOOM_WORDS.map((word, i) => {
-        const foreign = word.lang !== "en";
-        const state = i === index ? "loom-arriving" : i === prev ? "loom-leaving" : "";
-        const body = word.ruby ? (
-          <ruby>
-            {word.text}
-            <rt>{word.ruby}</rt>
-          </ruby>
-        ) : (
-          word.text
-        );
-        return (
-          <span key={i} className={`loom-item ${state}`} lang={word.lang} aria-hidden={i !== index}>
-            {foreign ? <span className="jp text-[var(--indigo)]">{body}</span> : body}
-          </span>
-        );
-      })}
-    </span>
+    <div className="flap-row">
+      <div className={`flap ${flipped ? "flap-flipped" : ""}`}>
+        <span className="flap-face flap-front">{en}</span>
+        <span className="flap-face flap-back jp">{to}</span>
+      </div>
+      <span className={`flap-note font-ui ${flipped ? "opacity-100" : "opacity-0"}`}>{note}</span>
+    </div>
+  );
+}
+
+function FlapBoard() {
+  return (
+    <div className="flap-board" aria-label="English words flipping into other languages">
+      {FLAPS.map((f) => (
+        <Flap key={f.en} {...f} />
+      ))}
+    </div>
   );
 }
 
@@ -104,30 +92,33 @@ export default function Landing() {
     <div className="landing">
       <section className="relative overflow-hidden">
         <Floaters />
-        <div className="relative mx-auto max-w-3xl px-6 pb-20 pt-16 md:pt-24">
-          <p className="font-ui text-xs tracking-[0.3em] text-[var(--ink-soft)]">
-            A READER THAT CHANGES LANGUAGE UNDER YOU
-          </p>
-          <h1 className="mt-8 max-w-[21ch] text-4xl leading-[1.22] md:text-6xl">
-            Learn a language the way you learned your first one - inside a{" "}
-            <WordLoom />
-          </h1>
-          <p className="mt-10 max-w-md text-lg leading-relaxed text-[var(--ink-soft)]">
-            weave takes a book you want to read and quietly swaps English words
-            for the language you&apos;re learning, fifteen per chapter. You keep
-            reading. The book stops being English before you notice.
-          </p>
-          <div className="font-ui mt-10 flex flex-wrap items-center gap-5 text-sm">
-            <Link
-              href="/library"
-              className="rounded bg-[var(--vermilion)] px-6 py-3 text-[#f4eee1]"
-            >
-              Open the library
-            </Link>
-            <a href="#demo" className="text-[var(--indigo)]">
-              watch a sentence change
-            </a>
+        <div className="relative mx-auto grid max-w-5xl items-center gap-14 px-6 pb-20 pt-16 md:grid-cols-[1.05fr_0.95fr] md:pt-24">
+          <div>
+            <p className="font-ui text-xs tracking-[0.3em] text-[var(--ink-soft)]">
+              A READER THAT CHANGES LANGUAGE UNDER YOU
+            </p>
+            <h1 className="mt-8 text-4xl leading-[1.16] md:text-5xl">
+              Start the book in English.
+              <br />
+              <span className="text-[var(--indigo)]">Finish it in another language.</span>
+            </h1>
+            <p className="mt-8 max-w-md text-lg leading-relaxed text-[var(--ink-soft)]">
+              weave swaps English words for the language you&apos;re learning,
+              fifteen per chapter, while you just keep reading.
+            </p>
+            <div className="font-ui mt-10 flex flex-wrap items-center gap-5 text-sm">
+              <Link
+                href="/library"
+                className="rounded bg-[var(--vermilion)] px-6 py-3 text-[#f4eee1]"
+              >
+                Open the library
+              </Link>
+              <a href="#demo" className="text-[var(--indigo)]">
+                watch a sentence change
+              </a>
+            </div>
           </div>
+          <FlapBoard />
         </div>
       </section>
 
