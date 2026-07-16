@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="min-h-screen">
-        <header className="mx-auto flex max-w-3xl items-center justify-between px-6 pb-2 pt-6">
+        <header className="mx-auto flex max-w-[1400px] items-center justify-between px-6 pb-2 pt-6 md:px-12">
           <Link href="/" className="font-ui flex items-center gap-2.5 text-sm tracking-[0.25em] text-[var(--ink-soft)]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logomark.svg" alt="" width={22} height={22} aria-hidden />

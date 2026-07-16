@@ -68,11 +68,11 @@ export default function WeavingPassage() {
   let wovenIndex = -1;
   return (
     <section id="demo" className="border-y border-[var(--line)] bg-[var(--paper-raised)]">
-      <div ref={rootRef} className="mx-auto max-w-3xl px-6 py-24">
+      <div ref={rootRef} className="mx-auto max-w-[1400px] px-6 py-24 md:px-12">
         <p className="font-ui text-xs tracking-[0.3em] text-[var(--ink-soft)]">
           CHAPTER ONE, PARAGRAPH THREE, WHILE YOU WATCH
         </p>
-        <p className="reader-para relative mt-8 !text-2xl" style={{ textIndent: 0 }}>
+        <p className="reader-para relative mt-8 max-w-[52ch] !text-2xl md:!text-4xl" style={{ textIndent: 0 }}>
           {PASSAGE.map((piece, i) => {
             if (typeof piece === "string") return <span key={i}>{piece}</span>;
             wovenIndex++;

@@ -20,7 +20,7 @@ export default function Library() {
   }
 
   return (
-    <div className="mx-auto mt-10 max-w-3xl px-6">
+    <div className="mx-auto mt-10 max-w-4xl px-6">
       {books.map((book) => {
         const cardsDone = getCardsDoneThrough(book.slug);
         return (

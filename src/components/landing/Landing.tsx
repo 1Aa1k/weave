@@ -92,12 +92,12 @@ export default function Landing() {
     <div className="landing">
       <section className="relative overflow-hidden">
         <Floaters />
-        <div className="relative mx-auto grid max-w-5xl items-center gap-14 px-6 pb-20 pt-16 md:grid-cols-[1.05fr_0.95fr] md:pt-24">
+        <div className="relative mx-auto grid max-w-[1400px] items-center gap-14 px-6 pb-24 pt-16 md:grid-cols-[1.05fr_0.95fr] md:px-12 md:pt-28">
           <div>
             <p className="font-ui text-xs tracking-[0.3em] text-[var(--ink-soft)]">
               A READER THAT CHANGES LANGUAGE UNDER YOU
             </p>
-            <h1 className="mt-8 text-4xl leading-[1.16] md:text-5xl">
+            <h1 className="mt-8 text-4xl leading-[1.16] md:text-6xl">
               Start the book in English.
               <br />
               <span className="text-[var(--indigo)]">Finish it in another language.</span>
@@ -124,7 +124,7 @@ export default function Landing() {
 
       <WeavingPassage />
 
-      <section className="mx-auto max-w-3xl px-6 py-24">
+      <section className="mx-auto max-w-[1400px] px-6 py-24 md:px-12">
         <div className="grid gap-14">
           <Step
             num="01"
@@ -144,7 +144,7 @@ export default function Landing() {
         </div>
       </section>
 
-      <footer className="mx-auto max-w-3xl px-6 pb-16">
+      <footer className="mx-auto max-w-[1400px] px-6 pb-16 md:px-12">
         <div className="flex items-baseline justify-between border-t border-[var(--line)] pt-6">
           <p className="font-ui text-xs text-[var(--ink-soft)]">
             Built for one impatient reader. Japanese on the loom first; any
@@ -160,14 +160,14 @@ export default function Landing() {
 
 function Step({ num, title, body }: { num: string; title: string; body: string }) {
   return (
-    <div className="grid grid-cols-[3.5rem_1fr] items-start gap-6 border-t border-[var(--line)] pt-8">
-      <span className="font-ui pt-1.5 text-sm tracking-[0.2em] text-[var(--vermilion)]" aria-hidden>
+    <div className="grid grid-cols-[3.5rem_1fr] items-start gap-6 border-t border-[var(--line)] pt-8 md:grid-cols-[5rem_1fr_1.5fr] md:gap-12">
+      <span className="font-ui pt-2 text-sm tracking-[0.2em] text-[var(--vermilion)]" aria-hidden>
         {num}
       </span>
-      <div>
-        <h2 className="text-2xl">{title}</h2>
-        <p className="mt-3 max-w-xl leading-relaxed text-[var(--ink-soft)]">{body}</p>
-      </div>
+      <h2 className="text-2xl md:text-3xl">{title}</h2>
+      <p className="col-start-2 leading-relaxed text-[var(--ink-soft)] md:col-start-3 md:mt-1 md:text-lg">
+        {body}
+      </p>
     </div>
   );
 }
