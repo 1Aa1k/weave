@@ -67,24 +67,25 @@ function WordLoom() {
     return () => clearInterval(tick);
   }, []);
 
-  const word = LOOM_WORDS[index];
-  const foreign = word.lang !== "en";
   return (
-    <span className={`loom-word ${leaving ? "loom-leaving" : "loom-arriving"}`} lang={word.lang}>
-      {foreign ? (
-        <span className={`jp ${foreign ? "text-[var(--indigo)]" : ""}`}>
-          {word.ruby ? (
-            <ruby>
-              {word.text}
-              <rt>{word.ruby}</rt>
-            </ruby>
-          ) : (
-            word.text
-          )}
-        </span>
-      ) : (
-        word.text
-      )}
+    <span className="loom-word">
+      {LOOM_WORDS.map((word, i) => {
+        const foreign = word.lang !== "en";
+        const state = i !== index ? "" : leaving ? "loom-leaving" : "loom-arriving";
+        const body = word.ruby ? (
+          <ruby>
+            {word.text}
+            <rt>{word.ruby}</rt>
+          </ruby>
+        ) : (
+          word.text
+        );
+        return (
+          <span key={i} className={`loom-item ${state}`} lang={word.lang} aria-hidden={i !== index}>
+            {foreign ? <span className="jp text-[var(--indigo)]">{body}</span> : body}
+          </span>
+        );
+      })}
     </span>
   );
 }
@@ -110,7 +111,7 @@ export default function Landing() {
           <div className="font-ui mt-10 flex flex-wrap items-center gap-5 text-sm">
             <Link
               href="/library"
-              className="rounded bg-[var(--indigo)] px-6 py-3 text-[var(--paper)]"
+              className="rounded bg-[var(--vermilion)] px-6 py-3 text-[#f4eee1]"
             >
               Open the library
             </Link>

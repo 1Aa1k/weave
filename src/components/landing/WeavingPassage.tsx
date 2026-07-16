@@ -38,7 +38,6 @@ const STAGGER_MS = 900;
 
 export default function WeavingPassage() {
   const [swapped, setSwapped] = useState(0);
-  const [settled, setSettled] = useState(0);
   const [slip, setSlip] = useState<number | null>(null);
   const [started, setStarted] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -48,7 +47,6 @@ export default function WeavingPassage() {
     if (!el) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       setSwapped(SWAP_COUNT);
-      setSettled(SWAP_COUNT);
       setStarted(true);
       return;
     }
@@ -66,13 +64,6 @@ export default function WeavingPassage() {
     return () => clearTimeout(t);
   }, [started, swapped]);
 
-  // The English span keeps its width during the crossfade, then collapses so
-  // the line closes up around the Japanese.
-  useEffect(() => {
-    if (settled >= swapped) return;
-    const t = setTimeout(() => setSettled(swapped), 540);
-    return () => clearTimeout(t);
-  }, [swapped, settled]);
 
   let wovenIndex = -1;
   return (
@@ -86,14 +77,10 @@ export default function WeavingPassage() {
             if (typeof piece === "string") return <span key={i}>{piece}</span>;
             wovenIndex++;
             const isSwapped = wovenIndex < swapped;
-            const isSettled = wovenIndex < settled;
             const slipIndex = i;
             return (
               <span key={i} className="weave-slot">
-                <span
-                  className={`weave-en ${isSwapped ? "weave-out" : ""} ${isSettled ? "hidden" : ""}`}
-                  aria-hidden={isSwapped}
-                >
+                <span className={`weave-en ${isSwapped ? "weave-out" : ""}`} aria-hidden={isSwapped}>
                   {piece.en}
                 </span>
                 <span
@@ -144,7 +131,6 @@ export default function WeavingPassage() {
               className="text-[var(--indigo)]"
               onClick={() => {
                 setSlip(null);
-                setSettled(0);
                 setSwapped(0);
               }}
             >

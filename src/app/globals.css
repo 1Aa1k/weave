@@ -3,20 +3,21 @@
 /* Hallmark · macrostructure: Marquee Hero · weave landing: cycling word-loom hero, self-weaving Alice passage, kanji floaters */
 
 :root {
-  /* paper and sumi ink */
-  --paper: #f7f6f1;
-  --paper-raised: #fdfcf9;
-  --ink: #26251f;
-  --ink-soft: #6b6a60;
-  --line: #e0ded4;
-  /* ai-iro, traditional Japanese indigo: the woven words */
-  --indigo: #1f4e79;
-  --indigo-soft: #eaeff5;
-  /* shu-iro, vermilion of a hanko seal: the mark, used nowhere else */
-  --vermilion: #ab3b2a;
+  /* sumi ink at night: warm near-black paper, lamplit text */
+  --paper: #171511;
+  --paper-raised: #201d17;
+  --ink: #e9e3d3;
+  --ink-soft: #9b937d;
+  --line: #363021;
+  --line-solid: #453e2b;
+  /* ai-iro indigo thread, brightened to read on dark: the woven words */
+  --indigo: #8db4e2;
+  --indigo-soft: #26303f;
+  /* shu-iro, vermilion of a hanko seal */
+  --vermilion: #c14a33;
   /* review grades */
-  --again: #9c3b2e;
-  --good: #3d6b4f;
+  --again: #d16a54;
+  --good: #8cb896;
 
   --font-body: "Noto Serif", "Liberation Serif", georgia, serif;
   --font-jp: "Noto Serif CJK JP", "Noto Serif JP", serif;
@@ -26,6 +27,7 @@
 html {
   background: var(--paper);
   color: var(--ink);
+  color-scheme: dark;
 }
 
 body {
@@ -88,10 +90,10 @@ body {
 /* definition slip */
 .slip {
   background: var(--paper-raised);
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-solid);
   border-top: 3px solid var(--indigo);
   border-radius: 4px;
-  box-shadow: 0 6px 24px rgba(38, 37, 31, 0.12);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
   max-width: 20rem;
 }
 
@@ -114,9 +116,9 @@ body {
 
 .card-face {
   background: var(--paper-raised);
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-solid);
   border-radius: 6px;
-  box-shadow: 0 2px 12px rgba(38, 37, 31, 0.07);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
 }
 
 .card-reveal {
@@ -144,7 +146,7 @@ body {
   width: 2rem;
   height: 2rem;
   background: var(--vermilion);
-  color: var(--paper-raised);
+  color: #f4eee1;
   border-radius: 3px;
   font-size: 1.15rem;
   line-height: 1;
@@ -170,7 +172,7 @@ body {
 .floater {
   position: absolute;
   color: var(--ink);
-  opacity: 0.05;
+  opacity: 0.06;
   animation-name: drift;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -197,23 +199,34 @@ body {
 
 /* ---- landing: word loom (hero cycle) ---- */
 
+/* All words render stacked in one grid cell, so the loom's width and height
+   never change - nothing around it moves when the word does. */
 .loom-word {
-  display: inline-block;
-  min-width: 4.6em;
+  display: inline-grid;
   white-space: nowrap;
+  vertical-align: bottom;
 }
 
-.loom-word rt {
+.loom-item {
+  grid-area: 1 / 1;
+  justify-self: start;
+  align-self: end;
+  visibility: hidden;
+}
+
+.loom-item rt {
   font-size: 0.3em;
   color: var(--ink-soft);
   letter-spacing: 0.08em;
 }
 
 .loom-arriving {
+  visibility: visible;
   animation: loom-in 420ms ease-out;
 }
 
 .loom-leaving {
+  visibility: visible;
   animation: loom-out 380ms ease-in forwards;
 }
 
