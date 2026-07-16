@@ -5,14 +5,21 @@ import Link from "next/link";
 import type { LexiconEntry, VocabEntry } from "@/lib/types";
 import { praise } from "@/lib/format";
 
+interface Example {
+  before: string;
+  word: string;
+  after: string;
+}
+
 interface SessionWord extends VocabEntry {
   entry: LexiconEntry;
+  example: Example | null;
   isNew: boolean;
 }
 
 interface SessionPayload {
-  newWords: (VocabEntry & { entry: LexiconEntry })[];
-  dueWords: (VocabEntry & { entry: LexiconEntry })[];
+  newWords: (VocabEntry & { entry: LexiconEntry; example: Example | null })[];
+  dueWords: (VocabEntry & { entry: LexiconEntry; example: Example | null })[];
   done: boolean;
   cardsDoneThrough: number;
   error?: string;
@@ -97,7 +104,14 @@ export default function ReviewSession({ slug, chapter, language }: ReviewSession
   }, [current, revealed, grade]);
 
   if (status === "loading") {
-    return <p className="font-ui mt-24 text-center text-sm text-[var(--ink-soft)]">loading...</p>;
+    return (
+      <div className="mt-16">
+        <div className="card-face mx-auto max-w-md px-8 py-12 text-center opacity-50">
+          <p className="jp text-5xl text-[var(--ink-soft)]">...</p>
+          <p className="font-ui mt-8 text-xs text-[var(--ink-soft)]">gathering your cards</p>
+        </div>
+      </div>
+    );
   }
   if (status === "error") {
     return (
@@ -155,6 +169,18 @@ export default function ReviewSession({ slug, chapter, language }: ReviewSession
             <p className="font-ui mt-2 text-xs text-[var(--ink-soft)]">
               {current.lemma} ({current.pos})
             </p>
+            {current.example && (
+              <p className="mt-5 border-t border-[var(--line)] pt-4 text-left text-sm leading-relaxed text-[var(--ink-soft)]">
+                {current.example.before}
+                <mark className="rounded bg-[var(--indigo-soft)] px-1 text-[var(--indigo)]">
+                  {current.example.word}
+                </mark>
+                {current.example.after}
+                <span className="font-ui mt-1 block text-xs opacity-70">
+                  from chapter {current.introducedChapter}
+                </span>
+              </p>
+            )}
           </div>
         ) : (
           <button
@@ -166,8 +192,12 @@ export default function ReviewSession({ slug, chapter, language }: ReviewSession
         )}
       </div>
 
+      <p className="font-ui mt-6 text-center text-xs text-[var(--ink-soft)] opacity-60">
+        {revealed ? "grade with 1 - 4" : "space to show the answer"}
+      </p>
+
       {revealed && (
-        <div className="mx-auto mt-6 flex max-w-md justify-center gap-3">
+        <div className="mx-auto mt-4 flex max-w-md justify-center gap-3">
           {GRADES.map((g) => (
             <button
               key={g.rating}

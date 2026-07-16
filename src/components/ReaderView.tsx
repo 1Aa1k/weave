@@ -15,6 +15,8 @@ interface Slip {
   english: string;
   x: number;
   y: number;
+  /** Render above the word when it sits too close to the viewport bottom. */
+  above: boolean;
 }
 
 interface ReaderViewProps {
@@ -52,11 +54,13 @@ export default function ReaderView({
     (e: React.MouseEvent<HTMLElement>, lexemeId: string, english: string) => {
       e.stopPropagation();
       const rect = e.currentTarget.getBoundingClientRect();
+      const above = rect.bottom + 190 > window.innerHeight;
       setSlip({
         lexemeId,
         english,
         x: Math.min(rect.left, window.innerWidth - 340),
-        y: rect.bottom + 8,
+        y: above ? rect.top - 8 : rect.bottom + 8,
+        above,
       });
       void fetch("/api/clicks", {
         method: "POST",
@@ -132,7 +136,11 @@ export default function ReaderView({
       {slip && entry && (
         <div
           className="slip slip-pop fixed z-50 px-4 py-3"
-          style={{ left: slip.x, top: slip.y }}
+          style={{
+            left: slip.x,
+            top: slip.y,
+            transform: slip.above ? "translateY(-100%)" : undefined,
+          }}
           onClick={(e) => e.stopPropagation()}
         >
           <p className="jp text-xl text-[var(--indigo)]">

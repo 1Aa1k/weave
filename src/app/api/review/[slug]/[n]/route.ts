@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getLexicon } from "@/lib/books";
 import { buildSession, getCardsDoneThrough } from "@/lib/srs";
+import { findExample } from "@/lib/example";
 
 export async function GET(
   _req: Request,
@@ -18,7 +19,11 @@ export async function GET(
     const withEntry = (words: typeof session.newWords) =>
       words
         .filter((w) => lexicon[w.id])
-        .map((w) => ({ ...w, entry: lexicon[w.id] }));
+        .map((w) => ({
+          ...w,
+          entry: lexicon[w.id],
+          example: findExample(slug, w.id, w.introducedChapter),
+        }));
     return NextResponse.json({
       newWords: withEntry(session.newWords),
       dueWords: withEntry(session.dueWords),

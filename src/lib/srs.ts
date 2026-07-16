@@ -127,6 +127,32 @@ export function buildSession(book: string, chapter: number, now = new Date()): R
   return { newWords, dueWords, done, cardsDoneThrough: getCardsDoneThrough(book) };
 }
 
+export interface BookStats {
+  /** Cards that exist (words met at least once). */
+  met: number;
+  /** Cards due for review now. */
+  due: number;
+}
+
+export function bookStats(book: string, now = new Date()): BookStats {
+  const db = getDb();
+  const met = (
+    db.prepare("SELECT COUNT(*) AS n FROM cards WHERE book = ?").get(book) as { n: number }
+  ).n;
+  const due = (
+    db.prepare("SELECT COUNT(*) AS n FROM cards WHERE book = ? AND due <= ?")
+      .get(book, now.toISOString()) as { n: number }
+  ).n;
+  return { met, due };
+}
+
+export function totalDue(now = new Date()): number {
+  return (
+    getDb().prepare("SELECT COUNT(*) AS n FROM cards WHERE due <= ?")
+      .get(now.toISOString()) as { n: number }
+  ).n;
+}
+
 /** Display state for every lexeme swapped in a given chapter. */
 export function swapStates(
   book: string,
