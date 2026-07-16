@@ -47,32 +47,65 @@ function Floaters() {
   );
 }
 
+/** Must stay in sync with the .flap-leaf-flipping transition duration in globals.css. */
+const FLIP_MS = 560;
+
 function Flap({ en, to, note, period, delay }: (typeof FLAPS)[number]) {
-  const [flipped, setFlipped] = useState(false);
+  const [showJa, setShowJa] = useState(false);
+  const [flipping, setFlipping] = useState(false);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setFlipped(true);
+      setShowJa(true);
       return;
     }
+    // Commit on a timer, not transitionend - the event is unreliable in
+    // throttled/background tabs and a missed one would freeze the board.
     let interval: ReturnType<typeof setInterval>;
+    let commit: ReturnType<typeof setTimeout>;
+    const flip = () => {
+      setFlipping(true);
+      commit = setTimeout(() => {
+        setShowJa((s) => !s);
+        setFlipping(false);
+      }, FLIP_MS + 40);
+    };
     const start = setTimeout(() => {
-      setFlipped(true);
-      interval = setInterval(() => setFlipped((f) => !f), period);
+      flip();
+      interval = setInterval(flip, period);
     }, 1000 + delay);
     return () => {
       clearTimeout(start);
       clearInterval(interval);
+      clearTimeout(commit);
     };
   }, [period, delay]);
 
+  const face = (ja: boolean) => (
+    <span className={ja ? "jp text-[var(--indigo)]" : ""}>{ja ? to : en}</span>
+  );
+  const current = showJa;
+  const next = !showJa;
+
   return (
     <div className="flap-row">
-      <div className={`flap ${flipped ? "flap-flipped" : ""}`}>
-        <span className="flap-face flap-front">{en}</span>
-        <span className="flap-face flap-back jp">{to}</span>
+      <div className="flap" aria-label={`${en} becomes ${to}`}>
+        <span className="flap-half flap-top" aria-hidden>
+          <span className="flap-text">{face(flipping ? next : current)}</span>
+        </span>
+        <span className="flap-half flap-bottom" aria-hidden>
+          <span className="flap-text">{face(current)}</span>
+        </span>
+        <span className={`flap-leaf ${flipping ? "flap-leaf-flipping" : ""}`} aria-hidden>
+          <span className="flap-half flap-leaf-front">
+            <span className="flap-text">{face(current)}</span>
+          </span>
+          <span className="flap-half flap-leaf-back">
+            <span className="flap-text">{face(next)}</span>
+          </span>
+        </span>
       </div>
-      <span className={`flap-note font-ui ${flipped ? "opacity-100" : "opacity-0"}`}>{note}</span>
+      <span className={`flap-note font-ui ${showJa ? "opacity-100" : "opacity-0"}`}>{note}</span>
     </div>
   );
 }

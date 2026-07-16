@@ -19,6 +19,11 @@ interface Slip {
   above: boolean;
 }
 
+interface Pin {
+  lexemeId: string;
+  english: string;
+}
+
 interface ReaderViewProps {
   chapter: Chapter;
   entries: WovenEntries;
@@ -26,7 +31,12 @@ interface ReaderViewProps {
   language: string;
   chapterCount: number;
   cardsDoneThrough: number;
+  knownCount: number;
+  nextNewCount: number;
 }
+
+const MAX_PINS = 6;
+const MARGIN_BREAKPOINT = 1024;
 
 export default function ReaderView({
   chapter,
@@ -35,8 +45,11 @@ export default function ReaderView({
   language,
   chapterCount,
   cardsDoneThrough,
+  knownCount,
+  nextNewCount,
 }: ReaderViewProps) {
   const [slip, setSlip] = useState<Slip | null>(null);
+  const [pins, setPins] = useState<Pin[]>([]);
 
   useEffect(() => {
     if (!slip) return;
@@ -53,15 +66,23 @@ export default function ReaderView({
   const openSlip = useCallback(
     (e: React.MouseEvent<HTMLElement>, lexemeId: string, english: string) => {
       e.stopPropagation();
-      const rect = e.currentTarget.getBoundingClientRect();
-      const above = rect.bottom + 190 > window.innerHeight;
-      setSlip({
-        lexemeId,
-        english,
-        x: Math.min(rect.left, window.innerWidth - 340),
-        y: above ? rect.top - 8 : rect.bottom + 8,
-        above,
-      });
+      // Wide screens pin the word into the living margin; small screens float a slip.
+      if (window.innerWidth >= MARGIN_BREAKPOINT) {
+        setPins((prev) => {
+          const rest = prev.filter((p) => p.lexemeId !== lexemeId);
+          return [{ lexemeId, english }, ...rest].slice(0, MAX_PINS);
+        });
+      } else {
+        const rect = e.currentTarget.getBoundingClientRect();
+        const above = rect.bottom + 190 > window.innerHeight;
+        setSlip({
+          lexemeId,
+          english,
+          x: Math.min(rect.left, window.innerWidth - 340),
+          y: above ? rect.top - 8 : rect.bottom + 8,
+          above,
+        });
+      }
       void fetch("/api/clicks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -76,7 +97,7 @@ export default function ReaderView({
 
   return (
     <div onClick={() => setSlip(null)}>
-      <div className="relative mt-12 mb-10">
+      <div className="relative mt-12 mb-10 lg:max-w-3xl">
         <span className="chapter-ornament absolute -left-2 top-1 hidden md:block" aria-hidden>
           {chapterOrnament(language, chapter.index)}
         </span>
@@ -91,15 +112,69 @@ export default function ReaderView({
         </div>
       </div>
 
-      <article className="md:pl-14">
-        {chapter.paragraphs.map((tokens, i) => (
-          <p key={i} className="reader-para">
-            {renderTokens(tokens, entries, openSlip)}
-          </p>
-        ))}
-      </article>
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-14">
+        <div className="min-w-0 lg:max-w-3xl">
+          <article className="md:pl-14">
+            {chapter.paragraphs.map((tokens, i) => (
+              <p key={i} className="reader-para">
+                {renderTokens(tokens, entries, openSlip)}
+              </p>
+            ))}
+          </article>
+        </div>
 
-      <footer className="font-ui mt-16 flex items-center justify-between border-t border-[var(--line)] pt-6 text-sm md:pl-14">
+        <aside className="hidden lg:block" aria-label="reading margin">
+          <div className="sticky top-8 max-h-[calc(100vh-4rem)] space-y-4 overflow-y-auto pb-4">
+            {pins.length === 0 ? (
+              <p className="font-ui border-l border-[var(--line)] pl-4 text-xs leading-relaxed text-[var(--ink-soft)]">
+                Tap an indigo word and it pins here, so the text stays clear.
+              </p>
+            ) : (
+              pins.map((pin) => {
+                const entry = entries[pin.lexemeId];
+                if (!entry) return null;
+                return (
+                  <div key={pin.lexemeId} className="slip slip-pop relative px-4 py-3">
+                    <button
+                      className="font-ui absolute right-2.5 top-2 text-xs text-[var(--ink-soft)]"
+                      aria-label={`unpin ${entry.ja}`}
+                      onClick={() =>
+                        setPins((prev) => prev.filter((p) => p.lexemeId !== pin.lexemeId))
+                      }
+                    >
+                      x
+                    </button>
+                    <p className="jp text-xl text-[var(--indigo)]">
+                      {entry.ja}
+                      {entry.reading && (
+                        <span className="ml-2 text-sm text-[var(--ink-soft)]">{entry.reading}</span>
+                      )}
+                    </p>
+                    <p className="mt-1 text-sm leading-snug">{entry.gloss}</p>
+                    <p className="font-ui mt-1.5 text-xs text-[var(--ink-soft)]">
+                      in the text: &ldquo;{pin.english}&rdquo;
+                    </p>
+                  </div>
+                );
+              })
+            )}
+
+            <div className="font-ui border-t border-[var(--line)] pt-4 text-xs leading-relaxed text-[var(--ink-soft)]">
+              <p>
+                {wovenCount} words woven into this chapter
+                {knownCount > 0 && <> · {knownCount} already furigana-free</>}
+              </p>
+              {chapter.index < chapterCount && nextNewCount > 0 && (
+                <p className="mt-2">
+                  next: {nextNewCount} new words wait in chapter {chapter.index + 1}
+                </p>
+              )}
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <footer className="font-ui mt-16 flex items-center justify-between border-t border-[var(--line)] pt-6 text-sm md:pl-14 lg:max-w-3xl">
         {chapter.index > 1 ? (
           <Link href={`/read/${chapter.book}/${chapter.index - 1}`} className="text-[var(--ink-soft)]">
             previous chapter

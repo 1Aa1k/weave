@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { rateCard } from "@/lib/srs";
+import { KNOWN_STABILITY_DAYS, rateCard } from "@/lib/srs";
 import type { Grade } from "ts-fsrs";
 
 export async function POST(req: Request) {
@@ -13,5 +13,10 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "bad answer payload" }, { status: 400 });
   }
   const card = rateCard(lexemeId, book, rating as Grade);
-  return NextResponse.json({ due: card.due, state: card.state, stability: card.stability });
+  return NextResponse.json({
+    due: card.due,
+    state: card.state,
+    stability: card.stability,
+    known: card.state === 2 && card.stability >= KNOWN_STABILITY_DAYS,
+  });
 }

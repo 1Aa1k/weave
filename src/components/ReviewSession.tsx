@@ -43,6 +43,9 @@ export default function ReviewSession({ slug, chapter, language }: ReviewSession
   const [revealed, setRevealed] = useState(false);
   const [done, setDone] = useState(false);
   const [seen, setSeen] = useState(0);
+  const [againCount, setAgainCount] = useState(0);
+  const [freed, setFreed] = useState<Set<string>>(new Set());
+  const [startedAt] = useState(() => Date.now());
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
 
   const load = useCallback(async () => {
@@ -79,11 +82,16 @@ export default function ReviewSession({ slug, chapter, language }: ReviewSession
       // A failed card repeats at the end of this session's queue.
       const next = rating === 1 ? [...rest, { ...current, isNew: false }] : rest;
       setQueue(next);
-      await fetch("/api/review/answer", {
+      if (rating === 1) setAgainCount((n) => n + 1);
+      const res = await fetch("/api/review/answer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ lexemeId: current.id, book: slug, rating }),
       });
+      const result = await res.json().catch(() => null);
+      if (result?.known) {
+        setFreed((s) => new Set(s).add(current.id));
+      }
       if (next.length === 0) await load();
     },
     [current, queue, slug, load],
@@ -121,18 +129,40 @@ export default function ReviewSession({ slug, chapter, language }: ReviewSession
     );
   }
   if (done) {
+    const minutes = Math.max(1, Math.round((Date.now() - startedAt) / 60000));
+    const accuracy = seen > 0 ? Math.round(((seen - againCount) / seen) * 100) : null;
     return (
       <div className="mt-24 text-center">
         <p className="jp text-4xl text-[var(--indigo)]">{praise(language)}</p>
         <p className="mt-4 text-[var(--ink-soft)]">
-          Chapter {chapter} words learned{seen > 0 ? ` after ${seen} cards` : ""}. Now read them
-          in the wild.
+          Chapter {chapter} words learned. Now read them in the wild.
         </p>
+        {seen > 0 && (
+          <div className="font-ui mx-auto mt-8 flex max-w-md justify-center gap-8 border-y border-[var(--line)] py-5 text-sm text-[var(--ink-soft)]">
+            <span>
+              <span className="block text-2xl text-[var(--ink)]">{seen}</span>cards
+            </span>
+            <span>
+              <span className="block text-2xl text-[var(--ink)]">{minutes}m</span>time
+            </span>
+            {accuracy !== null && (
+              <span>
+                <span className="block text-2xl text-[var(--ink)]">{accuracy}%</span>recalled
+              </span>
+            )}
+            {freed.size > 0 && (
+              <span>
+                <span className="block text-2xl text-[var(--indigo)]">{freed.size}</span>
+                furigana-free
+              </span>
+            )}
+          </div>
+        )}
         <div className="font-ui mt-8 flex justify-center gap-6 text-sm">
           <Link href={`/read/${slug}/${chapter}`} className="text-[var(--indigo)]">
             read chapter {chapter}
           </Link>
-          <Link href="/" className="text-[var(--ink-soft)]">
+          <Link href="/library" className="text-[var(--ink-soft)]">
             library
           </Link>
         </div>

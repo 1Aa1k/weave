@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getChapter, getLexicon, getMeta } from "@/lib/books";
+import { getChapter, getLexicon, getMeta, getVocab } from "@/lib/books";
 import { getCardsDoneThrough, swapStates } from "@/lib/srs";
 import ReaderView, { type WovenEntries } from "@/components/ReaderView";
 
@@ -50,8 +50,11 @@ export default async function ReadPage({
     if (lex) entries[id] = { ja: lex.ja, reading: lex.reading, gloss: lex.gloss, known: s.known };
   }
 
+  const knownCount = Object.values(entries).filter((e) => e.known).length;
+  const nextNewCount = getVocab(slug).filter((v) => v.introducedChapter === index + 1).length;
+
   return (
-    <div className="mx-auto max-w-3xl px-6">
+    <div className="mx-auto max-w-3xl px-6 lg:max-w-[1200px]">
       <ReaderView
         chapter={chapter}
         entries={entries}
@@ -59,6 +62,8 @@ export default async function ReadPage({
         language={meta.language}
         chapterCount={meta.chapterCount}
         cardsDoneThrough={cardsDone}
+        knownCount={knownCount}
+        nextNewCount={nextNewCount}
       />
     </div>
   );
