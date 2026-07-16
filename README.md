@@ -1,16 +1,45 @@
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="public/logomark.svg">
+  <img src="brand/logomark-light.svg" width="72" alt="weave logomark">
+</picture>
+
 # weave
 
-Learn to read a language by reading books that slowly change language.
+**Start the book in English. Finish it in another language.**
 
-A book starts in English. Each chapter weaves in ~15 new Japanese words (most
-frequent first), shown in indigo with furigana. Words come before text: a
-chapter opens for reading only after you finish its FSRS-scheduled flashcards
-(its 15 new words plus everything due from earlier chapters), so you always
-meet new words as cards first, then in the wild. Click any woven word while
-reading for its reading and definition; every click is tracked and front-loads
-that word in review. Furigana disappears per-word once its FSRS stability
-passes 7 days. By the end of a book you are reading hundreds of Japanese words
-in context without crutches.
+A diglot-weave reader: real books whose words progressively swap into the
+language you're learning, gated by FSRS flashcards, one chapter at a time.
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-8db4e2)](LICENSE)
+
+<img src="docs/screenshots/hero.png" alt="weave landing page with a split-flap board flipping English words into other languages" width="850">
+
+</div>
+
+## How it works
+
+1. **Fifteen words, then the chapter.** Each chapter starts as flashcards:
+   its ~15 most useful words (most frequent first), scheduled by
+   [FSRS](https://github.com/open-spaced-repetition/ts-fsrs), the algorithm
+   behind Anki. The chapter opens for reading only when the cards are done -
+   so every woven word is one you have already met.
+2. **Read them in the wild.** The chapter arrives with those words woven in,
+   indigo against the English, furigana printed above. Click one for its
+   reading and meaning; every click is tracked and front-loads that word in
+   review. On wide screens clicked words pin into a living margin so the text
+   stays clear.
+3. **The crutches fall away.** Old words keep returning as reviews alongside
+   each chapter's new ones. Once a word's FSRS stability passes 7 days its
+   furigana disappears. By the end of a book you are reading hundreds of
+   words in context without help.
+
+<div align="center">
+<img src="docs/screenshots/reader.png" alt="reader with Japanese words woven into Alice in Wonderland, furigana above each, stats in the margin" width="850">
+<br><br>
+<img src="docs/screenshots/review.png" alt="flashcard front showing a Japanese word with furigana" width="850">
+</div>
 
 ## Run
 
@@ -18,6 +47,10 @@ in context without crutches.
 npm install
 npm run dev        # custom server on :5317 (next dev CLI exits when detached; server.js does not)
 ```
+
+Japanese is on the loom first; the pipeline, data format, and UI take a
+per-book `language` field, so other languages are a dictionary + transliterator
+away, not a rewrite.
 
 ## Add a book
 
