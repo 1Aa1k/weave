@@ -109,7 +109,11 @@ Code is MIT (see `LICENSE`). Bundled data carries its own licenses:
   group's [CC BY-SA 4.0 licence](https://www.edrdg.org/edrdg/licence.html)
   (via [jmdict-simplified](https://github.com/scriptin/jmdict-simplified)).
   These files are therefore CC BY-SA 4.0.
-- `data/raw/en_50k.txt` is the English frequency list from
+- `data/lexicon/zh*.json` and the corresponding files under `data/books/`
+  contain Mandarin glosses derived from
+  [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict)
+  (CC BY-SA 4.0). These files are therefore CC BY-SA 4.0.
+- `data/raw/en_50k.txt` and `data/raw/zh_cn_50k.txt` are frequency lists from
   [hermitdave/FrequencyWords](https://github.com/hermitdave/FrequencyWords)
   (CC BY-SA 4.0, built from the OpenSubtitles corpus).
 - The book texts under `data/raw/` and `data/books/` (Alice's Adventures in

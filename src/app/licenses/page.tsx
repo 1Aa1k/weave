@@ -5,9 +5,9 @@ export const metadata: Metadata = { title: "licenses - weave" };
 
 export default function LicensesPage() {
   return (
-    <ProsePage eyebrow="LICENSES" title="Attributions" updated="July 15, 2026">
+    <ProsePage eyebrow="LICENSES" title="Attributions" updated="July 16, 2026">
       <p>weave is built on generously licensed work:</p>
-      <h2>Dictionary</h2>
+      <h2>Dictionaries</h2>
       <p>
         Japanese definitions come from{" "}
         <a href="https://www.edrdg.org/jmdict/j_jmdict.html">JMdict</a>, the
@@ -21,9 +21,16 @@ export default function LicensesPage() {
         </a>{" "}
         project.
       </p>
+      <p>
+        Mandarin definitions come from{" "}
+        <a href="https://www.mdbg.net/chinese/dictionary?page=cc-cedict">
+          CC-CEDICT
+        </a>
+        , used under Creative Commons Attribution-ShareAlike 4.0.
+      </p>
       <h2>Word frequency</h2>
       <p>
-        English word-frequency ranks come from{" "}
+        English and Mandarin word-frequency ranks come from{" "}
         <a href="https://github.com/hermitdave/FrequencyWords">
           FrequencyWords
         </a>{" "}

@@ -6,14 +6,13 @@
 //
 // <input> is a local .txt path, a Project Gutenberg book id (digits), or a URL.
 // Title and slug are read from the Gutenberg header when present.
-// JMdict path comes from $JMDICT or /data/dicts/jmdict-eng.json.
+// Dictionary paths come from $JMDICT / $CEDICT or /data/dicts/ (see scripts/dict).
 
 import fs from "node:fs";
 import path from "node:path";
 import { ingestBook } from "./ingest";
 import { buildBookLexicon } from "./build-lexicon";
 
-const JMDICT = process.env.JMDICT ?? "/data/dicts/jmdict-eng.json";
 const FREQ = path.join("data", "raw", "en_50k.txt");
 const MAX_DOWNLOAD_BYTES = 20 * 1024 * 1024;
 
@@ -96,7 +95,7 @@ async function main() {
     console.log("  NOTE: no chapter headings detected; split into even parts. Check data/raw and re-run if wrong.");
   }
 
-  const lex = buildBookLexicon(slug, JMDICT);
+  const lex = buildBookLexicon(slug);
   console.log(
     `  scheduled: ${lex.scheduled} words / ${lex.chapterCount} chapters ` +
     `(override ${lex.byProvenance.override}, global ${lex.byProvenance.global}, auto ${lex.byProvenance.auto})`,
@@ -117,7 +116,7 @@ async function main() {
     }
     if (lex.reviewQueue.length > 12) console.log(`    ... and ${lex.reviewQueue.length - 12} more`);
     console.log(
-      "  Curate: fix entries in data/lexicon/ja.json (add source: \"manual\"), then re-run this command.",
+      `  Curate: fix entries in data/lexicon/${lex.language}.json (add source: "manual"), then re-run this command.`,
     );
   } else {
     console.log("\n  review queue empty - fully covered by curated lexicon.");

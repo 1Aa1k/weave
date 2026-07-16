@@ -1,0 +1,1082 @@
+{
+ "no|adv": {
+  "word": "不",
+  "reading": "bù",
+  "gloss": "no; not",
+  "seq": 0
+ },
+ "know|verb": {
+  "word": "知道",
+  "reading": "zhī dào",
+  "gloss": "to know; to be aware of",
+  "seq": 0
+ },
+ "like|verb": {
+  "word": "喜欢",
+  "reading": "xǐ huan",
+  "gloss": "to like; to be fond of",
+  "seq": 0
+ },
+ "get|verb": {
+  "word": "得到",
+  "reading": "dé dào",
+  "gloss": "to get; to obtain; to receive",
+  "seq": 0
+ },
+ "go|verb": {
+  "word": "去",
+  "reading": "qù",
+  "gloss": "to go; to go to (a place); (of a time etc) last; just passed",
+  "seq": 18012
+ },
+ "right|adj": {
+  "word": "对",
+  "reading": "duì",
+  "gloss": "right; correct",
+  "seq": 0
+ },
+ "one|noun": {
+  "word": "一",
+  "reading": "yī",
+  "gloss": "one; single; a (article); as soon as",
+  "seq": 370
+ },
+ "come|verb": {
+  "word": "来",
+  "reading": "lái",
+  "gloss": "to come; (used as a substitute for a more specific verb); hither (directional complement for motion toward the speaker, as in 回來|回来[hui2 lai5]); ever since (as in 自古以來|自古以来[zi4 gu3 yi3 lai2])",
+  "seq": 7641
+ },
+ "want|verb": {
+  "word": "要",
+  "reading": "yào",
+  "gloss": "to want; to need; to be going to",
+  "seq": 0
+ },
+ "think|verb": {
+  "word": "想",
+  "reading": "xiǎng",
+  "gloss": "to think (about); to think of; to devise; to think (that); to believe (that); to desire; to want (to)",
+  "seq": 42374
+ },
+ "see|verb": {
+  "word": "看到",
+  "reading": "kàn dào",
+  "gloss": "to see",
+  "seq": 77931
+ },
+ "good|adj": {
+  "word": "好",
+  "reading": "hǎo",
+  "gloss": "good; appropriate; proper; all right!; (before a verb) easy to",
+  "seq": 29956
+ },
+ "let|verb": {
+  "word": "让",
+  "reading": "ràng",
+  "gloss": "to let; to allow; to make (sb do sth)",
+  "seq": 0
+ },
+ "time|noun": {
+  "word": "时候",
+  "reading": "shí hou",
+  "gloss": "time; length of time; moment; period",
+  "seq": 53263
+ },
+ "back|adv": {
+  "word": "回",
+  "reading": "huí",
+  "gloss": "back; to return; to go back",
+  "seq": 0
+ },
+ "look|verb": {
+  "word": "看",
+  "reading": "kàn",
+  "gloss": "to look; to watch; to see",
+  "seq": 0
+ },
+ "take|verb": {
+  "word": "拿",
+  "reading": "ná",
+  "gloss": "to take; to hold; to carry",
+  "seq": 0
+ },
+ "tell|verb": {
+  "word": "告诉",
+  "reading": "gào su",
+  "gloss": "to tell; to inform",
+  "seq": 0
+ },
+ "really|adv": {
+  "word": "真的",
+  "reading": "zhēn de",
+  "gloss": "really; truly",
+  "seq": 0
+ },
+ "man|noun": {
+  "word": "男人",
+  "reading": "nán rén",
+  "gloss": "man",
+  "seq": 0
+ },
+ "say|verb": {
+  "word": "说",
+  "reading": "shuō",
+  "gloss": "to say; to speak",
+  "seq": 0
+ },
+ "need|verb": {
+  "word": "需要",
+  "reading": "xū yào",
+  "gloss": "to need; to require",
+  "seq": 0
+ },
+ "something|noun": {
+  "word": "某事",
+  "reading": "mǒu shì",
+  "gloss": "something; a certain matter",
+  "seq": 56765
+ },
+ "way|noun": {
+  "word": "路",
+  "reading": "lù",
+  "gloss": "way; road; path",
+  "seq": 0
+ },
+ "down|adv": {
+  "word": "下",
+  "reading": "xià",
+  "gloss": "down; downwards; below; lower",
+  "seq": 1883
+ },
+ "make|verb": {
+  "word": "做",
+  "reading": "zuò",
+  "gloss": "to make; to do",
+  "seq": 0
+ },
+ "never|adv": {
+  "word": "从不",
+  "reading": "cóng bù",
+  "gloss": "never",
+  "seq": 40171
+ },
+ "people|noun": {
+  "word": "人们",
+  "reading": "rén men",
+  "gloss": "people",
+  "seq": 5667
+ },
+ "please|verb": {
+  "word": "请",
+  "reading": "qǐng",
+  "gloss": "please; to invite",
+  "seq": 0
+ },
+ "love|noun": {
+  "word": "爱",
+  "reading": "ài",
+  "gloss": "love",
+  "seq": 0
+ },
+ "mean|verb": {
+  "word": "意味着",
+  "reading": "yì wèi zhe",
+  "gloss": "to signify; to mean; to imply",
+  "seq": 42490
+ },
+ "sorry|adj": {
+  "word": "抱歉",
+  "reading": "bào qiàn",
+  "gloss": "sorry; to feel apologetic",
+  "seq": 0
+ },
+ "give|verb": {
+  "word": "给",
+  "reading": "gěi",
+  "gloss": "to give",
+  "seq": 0
+ },
+ "thank|verb": {
+  "word": "感谢",
+  "reading": "gǎn xiè",
+  "gloss": "to thank",
+  "seq": 0
+ },
+ "sure|adj": {
+  "word": "肯定",
+  "reading": "kěn dìng",
+  "gloss": "sure; certain; definite",
+  "seq": 0
+ },
+ "thing|noun": {
+  "word": "东西",
+  "reading": "dōng xi",
+  "gloss": "thing; stuff; person",
+  "seq": 56247
+ },
+ "help|verb": {
+  "word": "帮",
+  "reading": "bāng",
+  "gloss": "to help; to assist; to support; for sb (i.e. as a help)",
+  "seq": 37487
+ },
+ "first|adj": {
+  "word": "第一",
+  "reading": "dì yī",
+  "gloss": "first",
+  "seq": 0
+ },
+ "anything|noun": {
+  "word": "任何事",
+  "reading": "rèn hé shì",
+  "gloss": "anything",
+  "seq": 0
+ },
+ "still|adv": {
+  "word": "还",
+  "reading": "hái",
+  "gloss": "still; still in progress; still more; yet",
+  "seq": 109011
+ },
+ "find|verb": {
+  "word": "找到",
+  "reading": "zhǎo dào",
+  "gloss": "to find",
+  "seq": 0
+ },
+ "life|noun": {
+  "word": "人生",
+  "reading": "rén shēng",
+  "gloss": "life (one's time on earth)",
+  "seq": 5870
+ },
+ "nothing|noun": {
+  "word": "没什么",
+  "reading": "méi shén me",
+  "gloss": "nothing; it's nothing",
+  "seq": 0
+ },
+ "sir|noun": {
+  "word": "先生",
+  "reading": "xiān sheng",
+  "gloss": "sir; mister; gentleman",
+  "seq": 0
+ },
+ "day|noun": {
+  "word": "天",
+  "reading": "tiān",
+  "gloss": "day; sky; heaven",
+  "seq": 28565
+ },
+ "work|verb": {
+  "word": "工作",
+  "reading": "gōng zuò",
+  "gloss": "to work; work; job",
+  "seq": 0
+ },
+ "maybe|adv": {
+  "word": "也许",
+  "reading": "yě xǔ",
+  "gloss": "maybe; perhaps",
+  "seq": 0
+ },
+ "before|adv": {
+  "word": "之前",
+  "reading": "zhī qián",
+  "gloss": "before; prior to; ago; previously",
+  "seq": 4123
+ },
+ "wait|verb": {
+  "word": "等",
+  "reading": "děng",
+  "gloss": "to wait",
+  "seq": 0
+ },
+ "stop|verb": {
+  "word": "停",
+  "reading": "tíng",
+  "gloss": "to stop; to halt; to park (a car)",
+  "seq": 9218
+ },
+ "call|verb": {
+  "word": "叫",
+  "reading": "jiào",
+  "gloss": "to shout; to call; to order; to ask",
+  "seq": 19029
+ },
+ "talk|verb": {
+  "word": "说话",
+  "reading": "shuō huà",
+  "gloss": "to talk; to speak",
+  "seq": 0
+ },
+ "away|adv": {
+  "word": "走开",
+  "reading": "zǒu kāi",
+  "gloss": "away; to go away",
+  "seq": 0
+ },
+ "thought|noun": {
+  "word": "想法",
+  "reading": "xiǎng fǎ",
+  "gloss": "thought; idea",
+  "seq": 0
+ },
+ "home|noun": {
+  "word": "家",
+  "reading": "jiā",
+  "gloss": "home; family; (polite) my (sister, uncle etc); classifier for families or businesses",
+  "seq": 32690
+ },
+ "night|noun": {
+  "word": "夜",
+  "reading": "yè",
+  "gloss": "night",
+  "seq": 27455
+ },
+ "put|verb": {
+  "word": "放",
+  "reading": "fàng",
+  "gloss": "to put; to place; to release; to free",
+  "seq": 50167
+ },
+ "great|adj": {
+  "word": "极大",
+  "reading": "jí dà",
+  "gloss": "great; enormous; immense",
+  "seq": 0
+ },
+ "last|adj": {
+  "word": "最后",
+  "reading": "zuì hòu",
+  "gloss": "last; final",
+  "seq": 0
+ },
+ "better|adv": {
+  "word": "更好",
+  "reading": "gèng hǎo",
+  "gloss": "better",
+  "seq": 0
+ },
+ "everything|noun": {
+  "word": "一切",
+  "reading": "yī qiè",
+  "gloss": "everything; every; all",
+  "seq": 440
+ },
+ "new|adj": {
+  "word": "新",
+  "reading": "xīn",
+  "gloss": "new; newly; meso- (chemistry)",
+  "seq": 51638
+ },
+ "always|adv": {
+  "word": "总是",
+  "reading": "zǒng shì",
+  "gloss": "always",
+  "seq": 0
+ },
+ "keep|verb": {
+  "word": "保持",
+  "reading": "bǎo chí",
+  "gloss": "to keep; to maintain; to hold; to preserve",
+  "seq": 8141
+ },
+ "long|adj": {
+  "word": "长",
+  "reading": "cháng",
+  "gloss": "long",
+  "seq": 0
+ },
+ "leave|verb": {
+  "word": "离开",
+  "reading": "lí kāi",
+  "gloss": "to leave; to depart",
+  "seq": 0
+ },
+ "name|noun": {
+  "word": "名字",
+  "reading": "míng zi",
+  "gloss": "name",
+  "seq": 0
+ },
+ "place|noun": {
+  "word": "地方",
+  "reading": "dì fang",
+  "gloss": "place; area; spot",
+  "seq": 0
+ },
+ "ever|adv": {
+  "word": "曾经",
+  "reading": "céng jīng",
+  "gloss": "ever; once (in the past)",
+  "seq": 0
+ },
+ "feel|verb": {
+  "word": "觉得",
+  "reading": "jué de",
+  "gloss": "to feel; to think",
+  "seq": 0
+ },
+ "father|noun": {
+  "word": "父亲",
+  "reading": "fù qīn",
+  "gloss": "father; also pr. [fu4 qin5]",
+  "seq": 71122
+ },
+ "old|adj": {
+  "word": "老",
+  "reading": "lǎo",
+  "gloss": "old; aged",
+  "seq": 0
+ },
+ "nice|adj": {
+  "word": "美好",
+  "reading": "měi hǎo",
+  "gloss": "nice; fine; lovely",
+  "seq": 0
+ },
+ "believe|verb": {
+  "word": "相信",
+  "reading": "xiāng xìn",
+  "gloss": "to believe; to trust",
+  "seq": 0
+ },
+ "girl|noun": {
+  "word": "女孩",
+  "reading": "nǚ hái",
+  "gloss": "girl",
+  "seq": 0
+ },
+ "someone|noun": {
+  "word": "有人",
+  "reading": "yǒu rén",
+  "gloss": "someone; people; anyone; there is someone there",
+  "seq": 54706
+ },
+ "fine|adj": {
+  "word": "不错",
+  "reading": "bù cuò",
+  "gloss": "fine; not bad; pretty good",
+  "seq": 0
+ },
+ "kind|noun": {
+  "word": "种类",
+  "reading": "zhǒng lèi",
+  "gloss": "kind; sort; type",
+  "seq": 0
+ },
+ "house|noun": {
+  "word": "房子",
+  "reading": "fáng zi",
+  "gloss": "house",
+  "seq": 0
+ },
+ "course|noun": {
+  "word": "当然",
+  "reading": "dāng rán",
+  "gloss": "of course; naturally (as in 'of course')",
+  "seq": 0
+ },
+ "stay|verb": {
+  "word": "留",
+  "reading": "liú",
+  "gloss": "to leave (a message etc); to retain; to stay; to remain",
+  "seq": 74804
+ },
+ "enough|adv": {
+  "word": "够",
+  "reading": "gòu",
+  "gloss": "enough (sufficient); enough (too much); (coll.) (before adj.) really; (coll.) to reach by stretching out",
+  "seq": 27522
+ },
+ "wrong|adj": {
+  "word": "错",
+  "reading": "cuò",
+  "gloss": "wrong; mistaken",
+  "seq": 0
+ },
+ "world|noun": {
+  "word": "世界",
+  "reading": "shì jiè",
+  "gloss": "world",
+  "seq": 3036
+ },
+ "bad|adj": {
+  "word": "坏",
+  "reading": "huài",
+  "gloss": "bad; spoiled; broken; to break down",
+  "seq": 26758
+ },
+ "today|noun": {
+  "word": "今天",
+  "reading": "jīn tiān",
+  "gloss": "today; the present time; now",
+  "seq": 6097
+ },
+ "listen|verb": {
+  "word": "听",
+  "reading": "tīng",
+  "gloss": "to listen; to hear",
+  "seq": 0
+ },
+ "understand|verb": {
+  "word": "懂",
+  "reading": "dǒng",
+  "gloss": "to understand",
+  "seq": 0
+ },
+ "hear|verb": {
+  "word": "听到",
+  "reading": "tīng dào",
+  "gloss": "to hear",
+  "seq": 0
+ },
+ "remember|verb": {
+  "word": "记住",
+  "reading": "jì zhu",
+  "gloss": "to remember; to bear in mind; to learn by heart",
+  "seq": 100192
+ },
+ "ask|verb": {
+  "word": "问",
+  "reading": "wèn",
+  "gloss": "to ask",
+  "seq": 0
+ },
+ "show|verb": {
+  "word": "展示",
+  "reading": "zhǎn shì",
+  "gloss": "to show; to display",
+  "seq": 0
+ },
+ "else|adv": {
+  "word": "别的",
+  "reading": "bié de",
+  "gloss": "else; other",
+  "seq": 13953
+ },
+ "kill|verb": {
+  "word": "杀",
+  "reading": "shā",
+  "gloss": "to kill",
+  "seq": 0
+ },
+ "next|adj": {
+  "word": "下一个",
+  "reading": "xià yī gè",
+  "gloss": "next",
+  "seq": 0
+ },
+ "care|noun": {
+  "word": "关心",
+  "reading": "guān xīn",
+  "gloss": "care; concern",
+  "seq": 0
+ },
+ "try|verb": {
+  "word": "尝试",
+  "reading": "cháng shì",
+  "gloss": "to try; to attempt",
+  "seq": 0
+ },
+ "woman|noun": {
+  "word": "女人",
+  "reading": "nǚ rén",
+  "gloss": "woman",
+  "seq": 29758
+ },
+ "dead|adj": {
+  "word": "没电",
+  "reading": "méi diàn",
+  "gloss": "discharged; flat; dead (of batteries)",
+  "seq": 63056
+ },
+ "many|adj": {
+  "word": "许多",
+  "reading": "xǔ duō",
+  "gloss": "many; a lot of",
+  "seq": 0
+ },
+ "mind|noun": {
+  "word": "心",
+  "reading": "xīn",
+  "gloss": "heart; mind; intention; center",
+  "seq": 40647
+ },
+ "friend|noun": {
+  "word": "朋友",
+  "reading": "péng you",
+  "gloss": "friend",
+  "seq": 55042
+ },
+ "morning|noun": {
+  "word": "上午",
+  "reading": "shàng wǔ",
+  "gloss": "morning",
+  "seq": 1608
+ },
+ "boy|noun": {
+  "word": "男孩",
+  "reading": "nán hái",
+  "gloss": "boy",
+  "seq": 74702
+ },
+ "together|adv": {
+  "word": "一起",
+  "reading": "yī qǐ",
+  "gloss": "together",
+  "seq": 0
+ },
+ "real|adj": {
+  "word": "真正",
+  "reading": "zhēn zhèng",
+  "gloss": "real; genuine; true",
+  "seq": 0
+ },
+ "baby|noun": {
+  "word": "婴儿",
+  "reading": "yīng ér",
+  "gloss": "baby; infant",
+  "seq": 0
+ },
+ "room|noun": {
+  "word": "房间",
+  "reading": "fáng jiān",
+  "gloss": "room",
+  "seq": 0
+ },
+ "already|adv": {
+  "word": "已经",
+  "reading": "yǐ jīng",
+  "gloss": "already",
+  "seq": 0
+ },
+ "move|verb": {
+  "word": "动",
+  "reading": "dòng",
+  "gloss": "to move",
+  "seq": 0
+ },
+ "live|verb": {
+  "word": "活",
+  "reading": "huó",
+  "gloss": "to live; alive; living; work",
+  "seq": 64541
+ },
+ "miss|verb": {
+  "word": "错过",
+  "reading": "cuò guò",
+  "gloss": "to miss (train, opportunity etc)",
+  "seq": 111880
+ },
+ "once|adv": {
+  "word": "曾",
+  "reading": "céng",
+  "gloss": "once; already; ever (in the past); former",
+  "seq": 54390
+ },
+ "ready|adj": {
+  "word": "准备好",
+  "reading": "zhǔn bèi hǎo",
+  "gloss": "ready; prepared",
+  "seq": 0
+ },
+ "head|noun": {
+  "word": "头",
+  "reading": "tóu",
+  "gloss": "head",
+  "seq": 0
+ },
+ "idea|noun": {
+  "word": "主意",
+  "reading": "zhǔ yi",
+  "gloss": "idea; plan",
+  "seq": 0
+ },
+ "hold|verb": {
+  "word": "抱",
+  "reading": "bào",
+  "gloss": "to hold; to carry (in one's arms); to hug; to embrace",
+  "seq": 45621
+ },
+ "happy|adj": {
+  "word": "高兴",
+  "reading": "gāo xìng",
+  "gloss": "happy; glad; willing (to do sth); in a cheerful mood",
+  "seq": 121504
+ },
+ "door|noun": {
+  "word": "大门",
+  "reading": "dà mén",
+  "gloss": "entrance; door; gate; large and influential family",
+  "seq": 28437
+ },
+ "pretty|adj": {
+  "word": "漂亮",
+  "reading": "piào liang",
+  "gloss": "pretty; beautiful",
+  "seq": 0
+ },
+ "bit|noun": {
+  "word": "一点",
+  "reading": "yī diǎn",
+  "gloss": "a bit; a little",
+  "seq": 0
+ },
+ "yet|adv": {
+  "word": "还",
+  "reading": "hái",
+  "gloss": "yet; still",
+  "seq": 0
+ },
+ "whole|adj": {
+  "word": "整个",
+  "reading": "zhěng gè",
+  "gloss": "whole; entire; total",
+  "seq": 50892
+ },
+ "use|verb": {
+  "word": "用",
+  "reading": "yòng",
+  "gloss": "to use",
+  "seq": 0
+ },
+ "while|noun": {
+  "word": "一会儿",
+  "reading": "yī huìr",
+  "gloss": "a while; a moment",
+  "seq": 0
+ },
+ "guess|verb": {
+  "word": "猜",
+  "reading": "cāi",
+  "gloss": "to guess",
+  "seq": 72177
+ },
+ "matter|noun": {
+  "word": "事",
+  "reading": "shì",
+  "gloss": "matter; thing; item; work",
+  "seq": 4611
+ },
+ "meet|verb": {
+  "word": "遇见",
+  "reading": "yù jiàn",
+  "gloss": "to meet",
+  "seq": 107967
+ },
+ "bring|verb": {
+  "word": "带来",
+  "reading": "dài lái",
+  "gloss": "to bring; (fig.) to bring about; to produce",
+  "seq": 37291
+ },
+ "run|verb": {
+  "word": "跑",
+  "reading": "pǎo",
+  "gloss": "to run; to run away; to escape; to run around (on errands etc)",
+  "seq": 104578
+ },
+ "hard|adj": {
+  "word": "难",
+  "reading": "nán",
+  "gloss": "hard; difficult",
+  "seq": 0
+ },
+ "alone|adv": {
+  "word": "单独",
+  "reading": "dān dú",
+  "gloss": "alone; by oneself; on one's own",
+  "seq": 22783
+ },
+ "school|noun": {
+  "word": "学校",
+  "reading": "xué xiào",
+  "gloss": "school",
+  "seq": 31634
+ },
+ "end|noun": {
+  "word": "结束",
+  "reading": "jié shù",
+  "gloss": "end; to finish",
+  "seq": 0
+ },
+ "play|verb": {
+  "word": "玩",
+  "reading": "wán",
+  "gloss": "to play",
+  "seq": 0
+ },
+ "few|adj": {
+  "word": "少",
+  "reading": "shǎo",
+  "gloss": "few; less; to lack; to be missing",
+  "seq": 34747
+ },
+ "ago|adv": {
+  "word": "之前",
+  "reading": "zhī qián",
+  "gloss": "before; prior to; ago; previously",
+  "seq": 4123
+ },
+ "open|verb": {
+  "word": "打开",
+  "reading": "dǎ kāi",
+  "gloss": "to open; to show (a ticket); to turn on; to switch on",
+  "seq": 44757
+ },
+ "face|noun": {
+  "word": "脸",
+  "reading": "liǎn",
+  "gloss": "face",
+  "seq": 91030
+ },
+ "turn|verb": {
+  "word": "转",
+  "reading": "zhuǎn",
+  "gloss": "to turn; to change direction; to transfer; to forward (mail)",
+  "seq": 106078
+ },
+ "business|noun": {
+  "word": "事情",
+  "reading": "shì qing",
+  "gloss": "matter; business; affair",
+  "seq": 0
+ },
+ "true|adj": {
+  "word": "真",
+  "reading": "zhēn",
+  "gloss": "true; real",
+  "seq": 0
+ },
+ "die|verb": {
+  "word": "死",
+  "reading": "sǐ",
+  "gloss": "to die; impassable; uncrossable; inflexible",
+  "seq": 60749
+ },
+ "heart|noun": {
+  "word": "心",
+  "reading": "xīn",
+  "gloss": "heart; mind; intention; center",
+  "seq": 40647
+ },
+ "soon|adv": {
+  "word": "不久",
+  "reading": "bù jiǔ",
+  "gloss": "not long (after); before too long; soon; soon after",
+  "seq": 2127
+ },
+ "worry|verb": {
+  "word": "担心",
+  "reading": "dān xīn",
+  "gloss": "to worry",
+  "seq": 0
+ },
+ "year|noun": {
+  "word": "年",
+  "reading": "nián",
+  "gloss": "year",
+  "seq": 37793
+ },
+ "watch|verb": {
+  "word": "观看",
+  "reading": "guān kàn",
+  "gloss": "to watch",
+  "seq": 0
+ },
+ "hand|noun": {
+  "word": "手",
+  "reading": "shǒu",
+  "gloss": "hand; (formal) to hold; person engaged in certain types of work; person skilled in certain types of work",
+  "seq": 44205
+ },
+ "beautiful|adj": {
+  "word": "美",
+  "reading": "měi",
+  "gloss": "beautiful; very satisfactory; good; to beautify; to be pleased with oneself",
+  "seq": 87533
+ },
+ "second|adj": {
+  "word": "第二",
+  "reading": "dì èr",
+  "gloss": "second",
+  "seq": 0
+ },
+ "person|noun": {
+  "word": "人",
+  "reading": "rén",
+  "gloss": "person; human",
+  "seq": 0
+ },
+ "part|noun": {
+  "word": "部分",
+  "reading": "bù fen",
+  "gloss": "part; section",
+  "seq": 0
+ },
+ "late|adj": {
+  "word": "迟",
+  "reading": "chí",
+  "gloss": "late; delayed; slow",
+  "seq": 108726
+ },
+ "stuff|noun": {
+  "word": "东西",
+  "reading": "dōng xi",
+  "gloss": "thing; stuff; person",
+  "seq": 56247
+ },
+ "exactly|adv": {
+  "word": "刚好",
+  "reading": "gāng hǎo",
+  "gloss": "just; exactly; to happen to be",
+  "seq": 14585
+ },
+ "minute|noun": {
+  "word": "分钟",
+  "reading": "fēn zhōng",
+  "gloss": "minute",
+  "seq": 13612
+ },
+ "forget|verb": {
+  "word": "忘",
+  "reading": "wàng",
+  "gloss": "to forget; to overlook; to neglect",
+  "seq": 41012
+ },
+ "everybody|noun": {
+  "word": "大家",
+  "reading": "dà jiā",
+  "gloss": "everybody; everyone",
+  "seq": 0
+ },
+ "change|verb": {
+  "word": "改",
+  "reading": "gǎi",
+  "gloss": "to change; to alter; to transform; to correct",
+  "seq": 50061
+ },
+ "far|adv": {
+  "word": "远",
+  "reading": "yuǎn",
+  "gloss": "far; distant; remote; (intensifier in a comparison) by far",
+  "seq": 108550
+ },
+ "shut|verb": {
+  "word": "闭",
+  "reading": "bì",
+  "gloss": "to close; to stop up; to shut; to obstruct",
+  "seq": 113005
+ },
+ "check|verb": {
+  "word": "检查",
+  "reading": "jiǎn chá",
+  "gloss": "to check; to inspect",
+  "seq": 0
+ },
+ "deal|noun": {
+  "word": "大量",
+  "reading": "dà liàng",
+  "gloss": "a great deal; large amount",
+  "seq": 0
+ },
+ "different|adj": {
+  "word": "不同",
+  "reading": "bù tóng",
+  "gloss": "different; distinct; not the same; not alike",
+  "seq": 2331
+ },
+ "point|verb": {
+  "word": "指",
+  "reading": "zhǐ",
+  "gloss": "to point",
+  "seq": 0
+ },
+ "somebody|noun": {
+  "word": "某人",
+  "reading": "mǒu rén",
+  "gloss": "somebody; someone",
+  "seq": 0
+ },
+ "afraid|adj": {
+  "word": "害怕",
+  "reading": "hài pà",
+  "gloss": "afraid; scared",
+  "seq": 0
+ },
+ "sleep|verb": {
+  "word": "睡",
+  "reading": "shuì",
+  "gloss": "to sleep; to lie down",
+  "seq": 78377
+ },
+ "chance|noun": {
+  "word": "机会",
+  "reading": "jī huì",
+  "gloss": "opportunity; chance; occasion",
+  "seq": 59301
+ },
+ "dear|adj": {
+  "word": "亲爱",
+  "reading": "qīn ài",
+  "gloss": "dear; beloved; darling",
+  "seq": 99565
+ },
+ "quite|adv": {
+  "word": "相当",
+  "reading": "xiāng dāng",
+  "gloss": "quite; fairly; considerably",
+  "seq": 0
+ },
+ "close|verb": {
+  "word": "闭上",
+  "reading": "bì shang",
+  "gloss": "to close; to shut up",
+  "seq": 113006
+ },
+ "word|noun": {
+  "word": "词",
+  "reading": "cí",
+  "gloss": "word; statement; speech; lyrics; a form of lyric poetry, flourishing in the Song dynasty 宋朝[Song4 chao2] (CL:首[shou3])",
+  "seq": 100466
+ },
+ "important|adj": {
+  "word": "重要",
+  "reading": "zhòng yào",
+  "gloss": "important",
+  "seq": 0
+ },
+ "set|verb": {
+  "word": "摆",
+  "reading": "bǎi",
+  "gloss": "to set; to place; to arrange",
+  "seq": 0
+ },
+ "wish|verb": {
+  "word": "愿意",
+  "reading": "yuàn yì",
+  "gloss": "to wish; to want; ready; willing (to do sth)",
+  "seq": 118782
+ },
+ "moment|noun": {
+  "word": "时刻",
+  "reading": "shí kè",
+  "gloss": "moment; instant",
+  "seq": 0
+ },
+ "week|noun": {
+  "word": "星期",
+  "reading": "xīng qī",
+  "gloss": "week; day of the week; Sunday",
+  "seq": 53015
+ },
+ "rest|noun": {
+  "word": "休息",
+  "reading": "xiū xi",
+  "gloss": "rest; to rest",
+  "seq": 6872
+ }
+}

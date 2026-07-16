@@ -1,0 +1,3028 @@
+[
+ {
+  "id": "no|adv",
+  "lemma": "no",
+  "pos": "adv",
+  "rank": 27,
+  "count": 2,
+  "chapters": [
+   1,
+   2
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "know|verb",
+  "lemma": "know",
+  "pos": "verb",
+  "rank": 33,
+  "count": 103,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "like|verb",
+  "lemma": "like",
+  "pos": "verb",
+  "rank": 43,
+  "count": 19,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "get|verb",
+  "lemma": "get",
+  "pos": "verb",
+  "rank": 45,
+  "count": 112,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "go|verb",
+  "lemma": "go",
+  "pos": "verb",
+  "rank": 47,
+  "count": 176,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "right|adj",
+  "lemma": "right",
+  "pos": "adj",
+  "rank": 49,
+  "count": 14,
+  "chapters": [
+   1,
+   2,
+   4,
+   5,
+   6,
+   9
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "come|verb",
+  "lemma": "come",
+  "pos": "verb",
+  "rank": 58,
+  "count": 95,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "think|verb",
+  "lemma": "think",
+  "pos": "verb",
+  "rank": 67,
+  "count": 138,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "see|verb",
+  "lemma": "see",
+  "pos": "verb",
+  "rank": 69,
+  "count": 96,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "good|adj",
+  "lemma": "good",
+  "pos": "adj",
+  "rank": 71,
+  "count": 48,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "let|verb",
+  "lemma": "let",
+  "pos": "verb",
+  "rank": 75,
+  "count": 22,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "time|noun",
+  "lemma": "time",
+  "pos": "noun",
+  "rank": 80,
+  "count": 59,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "back|adv",
+  "lemma": "back",
+  "pos": "adv",
+  "rank": 83,
+  "count": 36,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "look|verb",
+  "lemma": "look",
+  "pos": "verb",
+  "rank": 84,
+  "count": 97,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "take|verb",
+  "lemma": "take",
+  "pos": "verb",
+  "rank": 90,
+  "count": 57,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 1
+ },
+ {
+  "id": "want|verb",
+  "lemma": "want",
+  "pos": "verb",
+  "rank": 66,
+  "count": 14,
+  "chapters": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "tell|verb",
+  "lemma": "tell",
+  "pos": "verb",
+  "rank": 97,
+  "count": 42,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "really|adv",
+  "lemma": "really",
+  "pos": "adv",
+  "rank": 98,
+  "count": 13,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   7,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "say|verb",
+  "lemma": "say",
+  "pos": "verb",
+  "rank": 101,
+  "count": 532,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "something|noun",
+  "lemma": "something",
+  "pos": "noun",
+  "rank": 108,
+  "count": 18,
+  "chapters": [
+   2,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9,
+   10
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "way|noun",
+  "lemma": "way",
+  "pos": "noun",
+  "rank": 112,
+  "count": 57,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "down|adv",
+  "lemma": "down",
+  "pos": "adv",
+  "rank": 113,
+  "count": 75,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "make|verb",
+  "lemma": "make",
+  "pos": "verb",
+  "rank": 114,
+  "count": 73,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "never|adv",
+  "lemma": "never",
+  "pos": "adv",
+  "rank": 116,
+  "count": 48,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "please|verb",
+  "lemma": "please",
+  "pos": "verb",
+  "rank": 122,
+  "count": 27,
+  "chapters": [
+   1,
+   2,
+   3,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "love|noun",
+  "lemma": "love",
+  "pos": "noun",
+  "rank": 123,
+  "count": 3,
+  "chapters": [
+   2,
+   9
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "give|verb",
+  "lemma": "give",
+  "pos": "verb",
+  "rank": 128,
+  "count": 30,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "sure|adj",
+  "lemma": "sure",
+  "pos": "adj",
+  "rank": 137,
+  "count": 20,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   10
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "thing|noun",
+  "lemma": "thing",
+  "pos": "noun",
+  "rank": 138,
+  "count": 80,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "help|verb",
+  "lemma": "help",
+  "pos": "verb",
+  "rank": 140,
+  "count": 10,
+  "chapters": [
+   2,
+   3,
+   4,
+   6,
+   7,
+   8,
+   9,
+   11
+  ],
+  "introducedChapter": 2
+ },
+ {
+  "id": "one|noun",
+  "lemma": "one",
+  "pos": "noun",
+  "rank": 57,
+  "count": 1,
+  "chapters": [
+   3
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "mean|verb",
+  "lemma": "mean",
+  "pos": "verb",
+  "rank": 125,
+  "count": 18,
+  "chapters": [
+   3,
+   5,
+   6,
+   7,
+   8,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "first|adj",
+  "lemma": "first",
+  "pos": "adj",
+  "rank": 141,
+  "count": 44,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "anything|noun",
+  "lemma": "anything",
+  "pos": "noun",
+  "rank": 143,
+  "count": 19,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "find|verb",
+  "lemma": "find",
+  "pos": "verb",
+  "rank": 145,
+  "count": 55,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "life|noun",
+  "lemma": "life",
+  "pos": "noun",
+  "rank": 146,
+  "count": 14,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   12
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "nothing|noun",
+  "lemma": "nothing",
+  "pos": "noun",
+  "rank": 147,
+  "count": 30,
+  "chapters": [
+   1,
+   2,
+   3,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "sir|noun",
+  "lemma": "sir",
+  "pos": "noun",
+  "rank": 148,
+  "count": 7,
+  "chapters": [
+   2,
+   3,
+   5,
+   9
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "day|noun",
+  "lemma": "day",
+  "pos": "noun",
+  "rank": 149,
+  "count": 33,
+  "chapters": [
+   1,
+   2,
+   3,
+   5,
+   6,
+   7,
+   8,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "wait|verb",
+  "lemma": "wait",
+  "pos": "verb",
+  "rank": 159,
+  "count": 21,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   10,
+   11
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "call|verb",
+  "lemma": "call",
+  "pos": "verb",
+  "rank": 161,
+  "count": 25,
+  "chapters": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "talk|verb",
+  "lemma": "talk",
+  "pos": "verb",
+  "rank": 164,
+  "count": 31,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "away|adv",
+  "lemma": "away",
+  "pos": "adv",
+  "rank": 165,
+  "count": 25,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "home|noun",
+  "lemma": "home",
+  "pos": "noun",
+  "rank": 168,
+  "count": 4,
+  "chapters": [
+   1,
+   3,
+   4
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "night|noun",
+  "lemma": "night",
+  "pos": "noun",
+  "rank": 169,
+  "count": 5,
+  "chapters": [
+   1,
+   2,
+   3,
+   5,
+   6
+  ],
+  "introducedChapter": 3
+ },
+ {
+  "id": "people|noun",
+  "lemma": "people",
+  "pos": "noun",
+  "rank": 118,
+  "count": 13,
+  "chapters": [
+   1,
+   4,
+   6,
+   8,
+   9,
+   11
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "thank|verb",
+  "lemma": "thank",
+  "pos": "verb",
+  "rank": 131,
+  "count": 5,
+  "chapters": [
+   4,
+   9,
+   10
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "still|adv",
+  "lemma": "still",
+  "pos": "adv",
+  "rank": 144,
+  "count": 13,
+  "chapters": [
+   1,
+   2,
+   4,
+   5,
+   6,
+   8,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "before|adv",
+  "lemma": "before",
+  "pos": "adv",
+  "rank": 157,
+  "count": 14,
+  "chapters": [
+   1,
+   2,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "stop|verb",
+  "lemma": "stop",
+  "pos": "verb",
+  "rank": 160,
+  "count": 9,
+  "chapters": [
+   1,
+   2,
+   4,
+   5,
+   7,
+   8,
+   11,
+   12
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "put|verb",
+  "lemma": "put",
+  "pos": "verb",
+  "rank": 170,
+  "count": 31,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "great|adj",
+  "lemma": "great",
+  "pos": "adj",
+  "rank": 171,
+  "count": 39,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "last|adj",
+  "lemma": "last",
+  "pos": "adj",
+  "rank": 173,
+  "count": 29,
+  "chapters": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "better|adv",
+  "lemma": "better",
+  "pos": "adv",
+  "rank": 174,
+  "count": 4,
+  "chapters": [
+   4,
+   8,
+   9
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "everything|noun",
+  "lemma": "everything",
+  "pos": "noun",
+  "rank": 175,
+  "count": 12,
+  "chapters": [
+   2,
+   4,
+   6,
+   7,
+   8,
+   9,
+   11
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "always|adv",
+  "lemma": "always",
+  "pos": "adv",
+  "rank": 180,
+  "count": 13,
+  "chapters": [
+   2,
+   3,
+   4,
+   6,
+   7,
+   8,
+   9,
+   12
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "keep|verb",
+  "lemma": "keep",
+  "pos": "verb",
+  "rank": 181,
+  "count": 26,
+  "chapters": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "long|adj",
+  "lemma": "long",
+  "pos": "adj",
+  "rank": 182,
+  "count": 25,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   7,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "leave|verb",
+  "lemma": "leave",
+  "pos": "verb",
+  "rank": 184,
+  "count": 24,
+  "chapters": [
+   1,
+   3,
+   4,
+   6,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "name|noun",
+  "lemma": "name",
+  "pos": "noun",
+  "rank": 189,
+  "count": 12,
+  "chapters": [
+   1,
+   2,
+   4,
+   6,
+   7,
+   8,
+   11,
+   12
+  ],
+  "introducedChapter": 4
+ },
+ {
+  "id": "man|noun",
+  "lemma": "man",
+  "pos": "noun",
+  "rank": 99,
+  "count": 6,
+  "chapters": [
+   5,
+   11,
+   12
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "need|verb",
+  "lemma": "need",
+  "pos": "verb",
+  "rank": 107,
+  "count": 4,
+  "chapters": [
+   5,
+   8,
+   9,
+   12
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "sorry|adj",
+  "lemma": "sorry",
+  "pos": "adj",
+  "rank": 127,
+  "count": 1,
+  "chapters": [
+   5
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "work|verb",
+  "lemma": "work",
+  "pos": "verb",
+  "rank": 151,
+  "count": 8,
+  "chapters": [
+   1,
+   5,
+   6,
+   7,
+   10,
+   12
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "new|adj",
+  "lemma": "new",
+  "pos": "adj",
+  "rank": 178,
+  "count": 4,
+  "chapters": [
+   2,
+   5,
+   9
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "place|noun",
+  "lemma": "place",
+  "pos": "noun",
+  "rank": 190,
+  "count": 10,
+  "chapters": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   12
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "ever|adv",
+  "lemma": "ever",
+  "pos": "adv",
+  "rank": 191,
+  "count": 22,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "feel|verb",
+  "lemma": "feel",
+  "pos": "verb",
+  "rank": 192,
+  "count": 32,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "father|noun",
+  "lemma": "father",
+  "pos": "noun",
+  "rank": 194,
+  "count": 2,
+  "chapters": [
+   5
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "old|adj",
+  "lemma": "old",
+  "pos": "adj",
+  "rank": 197,
+  "count": 22,
+  "chapters": [
+   3,
+   4,
+   5,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "believe|verb",
+  "lemma": "believe",
+  "pos": "verb",
+  "rank": 205,
+  "count": 10,
+  "chapters": [
+   3,
+   4,
+   5,
+   7,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "girl|noun",
+  "lemma": "girl",
+  "pos": "noun",
+  "rank": 206,
+  "count": 7,
+  "chapters": [
+   1,
+   2,
+   5,
+   11
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "kind|noun",
+  "lemma": "kind",
+  "pos": "noun",
+  "rank": 211,
+  "count": 7,
+  "chapters": [
+   2,
+   4,
+   5,
+   9,
+   10
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "house|noun",
+  "lemma": "house",
+  "pos": "noun",
+  "rank": 213,
+  "count": 18,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "enough|adv",
+  "lemma": "enough",
+  "pos": "adv",
+  "rank": 222,
+  "count": 18,
+  "chapters": [
+   1,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   12
+  ],
+  "introducedChapter": 5
+ },
+ {
+  "id": "maybe|adv",
+  "lemma": "maybe",
+  "pos": "adv",
+  "rank": 155,
+  "count": 2,
+  "chapters": [
+   6,
+   9
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "world|noun",
+  "lemma": "world",
+  "pos": "noun",
+  "rank": 228,
+  "count": 7,
+  "chapters": [
+   1,
+   2,
+   3,
+   6,
+   7,
+   9,
+   12
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "listen|verb",
+  "lemma": "listen",
+  "pos": "verb",
+  "rank": 233,
+  "count": 11,
+  "chapters": [
+   1,
+   3,
+   4,
+   5,
+   6,
+   8,
+   12
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "hear|verb",
+  "lemma": "hear",
+  "pos": "verb",
+  "rank": 236,
+  "count": 45,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "ask|verb",
+  "lemma": "ask",
+  "pos": "verb",
+  "rank": 238,
+  "count": 33,
+  "chapters": [
+   1,
+   2,
+   3,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "show|verb",
+  "lemma": "show",
+  "pos": "verb",
+  "rank": 241,
+  "count": 5,
+  "chapters": [
+   1,
+   2,
+   6,
+   9
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "kill|verb",
+  "lemma": "kill",
+  "pos": "verb",
+  "rank": 243,
+  "count": 2,
+  "chapters": [
+   1,
+   6
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "next|adj",
+  "lemma": "next",
+  "pos": "adj",
+  "rank": 246,
+  "count": 27,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   10,
+   11
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "care|noun",
+  "lemma": "care",
+  "pos": "noun",
+  "rank": 248,
+  "count": 2,
+  "chapters": [
+   6,
+   9
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "try|verb",
+  "lemma": "try",
+  "pos": "verb",
+  "rank": 252,
+  "count": 43,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "many|adj",
+  "lemma": "many",
+  "pos": "adj",
+  "rank": 257,
+  "count": 11,
+  "chapters": [
+   1,
+   2,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   12
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "mind|noun",
+  "lemma": "mind",
+  "pos": "noun",
+  "rank": 258,
+  "count": 7,
+  "chapters": [
+   1,
+   2,
+   3,
+   5,
+   6,
+   11
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "boy|noun",
+  "lemma": "boy",
+  "pos": "noun",
+  "rank": 266,
+  "count": 3,
+  "chapters": [
+   6,
+   12
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "together|adv",
+  "lemma": "together",
+  "pos": "adv",
+  "rank": 267,
+  "count": 9,
+  "chapters": [
+   4,
+   5,
+   6,
+   7,
+   9
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "real|adj",
+  "lemma": "real",
+  "pos": "adj",
+  "rank": 272,
+  "count": 3,
+  "chapters": [
+   4,
+   6,
+   9
+  ],
+  "introducedChapter": 6
+ },
+ {
+  "id": "course|noun",
+  "lemma": "course",
+  "pos": "noun",
+  "rank": 218,
+  "count": 26,
+  "chapters": [
+   3,
+   7,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "stay|verb",
+  "lemma": "stay",
+  "pos": "verb",
+  "rank": 219,
+  "count": 6,
+  "chapters": [
+   2,
+   3,
+   4,
+   7,
+   9
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "wrong|adj",
+  "lemma": "wrong",
+  "pos": "adj",
+  "rank": 227,
+  "count": 5,
+  "chapters": [
+   2,
+   5,
+   7,
+   10
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "bad|adj",
+  "lemma": "bad",
+  "pos": "adj",
+  "rank": 229,
+  "count": 5,
+  "chapters": [
+   2,
+   3,
+   7,
+   12
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "today|noun",
+  "lemma": "today",
+  "pos": "noun",
+  "rank": 232,
+  "count": 1,
+  "chapters": [
+   7
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "understand|verb",
+  "lemma": "understand",
+  "pos": "verb",
+  "rank": 235,
+  "count": 7,
+  "chapters": [
+   2,
+   5,
+   7,
+   9,
+   11
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "remember|verb",
+  "lemma": "remember",
+  "pos": "verb",
+  "rank": 237,
+  "count": 20,
+  "chapters": [
+   1,
+   2,
+   5,
+   7,
+   8,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "morning|noun",
+  "lemma": "morning",
+  "pos": "noun",
+  "rank": 264,
+  "count": 5,
+  "chapters": [
+   2,
+   3,
+   5,
+   7,
+   10
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "room|noun",
+  "lemma": "room",
+  "pos": "noun",
+  "rank": 275,
+  "count": 13,
+  "chapters": [
+   4,
+   5,
+   6,
+   7,
+   11
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "move|verb",
+  "lemma": "move",
+  "pos": "verb",
+  "rank": 278,
+  "count": 10,
+  "chapters": [
+   3,
+   4,
+   5,
+   7,
+   8,
+   12
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "live|verb",
+  "lemma": "live",
+  "pos": "verb",
+  "rank": 281,
+  "count": 15,
+  "chapters": [
+   2,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "once|adv",
+  "lemma": "once",
+  "pos": "adv",
+  "rank": 288,
+  "count": 34,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "head|noun",
+  "lemma": "head",
+  "pos": "noun",
+  "rank": 290,
+  "count": 59,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "idea|noun",
+  "lemma": "idea",
+  "pos": "noun",
+  "rank": 293,
+  "count": 15,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "hold|verb",
+  "lemma": "hold",
+  "pos": "verb",
+  "rank": 295,
+  "count": 16,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   12
+  ],
+  "introducedChapter": 7
+ },
+ {
+  "id": "someone|noun",
+  "lemma": "someone",
+  "pos": "noun",
+  "rank": 207,
+  "count": 1,
+  "chapters": [
+   8
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "fine|adj",
+  "lemma": "fine",
+  "pos": "adj",
+  "rank": 208,
+  "count": 2,
+  "chapters": [
+   8,
+   9
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "else|adv",
+  "lemma": "else",
+  "pos": "adv",
+  "rank": 242,
+  "count": 11,
+  "chapters": [
+   1,
+   3,
+   4,
+   5,
+   8,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "friend|noun",
+  "lemma": "friend",
+  "pos": "noun",
+  "rank": 260,
+  "count": 5,
+  "chapters": [
+   1,
+   8,
+   10,
+   12
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "already|adv",
+  "lemma": "already",
+  "pos": "adv",
+  "rank": 277,
+  "count": 2,
+  "chapters": [
+   6,
+   8
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "miss|verb",
+  "lemma": "miss",
+  "pos": "verb",
+  "rank": 282,
+  "count": 6,
+  "chapters": [
+   1,
+   4,
+   6,
+   8
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "yet|adv",
+  "lemma": "yet",
+  "pos": "adv",
+  "rank": 306,
+  "count": 25,
+  "chapters": [
+   2,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "whole|adj",
+  "lemma": "whole",
+  "pos": "adj",
+  "rank": 308,
+  "count": 13,
+  "chapters": [
+   2,
+   3,
+   4,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "while|noun",
+  "lemma": "while",
+  "pos": "noun",
+  "rank": 311,
+  "count": 5,
+  "chapters": [
+   1,
+   4,
+   6,
+   7,
+   8
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "bring|verb",
+  "lemma": "bring",
+  "pos": "verb",
+  "rank": 319,
+  "count": 9,
+  "chapters": [
+   1,
+   4,
+   5,
+   8,
+   11
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "run|verb",
+  "lemma": "run",
+  "pos": "verb",
+  "rank": 322,
+  "count": 28,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   8,
+   10,
+   12
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "hard|adj",
+  "lemma": "hard",
+  "pos": "adj",
+  "rank": 324,
+  "count": 8,
+  "chapters": [
+   2,
+   4,
+   8,
+   11,
+   12
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "end|noun",
+  "lemma": "end",
+  "pos": "noun",
+  "rank": 331,
+  "count": 15,
+  "chapters": [
+   1,
+   2,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "play|verb",
+  "lemma": "play",
+  "pos": "verb",
+  "rank": 334,
+  "count": 10,
+  "chapters": [
+   1,
+   2,
+   6,
+   8,
+   9
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "face|noun",
+  "lemma": "face",
+  "pos": "noun",
+  "rank": 347,
+  "count": 15,
+  "chapters": [
+   1,
+   2,
+   4,
+   5,
+   6,
+   8,
+   10,
+   12
+  ],
+  "introducedChapter": 8
+ },
+ {
+  "id": "ready|adj",
+  "lemma": "ready",
+  "pos": "adj",
+  "rank": 289,
+  "count": 8,
+  "chapters": [
+   2,
+   3,
+   4,
+   6,
+   9
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "pretty|adj",
+  "lemma": "pretty",
+  "pos": "adj",
+  "rank": 302,
+  "count": 1,
+  "chapters": [
+   9
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "bit|noun",
+  "lemma": "bit",
+  "pos": "noun",
+  "rank": 303,
+  "count": 16,
+  "chapters": [
+   1,
+   4,
+   5,
+   6,
+   7,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "use|verb",
+  "lemma": "use",
+  "pos": "verb",
+  "rank": 310,
+  "count": 15,
+  "chapters": [
+   2,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "meet|verb",
+  "lemma": "meet",
+  "pos": "verb",
+  "rank": 318,
+  "count": 5,
+  "chapters": [
+   3,
+   4,
+   9
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "alone|adv",
+  "lemma": "alone",
+  "pos": "adv",
+  "rank": 326,
+  "count": 4,
+  "chapters": [
+   2,
+   3,
+   5,
+   9
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "school|noun",
+  "lemma": "school",
+  "pos": "noun",
+  "rank": 328,
+  "count": 3,
+  "chapters": [
+   9,
+   10
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "turn|verb",
+  "lemma": "turn",
+  "pos": "verb",
+  "rank": 352,
+  "count": 40,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "business|noun",
+  "lemma": "business",
+  "pos": "noun",
+  "rank": 353,
+  "count": 7,
+  "chapters": [
+   4,
+   6,
+   8,
+   9,
+   12
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "true|adj",
+  "lemma": "true",
+  "pos": "adj",
+  "rank": 357,
+  "count": 4,
+  "chapters": [
+   1,
+   9,
+   12
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "die|verb",
+  "lemma": "die",
+  "pos": "verb",
+  "rank": 358,
+  "count": 2,
+  "chapters": [
+   9,
+   12
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "heart|noun",
+  "lemma": "heart",
+  "pos": "noun",
+  "rank": 359,
+  "count": 3,
+  "chapters": [
+   8,
+   9,
+   12
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "soon|adv",
+  "lemma": "soon",
+  "pos": "adv",
+  "rank": 360,
+  "count": 25,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   8,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "worry|verb",
+  "lemma": "worry",
+  "pos": "verb",
+  "rank": 362,
+  "count": 2,
+  "chapters": [
+   4,
+   9
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "watch|verb",
+  "lemma": "watch",
+  "pos": "verb",
+  "rank": 365,
+  "count": 9,
+  "chapters": [
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 9
+ },
+ {
+  "id": "thought|noun",
+  "lemma": "thought",
+  "pos": "noun",
+  "rank": 167,
+  "count": 2,
+  "chapters": [
+   10,
+   11
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "open|verb",
+  "lemma": "open",
+  "pos": "verb",
+  "rank": 343,
+  "count": 14,
+  "chapters": [
+   1,
+   4,
+   5,
+   6,
+   7,
+   10,
+   12
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "hand|noun",
+  "lemma": "hand",
+  "pos": "noun",
+  "rank": 367,
+  "count": 32,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   8,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "beautiful|adj",
+  "lemma": "beautiful",
+  "pos": "adj",
+  "rank": 370,
+  "count": 8,
+  "chapters": [
+   5,
+   7,
+   10
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "person|noun",
+  "lemma": "person",
+  "pos": "noun",
+  "rank": 379,
+  "count": 5,
+  "chapters": [
+   1,
+   2,
+   3,
+   10,
+   12
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "part|noun",
+  "lemma": "part",
+  "pos": "noun",
+  "rank": 380,
+  "count": 3,
+  "chapters": [
+   8,
+   10,
+   11
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "late|adj",
+  "lemma": "late",
+  "pos": "adj",
+  "rank": 382,
+  "count": 8,
+  "chapters": [
+   1,
+   3,
+   4,
+   8,
+   10,
+   12
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "stuff|noun",
+  "lemma": "stuff",
+  "pos": "noun",
+  "rank": 383,
+  "count": 3,
+  "chapters": [
+   5,
+   10
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "minute|noun",
+  "lemma": "minute",
+  "pos": "noun",
+  "rank": 387,
+  "count": 32,
+  "chapters": [
+   1,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "change|verb",
+  "lemma": "change",
+  "pos": "verb",
+  "rank": 393,
+  "count": 19,
+  "chapters": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "far|adv",
+  "lemma": "far",
+  "pos": "adv",
+  "rank": 399,
+  "count": 13,
+  "chapters": [
+   2,
+   4,
+   5,
+   6,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "shut|verb",
+  "lemma": "shut",
+  "pos": "verb",
+  "rank": 404,
+  "count": 7,
+  "chapters": [
+   1,
+   2,
+   4,
+   10,
+   12
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "check|verb",
+  "lemma": "check",
+  "pos": "verb",
+  "rank": 410,
+  "count": 3,
+  "chapters": [
+   8,
+   10
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "different|adj",
+  "lemma": "different",
+  "pos": "adj",
+  "rank": 414,
+  "count": 9,
+  "chapters": [
+   2,
+   5,
+   9,
+   10
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "close|verb",
+  "lemma": "close",
+  "pos": "verb",
+  "rank": 431,
+  "count": 10,
+  "chapters": [
+   1,
+   3,
+   7,
+   8,
+   9,
+   10,
+   12
+  ],
+  "introducedChapter": 10
+ },
+ {
+  "id": "nice|adj",
+  "lemma": "nice",
+  "pos": "adj",
+  "rank": 204,
+  "count": 6,
+  "chapters": [
+   1,
+   2,
+   11
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "door|noun",
+  "lemma": "door",
+  "pos": "noun",
+  "rank": 297,
+  "count": 32,
+  "chapters": [
+   1,
+   2,
+   4,
+   5,
+   6,
+   7,
+   11
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "guess|verb",
+  "lemma": "guess",
+  "pos": "verb",
+  "rank": 315,
+  "count": 6,
+  "chapters": [
+   2,
+   4,
+   7,
+   11
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "few|adj",
+  "lemma": "few",
+  "pos": "adj",
+  "rank": 339,
+  "count": 9,
+  "chapters": [
+   1,
+   3,
+   4,
+   5,
+   6,
+   11,
+   12
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "second|adj",
+  "lemma": "second",
+  "pos": "adj",
+  "rank": 376,
+  "count": 4,
+  "chapters": [
+   1,
+   4,
+   6,
+   11
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "forget|verb",
+  "lemma": "forget",
+  "pos": "verb",
+  "rank": 390,
+  "count": 9,
+  "chapters": [
+   2,
+   4,
+   6,
+   7,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "deal|noun",
+  "lemma": "deal",
+  "pos": "noun",
+  "rank": 413,
+  "count": 12,
+  "chapters": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   11
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "chance|noun",
+  "lemma": "chance",
+  "pos": "noun",
+  "rank": 426,
+  "count": 3,
+  "chapters": [
+   4,
+   5,
+   11
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "dear|adj",
+  "lemma": "dear",
+  "pos": "adj",
+  "rank": 427,
+  "count": 28,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   8,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "quite|adv",
+  "lemma": "quite",
+  "pos": "adv",
+  "rank": 428,
+  "count": 55,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "word|noun",
+  "lemma": "word",
+  "pos": "noun",
+  "rank": 436,
+  "count": 31,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   11,
+   12
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "wish|verb",
+  "lemma": "wish",
+  "pos": "verb",
+  "rank": 447,
+  "count": 21,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   11
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "moment|noun",
+  "lemma": "moment",
+  "pos": "noun",
+  "rank": 448,
+  "count": 31,
+  "chapters": [
+   1,
+   2,
+   4,
+   5,
+   6,
+   8,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "week|noun",
+  "lemma": "week",
+  "pos": "noun",
+  "rank": 450,
+  "count": 4,
+  "chapters": [
+   5,
+   9,
+   11,
+   12
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "rest|noun",
+  "lemma": "rest",
+  "pos": "noun",
+  "rank": 453,
+  "count": 8,
+  "chapters": [
+   3,
+   5,
+   6,
+   8,
+   11,
+   12
+  ],
+  "introducedChapter": 11
+ },
+ {
+  "id": "woman|noun",
+  "lemma": "woman",
+  "pos": "noun",
+  "rank": 253,
+  "count": 2,
+  "chapters": [
+   4,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "dead|adj",
+  "lemma": "dead",
+  "pos": "adj",
+  "rank": 256,
+  "count": 4,
+  "chapters": [
+   4,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "baby|noun",
+  "lemma": "baby",
+  "pos": "noun",
+  "rank": 274,
+  "count": 14,
+  "chapters": [
+   6,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "happy|adj",
+  "lemma": "happy",
+  "pos": "adj",
+  "rank": 296,
+  "count": 1,
+  "chapters": [
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "matter|noun",
+  "lemma": "matter",
+  "pos": "noun",
+  "rank": 317,
+  "count": 4,
+  "chapters": [
+   1,
+   6,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "ago|adv",
+  "lemma": "ago",
+  "pos": "adv",
+  "rank": 342,
+  "count": 2,
+  "chapters": [
+   2,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "year|noun",
+  "lemma": "year",
+  "pos": "noun",
+  "rank": 364,
+  "count": 3,
+  "chapters": [
+   7,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "exactly|adv",
+  "lemma": "exactly",
+  "pos": "adv",
+  "rank": 384,
+  "count": 8,
+  "chapters": [
+   3,
+   5,
+   6,
+   7,
+   8,
+   9,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "everybody|noun",
+  "lemma": "everybody",
+  "pos": "noun",
+  "rank": 391,
+  "count": 5,
+  "chapters": [
+   6,
+   8,
+   9,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "point|verb",
+  "lemma": "point",
+  "pos": "verb",
+  "rank": 416,
+  "count": 5,
+  "chapters": [
+   3,
+   4,
+   7,
+   8,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "somebody|noun",
+  "lemma": "somebody",
+  "pos": "noun",
+  "rank": 420,
+  "count": 6,
+  "chapters": [
+   1,
+   2,
+   3,
+   8,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "afraid|adj",
+  "lemma": "afraid",
+  "pos": "adj",
+  "rank": 424,
+  "count": 12,
+  "chapters": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   7,
+   8,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "sleep|verb",
+  "lemma": "sleep",
+  "pos": "verb",
+  "rank": 425,
+  "count": 4,
+  "chapters": [
+   7,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "important|adj",
+  "lemma": "important",
+  "pos": "adj",
+  "rank": 438,
+  "count": 7,
+  "chapters": [
+   3,
+   5,
+   12
+  ],
+  "introducedChapter": 12
+ },
+ {
+  "id": "set|verb",
+  "lemma": "set",
+  "pos": "verb",
+  "rank": 439,
+  "count": 14,
+  "chapters": [
+   1,
+   4,
+   5,
+   6,
+   7,
+   10,
+   12
+  ],
+  "introducedChapter": 12
+ }
+]

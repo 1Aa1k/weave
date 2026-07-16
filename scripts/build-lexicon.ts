@@ -1,13 +1,16 @@
-// Build a Japanese lexicon for a book's candidate lexemes, then schedule word
-// introductions (NEW_WORDS_PER_CHAPTER per chapter).
+// Build a target-language lexicon for a book's candidate lexemes, then
+// schedule word introductions (NEW_WORDS_PER_CHAPTER per chapter).
 //
 // Resolution order per lexeme:
 //   1. data/books/<slug>/lexicon-overrides.json  (book-specific senses)
-//   2. data/lexicon/ja.json                      (global curated lexicon)
-//   3. JMdict reverse lookup                     (auto; low-confidence picks
+//   2. data/lexicon/<language>.json              (global curated lexicon)
+//   3. dictionary reverse lookup                 (auto; low-confidence picks
 //      are written to review-queue.json for a curation pass)
 //
-// Usage: npx tsx scripts/build-lexicon.ts <slug> <jmdict-eng.json>
+// The dictionary comes from the book's language (meta.json): JMdict for ja,
+// CC-CEDICT for zh. See scripts/dict/.
+//
+// Usage: npx tsx scripts/build-lexicon.ts <slug> [dict-path]
 //
 // Writes data/books/<slug>/lexicon.json       { [lexemeId]: LexiconEntry }
 // Writes data/books/<slug>/vocab.json         VocabEntry[] (schedule)
@@ -15,108 +18,9 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import type { Candidate, LexiconEntry, Pos, VocabEntry } from "../src/lib/types";
+import type { BookMeta, Candidate, LexiconEntry, Pos, VocabEntry } from "../src/lib/types";
 import { NEW_WORDS_PER_CHAPTER } from "../src/lib/types";
-
-interface JmKanji { common: boolean; text: string }
-interface JmKana { common: boolean; text: string; appliesToKanji: string[] }
-interface JmGloss { lang: string; text: string }
-interface JmSense {
-  partOfSpeech: string[];
-  misc: string[];
-  gloss: JmGloss[];
-  appliesToKanji: string[];
-  appliesToKana: string[];
-}
-interface JmWord { id: string; kanji: JmKanji[]; kana: JmKana[]; sense: JmSense[] }
-
-// hon/hum/pol: keigo forms (参る, おっしゃる) are wrong first words for a learner
-const SKIP_MISC = new Set(["arch", "obs", "rare", "obsc", "vulg", "derog", "hon", "hum", "pol"]);
-
-function posMatches(bucket: Pos, tags: string[]): boolean {
-  if (bucket === "noun") return tags.includes("n");
-  if (bucket === "verb") return tags.some((t) => t.startsWith("v") && t !== "v-unspec");
-  if (bucket === "adj") return tags.some((t) => t === "adj-i" || t === "adj-na" || t === "adj-ix");
-  return tags.includes("adv") || tags.includes("adv-to");
-}
-
-interface Hit { word: JmWord; senseIdx: number; glossIdx: number }
-
-/** gloss text (lowercased, "to " stripped) -> hits across all of JMdict */
-export function buildGlossIndex(words: JmWord[]): Map<string, Hit[]> {
-  const index = new Map<string, Hit[]>();
-  for (const word of words) {
-    word.sense.forEach((sense, senseIdx) => {
-      if (sense.misc.some((m) => SKIP_MISC.has(m))) return;
-      sense.gloss.forEach((gloss, glossIdx) => {
-        if (gloss.lang !== "eng") return;
-        const key = gloss.text.toLowerCase().replace(/^to /, "");
-        if (key.length < 2 || key.includes(" ")) return; // single-word glosses only
-        let hits = index.get(key);
-        if (!hits) index.set(key, (hits = []));
-        hits.push({ word, senseIdx, glossIdx });
-      });
-    });
-  }
-  return index;
-}
-
-function isCommon(word: JmWord): boolean {
-  return word.kanji.some((k) => k.common) || word.kana.some((k) => k.common);
-}
-
-function isKatakanaOnly(word: JmWord): boolean {
-  if (word.kanji.length > 0) return false;
-  return word.kana.every((k) => /^[゠-ヿー]+$/.test(k.text));
-}
-
-export function scoreHit(hit: Hit, bucket: Pos): number {
-  const sense = hit.word.sense[hit.senseIdx];
-  if (!posMatches(bucket, sense.partOfSpeech)) return -1;
-  let score = 0;
-  if (isCommon(hit.word)) score += 4;
-  if (hit.glossIdx === 0) score += 2;
-  if (hit.senseIdx === 0) score += 1;
-  // Loanwords (リトル, ラブ) teach nothing; prefer native vocabulary.
-  if (isKatakanaOnly(hit.word)) score -= 4;
-  return score;
-}
-
-function pickReading(word: JmWord, kanjiText: string | null): string {
-  const applicable = word.kana.filter(
-    (k) => !kanjiText || k.appliesToKanji.includes("*") || k.appliesToKanji.includes(kanjiText),
-  );
-  const pool = applicable.length > 0 ? applicable : word.kana;
-  return (pool.find((k) => k.common) ?? pool[0])?.text ?? "";
-}
-
-export function hitToEntry(hit: Hit): LexiconEntry {
-  const { word: jmWord, senseIdx } = hit;
-  const kanji = (jmWord.kanji.find((k) => k.common) ?? jmWord.kanji[0])?.text ?? null;
-  const reading = pickReading(jmWord, kanji);
-  const display = kanji ?? reading;
-  const gloss = jmWord.sense[senseIdx].gloss
-    .filter((g) => g.lang === "eng")
-    .slice(0, 4)
-    .map((g) => g.text)
-    .join("; ");
-  return { word: display, reading: display === reading ? "" : reading, gloss, seq: Number(jmWord.id) };
-}
-
-export function lookup(index: Map<string, Hit[]>, lemma: string, pos: Pos): LexiconEntry | null {
-  const hits = index.get(lemma);
-  if (!hits) return null;
-  let best: Hit | null = null;
-  let bestScore = -1;
-  for (const hit of hits) {
-    const score = scoreHit(hit, pos);
-    if (score > bestScore) {
-      best = hit;
-      bestScore = score;
-    }
-  }
-  return best && bestScore >= 0 ? hitToEntry(best) : null;
-}
+import { loadAdapter } from "./dict";
 
 /**
  * Assign each looked-up lexeme an introduction chapter: each chapter gets up
@@ -171,34 +75,30 @@ export interface ReviewItem {
   reason: string;
 }
 
-function bestScore(index: Map<string, Hit[]>, lemma: string, pos: Pos): number {
-  const hits = index.get(lemma) ?? [];
-  return hits.reduce((best, h) => Math.max(best, scoreHit(h, pos)), -1);
-}
-
 export interface LexiconSummary {
+  language: string;
   scheduled: number;
   chapterCount: number;
   byProvenance: { override: number; global: number; auto: number };
   reviewQueue: ReviewItem[];
 }
 
-export function buildBookLexicon(slug: string, jmdictPath: string): LexiconSummary {
+export function buildBookLexicon(slug: string, dictPath?: string): LexiconSummary {
   const bookDir = path.join("data", "books", slug);
   const candidates: Candidate[] = JSON.parse(
     fs.readFileSync(path.join(bookDir, "candidates.json"), "utf8"),
   );
+  const meta: BookMeta = JSON.parse(fs.readFileSync(path.join(bookDir, "meta.json"), "utf8"));
   const chapterCount = fs.readdirSync(path.join(bookDir, "chapters")).length;
 
-  console.log("loading JMdict...");
-  const jmdict: { words: JmWord[] } = JSON.parse(fs.readFileSync(jmdictPath, "utf8"));
-  const index = buildGlossIndex(jmdict.words);
+  console.log(`loading ${meta.language} dictionary...`);
+  const dict = loadAdapter(meta.language, dictPath);
 
   const overridesPath = path.join(bookDir, "lexicon-overrides.json");
   const overrides: Record<string, LexiconEntry> = fs.existsSync(overridesPath)
     ? JSON.parse(fs.readFileSync(overridesPath, "utf8"))
     : {};
-  const globalPath = path.join("data", "lexicon", "ja.json");
+  const globalPath = path.join("data", "lexicon", `${meta.language}.json`);
   const globalLexicon: Record<string, LexiconEntry & { source?: string }> = fs.existsSync(
     globalPath,
   )
@@ -216,7 +116,7 @@ export function buildBookLexicon(slug: string, jmdictPath: string): LexiconSumma
       lexicon[c.id] = entry;
       provenance[c.id] = "global";
     } else {
-      const entry = lookup(index, c.lemma, c.pos);
+      const entry = dict.lookup(c.lemma, c.pos);
       if (entry) {
         lexicon[c.id] = entry;
         provenance[c.id] = "auto";
@@ -234,7 +134,7 @@ export function buildBookLexicon(slug: string, jmdictPath: string): LexiconSumma
   const queue: ReviewItem[] = [];
   for (const v of vocab) {
     if (provenance[v.id] !== "auto") continue;
-    const score = bestScore(index, v.lemma, v.pos);
+    const score = dict.bestScore(v.lemma, v.pos);
     const reasons: string[] = [];
     if (v.rank <= REVIEW_RANK_THRESHOLD) reasons.push(`common word (rank ${v.rank})`);
     if (score <= REVIEW_SCORE_THRESHOLD) reasons.push(`weak match (score ${score})`);
@@ -252,18 +152,24 @@ export function buildBookLexicon(slug: string, jmdictPath: string): LexiconSumma
 
   const byProv = { override: 0, global: 0, auto: 0 };
   for (const id of scheduledIds) byProv[provenance[id]]++;
-  return { scheduled: vocab.length, chapterCount, byProvenance: byProv, reviewQueue: queue };
+  return {
+    language: meta.language,
+    scheduled: vocab.length,
+    chapterCount,
+    byProvenance: byProv,
+    reviewQueue: queue,
+  };
 }
 
 function main() {
-  const [, , slug, jmdictPath] = process.argv;
-  if (!slug || !jmdictPath) {
-    console.error("usage: tsx scripts/build-lexicon.ts <slug> <jmdict-eng.json>");
+  const [, , slug, dictPath] = process.argv;
+  if (!slug) {
+    console.error("usage: tsx scripts/build-lexicon.ts <slug> [dict-path]");
     process.exit(1);
   }
-  const s = buildBookLexicon(slug, jmdictPath);
+  const s = buildBookLexicon(slug, dictPath);
   console.log(
-    `${slug}: ${s.scheduled} scheduled across ${s.chapterCount} chapters ` +
+    `${slug} (${s.language}): ${s.scheduled} scheduled across ${s.chapterCount} chapters ` +
     `(overrides ${s.byProvenance.override}, global ${s.byProvenance.global}, auto ${s.byProvenance.auto}) | ` +
     `review queue: ${s.reviewQueue.length}`,
   );
