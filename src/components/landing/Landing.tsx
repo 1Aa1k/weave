@@ -109,7 +109,7 @@ export default function Landing() {
             <div className="font-ui mt-10 flex flex-wrap items-center gap-5 text-sm">
               <Link
                 href="/library"
-                className="rounded bg-[var(--vermilion)] px-6 py-3 text-[#f4eee1]"
+                className="rounded bg-[var(--indigo)] px-6 py-3 font-medium text-[var(--accent-ink)]"
               >
                 Open the library
               </Link>
@@ -161,7 +161,7 @@ export default function Landing() {
 function Step({ num, title, body }: { num: string; title: string; body: string }) {
   return (
     <div className="grid grid-cols-[3.5rem_1fr] items-start gap-6 border-t border-[var(--line)] pt-8 md:grid-cols-[5rem_1fr_1.5fr] md:gap-12">
-      <span className="font-ui pt-2 text-sm tracking-[0.2em] text-[var(--vermilion)]" aria-hidden>
+      <span className="font-ui pt-2 text-sm tracking-[0.2em] text-[var(--ink-soft)]" aria-hidden>
         {num}
       </span>
       <h2 className="text-2xl md:text-3xl">{title}</h2>

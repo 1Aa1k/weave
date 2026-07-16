@@ -19,10 +19,10 @@ interface SessionPayload {
 }
 
 const GRADES = [
-  { rating: 1, label: "Again", key: "1", color: "var(--again)" },
+  { rating: 1, label: "Again", key: "1", color: "var(--danger)" },
   { rating: 2, label: "Hard", key: "2", color: "var(--ink-soft)" },
-  { rating: 3, label: "Good", key: "3", color: "var(--good)" },
-  { rating: 4, label: "Easy", key: "4", color: "var(--indigo)" },
+  { rating: 3, label: "Good", key: "3", color: "var(--indigo)" },
+  { rating: 4, label: "Easy", key: "4", color: "var(--ink-soft)" },
 ] as const;
 
 interface ReviewSessionProps {

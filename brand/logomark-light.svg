@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="weave">
+  <!-- Light-background variant: indigo deepened, parchment threads become ink. -->
+  <g stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M17 6 v6" stroke="#3d6ea5"/>
+    <path d="M17 22 v20" stroke="#3d6ea5"/>
+    <path d="M31 6 v20" stroke="#3d6ea5"/>
+    <path d="M31 36 v6" stroke="#3d6ea5"/>
+    <path d="M6 17 h20" stroke="#26251f"/>
+    <path d="M36 17 h6" stroke="#26251f"/>
+    <path d="M6 31 h6" stroke="#26251f"/>
+    <path d="M22 31 h20" stroke="#26251f"/>
+  </g>
+</svg>

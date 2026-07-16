@@ -10,14 +10,13 @@
   --ink-soft: #9b937d;
   --line: #363021;
   --line-solid: #453e2b;
-  /* ai-iro indigo thread, brightened to read on dark: the woven words */
+  /* ai-iro indigo thread, brightened to read on dark: the one accent */
   --indigo: #8db4e2;
   --indigo-soft: #26303f;
-  /* shu-iro, vermilion of a hanko seal */
-  --vermilion: #c14a33;
-  /* review grades */
-  --again: #d16a54;
-  --good: #8cb896;
+  /* dark ink for text set on an indigo fill */
+  --accent-ink: #14181f;
+  /* muted warning, used only for the Again grade */
+  --danger: #c0705d;
 
   --font-body: "Noto Serif", "Liberation Serif", georgia, serif;
   /* target-language serif: JP first, then the other CJK cuts, then fontconfig */
@@ -29,6 +28,22 @@ html {
   background: var(--paper);
   color: var(--ink);
   color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--indigo-soft);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--indigo);
+  outline-offset: 2px;
+}
+
+a,
+button {
+  transition: color 120ms ease, background-color 120ms ease, border-color 120ms ease;
 }
 
 body {
