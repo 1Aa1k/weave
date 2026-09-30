@@ -28,13 +28,13 @@ describe("rateCard", () => {
     const now = new Date("2026-07-15T12:00:00Z");
     const card = srs.rateCard("cat|noun", "alice", 3, now);
     expect(card.due.getTime()).toBeGreaterThan(now.getTime());
-    expect(srs.getCardRow("cat|noun")).toBeDefined();
+    expect(srs.getCardRow("cat|noun", "ja")).toBeDefined();
   });
 
   it("rejects nothing but records a review log entry", async () => {
     const srs = await loadSrs();
     srs.rateCard("dog|noun", "alice", 1);
-    const row = srs.getCardRow("dog|noun");
+    const row = srs.getCardRow("dog|noun", "ja");
     expect(row?.book).toBe("alice");
   });
 });
@@ -49,7 +49,7 @@ describe("isKnown / furigana fade", () => {
       now = new Date(now.getTime() + 1000 * 60 * 60 * 24 * 30);
       srs.rateCard("run|verb", "alice", 4, now);
     }
-    expect(srs.isKnown(srs.getCardRow("run|verb"))).toBe(true);
+    expect(srs.isKnown(srs.getCardRow("run|verb", "ja"))).toBe(true);
     expect(srs.isKnown(undefined)).toBe(false);
   });
 });
@@ -87,5 +87,37 @@ describe("buildSession + gate (integration, real alice data)", () => {
     const after = srs.buildSession("alice", 1, now);
     expect(after.done).toBe(true);
     expect(srs.getCardsDoneThrough("alice")).toBe(1);
+  });
+});
+
+describe("cards per language", () => {
+  it("keeps a German card apart from the Japanese card for the same lexeme", async () => {
+    const srs = await loadSrs();
+    const now = new Date("2026-09-30T12:00:00Z");
+    srs.rateCard("know|verb", "alice", 4, now);
+    srs.rateCard("know|verb", "alice-de", 1, now);
+    const ja = srs.getCardRow("know|verb", "ja");
+    const de = srs.getCardRow("know|verb", "de");
+    expect(ja?.book).toBe("alice");
+    expect(de?.book).toBe("alice-de");
+    expect(ja!.stability).toBeGreaterThan(de!.stability);
+  });
+
+  it("migrates an old lexeme-keyed cards table, tagging rows by book language", async () => {
+    const Database = (await import("better-sqlite3")).default;
+    const old = new Database(process.env.WEAVE_DB!);
+    old.exec(`CREATE TABLE cards (lexeme_id TEXT PRIMARY KEY, book TEXT NOT NULL,
+      card_json TEXT NOT NULL, due TEXT NOT NULL, state INTEGER NOT NULL,
+      stability REAL NOT NULL DEFAULT 0);
+      CREATE INDEX idx_cards_due ON cards(book, due);`);
+    const ins = old.prepare("INSERT INTO cards VALUES (?, ?, '{}', '2026-01-01', 2, 9)");
+    ins.run("know|verb", "alice");
+    ins.run("say|verb", "alice-zh");
+    old.close();
+
+    const srs = await loadSrs();
+    expect(srs.getCardRow("know|verb", "ja")?.stability).toBe(9);
+    expect(srs.getCardRow("say|verb", "zh")?.book).toBe("alice-zh");
+    expect(srs.getCardRow("know|verb", "de")).toBeUndefined();
   });
 });

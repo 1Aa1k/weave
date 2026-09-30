@@ -108,6 +108,14 @@ body {
   font-size: 0.95rem;
   user-select: none;
 }
+/* Latin-script labels ("Kapitel 3") run sideways; stacking upright letters
+   only reads well for CJK. */
+.chapter-ornament:not(:lang(ja)):not(:lang(zh)) {
+  text-orientation: sideways;
+  white-space: nowrap;
+  font-family: inherit;
+  letter-spacing: 0.25em;
+}
 
 /* definition slip */
 .slip {

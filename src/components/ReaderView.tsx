@@ -98,7 +98,7 @@ export default function ReaderView({
   return (
     <div onClick={() => setSlip(null)}>
       <div className="relative mt-12 mb-10 lg:max-w-3xl">
-        <span className="chapter-ornament absolute -left-2 top-1 hidden md:block" aria-hidden>
+        <span className="chapter-ornament absolute -left-2 top-1 hidden md:block" lang={language} aria-hidden>
           {chapterOrnament(language, chapter.index)}
         </span>
         <div className="md:pl-14">

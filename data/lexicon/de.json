@@ -1,0 +1,1262 @@
+{
+ "no|adv": {
+  "word": "nein",
+  "reading": "",
+  "gloss": "no",
+  "seq": 0,
+  "source": "manual"
+ },
+ "know|verb": {
+  "word": "wissen",
+  "reading": "",
+  "gloss": "to know; to be aware of; to remember",
+  "seq": 6639,
+  "source": "reviewed"
+ },
+ "like|verb": {
+  "word": "mögen",
+  "reading": "",
+  "gloss": "to like; would like; to want; to want to",
+  "seq": 9033,
+  "source": "reviewed"
+ },
+ "get|verb": {
+  "word": "bekommen",
+  "reading": "",
+  "gloss": "to get; to receive",
+  "seq": 0,
+  "source": "manual"
+ },
+ "go|verb": {
+  "word": "gehen",
+  "reading": "",
+  "gloss": "to go, to walk; to leave; to leave, to take off; to be going",
+  "seq": 1907,
+  "source": "reviewed"
+ },
+ "right|adj": {
+  "word": "richtig",
+  "reading": "",
+  "gloss": "right; correct",
+  "seq": 0,
+  "source": "manual"
+ },
+ "come|verb": {
+  "word": "kommen",
+  "reading": "",
+  "gloss": "to come; to arrive; to come to; to come over",
+  "seq": 2655,
+  "source": "reviewed"
+ },
+ "think|verb": {
+  "word": "denken",
+  "reading": "",
+  "gloss": "to think",
+  "seq": 0,
+  "source": "manual"
+ },
+ "see|verb": {
+  "word": "sehen",
+  "reading": "",
+  "gloss": "to see; to have sight; to perceive by vision; to realize",
+  "seq": 389,
+  "source": "reviewed"
+ },
+ "good|adj": {
+  "word": "gut",
+  "reading": "",
+  "gloss": "good; all right, fair, proper",
+  "seq": 724,
+  "source": "reviewed"
+ },
+ "let|verb": {
+  "word": "lassen",
+  "reading": "",
+  "gloss": "to allow; to permit; to let; to have someone",
+  "seq": 6431,
+  "source": "reviewed"
+ },
+ "time|noun": {
+  "word": "Zeit",
+  "reading": "die",
+  "gloss": "time; time of day; period, era; stint",
+  "seq": 1390,
+  "source": "reviewed"
+ },
+ "back|adv": {
+  "word": "zurück",
+  "reading": "",
+  "gloss": "back, backward, backwards, to the rear",
+  "seq": 1207,
+  "source": "reviewed"
+ },
+ "look|verb": {
+  "word": "schauen",
+  "reading": "",
+  "gloss": "to look",
+  "seq": 0,
+  "source": "manual"
+ },
+ "take|verb": {
+  "word": "nehmen",
+  "reading": "",
+  "gloss": "to take; to take from; to hold, to grasp; to take, to consider",
+  "seq": 1239,
+  "source": "reviewed"
+ },
+ "want|verb": {
+  "word": "wollen",
+  "reading": "",
+  "gloss": "to want; to wish; to desire; to demand",
+  "seq": 8311,
+  "source": "reviewed"
+ },
+ "tell|verb": {
+  "word": "erzählen",
+  "reading": "",
+  "gloss": "to tell",
+  "seq": 0,
+  "source": "manual"
+ },
+ "really|adv": {
+  "word": "wirklich",
+  "reading": "",
+  "gloss": "really, actually",
+  "seq": 19294,
+  "source": "reviewed"
+ },
+ "say|verb": {
+  "word": "sagen",
+  "reading": "",
+  "gloss": "to say; to tell; to mean, to ring a bell",
+  "seq": 8298,
+  "source": "reviewed"
+ },
+ "something|noun": {
+  "word": "etwas",
+  "reading": "",
+  "gloss": "something",
+  "seq": 0,
+  "source": "manual"
+ },
+ "way|noun": {
+  "word": "Weg",
+  "reading": "der",
+  "gloss": "way; path",
+  "seq": 0,
+  "source": "manual"
+ },
+ "down|adv": {
+  "word": "hinunter",
+  "reading": "",
+  "gloss": "down; downwards",
+  "seq": 0,
+  "source": "manual"
+ },
+ "make|verb": {
+  "word": "machen",
+  "reading": "",
+  "gloss": "to make, to produce, to create; to make, prepare; to do, perform, carry out; to do",
+  "seq": 6505,
+  "source": "reviewed"
+ },
+ "never|adv": {
+  "word": "nie",
+  "reading": "",
+  "gloss": "never, never at all; never, not once",
+  "seq": 1251,
+  "source": "reviewed"
+ },
+ "little|adj": {
+  "word": "klein",
+  "reading": "",
+  "gloss": "little; small",
+  "seq": 0,
+  "source": "manual"
+ },
+ "please|verb": {
+  "word": "bitte",
+  "reading": "",
+  "gloss": "please",
+  "seq": 0,
+  "source": "manual"
+ },
+ "love|noun": {
+  "word": "Liebe",
+  "reading": "die",
+  "gloss": "love; a love relationship; sex; sexual relations",
+  "seq": 1731,
+  "source": "reviewed"
+ },
+ "give|verb": {
+  "word": "geben",
+  "reading": "",
+  "gloss": "to give; to hand, to pass, to put within reach; to communicate, to signal",
+  "seq": 641,
+  "source": "reviewed"
+ },
+ "sure|adj": {
+  "word": "sicher",
+  "reading": "",
+  "gloss": "safe, secure; sure, certain",
+  "seq": 552,
+  "source": "reviewed"
+ },
+ "thing|noun": {
+  "word": "Ding",
+  "reading": "das",
+  "gloss": "thing; girl; boy; thing, prick, penis",
+  "seq": 9100,
+  "source": "reviewed"
+ },
+ "one|noun": {
+  "word": "eins",
+  "reading": "",
+  "gloss": "one",
+  "seq": 0,
+  "source": "manual"
+ },
+ "mean|verb": {
+  "word": "meinen",
+  "reading": "",
+  "gloss": "to mean",
+  "seq": 0,
+  "source": "manual"
+ },
+ "help|verb": {
+  "word": "helfen",
+  "reading": "",
+  "gloss": "to help; to assist; to aid",
+  "seq": 2432,
+  "source": "reviewed"
+ },
+ "first|adj": {
+  "word": "erste",
+  "reading": "",
+  "gloss": "first",
+  "seq": 10650,
+  "source": "reviewed"
+ },
+ "find|verb": {
+  "word": "finden",
+  "reading": "",
+  "gloss": "to find; to discover; to think, to consider, to find; to find one's way",
+  "seq": 6501,
+  "source": "reviewed"
+ },
+ "life|noun": {
+  "word": "Leben",
+  "reading": "das",
+  "gloss": "life",
+  "seq": 0,
+  "source": "manual"
+ },
+ "nothing|noun": {
+  "word": "nichts",
+  "reading": "",
+  "gloss": "nothing",
+  "seq": 0,
+  "source": "manual"
+ },
+ "day|noun": {
+  "word": "Tag",
+  "reading": "der",
+  "gloss": "day; day, daylight; day, daylight, light; light",
+  "seq": 5382,
+  "source": "reviewed"
+ },
+ "wait|verb": {
+  "word": "warten",
+  "reading": "",
+  "gloss": "to wait; to maintain",
+  "seq": 8321,
+  "source": "reviewed"
+ },
+ "call|verb": {
+  "word": "rufen",
+  "reading": "",
+  "gloss": "to call",
+  "seq": 0,
+  "source": "manual"
+ },
+ "talk|verb": {
+  "word": "reden",
+  "reading": "",
+  "gloss": "to talk, to speak, to orate; to talk, to reveal; to say, to speak",
+  "seq": 2651,
+  "source": "reviewed"
+ },
+ "away|adv": {
+  "word": "weg",
+  "reading": "",
+  "gloss": "away; gone, not there",
+  "seq": 1324,
+  "source": "reviewed"
+ },
+ "home|noun": {
+  "word": "Zuhause",
+  "reading": "das",
+  "gloss": "home",
+  "seq": 0,
+  "source": "manual"
+ },
+ "night|noun": {
+  "word": "Nacht",
+  "reading": "die",
+  "gloss": "night; darkness",
+  "seq": 1155,
+  "source": "reviewed"
+ },
+ "put|verb": {
+  "word": "legen",
+  "reading": "",
+  "gloss": "to put; to lay",
+  "seq": 0,
+  "source": "manual"
+ },
+ "people|noun": {
+  "word": "Leute",
+  "reading": "die",
+  "gloss": "people",
+  "seq": 0,
+  "source": "manual"
+ },
+ "thank|verb": {
+  "word": "danken",
+  "reading": "",
+  "gloss": "to thank",
+  "seq": 9097,
+  "source": "reviewed"
+ },
+ "still|adv": {
+  "word": "immer noch",
+  "reading": "",
+  "gloss": "still",
+  "seq": 0,
+  "source": "manual"
+ },
+ "before|adv": {
+  "word": "vorher",
+  "reading": "",
+  "gloss": "beforehand, previously, before",
+  "seq": 29489,
+  "source": "reviewed"
+ },
+ "stop|verb": {
+  "word": "aufhören",
+  "reading": "",
+  "gloss": "to stop; to quit; to cease; to stop talking about something",
+  "seq": 18249,
+  "source": "reviewed"
+ },
+ "great|adj": {
+  "word": "groß",
+  "reading": "",
+  "gloss": "great; big",
+  "seq": 0,
+  "source": "manual"
+ },
+ "last|adj": {
+  "word": "letzte",
+  "reading": "",
+  "gloss": "last",
+  "seq": 80737,
+  "source": "reviewed"
+ },
+ "always|adv": {
+  "word": "immer",
+  "reading": "",
+  "gloss": "always; at all times without exception; very often; all the time",
+  "seq": 6957,
+  "source": "reviewed"
+ },
+ "keep|verb": {
+  "word": "behalten",
+  "reading": "",
+  "gloss": "to keep, to retain; to keep, to not reveal; to remember",
+  "seq": 21484,
+  "source": "reviewed"
+ },
+ "long|adj": {
+  "word": "lang",
+  "reading": "",
+  "gloss": "long; lengthy; tall; many",
+  "seq": 2714,
+  "source": "reviewed"
+ },
+ "leave|verb": {
+  "word": "verlassen",
+  "reading": "",
+  "gloss": "to leave, to abandon; to depart, to forsake; to leave, to desert, to dump; to pass away",
+  "seq": 6464,
+  "source": "reviewed"
+ },
+ "name|noun": {
+  "word": "Name",
+  "reading": "der",
+  "gloss": "name",
+  "seq": 4642,
+  "source": "reviewed"
+ },
+ "place|noun": {
+  "word": "Ort",
+  "reading": "der",
+  "gloss": "place, location, point, position; locus, point",
+  "seq": 8888,
+  "source": "reviewed"
+ },
+ "ever|adv": {
+  "word": "je",
+  "reading": "",
+  "gloss": "ever; per; the",
+  "seq": 991,
+  "source": "reviewed"
+ },
+ "feel|verb": {
+  "word": "fühlen",
+  "reading": "",
+  "gloss": "to feel; to touch so as to perceive something; to feel for, to search by feeling; to touch",
+  "seq": 10686,
+  "source": "reviewed"
+ },
+ "man|noun": {
+  "word": "Mann",
+  "reading": "der",
+  "gloss": "man, male human being; husband",
+  "seq": 4465,
+  "source": "reviewed"
+ },
+ "need|verb": {
+  "word": "brauchen",
+  "reading": "",
+  "gloss": "to need, to be in need of, to require; to need to, to have to",
+  "seq": 11243,
+  "source": "reviewed"
+ },
+ "work|verb": {
+  "word": "arbeiten",
+  "reading": "",
+  "gloss": "to work; to work, function, run, operate; to ferment; to work, execute",
+  "seq": 1153,
+  "source": "reviewed"
+ },
+ "new|adj": {
+  "word": "neu",
+  "reading": "",
+  "gloss": "new; modern, recent, latest",
+  "seq": 1249,
+  "source": "reviewed"
+ },
+ "father|noun": {
+  "word": "Vater",
+  "reading": "der",
+  "gloss": "father",
+  "seq": 2723,
+  "source": "reviewed"
+ },
+ "old|adj": {
+  "word": "alt",
+  "reading": "",
+  "gloss": "old; ancient; elderly",
+  "seq": 2519,
+  "source": "reviewed"
+ },
+ "believe|verb": {
+  "word": "glauben",
+  "reading": "",
+  "gloss": "to believe",
+  "seq": 0,
+  "source": "manual"
+ },
+ "girl|noun": {
+  "word": "Mädchen",
+  "reading": "das",
+  "gloss": "girl; maiden",
+  "seq": 2656,
+  "source": "reviewed"
+ },
+ "kind|noun": {
+  "word": "Art",
+  "reading": "die",
+  "gloss": "kind, sort, type; species; nature, character; behaviour",
+  "seq": 3305,
+  "source": "reviewed"
+ },
+ "house|noun": {
+  "word": "Haus",
+  "reading": "das",
+  "gloss": "house, building; home; theatre",
+  "seq": 41,
+  "source": "reviewed"
+ },
+ "enough|adv": {
+  "word": "genug",
+  "reading": "",
+  "gloss": "enough, sufficiently, in an adequate way",
+  "seq": 10701,
+  "source": "reviewed"
+ },
+ "wrong|adj": {
+  "word": "falsch",
+  "reading": "",
+  "gloss": "false, unfactual, untrue; wrong; fake, forged; untruthful, perfidious",
+  "seq": 8294,
+  "source": "reviewed"
+ },
+ "listen|verb": {
+  "word": "zuhören",
+  "reading": "",
+  "gloss": "to listen",
+  "seq": 0,
+  "source": "manual"
+ },
+ "understand|verb": {
+  "word": "verstehen",
+  "reading": "",
+  "gloss": "to understand; to hear and interpret; to comprehend, to make sense of; to take, to interpret, to gather",
+  "seq": 2510,
+  "source": "reviewed"
+ },
+ "remember|verb": {
+  "word": "erinnern",
+  "reading": "",
+  "gloss": "to remember",
+  "seq": 0,
+  "source": "manual"
+ },
+ "maybe|adv": {
+  "word": "vielleicht",
+  "reading": "",
+  "gloss": "perhaps, maybe",
+  "seq": 10634,
+  "source": "reviewed"
+ },
+ "world|noun": {
+  "word": "Welt",
+  "reading": "die",
+  "gloss": "world",
+  "seq": 1013,
+  "source": "reviewed"
+ },
+ "hear|verb": {
+  "word": "hören",
+  "reading": "",
+  "gloss": "to hear; to listen to, pay attention to; to attend, to go to, to sit in on; to get, to receive",
+  "seq": 8508,
+  "source": "reviewed"
+ },
+ "ask|verb": {
+  "word": "fragen",
+  "reading": "",
+  "gloss": "to ask; to ask for, to ask after; to wonder",
+  "seq": 6512,
+  "source": "reviewed"
+ },
+ "show|verb": {
+  "word": "zeigen",
+  "reading": "",
+  "gloss": "to show, make see; to point; to exhibit, allow to see",
+  "seq": 2146,
+  "source": "reviewed"
+ },
+ "kill|verb": {
+  "word": "töten",
+  "reading": "",
+  "gloss": "to kill",
+  "seq": 7587,
+  "source": "reviewed"
+ },
+ "next|adj": {
+  "word": "nächste",
+  "reading": "",
+  "gloss": "next",
+  "seq": 0,
+  "source": "manual"
+ },
+ "care|noun": {
+  "word": "Sorge",
+  "reading": "die",
+  "gloss": "concern, care, responsibility, aid",
+  "seq": 5266,
+  "source": "reviewed"
+ },
+ "try|verb": {
+  "word": "versuchen",
+  "reading": "",
+  "gloss": "to try, to attempt; to try, to taste; to tempt; to dabble in, to experiment with",
+  "seq": 29472,
+  "source": "reviewed"
+ },
+ "many|adj": {
+  "word": "viele",
+  "reading": "",
+  "gloss": "many",
+  "seq": 0,
+  "source": "manual"
+ },
+ "mind|noun": {
+  "word": "Sinn",
+  "reading": "der",
+  "gloss": "sense; meaning, sense; point, idea, tenor; mind, consciousness",
+  "seq": 5232,
+  "source": "reviewed"
+ },
+ "boy|noun": {
+  "word": "Junge",
+  "reading": "der",
+  "gloss": "boy; jack",
+  "seq": 2658,
+  "source": "reviewed"
+ },
+ "together|adv": {
+  "word": "zusammen",
+  "reading": "",
+  "gloss": "together, jointly",
+  "seq": 6017,
+  "source": "reviewed"
+ },
+ "real|adj": {
+  "word": "echt",
+  "reading": "",
+  "gloss": "real",
+  "seq": 0,
+  "source": "manual"
+ },
+ "baby|noun": {
+  "word": "Baby",
+  "reading": "das",
+  "gloss": "baby",
+  "seq": 3360,
+  "source": "reviewed"
+ },
+ "course|noun": {
+  "word": "Lauf",
+  "reading": "der",
+  "gloss": "course; run",
+  "seq": 0,
+  "source": "manual"
+ },
+ "stay|verb": {
+  "word": "bleiben",
+  "reading": "",
+  "gloss": "to remain; to keep; to continue; to stay",
+  "seq": 8094,
+  "source": "reviewed"
+ },
+ "bad|adj": {
+  "word": "schlecht",
+  "reading": "",
+  "gloss": "bad, evil, wicked; bad; bad, off; sick, nauseated",
+  "seq": 10269,
+  "source": "reviewed"
+ },
+ "today|noun": {
+  "word": "heute",
+  "reading": "",
+  "gloss": "today",
+  "seq": 0,
+  "source": "manual"
+ },
+ "morning|noun": {
+  "word": "Morgen",
+  "reading": "der",
+  "gloss": "morning",
+  "seq": 7693,
+  "source": "reviewed"
+ },
+ "room|noun": {
+  "word": "Zimmer",
+  "reading": "das",
+  "gloss": "room",
+  "seq": 2792,
+  "source": "reviewed"
+ },
+ "move|verb": {
+  "word": "bewegen",
+  "reading": "",
+  "gloss": "to move",
+  "seq": 0,
+  "source": "manual"
+ },
+ "live|verb": {
+  "word": "leben",
+  "reading": "",
+  "gloss": "to live, to be alive; to dwell, to reside; to live, to exist, to occupy a place; to live off, subsist, to survive",
+  "seq": 6629,
+  "source": "reviewed"
+ },
+ "once|adv": {
+  "word": "einmal",
+  "reading": "",
+  "gloss": "once, one time; once; sometime; first of all, for starters, firstly",
+  "seq": 7875,
+  "source": "reviewed"
+ },
+ "head|noun": {
+  "word": "Kopf",
+  "reading": "der",
+  "gloss": "head; crown, top; heading, title; person",
+  "seq": 2754,
+  "source": "reviewed"
+ },
+ "idea|noun": {
+  "word": "Idee",
+  "reading": "die",
+  "gloss": "idea",
+  "seq": 14286,
+  "source": "reviewed"
+ },
+ "hold|verb": {
+  "word": "halten",
+  "reading": "",
+  "gloss": "to hold; to stop, to halt, to hold back; to support, to hold up; to keep, to maintain",
+  "seq": 8665,
+  "source": "reviewed"
+ },
+ "door|noun": {
+  "word": "Tür",
+  "reading": "die",
+  "gloss": "door; doorway",
+  "seq": 6537,
+  "source": "reviewed"
+ },
+ "bit|noun": {
+  "word": "bisschen",
+  "reading": "",
+  "gloss": "bit; a little",
+  "seq": 0,
+  "source": "manual"
+ },
+ "yet|adv": {
+  "word": "noch",
+  "reading": "",
+  "gloss": "yet; still",
+  "seq": 0,
+  "source": "manual"
+ },
+ "fine|adj": {
+  "word": "fein",
+  "reading": "",
+  "gloss": "fine; refined; posh; fancy",
+  "seq": 10665,
+  "source": "reviewed"
+ },
+ "else|adv": {
+  "word": "sonst",
+  "reading": "",
+  "gloss": "otherwise; normally, usually; else; so",
+  "seq": 9329,
+  "source": "reviewed"
+ },
+ "friend|noun": {
+  "word": "Freund",
+  "reading": "der",
+  "gloss": "friend; boyfriend",
+  "seq": 3015,
+  "source": "reviewed"
+ },
+ "already|adv": {
+  "word": "schon",
+  "reading": "",
+  "gloss": "already; previously, before; yet; admittedly",
+  "seq": 6480,
+  "source": "reviewed"
+ },
+ "miss|verb": {
+  "word": "vermissen",
+  "reading": "",
+  "gloss": "to miss; to have something missing",
+  "seq": 20196,
+  "source": "reviewed"
+ },
+ "whole|adj": {
+  "word": "ganz",
+  "reading": "",
+  "gloss": "entire, whole, complete; all; whole, intact; true",
+  "seq": 1106,
+  "source": "reviewed"
+ },
+ "use|noun": {
+  "word": "Nutzen",
+  "reading": "der",
+  "gloss": "use; benefit",
+  "seq": 0,
+  "source": "manual"
+ },
+ "while|noun": {
+  "word": "Weile",
+  "reading": "die",
+  "gloss": "while",
+  "seq": 10033,
+  "source": "reviewed"
+ },
+ "matter|verb": {
+  "word": "ausmachen",
+  "reading": "",
+  "gloss": "to matter",
+  "seq": 0,
+  "source": "manual"
+ },
+ "bring|verb": {
+  "word": "bringen",
+  "reading": "",
+  "gloss": "to cause to have; to cause to be a part of; to get, to cause; to acquire",
+  "seq": 1210,
+  "source": "reviewed"
+ },
+ "run|verb": {
+  "word": "laufen",
+  "reading": "",
+  "gloss": "to run",
+  "seq": 0,
+  "source": "manual"
+ },
+ "hard|adj": {
+  "word": "hart",
+  "reading": "",
+  "gloss": "hard; severe, harsh; unmoved, cold, cruel",
+  "seq": 579,
+  "source": "reviewed"
+ },
+ "end|noun": {
+  "word": "Ende",
+  "reading": "das",
+  "gloss": "end, finish; conclusion",
+  "seq": 9188,
+  "source": "reviewed"
+ },
+ "play|verb": {
+  "word": "spielen",
+  "reading": "",
+  "gloss": "to play; to play, to engage in; to play, to perform; to play, to listen to",
+  "seq": 2164,
+  "source": "reviewed"
+ },
+ "face|noun": {
+  "word": "Gesicht",
+  "reading": "das",
+  "gloss": "face; a facial expression, a look; that which is outward or in front; honour, reputation",
+  "seq": 6228,
+  "source": "reviewed"
+ },
+ "ready|adj": {
+  "word": "bereit",
+  "reading": "",
+  "gloss": "ready",
+  "seq": 8925,
+  "source": "reviewed"
+ },
+ "pretty|adj": {
+  "word": "hübsch",
+  "reading": "",
+  "gloss": "pretty",
+  "seq": 0,
+  "source": "manual"
+ },
+ "meet|verb": {
+  "word": "treffen",
+  "reading": "",
+  "gloss": "to meet; to encounter; to hit; to strike",
+  "seq": 10925,
+  "source": "reviewed"
+ },
+ "alone|adv": {
+  "word": "allein",
+  "reading": "",
+  "gloss": "alone; only",
+  "seq": 8307,
+  "source": "reviewed"
+ },
+ "school|verb": {
+  "word": "Schule",
+  "reading": "die",
+  "gloss": "school",
+  "seq": 0,
+  "source": "manual"
+ },
+ "turn|verb": {
+  "word": "drehen",
+  "reading": "",
+  "gloss": "to turn; to turn, turn around; to revolve, rotate, spin; to concern, to revolve around",
+  "seq": 9109,
+  "source": "reviewed"
+ },
+ "business|noun": {
+  "word": "Geschäft",
+  "reading": "das",
+  "gloss": "shop, store; business; business activity; transaction",
+  "seq": 20650,
+  "source": "reviewed"
+ },
+ "true|adj": {
+  "word": "wahr",
+  "reading": "",
+  "gloss": "true, real; true, truthful",
+  "seq": 9260,
+  "source": "reviewed"
+ },
+ "die|verb": {
+  "word": "sterben",
+  "reading": "",
+  "gloss": "to die",
+  "seq": 6839,
+  "source": "reviewed"
+ },
+ "heart|noun": {
+  "word": "Herz",
+  "reading": "das",
+  "gloss": "heart",
+  "seq": 0,
+  "source": "manual"
+ },
+ "soon|adv": {
+  "word": "bald",
+  "reading": "",
+  "gloss": "soon; almost; indicates a rapid alternation of states; now ..., now ",
+  "seq": 826,
+  "source": "reviewed"
+ },
+ "worry|verb": {
+  "word": "sorgen",
+  "reading": "",
+  "gloss": "to bring about, to ensure, to cause; to worry, to be worried",
+  "seq": 26997,
+  "source": "reviewed"
+ },
+ "watch|verb": {
+  "word": "beobachten",
+  "reading": "",
+  "gloss": "to watch",
+  "seq": 0,
+  "source": "manual"
+ },
+ "music|noun": {
+  "word": "Musik",
+  "reading": "die",
+  "gloss": "music; a musical piece",
+  "seq": 4628,
+  "source": "reviewed"
+ },
+ "sit|verb": {
+  "word": "sitzen",
+  "reading": "",
+  "gloss": "to sit; to perch; to stay; to remain",
+  "seq": 6516,
+  "source": "reviewed"
+ },
+ "open|verb": {
+  "word": "öffnen",
+  "reading": "",
+  "gloss": "to open; to open, get, or answer the door; to open up, confide",
+  "seq": 6065,
+  "source": "reviewed"
+ },
+ "hand|noun": {
+  "word": "Hand",
+  "reading": "die",
+  "gloss": "hand; handwriting",
+  "seq": 4049,
+  "source": "reviewed"
+ },
+ "beautiful|adj": {
+  "word": "schön",
+  "reading": "",
+  "gloss": "beautiful, lovely, pretty, handsome; good, great, splendid; nice, pleasant",
+  "seq": 1047,
+  "source": "reviewed"
+ },
+ "person|noun": {
+  "word": "Person",
+  "reading": "die",
+  "gloss": "person, individual",
+  "seq": 4838,
+  "source": "reviewed"
+ },
+ "part|noun": {
+  "word": "Teil",
+  "reading": "der",
+  "gloss": "part, piece; fraction of a whole",
+  "seq": 8871,
+  "source": "reviewed"
+ },
+ "late|adj": {
+  "word": "spät",
+  "reading": "",
+  "gloss": "late",
+  "seq": 8509,
+  "source": "reviewed"
+ },
+ "stuff|noun": {
+  "word": "Zeug",
+  "reading": "das",
+  "gloss": "stuff, gear, equipment; material; fabric, clothing, clothes",
+  "seq": 8774,
+  "source": "reviewed"
+ },
+ "minute|noun": {
+  "word": "Minute",
+  "reading": "die",
+  "gloss": "minute",
+  "seq": 4568,
+  "source": "reviewed"
+ },
+ "change|verb": {
+  "word": "ändern",
+  "reading": "",
+  "gloss": "to change, to alter; to change, to vary",
+  "seq": 9059,
+  "source": "reviewed"
+ },
+ "happen|verb": {
+  "word": "passieren",
+  "reading": "",
+  "gloss": "to happen; to move beyond; pass; to pass through a sieve, to strain",
+  "seq": 9060,
+  "source": "reviewed"
+ },
+ "far|adv": {
+  "word": "weit",
+  "reading": "",
+  "gloss": "far",
+  "seq": 8870,
+  "source": "reviewed"
+ },
+ "shut|verb": {
+  "word": "schließen",
+  "reading": "",
+  "gloss": "to shut; to close; to shut down; to lock",
+  "seq": 8849,
+  "source": "reviewed"
+ },
+ "check|verb": {
+  "word": "prüfen",
+  "reading": "",
+  "gloss": "to check",
+  "seq": 0,
+  "source": "manual"
+ },
+ "different|adj": {
+  "word": "anders",
+  "reading": "",
+  "gloss": "different",
+  "seq": 0,
+  "source": "manual"
+ },
+ "close|verb": {
+  "word": "zumachen",
+  "reading": "",
+  "gloss": "to close",
+  "seq": 0,
+  "source": "manual"
+ },
+ "nice|adj": {
+  "word": "nett",
+  "reading": "",
+  "gloss": "nice; friendly; likable; kind",
+  "seq": 17514,
+  "source": "reviewed"
+ },
+ "guess|verb": {
+  "word": "raten",
+  "reading": "",
+  "gloss": "to guess",
+  "seq": 0,
+  "source": "manual"
+ },
+ "few|adj": {
+  "word": "wenige",
+  "reading": "",
+  "gloss": "few",
+  "seq": 0,
+  "source": "manual"
+ },
+ "second|adj": {
+  "word": "zweite",
+  "reading": "",
+  "gloss": "second",
+  "seq": 18827,
+  "source": "reviewed"
+ },
+ "forget|verb": {
+  "word": "vergessen",
+  "reading": "",
+  "gloss": "to forget; to leave; to overlook, to miss",
+  "seq": 8805,
+  "source": "reviewed"
+ },
+ "deal|noun": {
+  "word": "Menge",
+  "reading": "die",
+  "gloss": "a great deal; amount",
+  "seq": 0,
+  "source": "manual"
+ },
+ "chance|noun": {
+  "word": "Chance",
+  "reading": "die",
+  "gloss": "chance",
+  "seq": 13363,
+  "source": "reviewed"
+ },
+ "dear|adj": {
+  "word": "lieb",
+  "reading": "",
+  "gloss": "dear",
+  "seq": 0,
+  "source": "manual"
+ },
+ "quite|adv": {
+  "word": "ziemlich",
+  "reading": "",
+  "gloss": "quite; rather",
+  "seq": 0,
+  "source": "manual"
+ },
+ "word|noun": {
+  "word": "Wort",
+  "reading": "das",
+  "gloss": "word as an isolated unit; utterance, word with context; speech, speaking, floor; promise, word",
+  "seq": 5679,
+  "source": "reviewed"
+ },
+ "wish|verb": {
+  "word": "wünschen",
+  "reading": "",
+  "gloss": "to wish",
+  "seq": 0,
+  "source": "manual"
+ },
+ "moment|noun": {
+  "word": "Moment",
+  "reading": "der",
+  "gloss": "moment",
+  "seq": 4587,
+  "source": "reviewed"
+ },
+ "week|noun": {
+  "word": "Woche",
+  "reading": "die",
+  "gloss": "week; weekdays",
+  "seq": 8978,
+  "source": "reviewed"
+ },
+ "rest|noun": {
+  "word": "Rest",
+  "reading": "der",
+  "gloss": "rest, remainder, remnant; radical",
+  "seq": 5085,
+  "source": "reviewed"
+ },
+ "side|noun": {
+  "word": "Seite",
+  "reading": "die",
+  "gloss": "side; page; one side or half of something or someone; a certain aspect of a concept",
+  "seq": 10333,
+  "source": "reviewed"
+ },
+ "woman|noun": {
+  "word": "Frau",
+  "reading": "die",
+  "gloss": "woman; wife; madam; lady",
+  "seq": 2065,
+  "source": "reviewed"
+ },
+ "dead|adj": {
+  "word": "tot",
+  "reading": "",
+  "gloss": "dead, deceased",
+  "seq": 1786,
+  "source": "reviewed"
+ },
+ "happy|adj": {
+  "word": "froh",
+  "reading": "",
+  "gloss": "happy; glad",
+  "seq": 0,
+  "source": "manual"
+ },
+ "ago|adv": {
+  "word": "zuvor",
+  "reading": "",
+  "gloss": "ago; before",
+  "seq": 0,
+  "source": "manual"
+ },
+ "year|noun": {
+  "word": "Jahr",
+  "reading": "das",
+  "gloss": "year",
+  "seq": 5793,
+  "source": "reviewed"
+ },
+ "exactly|adv": {
+  "word": "genau",
+  "reading": "",
+  "gloss": "just, exactly",
+  "seq": 10697,
+  "source": "reviewed"
+ },
+ "point|verb": {
+  "word": "zeigen",
+  "reading": "",
+  "gloss": "to show, make see; to point; to exhibit, allow to see",
+  "seq": 2146,
+  "source": "reviewed"
+ },
+ "afraid|adj": {
+  "word": "ängstlich",
+  "reading": "",
+  "gloss": "afraid; anxious",
+  "seq": 0,
+  "source": "manual"
+ },
+ "sleep|verb": {
+  "word": "schlafen",
+  "reading": "",
+  "gloss": "to sleep; to sleep on something; to sleep with; to have sex",
+  "seq": 9313,
+  "source": "reviewed"
+ },
+ "important|adj": {
+  "word": "wichtig",
+  "reading": "",
+  "gloss": "",
+  "seq": 1666,
+  "source": "reviewed"
+ },
+ "set|verb": {
+  "word": "setzen",
+  "reading": "",
+  "gloss": "to set; to put",
+  "seq": 0,
+  "source": "manual"
+ },
+ "nobody|noun": {
+  "word": "niemand",
+  "reading": "",
+  "gloss": "nobody",
+  "seq": 0,
+  "source": "manual"
+ },
+ "read|verb": {
+  "word": "lesen",
+  "reading": "",
+  "gloss": "to read; to select and gather or harvest",
+  "seq": 6518,
+  "source": "reviewed"
+ },
+ "sister|noun": {
+  "word": "Schwester",
+  "reading": "die",
+  "gloss": "sister; nurse; used as a title of address for nurses; nun",
+  "seq": 9119,
+  "source": "reviewed"
+ },
+ "child|noun": {
+  "word": "Kind",
+  "reading": "das",
+  "gloss": "kid; child; offspring",
+  "seq": 4273,
+  "source": "reviewed"
+ }
+}

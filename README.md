@@ -78,7 +78,9 @@ Word resolution order per lexeme:
    and never sent to the dictionary
 4. dictionary reverse lookup - JMdict for Japanese (skips honorific/humble
    senses, penalizes katakana loanwords), CC-CEDICT for Mandarin
-   (frequency-ranked, proper nouns rejected, tone-marked pinyin) -
+   (frequency-ranked, proper nouns rejected, tone-marked pinyin),
+   Wiktionary (kaikki.org extract) for German (frequency-ranked, nouns
+   carry der/die/das as their reading aid) -
    scheduled auto-picks that are common words or weak matches land in
    `data/books/<slug>/review-queue.json`
 
@@ -92,6 +94,15 @@ full audit, Oz reused 47% of it, Peter Pan reused 62% and needed one fix.
 JMdict JSON lives at `/data/dicts/jmdict-eng.json` (from
 github.com/scriptin/jmdict-simplified, `jmdict-eng` release asset);
 override with `$JMDICT`.
+
+The German dictionary is the kaikki.org Wiktionary extract, shrunk while it
+streams (the raw file is ~1 GB) to `/data/dicts/kaikki-de.jsonl`:
+
+    curl -s https://kaikki.org/dictionary/German/kaikki.org-dictionary-German.jsonl \
+      | npx tsx scripts/dict/prep-kaikki-de.ts > /data/dicts/kaikki-de.jsonl
+
+Override the path with `$KAIKKI_DE`. German Alice was woven with
+`npm run weave-book -- data/raw/alice.txt --slug alice-de --lang de --title "Alice's Adventures in Wonderland (German)"`.
 
 ## Layout
 
@@ -118,7 +129,12 @@ Code is MIT (see `LICENSE`). Bundled data carries its own licenses:
   contain Mandarin glosses derived from
   [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cc-cedict)
   (CC BY-SA 4.0). These files are therefore CC BY-SA 4.0.
-- `data/raw/en_50k.txt` and `data/raw/zh_cn_50k.txt` are frequency lists from
+- `data/lexicon/de*.json` and the corresponding files under `data/books/`
+  contain German words, genders and glosses derived from
+  [English Wiktionary](https://en.wiktionary.org/) via
+  [kaikki.org](https://kaikki.org/) (CC BY-SA 4.0). These files are
+  therefore CC BY-SA 4.0.
+- `data/raw/en_50k.txt`, `data/raw/zh_cn_50k.txt` and `data/raw/de_50k.txt` are frequency lists from
   [hermitdave/FrequencyWords](https://github.com/hermitdave/FrequencyWords)
   (CC BY-SA 4.0, built from the OpenSubtitles corpus).
 - The book texts under `data/raw/` and `data/books/` (Alice's Adventures in

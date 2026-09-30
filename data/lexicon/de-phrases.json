@@ -1,0 +1,92 @@
+{
+ "of course": {
+  "word": "natürlich",
+  "reading": "",
+  "gloss": "of course; naturally",
+  "rank": 300
+ },
+ "at last": {
+  "word": "endlich",
+  "reading": "",
+  "gloss": "at last; finally",
+  "rank": 900
+ },
+ "at once": {
+  "word": "sofort",
+  "reading": "",
+  "gloss": "at once; immediately",
+  "rank": 800
+ },
+ "a little": {
+  "word": "ein bisschen",
+  "reading": "",
+  "gloss": "a little; a bit",
+  "rank": 400
+ },
+ "at all": {
+  "word": "überhaupt",
+  "reading": "",
+  "gloss": "at all (with negative); fundamentally",
+  "rank": 600
+ },
+ "all right": {
+  "word": "in Ordnung",
+  "reading": "",
+  "gloss": "all right; okay",
+  "rank": 500
+ },
+ "once more": {
+  "word": "noch einmal",
+  "reading": "",
+  "gloss": "once more; one more time",
+  "rank": 700
+ },
+ "each other": {
+  "word": "einander",
+  "reading": "",
+  "gloss": "each other; mutually",
+  "rank": 800
+ },
+ "in fact": {
+  "word": "tatsächlich",
+  "reading": "",
+  "gloss": "in fact; actually",
+  "rank": 700
+ },
+ "no one": {
+  "word": "niemand",
+  "reading": "",
+  "gloss": "no one; nobody",
+  "rank": 500
+ },
+ "come back": {
+  "word": "zurückkommen",
+  "reading": "",
+  "gloss": "to come back; to return",
+  "rank": 700
+ },
+ "by and by": {
+  "word": "nach und nach",
+  "reading": "",
+  "gloss": "by and by; before long",
+  "rank": 2000
+ },
+ "in a hurry": {
+  "word": "in Eile",
+  "reading": "",
+  "gloss": "in a hurry; hastily",
+  "rank": 1500
+ },
+ "all the time": {
+  "word": "die ganze Zeit",
+  "reading": "",
+  "gloss": "all the time; continuously",
+  "rank": 800
+ },
+ "no doubt": {
+  "word": "zweifellos",
+  "reading": "",
+  "gloss": "no doubt; undoubtedly",
+  "rank": 1500
+ }
+}

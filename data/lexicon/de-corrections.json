@@ -1,0 +1,267 @@
+{
+ "no|adv": {
+  "word": "nein",
+  "reading": "",
+  "gloss": "no"
+ },
+ "get|verb": {
+  "word": "bekommen",
+  "reading": "",
+  "gloss": "to get; to receive"
+ },
+ "right|adj": {
+  "word": "richtig",
+  "reading": "",
+  "gloss": "right; correct"
+ },
+ "think|verb": {
+  "word": "denken",
+  "reading": "",
+  "gloss": "to think"
+ },
+ "look|verb": {
+  "word": "schauen",
+  "reading": "",
+  "gloss": "to look"
+ },
+ "something|noun": {
+  "word": "etwas",
+  "reading": "",
+  "gloss": "something"
+ },
+ "way|noun": {
+  "word": "Weg",
+  "reading": "der",
+  "gloss": "way; path"
+ },
+ "down|adv": {
+  "word": "hinunter",
+  "reading": "",
+  "gloss": "down; downwards"
+ },
+ "little|adj": {
+  "word": "klein",
+  "reading": "",
+  "gloss": "little; small"
+ },
+ "please|verb": {
+  "word": "bitte",
+  "reading": "",
+  "gloss": "please"
+ },
+ "one|noun": {
+  "word": "eins",
+  "reading": "",
+  "gloss": "one"
+ },
+ "mean|verb": {
+  "word": "meinen",
+  "reading": "",
+  "gloss": "to mean"
+ },
+ "life|noun": {
+  "word": "Leben",
+  "reading": "das",
+  "gloss": "life"
+ },
+ "nothing|noun": {
+  "word": "nichts",
+  "reading": "",
+  "gloss": "nothing"
+ },
+ "call|verb": {
+  "word": "rufen",
+  "reading": "",
+  "gloss": "to call"
+ },
+ "home|noun": {
+  "word": "Zuhause",
+  "reading": "das",
+  "gloss": "home"
+ },
+ "put|verb": {
+  "word": "legen",
+  "reading": "",
+  "gloss": "to put; to lay"
+ },
+ "people|noun": {
+  "word": "Leute",
+  "reading": "die",
+  "gloss": "people"
+ },
+ "great|adj": {
+  "word": "groß",
+  "reading": "",
+  "gloss": "great; big"
+ },
+ "believe|verb": {
+  "word": "glauben",
+  "reading": "",
+  "gloss": "to believe"
+ },
+ "remember|verb": {
+  "word": "erinnern",
+  "reading": "",
+  "gloss": "to remember"
+ },
+ "many|adj": {
+  "word": "viele",
+  "reading": "",
+  "gloss": "many"
+ },
+ "course|noun": {
+  "word": "Lauf",
+  "reading": "der",
+  "gloss": "course; run"
+ },
+ "today|noun": {
+  "word": "heute",
+  "reading": "",
+  "gloss": "today"
+ },
+ "move|verb": {
+  "word": "bewegen",
+  "reading": "",
+  "gloss": "to move"
+ },
+ "bit|noun": {
+  "word": "bisschen",
+  "reading": "",
+  "gloss": "bit; a little"
+ },
+ "yet|adv": {
+  "word": "noch",
+  "reading": "",
+  "gloss": "yet; still"
+ },
+ "still|adv": {
+  "word": "immer noch",
+  "reading": "",
+  "gloss": "still"
+ },
+ "use|noun": {
+  "word": "Nutzen",
+  "reading": "der",
+  "gloss": "use; benefit"
+ },
+ "matter|verb": {
+  "word": "ausmachen",
+  "reading": "",
+  "gloss": "to matter"
+ },
+ "run|verb": {
+  "word": "laufen",
+  "reading": "",
+  "gloss": "to run"
+ },
+ "school|verb": {
+  "word": "Schule",
+  "reading": "die",
+  "gloss": "school"
+ },
+ "pretty|adj": {
+  "word": "hübsch",
+  "reading": "",
+  "gloss": "pretty"
+ },
+ "heart|noun": {
+  "word": "Herz",
+  "reading": "das",
+  "gloss": "heart"
+ },
+ "different|adj": {
+  "word": "anders",
+  "reading": "",
+  "gloss": "different"
+ },
+ "guess|verb": {
+  "word": "raten",
+  "reading": "",
+  "gloss": "to guess"
+ },
+ "few|adj": {
+  "word": "wenige",
+  "reading": "",
+  "gloss": "few"
+ },
+ "dear|adj": {
+  "word": "lieb",
+  "reading": "",
+  "gloss": "dear"
+ },
+ "wish|verb": {
+  "word": "wünschen",
+  "reading": "",
+  "gloss": "to wish"
+ },
+ "afraid|adj": {
+  "word": "ängstlich",
+  "reading": "",
+  "gloss": "afraid; anxious"
+ },
+ "set|verb": {
+  "word": "setzen",
+  "reading": "",
+  "gloss": "to set; to put"
+ },
+ "nobody|noun": {
+  "word": "niemand",
+  "reading": "",
+  "gloss": "nobody"
+ },
+ "deal|noun": {
+  "word": "Menge",
+  "reading": "die",
+  "gloss": "a great deal; amount"
+ },
+ "ago|adv": {
+  "word": "zuvor",
+  "reading": "",
+  "gloss": "ago; before"
+ },
+ "next|adj": {
+  "word": "nächste",
+  "reading": "",
+  "gloss": "next"
+ },
+ "watch|verb": {
+  "word": "beobachten",
+  "reading": "",
+  "gloss": "to watch"
+ },
+ "close|verb": {
+  "word": "zumachen",
+  "reading": "",
+  "gloss": "to close"
+ },
+ "happy|adj": {
+  "word": "froh",
+  "reading": "",
+  "gloss": "happy; glad"
+ },
+ "listen|verb": {
+  "word": "zuhören",
+  "reading": "",
+  "gloss": "to listen"
+ },
+ "quite|adv": {
+  "word": "ziemlich",
+  "reading": "",
+  "gloss": "quite; rather"
+ },
+ "check|verb": {
+  "word": "prüfen",
+  "reading": "",
+  "gloss": "to check"
+ },
+ "real|adj": {
+  "word": "echt",
+  "reading": "",
+  "gloss": "real"
+ },
+ "tell|verb": {
+  "word": "erzählen",
+  "reading": "",
+  "gloss": "to tell"
+ }
+}

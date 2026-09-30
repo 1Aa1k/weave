@@ -16,10 +16,12 @@ export function jpChapter(n: number): string {
 
 /**
  * Chapter ornament in the book's own language. The chrome follows the book:
- * a Japanese or Chinese book gets 第N章, anything else a plain chapter label.
+ * a Japanese or Chinese book gets 第N章, a German one "Kapitel N", anything
+ * else a plain chapter label.
  */
 export function chapterOrnament(language: string, n: number): string {
   if (language === "ja" || language === "zh") return jpChapter(n);
+  if (language === "de") return `Kapitel ${n}`;
   return `Ch. ${n}`;
 }
 
@@ -27,6 +29,8 @@ export function chapterOrnament(language: string, n: number): string {
 export function readingName(language: string): string {
   if (language === "ja") return "furigana";
   if (language === "zh") return "pinyin";
+  // German nouns carry their article (der/die/das) as the reading aid.
+  if (language === "de") return "article";
   return "hint";
 }
 
@@ -35,6 +39,7 @@ export function praise(language: string): string {
   const map: Record<string, string> = {
     ja: "よくできました",
     zh: "做得好",
+    de: "Gut gemacht",
     es: "Bien hecho",
     fr: "Bien joue",
     ko: "잘했어요",

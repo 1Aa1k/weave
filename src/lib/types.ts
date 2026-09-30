@@ -52,7 +52,7 @@ export interface VocabEntry extends Candidate {
 export interface LexiconEntry {
   /** Display form in the target language (kanji/hanzi when available). */
   word: string;
-  /** Pronunciation aid (kana for ja, pinyin for zh); empty when `word` needs none. */
+  /** Reading aid (kana for ja, pinyin for zh, der/die/das for de nouns); empty when `word` needs none. */
   reading: string;
   /** Short English gloss list, "; "-joined. */
   gloss: string;

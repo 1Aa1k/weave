@@ -2,7 +2,7 @@
 
 import { fsrs, generatorParameters, createEmptyCard, type Card, type Grade } from "ts-fsrs";
 import { getDb } from "./db";
-import { getVocab } from "./books";
+import { getMeta, getVocab } from "./books";
 import type { VocabEntry } from "./types";
 
 /** A word is "known" (furigana hidden) once FSRS stability reaches this many days. */
@@ -12,6 +12,7 @@ const FSRS_REVIEW_STATE = 2;
 const scheduler = fsrs(generatorParameters({ enable_fuzz: true }));
 
 interface CardRow {
+  language: string;
   lexeme_id: string;
   book: string;
   card_json: string;
@@ -27,22 +28,23 @@ function parseCard(row: CardRow): Card {
   return c as Card;
 }
 
-function saveCard(lexemeId: string, book: string, card: Card): void {
+function saveCard(lexemeId: string, language: string, book: string, card: Card): void {
   getDb()
     .prepare(
-      `INSERT INTO cards (lexeme_id, book, card_json, due, state, stability)
-       VALUES (?, ?, ?, ?, ?, ?)
-       ON CONFLICT(lexeme_id) DO UPDATE SET
+      `INSERT INTO cards (language, lexeme_id, book, card_json, due, state, stability)
+       VALUES (?, ?, ?, ?, ?, ?, ?)
+       ON CONFLICT(language, lexeme_id) DO UPDATE SET
          card_json = excluded.card_json, due = excluded.due,
          state = excluded.state, stability = excluded.stability`,
     )
-    .run(lexemeId, book, JSON.stringify(card), card.due.toISOString(), card.state, card.stability);
+    .run(language, lexemeId, book, JSON.stringify(card), card.due.toISOString(), card.state, card.stability);
 }
 
-export function getCardRow(lexemeId: string): CardRow | undefined {
-  return getDb().prepare("SELECT * FROM cards WHERE lexeme_id = ?").get(lexemeId) as
-    | CardRow
-    | undefined;
+/** A lexeme's card in one target language; books of that language share it. */
+export function getCardRow(lexemeId: string, language: string): CardRow | undefined {
+  return getDb()
+    .prepare("SELECT * FROM cards WHERE language = ? AND lexeme_id = ?")
+    .get(language, lexemeId) as CardRow | undefined;
 }
 
 export function isKnown(row: CardRow | undefined): boolean {
@@ -51,10 +53,11 @@ export function isKnown(row: CardRow | undefined): boolean {
 
 /** Apply a rating (1=Again 2=Hard 3=Good 4=Easy), creating the card if new. */
 export function rateCard(lexemeId: string, book: string, rating: Grade, now = new Date()): Card {
-  const row = getCardRow(lexemeId);
+  const language = getMeta(book).language;
+  const row = getCardRow(lexemeId, language);
   const card = row ? parseCard(row) : createEmptyCard(now);
   const next = scheduler.repeat(card, now)[rating].card;
-  saveCard(lexemeId, book, next);
+  saveCard(lexemeId, language, book, next);
   getDb()
     .prepare("INSERT INTO review_log (lexeme_id, rating, ts) VALUES (?, ?, ?)")
     .run(lexemeId, rating, now.toISOString());
@@ -108,11 +111,12 @@ export interface ReviewSession {
 
 export function buildSession(book: string, chapter: number, now = new Date()): ReviewSession {
   const vocab = getVocab(book);
+  const language = getMeta(book).language;
   const clicks = clickCounts(book);
   const byId = new Map(vocab.map((v) => [v.id, v]));
 
   const newWords = vocab
-    .filter((v) => v.introducedChapter === chapter && !getCardRow(v.id))
+    .filter((v) => v.introducedChapter === chapter && !getCardRow(v.id, language))
     .sort((a, b) => (clicks.get(b.id) ?? 0) - (clicks.get(a.id) ?? 0) || a.rank - b.rank);
 
   const dueRows = getDb()
@@ -159,10 +163,11 @@ export function swapStates(
   chapter: number,
 ): Map<string, { known: boolean }> {
   const vocab = getVocab(book);
+  const language = getMeta(book).language;
   const result = new Map<string, { known: boolean }>();
   for (const v of vocab) {
     if (v.introducedChapter <= chapter) {
-      result.set(v.id, { known: isKnown(getCardRow(v.id)) });
+      result.set(v.id, { known: isKnown(getCardRow(v.id, language)) });
     }
   }
   return result;

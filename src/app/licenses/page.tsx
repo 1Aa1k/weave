@@ -28,9 +28,15 @@ export default function LicensesPage() {
         </a>
         , used under Creative Commons Attribution-ShareAlike 4.0.
       </p>
+      <p>
+        German definitions and noun genders come from{" "}
+        <a href="https://en.wiktionary.org/">English Wiktionary</a>, via the{" "}
+        <a href="https://kaikki.org/">kaikki.org</a> extraction, used under
+        Creative Commons Attribution-ShareAlike 4.0.
+      </p>
       <h2>Word frequency</h2>
       <p>
-        English and Mandarin word-frequency ranks come from{" "}
+        English, Mandarin and German word-frequency ranks come from{" "}
         <a href="https://github.com/hermitdave/FrequencyWords">
           FrequencyWords
         </a>{" "}
